@@ -11,5 +11,5 @@ public class t_user {
 	String id;
 	String pw;
 	String nick;
-	String date;
+	String created_at;
 }
