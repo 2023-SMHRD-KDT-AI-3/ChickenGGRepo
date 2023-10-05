@@ -14,7 +14,7 @@
     <!-- 왼쪽 고정된 네비게이션 바 -->
     <div class="left-navbar">
         <!-- 로고 넣는곳 -->
-        <div class="navbar_logo">
+        <div class="navbar-logo">
             <a href="goMain"><h2>🅒🅗🅘🅒🅚🅔🅝.🅖🅖</h2></a>
         </div>
         <a href="goMain">
@@ -43,8 +43,8 @@
     <!-- 네비게이션 바 만드는곳 -->
     <nav class="navbar">
         <!-- 로고 넣는곳 -->
-        <div class="navbar_logo">
-            <a href="goMain" id="navbar__logoimg"><img src="images/하얀닭.png" alt="치킨 연구소 로고"></a>
+        <div class="navbar-logo">
+            <a href="goMain" id="navbar_logoimg"><img src="images/하얀닭.png" alt="치킨 연구소 로고"></a>
         </div>
 
         <!-- 로그인 및 검색 부분 -->
@@ -55,7 +55,7 @@
                     <option value="chi_menu">메뉴</option>
                     <option value="store_name">가게명</option>
                 </select>
-                <input type="text" class="sr_input" name="sr_input" placeholder="Search">
+                <input type="text" class="sr-input" name="sr_input" placeholder="Search">
                 <input type="submit" value="검색버튼">
             </form>
 
