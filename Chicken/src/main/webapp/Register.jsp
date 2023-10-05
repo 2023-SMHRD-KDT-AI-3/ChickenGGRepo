@@ -41,19 +41,19 @@
     </div>
 
     <!-- 회원가입 양식 -->
-    <form action="" method="post">
+    <form action="Register" method="post">
         <div class="wrapper">
             <div class="title">
                 <h1>회원가입</h1>
             </div>
             <div class="form-group">
                 <label for="username">아이디:</label>
-                <input id="username" type="text" placeholder="아이디를 입력하세요." required>
+                <input id="username" type="text" name="id" placeholder="아이디를 입력하세요." required>
                 <div id="usernameError" class="error"></div>
             </div>
             <div class="form-group">
                 <label for="password">비밀번호:</label>
-                <input id="password" type="password" placeholder="비밀번호를 입력하세요." required>
+                <input id="password" type="password" name="pw" placeholder="비밀번호를 입력하세요." required>
             </div>
             <div class="form-group">
                 <label for="confirmPassword">비밀번호 확인:</label>
@@ -62,7 +62,7 @@
             </div>
             <div class="form-group">
                 <label for="nickname">닉네임:</label>
-                <input id="nickname" type="text" placeholder="닉네임을 입력하세요." required>
+                <input id="nickname" type="text" name="nick" placeholder="닉네임을 입력하세요." required>
                 <div id="nicknameError" class="error"></div>
             </div>
             <div class="form-group">
@@ -70,6 +70,6 @@
             </div>
         </div>
     </form>
-    <script src="script.js"></script>
+    <script src="assets/js/Register.js"></script>
 </body>
 </html>
