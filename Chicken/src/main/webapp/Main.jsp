@@ -31,7 +31,7 @@
         </a>
         <a href="#">
             <i class="fas fa-trophy"></i>
-            랭킹
+            마이페이지
         </a>
         <a href="#">
             <i class="fas fa-map-marker-alt"></i>
