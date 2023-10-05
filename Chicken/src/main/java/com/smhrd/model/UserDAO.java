@@ -14,6 +14,12 @@ public class UserDAO {
 		sqlSession.close();
 		return info;
 	}
+	public int register(t_user user) {
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		int res = sqlSession.insert("join", user);
+		sqlSession.close();
+		return res;
+	}
 	
 	
 	
