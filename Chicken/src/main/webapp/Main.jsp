@@ -44,7 +44,7 @@
     <nav class="navbar">
         <!-- 로고 넣는곳 -->
         <div class="navbar_logo">
-            <a href="goMain" id="navbar__logoimg"><img src="images/치킨.GG 로고.png" alt="치킨 연구소 로고"></a>
+            <a href="goMain" id="navbar__logoimg"><img src="images/하얀닭.png" alt="치킨 연구소 로고"></a>
         </div>
 
         <!-- 로그인 및 검색 부분 -->
