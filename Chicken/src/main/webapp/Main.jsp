@@ -64,6 +64,9 @@
                 <input type="password" placeholder="비밀번호" name="pw">
                 <button class="login-button">로그인</button>
             </form>
+            <form action="register" method="post" class="register-input">
+            	<button class="register-button">회원가입</button>
+            </form>
         </div>
     </nav>
 

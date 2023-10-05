@@ -58,13 +58,15 @@
         }
 
         .login-input {
-            margin-right: 10px;
-            display: flex; /* 추가 */
-        }
+    		margin-right: 10px;
+    		display: flex;
+    		flex-direction: column; /* 아이디와 비밀번호를 위아래로 나열하도록 설정 */
+		}
 
-        .login-input input {
-            margin-right: 5px; /* 로그인 입력 요소 간격 조절 */
-        }
+		.login-input input {
+   			 margin-bottom: 10px; /* 입력 필드 간 간격을 추가하여 위아래로 나열되도록 조정 */
+		}
+
 
         .login-button {
             background-color: #333;
