@@ -12,6 +12,7 @@
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 <title>치킨 연구소</title>
 <link rel="stylesheet" href="assets/css/main.css"></link>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
 	<!-- 왼쪽 고정된 네비게이션 바 -->
@@ -39,11 +40,15 @@
 		<div class="login-search">
 			<form action="" method="post">
 				<select name="sr">
-					<option value="chi_brand">브랜드</option>
-					<option value="chi_menu">메뉴</option>
-					<option value="store_name">가게명</option>
-				</select> <input type="text" class="sr-input" name="sr_input"
-					placeholder="Search"> <input type="submit" value="검색버튼">
+					<option value="chi_brand" name="brand_search">브랜드</option>
+					<option value="chi_menu" name="menu_search">메뉴</option>
+				</select> 
+				<input type="text" class="sr-input" name="sr_input" placeholder="Search" autocomplete="off">
+				<input type="submit" value="검색버튼">
+				<!-- 추천창 -->
+      			<div id="suggestion_box" class = "invisible">
+       				<div id = suggested_items></div>
+      			</div>
 			</form>
 			<c:if test="${empty info}">
 				<form action="login" method="post" class="login-input">
@@ -70,8 +75,8 @@
 			<canvas id="myChart" style="height: 40vh; width: 40vw"></canvas>
 		</div>
 	</div>
-
-
+	<!-- 검색추천, 자동완성  js문 -->
+	<script src="assets/js/Main.js"></script>
 
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>

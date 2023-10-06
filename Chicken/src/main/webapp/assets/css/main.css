@@ -66,7 +66,34 @@
             	background-position: 100% center;
         }
         }
+        
+        /* 검색추천, 자동완성 */
+        .invisible{
+    		display: none;
+		}
 
+
+		#suggestion_box {
+    		margin-top: 1px;
+    		background: white;
+    		padding: 0 10px;
+    		border: 1px solid black;
+		}
+
+		#suggested_items{
+    		height:100px;
+    		width: 250px;
+    		overflow: auto; /* 스크롤바 추가 */
+		}
+
+		/* 마우스 올리면 색 변화 */
+		.item:hover{
+    		color: #fff;
+    		background-color: lightgreen;
+		}
+		
+		
+		/* 로그인, 회원가입 */
         .login-input {
     		margin-right: 10px;
     		display: flex;
@@ -86,7 +113,7 @@
             cursor: pointer;
         }
 
-        /* 추가 스타일 */
+        /* 본문 내용 스타일 */
         .content {
             margin-top: 140px;
             padding: 20px;
