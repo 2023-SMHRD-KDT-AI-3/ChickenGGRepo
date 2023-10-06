@@ -67,6 +67,7 @@
 	<div class="content">
 		<!-- 여기에 페이지 콘텐츠를 추가합니다. -->
 		<div id="map" style="float: left"></div>
+		<!-- 여기는 마이차트 부분입니다 -->
 		<div style="float: right">
 			<canvas id="myChart" style="height: 40vh; width: 40vw"></canvas>
 		</div>
@@ -95,13 +96,13 @@
       const myChart = new Chart(ctx, {
          type : 'bar',
          data : {
-            labels : [
+            labels : [ //브랜드 이름 가져와서 X축에 넣기
 				<c:forEach var="brand" items="${FinalBrand}" varStatus="status">
 				'${brand.brand_name}',
 				</c:forEach>
             	],
             datasets : [ {
-               data : [ 
+               data : [ //브랜드 이름별 평균 가격 가져와서 Y축에 넣기
    				<c:forEach var="brand" items="${FinalBrand}" varStatus="status">
 				${brand.min_price},
 				</c:forEach>
@@ -121,7 +122,7 @@
             scales : {
                 yAxes: [
                     {
-                      ticks: {
+                      ticks: { // 최소값, 최대값, 틱범위
                         min: 13000,
                         max: 25000,
                         stepSize: 3000
