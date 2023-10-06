@@ -91,21 +91,9 @@ nav.navbar {
 	height: 490px;
 }
 
-#newPage {
-	margin-left: 250px;
-	font-size: 80px;
-	color: darkgray;
-	text-decoration: none;
-}
-
 .brandlogo {
 	margin-left: 250px;
 	margin-top: 110px;
-	background-color: red;
 }
-#bbqbox {
-	background-color: blue;
-}
-
 
 

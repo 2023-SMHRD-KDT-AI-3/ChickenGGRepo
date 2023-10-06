@@ -52,14 +52,27 @@
 			</form>
 		</div>
 	</nav>
-	
-	<a href="brand.jsp" id="newPage">브랜드</a>
-	
+
+
 	<div class="brandlogo">
-		<div class="logobox">
-			<a href="#" id="bbqbox"><img alt="bbq" src="../../images/brandlogo/logo-bbq.jpg"></a>
+		<div>
+			<div>
+				<button type="button" class="logobox">1</button>
+				<button type="button" class="logobox">2</button>
+				<button type="button" class="logobox">3</button>
+				<button type="button" class="logobox">4</button>
+				<button type="button" class="logobox">5</button>
+			</div>
+			<div>
+				<button type="button" class="logobox">6</button>
+				<button type="button" class="logobox">7</button>
+				<button type="button" class="logobox">8</button>
+				<button type="button" class="logobox">9</button>
+				<button type="button" class="logobox">10</button>
+			</div>
 		</div>
 	</div>
+
 
 </body>
 </html>
