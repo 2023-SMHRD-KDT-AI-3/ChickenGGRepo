@@ -1,8 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="false"
-	pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	isELIgnored="false" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page import="com.smhrd.model.Brand"%>
-<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.ArrayList"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -56,7 +56,7 @@
 				<a href="Register.jsp"><button class="register-button">회원가입</button></a>
 			</c:if>
 			<c:if test="${!empty info}">
-				<h1>${info.nick}님 환영합니다!</h1>
+				<h1>${info.nick}님환영합니다!</h1>
 			</c:if>
 		</div>
 	</nav>
@@ -89,37 +89,45 @@
 	</script>
 
 	<script>
-		const ctx = document.getElementById('myChart').getContext('2d');
-		const myChart = new Chart(ctx, {
-			type : 'bar',
-			data : {
-				labels :
-					['교촌','BBQ','수미','양자' ,'바람', '물']
-				datasets : [ {
-					label : '# of Votes',
-					data : [ 12, 19, 3, 5, 4],
-					backgroundColor : [ 'rgba(255, 99, 132, 0.2)',
-							'rgba(54, 162, 235, 0.2)',
-							'rgba(255, 206, 86, 0.2)',
-							'rgba(75, 192, 192, 0.2)',
-							'rgba(153, 102, 255, 0.2)',
-							'rgba(150, 102, 255, 0.2)']
-					borderColor : [ 'rgba(255, 99, 132, 1)',
-							'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
-							'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)',
-							'rgba(153, 102, 255, 0.2)']
-					borderWidth : 1
-				} ]
-			},
-			options : {
-				responsive : false,
-				scales : {
-					y : {
-						beginAtZero : false
-					}
-				}
-			}
-		});
-	</script>
+      const ctx = document.getElementById('myChart').getContext('2d');
+      const myChart = new Chart(ctx, {
+         type : 'bar',
+         data : {
+            labels : [
+				<c:forEach var="brand" items="${FinalBrand}" varStatus="status">
+				'${brand.brand_name}',
+				</c:forEach>
+            	],
+            datasets : [ {
+               data : [ 
+   				<c:forEach var="brand" items="${FinalBrand}" varStatus="status">
+				${brand.min_price},
+				</c:forEach>
+               ],
+               backgroundColor : [ 'rgba(255, 99, 132, 0.2)',
+                     'rgba(54, 162, 235, 0.2)',
+                     'rgba(255, 206, 86, 0.2)',
+                     'rgba(75, 192, 192, 0.2)',
+                     'rgba(153, 102, 255, 0.2)'],
+               borderColor : [ 'rgba(255, 99, 132, 1)',
+                     'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
+                     'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'],
+               borderWidth : 1
+            } ]
+         },
+         options : {
+            scales : {
+                yAxes: [
+                    {
+                      ticks: {
+                        min: 13000,
+                        max: 25000,
+                        stepSize: 3000
+                      }
+                    }]
+            	}
+         		}
+      });
+   </script>
 </body>
 </html>
