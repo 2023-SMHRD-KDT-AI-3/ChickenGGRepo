@@ -97,12 +97,18 @@ nav.navbar {
 }
 
 .logobox {
-	 width: 220px;
-	 height: 110px;
+	 width: 330px;
+	 height: 165px;
 	 background-color: white;
+	 margin-left: 160px;
+	 border-color: #FFA500;
 }
 
 .secondLine {
+	margin-top: 15px;
+}
+
+.thirdLine {
 	margin-top: 15px;
 }
 
@@ -110,4 +116,5 @@ nav.navbar {
 	width: 200px;
 	height: 100px;
 }
+
 

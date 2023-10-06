@@ -60,19 +60,16 @@
 				<button type="button" class="logobox"><img alt="bbq" src="images/brandlogo/logo-bbq.jpg" class="logosize"></button>
 				<button type="button" class="logobox"><img alt="bhc" src="images/brandlogo/logo-bhc.png" class="logosize"></button>
 				<button type="button" class="logobox"><img alt="gyochon" src="images/brandlogo/logo-gyochon.png" class="logosize"></button>
+			</div>
+			<div class="secondLine">
 				<button type="button" class="logobox"><img alt="goobne" src="images/brandlogo/logo-goobne.png" class="logosize"></button>
 				<button type="button" class="logobox"><img alt="hosigi" src="images/brandlogo/logo-hosigi.png" class="logosize"></button>
 				<button type="button" class="logobox"><img alt="jadam" src="images/brandlogo/logo-jadam.png" class="logosize"></button>
-				<button type="button" class="logobox"><img alt="ajukeo" src="images/brandlogo/logo-ajukeo.jpg" class="logosize"></button>
 			</div>
-			<div class="secondLine">
+			<div class="thirdLine">
+				<button type="button" class="logobox"><img alt="ajukeo" src="images/brandlogo/logo-ajukeo.jpg" class="logosize"></button>
 				<button type="button" class="logobox"><img alt="mexicana" src="images/brandlogo/logo-mexicana.png" class="logosize"></button>
-				<button type="button" class="logobox">9</button>
-				<button type="button" class="logobox">10</button>
-				<button type="button" class="logobox">11</button>
-				<button type="button" class="logobox">12</button>
-				<button type="button" class="logobox">13</button>
-				<button type="button" class="logobox">14</button>
+				<button type="button" class="logobox"><img alt="chickenplus" src="images/brandlogo/logo-chickenplus.png" class="logosize"></button>
 			</div>
 		</div>
 	</div>
