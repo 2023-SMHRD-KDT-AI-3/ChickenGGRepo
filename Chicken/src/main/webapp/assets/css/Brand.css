@@ -96,4 +96,18 @@ nav.navbar {
 	margin-top: 110px;
 }
 
+.logobox {
+	 width: 220px;
+	 height: 110px;
+	 background-color: white;
+}
+
+.secondLine {
+	margin-top: 15px;
+}
+
+.logosize {
+	width: 200px;
+	height: 100px;
+}
 

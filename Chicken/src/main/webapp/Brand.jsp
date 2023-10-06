@@ -56,19 +56,23 @@
 
 	<div class="brandlogo">
 		<div>
-			<div>
-				<button type="button" class="logobox">1</button>
-				<button type="button" class="logobox">2</button>
-				<button type="button" class="logobox">3</button>
-				<button type="button" class="logobox">4</button>
-				<button type="button" class="logobox">5</button>
+			<div class="firstLine">
+				<button type="button" class="logobox"><img alt="bbq" src="images/brandlogo/logo-bbq.jpg" class="logosize"></button>
+				<button type="button" class="logobox"><img alt="bhc" src="images/brandlogo/logo-bhc.png" class="logosize"></button>
+				<button type="button" class="logobox"><img alt="gyochon" src="images/brandlogo/logo-gyochon.png" class="logosize"></button>
+				<button type="button" class="logobox"><img alt="goobne" src="images/brandlogo/logo-goobne.png" class="logosize"></button>
+				<button type="button" class="logobox"><img alt="hosigi" src="images/brandlogo/logo-hosigi.png" class="logosize"></button>
+				<button type="button" class="logobox"><img alt="jadam" src="images/brandlogo/logo-jadam.png" class="logosize"></button>
+				<button type="button" class="logobox"><img alt="ajukeo" src="images/brandlogo/logo-ajukeo.jpg" class="logosize"></button>
 			</div>
-			<div>
-				<button type="button" class="logobox">6</button>
-				<button type="button" class="logobox">7</button>
+			<div class="secondLine">
 				<button type="button" class="logobox">8</button>
 				<button type="button" class="logobox">9</button>
 				<button type="button" class="logobox">10</button>
+				<button type="button" class="logobox">11</button>
+				<button type="button" class="logobox">12</button>
+				<button type="button" class="logobox">13</button>
+				<button type="button" class="logobox">14</button>
 			</div>
 		</div>
 	</div>
