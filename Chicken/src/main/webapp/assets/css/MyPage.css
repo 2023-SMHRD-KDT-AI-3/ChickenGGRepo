@@ -25,3 +25,63 @@
         .left-navbar a i {
             margin-right: 10px;
         }
+        
+        /* 네비게이션 바 스타일 */
+        nav.navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FFA500;
+            padding: 10px 20px;
+            margin-left: 220px;
+            height: 150px;
+        }
+
+        .navbar-logo {
+            max-width: 150px; /* 로고 이미지의 최대 너비 설정 */
+        }
+
+        .navbar-logo img {
+            height: auto;
+            max-width: 100%;
+            display: block;
+        }
+
+        /* 로그인 및 검색 부분 스타일 */
+        .login-search {
+            display: flex;
+            align-items: center;
+        }
+
+        .sr-input {
+            background-color: transparent;
+            border-radius: 50px;
+            &:hover,
+       		&:focus {
+            	padding: 12px 0;
+            	outline: 0;
+            	border: 1px solid transparent;
+            	border-bottom: 1px solid #575756;
+            	border-radius: 0;
+            	background-position: 100% center;
+        }
+        }
+
+        .login-input {
+    		margin-right: 10px;
+    		display: flex;
+    		flex-direction: column; /* 아이디와 비밀번호를 위아래로 나열하도록 설정 */
+		}
+
+		.login-input input {
+   			 margin-bottom: 10px; /* 입력 필드 간 간격을 추가하여 위아래로 나열되도록 조정 */
+		}
+
+
+        .login-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }

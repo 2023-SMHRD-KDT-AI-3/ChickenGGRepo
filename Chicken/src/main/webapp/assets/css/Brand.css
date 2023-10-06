@@ -56,6 +56,16 @@ nav.navbar {
 
 .sr-input {
 	background-color: transparent;
+	border-radius: 50px;
+            &:hover,
+       		&:focus {
+            	padding: 12px 0;
+            	outline: 0;
+            	border: 1px solid transparent;
+            	border-bottom: 1px solid #575756;
+            	border-radius: 0;
+            	background-position: 100% center;
+        }
 }
 
 .login-input {
