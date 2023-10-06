@@ -11,4 +11,7 @@
 		insert into t_user values(#{id}, #{pw}, #{nick} ,NOW())
 	</insert>
 
+	<select id="check" parameterType="string" resultType="com.smhrd.model.t_user">
+		select * from t_user where id = #{id}
+	</select>
 </mapper>

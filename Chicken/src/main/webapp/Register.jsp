@@ -49,7 +49,7 @@
             <div class="form-group">
                 <label for="username">아이디:</label>
                 <input id="username" type="text" name="id" placeholder="아이디를 입력하세요." required>
-                <div id="usernameError" class="error"></div>
+                <div id="usernameError"></div>
             </div>
             <div class="form-group">
                 <label for="password">비밀번호:</label>
@@ -70,9 +70,11 @@
             </div>
         </div>
     </form>
-    <script src="assets/js/Register.js"></script>
-    <script type="text/javascript">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
     $(document).ready(function(){
+    	console.log("테스트!")
 		var input = $('#username')
 		input.on('input', UserCheck);
 	});
@@ -104,5 +106,7 @@
 		});
 	}
     </script>
+    
+    <script src="assets/js/Register.js"></script>
 </body>
 </html>
