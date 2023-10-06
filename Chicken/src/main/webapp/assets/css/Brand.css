@@ -123,8 +123,12 @@ nav.navbar {
 }
 
 .logosize {
-	width: 200px;
-	height: 100px;
+	width: 180px;
+	height: 90px;
 }
 
+h1 {
+	font-size: 100px;
+	color: #FFA500;
+}
 
