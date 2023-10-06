@@ -49,7 +49,7 @@
             <div class="form-group">
                 <label for="username">아이디:</label>
                 <input id="username" type="text" name="id" placeholder="아이디를 입력하세요." required>
-                <div id="usernameError" class="error"></div>
+                <div id="usernameError"></div>
             </div>
             <div class="form-group">
                 <label for="password">비밀번호:</label>
@@ -70,6 +70,43 @@
             </div>
         </div>
     </form>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+    	console.log("테스트!")
+		var input = $('#username')
+		input.on('input', UserCheck);
+	});
+	// UserCheck 기능 생성
+	function UserCheck(){
+		// 입력된 값이 실제 DB에 들어있는 값인지 판단!
+		var value= $(this).val();
+		$.ajax({
+			url : 'CheckUser',
+			type : 'post',
+			data : {'id':value},
+			success : function(res){
+				// 성공에대한 처리작업
+				// 성공시 돌아오는 res 변수는 String 값!
+				
+				// p태그의 위치 찾아오기!
+				var p = $('#usernameError')
+				console.log(res)
+				if(res == "false"){
+					p.html("사용이 가능한 아이디 입니다").css("color", "green")
+				}else{
+					p.html("사용이 불가능한 아이디 입니다").css("color", "red")
+				}
+			},
+			error : function(e){
+				alert('통신 실패!')
+			}
+			
+		});
+	}
+    </script>
+    
     <script src="assets/js/Register.js"></script>
 </body>
 </html>

@@ -20,6 +20,12 @@ public class UserDAO {
 		sqlSession.close();
 		return res;
 	}
+	public t_user check(String id) {
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		t_user user = sqlSession.selectOne("check",id);
+		sqlSession.close();
+		return user;
+	}
 	
 	
 	
