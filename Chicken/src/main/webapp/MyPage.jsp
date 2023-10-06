@@ -10,7 +10,7 @@
 <body>
 	<!-- 왼쪽 고정된 네비게이션 바 -->
 	<div class="left-navbar">
-		<!-- 로고 넣는곳 -->
+		<!-- 로고 넣는곳 -->	
 		<div class="navbar-logo">
 			<a href="goMain"><h2>🅒🅗🅘🅒🅚🅔🅝.🅖🅖</h2></a>
 		</div>
@@ -22,6 +22,41 @@
 		</a>
 		<!-- 여기에 추가 메뉴 항목을 추가할 수 있습니다. -->
 	</div>
+	
+	<!-- 네비게이션 바 만드는곳 -->
+	<nav class="navbar">
+		<!-- 로고 넣는곳 -->
+		<div class="navbar-logo">
+			<a href="goMain" id="navbar_logoimg"><img src="images/하얀닭.png"
+				alt="치킨 연구소 로고"></a>
+		</div>
+
+		<!-- 로그인 및 검색 부분 -->
+		<div class="login-search">
+			<form action="" method="post">
+				<select name="sr">
+					<option value="chi_brand">브랜드</option>
+					<option value="chi_menu">메뉴</option>
+					<option value="store_name">가게명</option>
+				</select> <input type="text" class="sr-input" name="sr_input"
+					placeholder="Search"> <input type="submit" value="검색버튼">
+			</form>
+			<c:if test="${empty info}">
+				<form action="login" method="post" class="login-input">
+					<div class="input-group">
+						<input type="text" placeholder="아이디" name="id">
+						<input type="password" placeholder="비밀번호" name="pw">
+					</div>
+					<button class="login-button">로그인</button>
+				</form>
+				<a href="Register.jsp"><button class="register-button">회원가입</button></a>
+			</c:if>
+			<c:if test="${!empty info}">
+				<h1>${info.nick}님환영합니다!</h1>
+			</c:if>
+		</div>
+	</nav>
+	
 	
 	
 </body>
