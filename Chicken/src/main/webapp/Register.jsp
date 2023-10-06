@@ -71,5 +71,38 @@
         </div>
     </form>
     <script src="assets/js/Register.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+		var input = $('#username')
+		input.on('input', UserCheck);
+	});
+	// UserCheck 기능 생성
+	function UserCheck(){
+		// 입력된 값이 실제 DB에 들어있는 값인지 판단!
+		var value= $(this).val();
+		$.ajax({
+			url : 'CheckUser',
+			type : 'post',
+			data : {'id':value},
+			success : function(res){
+				// 성공에대한 처리작업
+				// 성공시 돌아오는 res 변수는 String 값!
+				
+				// p태그의 위치 찾아오기!
+				var p = $('#usernameError')
+				console.log(res)
+				if(res == "false"){
+					p.html("사용이 가능한 아이디 입니다").css("color", "green")
+				}else{
+					p.html("사용이 불가능한 아이디 입니다").css("color", "red")
+				}
+			},
+			error : function(e){
+				alert('통신 실패!')
+			}
+			
+		});
+	}
+    </script>
 </body>
 </html>
