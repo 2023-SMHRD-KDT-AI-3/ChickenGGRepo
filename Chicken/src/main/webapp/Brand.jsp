@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 <title>브랜드 별 치킨연구소</title>
 <link rel="stylesheet" href="assets/css/Brand.css"></link>
 </head>
