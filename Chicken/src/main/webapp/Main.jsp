@@ -49,8 +49,10 @@
 			</form>
 			<c:if test="${empty info}">
 				<form action="login" method="post" class="login-input">
-					<input type="text" placeholder="아이디" name="id"> <input
-						type="password" placeholder="비밀번호" name="pw">
+					<div class="input-group">
+						<input type="text" placeholder="아이디" name="id">
+						<input type="password" placeholder="비밀번호" name="pw">
+					</div>
 					<button class="login-button">로그인</button>
 				</form>
 				<a href="Register.jsp"><button class="register-button">회원가입</button></a>
