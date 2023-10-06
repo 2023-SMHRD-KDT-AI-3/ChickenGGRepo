@@ -66,7 +66,7 @@
 				<button type="button" class="logobox"><img alt="ajukeo" src="images/brandlogo/logo-ajukeo.jpg" class="logosize"></button>
 			</div>
 			<div class="secondLine">
-				<button type="button" class="logobox">8</button>
+				<button type="button" class="logobox"><img alt="mexicana" src="images/brandlogo/logo-mexicana.png" class="logosize"></button>
 				<button type="button" class="logobox">9</button>
 				<button type="button" class="logobox">10</button>
 				<button type="button" class="logobox">11</button>
