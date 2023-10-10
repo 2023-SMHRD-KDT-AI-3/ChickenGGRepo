@@ -33,8 +33,9 @@
 	<nav class="navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="navbar-logo">
-			<a href="goMain" id="navbar_logoimg"><img src="images/하얀닭.png"
-				alt="치킨 연구소 로고"></a>
+			<a href="goMain" id="navbar_logoimg">
+				<img src="images/하얀닭.png"alt="치킨 연구소 로고">
+			</a>
 		</div>
 
 		<!-- 로그인 및 검색 부분 -->
@@ -43,9 +44,9 @@
 				<select name="sr">
 					<option value="chi_brand" name="brand_search">브랜드</option>
 					<option value="chi_menu" name="menu_search">메뉴</option>
-				</select> <input type="text" class="sr-input" name="sr_input"
-					placeholder="Search" autocomplete="off"> <input
-					type="submit" value="검색버튼">
+				</select> 
+				<input type="text" class="sr-input" name="sr_input" placeholder="Search" autocomplete="off">
+				<input type="submit" value="검색버튼">
 				<!-- 추천창 -->
 				<div id="suggestion_box" class="invisible">
 					<div id=suggested_items></div>

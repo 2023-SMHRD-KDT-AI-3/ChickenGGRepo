@@ -92,7 +92,20 @@
 				<a href="Register.jsp"><button class="register-button">회원가입</button></a>
 			</c:if>
 			<c:if test="${!empty info}">
-				<h1>${info.nick}님환영합니다!</h1>
+				<div class="MyPage">
+					<div class="MyPage-Container">
+						<div class="My-Profile">
+							<div class="Profile-Img">
+								<img src="images/images.png">
+							</div>
+							<div class="MyPage-Content">
+								<p>id</p>
+								<p>pw</p>
+								<p>nick</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</c:if>
 		</div>
 	</wrapper>
