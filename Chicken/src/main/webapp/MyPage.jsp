@@ -43,13 +43,25 @@
 			</form>
 			<c:if test="${empty info}">
 				<form action="login" method="post" class="login-input">
-					<div class="input-group">
-						<input type="text" placeholder="아이디" name="id">
-						<input type="password" placeholder="비밀번호" name="pw">
-					</div>
-					<button class="login-button">로그인</button>
+					<table>
+						<tr>
+							<td>
+								<input type="text" placeholder="아이디" name="id">
+							</td>
+							<td>
+								<button class="login-button">로그인</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="password" placeholder="비밀번호" name="pw">
+							</td>
+							<td>
+								<a href="Register.jsp"><button class="register-button">회원가입</button></a>
+							</td>
+						</tr>
+					</table>
 				</form>
-				<a href="Register.jsp"><button class="register-button">회원가입</button></a>
 			</c:if>
 			<c:if test="${!empty info}">
 				<h1>${info.nick}님환영합니다!</h1>
@@ -57,7 +69,20 @@
 		</div>
 	</nav>
 	
-	
+	<div>
+		<c:if test="${empty info}">
+			<form action="login" method="post" class="MP_Login">
+				<div class="MP_Input_Group">
+					<input type="text" placeholder="아이디" name="id">
+					<input type="password" placeholder="비밀번호" name="pw">
+				</div>
+				<button class="MP_Login_Btn">로그인</button>
+			</form>
+		</c:if>
+		<c:if test="${!empty info}">
+			<h1>${info.nick}님환영합니다!</h1>
+		</c:if>
+	</div>
 	
 </body>
 </html>

@@ -53,13 +53,26 @@
 			</form>
 			<c:if test="${empty info}">
 				<form action="login" method="post" class="login-input">
-					<div class="input-group">
-						<input type="text" placeholder="아이디" name="id"> <input
-							type="password" placeholder="비밀번호" name="pw">
-					</div>
-					<button class="login-button">로그인</button>
+
+					<table>
+						<tr>
+							<td>
+								<input type="text" placeholder="아이디" name="id">
+							</td>
+							<td>
+								<button class="login-button">로그인</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="password" placeholder="비밀번호" name="pw">
+							</td>
+							<td>
+								<a href="Register.jsp"><button class="register-button">회원가입</button></a>
+							</td>
+						</tr>
+					</table>
 				</form>
-				<a href="Register.jsp"><button class="register-button">회원가입</button></a>
 			</c:if>
 			<c:if test="${!empty info}">
 				<h1>${info.nick}님환영합니다!</h1>
@@ -75,7 +88,9 @@
 		<div style="float: right">
 			<canvas id="myChart" style="height: 490px; width: 850px"></canvas>
 		</div>
-		
+		<div id="Chart2">
+			
+		</div>
 	</div>
 	<!-- 검색추천, 자동완성  js문 -->
 	<script src="assets/js/Main.js"></script>
@@ -155,12 +170,19 @@
 	      var finallabel;
 	      var finalmin;
 	      var finalavg;
-	      console.log('${brand.brand_name}')
+	      console.log(${brand[0].brand_name})
+	      var arr = new Array();
+		  <c:forEach var="brand" items="${FinalBrand}" varStatus="status">
+		     arr.push({brand_name:"${brand.brand_name}",
+		    	      min_price:"${brand.min_price}",
+		    		  avg_price:"${brand.avg_price}"})
+		  </c:forEach>
           for (var i = 0; i < 5; i++) {
-			if(label == '${brand[i].brand_name}'){
-        		finallabel = '${brand[i].brand_name}'
-        		finalmin = '${brand[i].min_price}'
-        		finalavg = '${brand[i].avg_price}'
+			if(label == arr[i].brand_name){
+        		finallabel = arr[i].brand_name
+        		finalmin = arr[i].min_price
+        		finalavg = arr[i].avg_price
+        		console.log(arr[i].brand_name)
 				}
 			}
 
@@ -170,7 +192,7 @@
                  type : 'bar',
                  data : {
                     labels : [ //브랜드 이름 가져와서 X축에 넣기
-						finallabel , '치킨최소값평균' , finallabel , '치킨평균값'
+						finallabel+'최소값평균' , '치킨최소값평균' , finallabel+'평균값' , '치킨평균값'
                     	],
                     datasets : [ {
                        data : [ //브랜드 이름별 평균 가격 가져와서 Y축에 넣기

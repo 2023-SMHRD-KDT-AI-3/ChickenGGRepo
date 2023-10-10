@@ -66,6 +66,10 @@
             	background-position: 100% center;
         }
         }
+        
+        .testtest{
+			display: block;
+		}
 
         .login-input {
     		margin-right: 10px;
@@ -85,3 +89,10 @@
             padding: 5px 10px;
             cursor: pointer;
         }
+        
+        
+        #app{
+			margin-left: 250px;
+		}
+		
+		
