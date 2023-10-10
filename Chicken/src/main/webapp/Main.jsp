@@ -51,9 +51,9 @@
 					<div id=suggested_items></div>
 				</div>
 			</form>
+			
 			<c:if test="${empty info}">
 				<form action="login" method="post" class="login-input">
-
 					<table>
 						<tr>
 							<td>
@@ -75,7 +75,7 @@
 			<div class="Logout-Container">
 				<c:if test="${!empty info}">
 					<h1>${info.nick}님환영합니다!</h1>
-					<form action="" method="post">
+					<form action="Logout" method="post">
 						<button class="Logout-Btn">로그아웃</button>
 					</form>
 				</c:if>
