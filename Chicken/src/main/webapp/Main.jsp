@@ -21,10 +21,11 @@
 		<div class="navbar-logo">
 			<a href="goMain"><h2>🅒🅗🅘🅒🅚🅔🅝.🅖🅖</h2></a>
 		</div>
-		<a href="goMain"> <i class="fas fa-home"></i> 홈</a> 
-		<a href="#"> <i class="fas fa-list"></i> 브랜드</a> 
-		<a href="#"> <i class="fas fa-utensils"></i> 메뉴</a> 
-		<a href="#"> <i class="fas fa-trophy"></i> 마이페이지</a>
+		<a href="goMain"> <i class="fas fa-home"></i> 홈
+		</a> <a href="#"> <i class="fas fa-list"></i> 브랜드
+		</a> <a href="#"> <i class="fas fa-utensils"></i> 메뉴
+		</a> <a href="#"> <i class="fas fa-trophy"></i> 마이페이지
+		</a>
 		<!-- 여기에 추가 메뉴 항목을 추가할 수 있습니다. -->
 	</div>
 
@@ -42,19 +43,19 @@
 				<select name="sr">
 					<option value="chi_brand" name="brand_search">브랜드</option>
 					<option value="chi_menu" name="menu_search">메뉴</option>
-				</select> 
-				<input type="text" class="sr-input" name="sr_input" placeholder="Search" autocomplete="off">
-				<input type="submit" value="검색버튼">
+				</select> <input type="text" class="sr-input" name="sr_input"
+					placeholder="Search" autocomplete="off"> <input
+					type="submit" value="검색버튼">
 				<!-- 추천창 -->
-      			<div id="suggestion_box" class = "invisible">
-       				<div id = suggested_items></div>
-      			</div>
+				<div id="suggestion_box" class="invisible">
+					<div id=suggested_items></div>
+				</div>
 			</form>
 			<c:if test="${empty info}">
 				<form action="login" method="post" class="login-input">
 					<div class="input-group">
-						<input type="text" placeholder="아이디" name="id">
-						<input type="password" placeholder="비밀번호" name="pw">
+						<input type="text" placeholder="아이디" name="id"> <input
+							type="password" placeholder="비밀번호" name="pw">
 					</div>
 					<button class="login-button">로그인</button>
 				</form>
@@ -74,6 +75,7 @@
 		<div style="float: right">
 			<canvas id="myChart" style="height: 490px; width: 850px"></canvas>
 		</div>
+		
 	</div>
 	<!-- 검색추천, 자동완성  js문 -->
 	<script src="assets/js/Main.js"></script>
@@ -134,18 +136,74 @@
             	}
          		}
       });
-      
       document.getElementById("myChart").onclick = function(evt) {
           var activePoints = myChart.getElementsAtEvent(evt);
 
           if(activePoints.length > 0)
           {
               var clickedElementindex = activePoints[0]["_index"];
-
               var label = myChart.data.labels[clickedElementindex];
               console.log("label : " + label);
           }
+	  
+
+      // 클릭시 getChart 만들기
+	  makeChart2(label)
       }
+      function makeChart2(label){
+	      console.log(label)
+	      var finallabel;
+	      var finalmin;
+	      var finalavg;
+	      console.log('${brand.brand_name}')
+          for (var i = 0; i < 5; i++) {
+			if(label == '${brand[i].brand_name}'){
+        		finallabel = '${brand[i].brand_name}'
+        		finalmin = '${brand[i].min_price}'
+        		finalavg = '${brand[i].avg_price}'
+				}
+			}
+
+          document.getElementById("Chart2").innerHTML = '<canvas id="getChart" style="height: 490px; width: 850px; margin-left: 250px;"></canvas>'
+              const gct = document.getElementById('getChart').getContext('2d');
+              const myChart = new Chart(gct, {
+                 type : 'bar',
+                 data : {
+                    labels : [ //브랜드 이름 가져와서 X축에 넣기
+						finallabel , '치킨최소값평균' , finallabel , '치킨평균값'
+                    	],
+                    datasets : [ {
+                       data : [ //브랜드 이름별 평균 가격 가져와서 Y축에 넣기
+							finalmin , 15000 , finalavg , 18000
+                       ],
+                       backgroundColor : [ 'rgba(255, 99, 132, 0.2)',
+                             'rgba(54, 162, 235, 0.2)',
+                             'rgba(255, 206, 86, 0.2)',
+                             'rgba(75, 192, 192, 0.2)',
+                             'rgba(153, 102, 255, 0.2)'],
+                       borderColor : [ 'rgba(255, 99, 132, 1)',
+                             'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
+                             'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'],
+                       borderWidth : 1
+                    } ]
+                 },
+                 options : {
+                    scales : {
+                        yAxes: [
+                            {
+                              ticks: { // 최소값, 최대값, 틱범위
+                                min: 13000,
+                                max: 25000,
+                                stepSize: 3000
+                              }
+                            }]
+                    	}
+                 		}
+              });
+      }
+      
+
    </script>
+
 </body>
 </html>
