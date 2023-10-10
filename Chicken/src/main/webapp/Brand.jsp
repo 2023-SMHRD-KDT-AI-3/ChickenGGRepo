@@ -20,7 +20,6 @@
 		</a> <a href="#"> <i class="fas fa-list"></i> 브랜드
 		</a> <a href="#"> <i class="fas fa-utensils"></i> 메뉴
 		</a> <a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지
-		</a> <a href="#"> <i class="fas fa-map-marker-alt"></i> 지도
 		</a>
 		<!-- 여기에 추가 메뉴 항목을 추가할 수 있습니다. -->
 	</div>
@@ -33,10 +32,9 @@
 				alt="치킨 연구소 로고"></a>
 		</div>
 
-		<!-- 로그인 및 검색 부분 -->
 		<div class="login-search">
 			<form action="" method="post">
-				<select name="sk">
+				<select name="sr">
 					<option value="chi_brand">브랜드</option>
 					<option value="chi_menu">메뉴</option>
 					<option value="store_name">가게명</option>
@@ -45,17 +43,31 @@
 			</form>
 			<c:if test="${empty info}">
 				<form action="login" method="post" class="login-input">
-					<input type="text" placeholder="아이디" name="id"> <input
-						type="password" placeholder="비밀번호" name="pw">
-					<button class="login-button">로그인</button>
+					<table>
+						<tr>
+							<td><input type="text" placeholder="아이디" name="id">
+							</td>
+							<td rowspan="2">
+								<button class="login-button">로그인</button>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="password" placeholder="비밀번호" name="pw">
+							</td>
+						</tr>
+					</table>
 				</form>
-				<form action="register" method="post" class="register-input">
-					<button class="register-button">회원가입</button>
-				</form>
+				<a href="Register.jsp"><button class="register-button">회원가입</button></a>
 			</c:if>
-			<c:if test="${!empty info}">
-				<h2>${info.nick}님환영합니다!</h2>
-			</c:if>
+			<div class="Logout-Container">
+				<c:if test="${!empty info}">
+					<h1>${info.nick}님환영합니다!</h1>
+					<form action="Logout" method="post">
+						<button class="Logout-Btn">로그아웃</button>
+					</form>
+				</c:if>
+			</div>
 		</div>
 	</nav>
 

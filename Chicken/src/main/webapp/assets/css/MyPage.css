@@ -90,6 +90,18 @@
             cursor: pointer;
         }
         
+        .Logout-Container{
+			flex-direction: column;
+			
+		}
+        
+        .Logout-Btn{
+			background-color: #F27405;
+			padding: 10px 20px;
+    		border-radius: 5px;
+    		cursor: pointer;
+		}
+        
         /* 마이페이지 내용 */
         
         .MP_Container{
@@ -98,7 +110,7 @@
 			align-items: center;
 			border: 1px solid;
 			border-radius: 10px;
-			width: 500px;
+			width: 1000px;
 			height: 700px;
 			margin-left: 250px;
 		}
