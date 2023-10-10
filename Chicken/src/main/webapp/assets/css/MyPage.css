@@ -90,8 +90,15 @@
             cursor: pointer;
         }
         
+        /* 마이페이지 내용 */
         
-        #app{
+        .MP_Content{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+        
+        .MP_Login{
 			margin-left: 250px;
 		}
 		
