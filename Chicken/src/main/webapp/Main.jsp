@@ -88,7 +88,7 @@
 		<div style="float: right">
 			<canvas id="myChart" style="height: 490px; width: 850px"></canvas>
 		</div>
-		<div id="Chart2">
+		<div id="Chart2" style="height: 490px; width: 850px">
 			
 		</div>
 	</div>
@@ -186,7 +186,7 @@
 				}
 			}
 
-          document.getElementById("Chart2").innerHTML = '<canvas id="getChart" style="height: 490px; width: 850px; margin-left: 250px;"></canvas>'
+          document.getElementById("Chart2").innerHTML = '<canvas id="getChart" style="height: 200px; width: 450px; margin-left: 250px;"></canvas>'
               const gct = document.getElementById('getChart').getContext('2d');
               const myChart = new Chart(gct, {
                  type : 'bar',
