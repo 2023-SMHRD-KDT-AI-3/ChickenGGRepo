@@ -1,6 +1,7 @@
 /**
  * 
  */
+// 연관검색어
 $(function() {
 	$(".sr-input").keyup(function() {
 

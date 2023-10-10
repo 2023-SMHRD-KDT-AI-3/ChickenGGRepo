@@ -72,7 +72,7 @@
 		<div id="map" style="float: left"></div>
 		<!-- 여기는 마이차트 부분입니다 -->
 		<div style="float: right">
-			<canvas id="myChart" style="height: 40vh; width: 40vw"></canvas>
+			<canvas id="myChart" style="height: 490px; width: 850px"></canvas>
 		</div>
 	</div>
 	<!-- 검색추천, 자동완성  js문 -->
@@ -134,6 +134,18 @@
             	}
          		}
       });
+      
+      document.getElementById("myChart").onclick = function(evt) {
+          var activePoints = myChart.getElementsAtEvent(evt);
+
+          if(activePoints.length > 0)
+          {
+              var clickedElementindex = activePoints[0]["_index"];
+
+              var label = myChart.data.labels[clickedElementindex];
+              console.log("label : " + label);
+          }
+      }
    </script>
 </body>
 </html>
