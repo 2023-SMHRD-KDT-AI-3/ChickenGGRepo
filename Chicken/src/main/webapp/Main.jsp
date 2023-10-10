@@ -22,9 +22,9 @@
 			<a href="goMain"><h2>🅒🅗🅘🅒🅚🅔🅝.🅖🅖</h2></a>
 		</div>
 		<a href="goMain"> <i class="fas fa-home"></i> 홈
-		</a> <a href="#"> <i class="fas fa-list"></i> 브랜드
+		</a> <a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드
 		</a> <a href="#"> <i class="fas fa-utensils"></i> 메뉴
-		</a> <a href="#"> <i class="fas fa-trophy"></i> 마이페이지
+		</a> <a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지
 		</a>
 		<!-- 여기에 추가 메뉴 항목을 추가할 수 있습니다. -->
 	</div>

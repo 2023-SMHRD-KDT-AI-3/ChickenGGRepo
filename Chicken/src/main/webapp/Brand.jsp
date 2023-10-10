@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+<%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="false"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,7 +19,7 @@
 		<a href="goMain"> <i class="fas fa-home"></i> 홈
 		</a> <a href="#"> <i class="fas fa-list"></i> 브랜드
 		</a> <a href="#"> <i class="fas fa-utensils"></i> 메뉴
-		</a> <a href="#"> <i class="fas fa-trophy"></i> 마이페이지
+		</a> <a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지
 		</a> <a href="#"> <i class="fas fa-map-marker-alt"></i> 지도
 		</a>
 		<!-- 여기에 추가 메뉴 항목을 추가할 수 있습니다. -->
@@ -42,15 +43,19 @@
 				</select> <input type="text" class="sr-input" name="sr_input"
 					placeholder="Search"> <input type="submit" value="검색버튼">
 			</form>
-
-			<form action="login" method="post" class="login-input">
-				<input type="text" placeholder="아이디" name="id"> <input
-					type="password" placeholder="비밀번호" name="pw">
-				<button class="login-button">로그인</button>
-			</form>
-			<form action="register" method="post" class="register-input">
-				<button class="register-button">회원가입</button>
-			</form>
+			<c:if test="${empty info}">
+				<form action="login" method="post" class="login-input">
+					<input type="text" placeholder="아이디" name="id"> <input
+						type="password" placeholder="비밀번호" name="pw">
+					<button class="login-button">로그인</button>
+				</form>
+				<form action="register" method="post" class="register-input">
+					<button class="register-button">회원가입</button>
+				</form>
+			</c:if>
+			<c:if test="${!empty info}">
+				<h2>${info.nick}님환영합니다!</h2>
+			</c:if>
 		</div>
 	</nav>
 
