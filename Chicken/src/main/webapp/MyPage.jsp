@@ -65,14 +65,15 @@
 			</c:if>
 		</div>
 	</nav>
-
-	<wrapper class="MP_Content">
-		<div class="MP_Div">
+	<wrapper class="MP_Container">
+		<div class="MP_Content">
 			<c:if test="${empty info}">
+				<h1>Chicken.GG</h1>
 				<form action="login" method="post" class="MP_Login">
 					<table>
 						<tr>
-							<td><input type="text" placeholder="아이디" name="id"></td>
+							<td>
+								<input type="text" placeholder="아이디" name="id"></td>
 							<td>
 								<button class="login-button">로그인</button>
 							</td>
