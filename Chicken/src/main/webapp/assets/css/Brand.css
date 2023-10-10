@@ -57,15 +57,16 @@ nav.navbar {
 .sr-input {
 	background-color: transparent;
 	border-radius: 50px;
-            &:hover,
-       		&:focus {
-            	padding: 12px 0;
-            	outline: 0;
-            	border: 1px solid transparent;
-            	border-bottom: 1px solid #575756;
-            	border-radius: 0;
-            	background-position: 100% center;
-        }
+
+	&:hover,
+	&:focus {
+		padding: 12px 0;
+		outline: 0;
+		border: 1px solid transparent;
+		border-bottom: 1px solid #575756;
+		border-radius: 0;
+		background-position: 100% center;
+	}
 }
 
 .login-input {
@@ -89,6 +90,18 @@ nav.navbar {
 	cursor: pointer;
 }
 
+.Logout-Container {
+	flex-direction: column;
+
+}
+
+.Logout-Btn {
+	background-color: #F27405;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
 /* 추가 스타일 */
 .content {
 	margin-top: 140px;
@@ -107,11 +120,11 @@ nav.navbar {
 }
 
 .logobox {
-	 width: 330px;
-	 height: 165px;
-	 background-color: white;
-	 margin-left: 160px;
-	 border-color: #FFA500;
+	width: 330px;
+	height: 165px;
+	background-color: white;
+	margin-left: 160px;
+	border-color: #FFA500;
 }
 
 .secondLine {
@@ -131,4 +144,3 @@ h1 {
 	font-size: 100px;
 	color: #FFA500;
 }
-

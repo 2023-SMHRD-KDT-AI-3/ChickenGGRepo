@@ -83,12 +83,13 @@
 							</td>
 						</tr>
 						<tr>
-							<td><input type="password" placeholder="비밀번호" name="pw">
+							<td>
+								<input type="password" placeholder="비밀번호" name="pw">
 							</td>
-							<td><a href="Register.jsp"><button class="register-button">회원가입</button></a></td>
 						</tr>
 					</table>
 				</form>
+				<a href="Register.jsp"><button class="register-button">회원가입</button></a>
 			</c:if>
 			<c:if test="${!empty info}">
 				<h1>${info.nick}님환영합니다!</h1>
