@@ -175,12 +175,21 @@ nav.navbar {
 	padding: 20px;
 }
 
+.map_wrap {
+	margin-left: 245px;
+	float: left;
+}
+
 #map {
 	margin-left: 245px;
-	width: 688px;
+	width: 60%;
 	height: 490px;
 	border: 1px solid;
 	border-color: #333;
+}
+
+.chart-wrap{
+	width: 40%;
 }
 
 
