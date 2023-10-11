@@ -38,8 +38,9 @@
 					<option value="chi_brand">브랜드</option>
 					<option value="chi_menu">메뉴</option>
 					<option value="store_name">가게명</option>
-				</select> <input type="text" class="sr-input" name="sr_input"
-					placeholder="Search"> <input type="submit" value="검색버튼">
+				</select> 
+				<input type="text" class="sr-input" name="sr_input" placeholder="Search" autocomplete="off">
+				<button type="submit" class="sr-input-btn">검색버튼</button>
 			</form>
 			<c:if test="${empty info}">
 				<form action="login" method="post" class="login-input">
@@ -75,6 +76,7 @@
 			<div>
 				<div>
 					<h1>브랜드</h1>
+					<div id="compare_list">시발</div>
 					<button type="submit" class="compare">비교하기</button>
 					<hr>
 				</div>
@@ -142,7 +144,7 @@
 				</div>
 			</div>
 		</div>
-	</form>
 
+	<script type="/assets/js/brand.js"></script>
 </body>
 </html>

@@ -56,9 +56,11 @@
 	<!-- 왼쪽 고정된 네비게이션 바 -->
 	<div class="left-navbar">
 		<!-- 로고 넣는곳 -->
-		<div class="navbar-logo">
+		<div class="left-navbar-logo">
 			<a href="goMain"><h2>🅒🅗🅘🅒🅚🅔🅝.🅖🅖</h2></a>
 		</div>
+		<div class="blank"></div>
+		<hr class="hrhr"></hr>
 		<a href="goMain"> <i class="fas fa-home"></i> 홈
 		</a> <a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드
 		</a> <a href="#"> <i class="fas fa-utensils"></i> 메뉴
@@ -84,7 +86,7 @@
 					<option value="chi_menu" name="menu_search">메뉴</option>
 				</select> 
 				<input type="text" class="sr-input" name="sr_input" placeholder="Search" autocomplete="off">
-				<input type="submit" value="검색버튼">
+				<button type="submit" class="sr-input-btn">검색버튼</button>
 				<!-- 추천창 -->
 				<div id="suggestion_box" class="invisible">
 					<div id=suggested_items></div>
@@ -158,7 +160,7 @@
 		var markers = [];
 		var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
 		var options = { //지도를 생성할 때 필요한 기본 옵션
-		        center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
+		        center: new kakao.maps.LatLng(35.110553, 126.877824), // 지도의 중심좌표
 		        level: 3,
 		        radius : 1000
 		//지도의 레벨(확대, 축소 정도)
@@ -171,28 +173,14 @@
 
 		// 검색 결과 목록이나 마커를 클릭했을 때 장소명을 표출할 인포윈도우를 생성합니다
 		var infowindow = new kakao.maps.InfoWindow({zIndex:1});
-
-		// 키워드로 장소를 검색합니다
-		searchPlaces();
-
-		// 키워드 검색을 요청하는 함수입니다
-		function searchPlaces() {
-
-		    var keyword = document.getElementById('keyword').value;
-
-		    if (!keyword.replace(/^\s+|\s+$/g, '')) {
-		        alert('키워드를 입력해주세요!');
-		        return false;
-		    }
-
-		    // 장소검색 객체를 통해 키워드로 장소검색을 요청합니다
-		    ps.keywordSearch(keyword, placesSearchCB , options); 
-		}
-
+		var bounds = map.getBounds();
+		var center = map.getCenter();
+		ps.keywordSearch('치킨', placesSearchCB, {location : center}); 
+		
 		// 장소검색이 완료됐을 때 호출되는 콜백함수 입니다
 		function placesSearchCB(data, status, pagination) {
 		    if (status === kakao.maps.services.Status.OK) {
-
+				console.log("!!")
 		        // 정상적으로 검색이 완료됐으면
 		        // 검색 목록과 마커를 표출합니다
 		        displayPlaces(data);

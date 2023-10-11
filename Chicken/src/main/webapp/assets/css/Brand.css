@@ -1,5 +1,11 @@
 @charset "EUC-KR";
 
+body {
+	background-color: #F5F5F5;
+	margin: 0;
+	padding: 0;
+}
+
 /* 왼쪽 고정 네비게이션 바 스타일 */
 .left-navbar {
 	position: fixed;
@@ -67,6 +73,16 @@ nav.navbar {
 		border-radius: 0;
 		background-position: 100% center;
 	}
+}
+
+.sr-input-btn {
+	margin-right: 10px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.sr-input-btn:hover {
+	animation: jittery 4s infinite;
 }
 
 .login-input {
@@ -145,6 +161,7 @@ nav.navbar {
 h1 {
 	font-size: 65px;
 	color: #FFA500;
+
 	margin-top: 45px;
 	margin-left: 160px;
 	margin-bottom: 5px;
@@ -160,11 +177,53 @@ h1 {
 
 .compare {
 	margin-left: 1480px;
-	background-color: white;
+	background-color: #F5F5F5;
 	color: #FFA500;
 	border: none;
 	cursor: pointer;
 	font-size: 22px;
 	font-weight: 300;
-	
+	display: inline;
 }
+
+#compare_list {
+	margin-left: 160px;
+}
+
+
+@keyframes jittery {
+
+	5%,
+	50% {
+		transform: scale(1);
+	}
+
+	10% {
+		transform: scale(0.9);
+	}
+
+	15% {
+		transform: scale(1.15);
+	}
+
+	20% {
+		transform: scale(1.15) rotate(-5deg);
+	}
+
+	25% {
+		transform: scale(1.15) rotate(5deg);
+	}
+
+	30% {
+		transform: scale(1.15) rotate(-3deg);
+	}
+
+	35% {
+		transform: scale(1.15) rotate(2deg);
+	}
+
+	40% {
+		transform: scale(1.15) rotate(0);
+	}
+}
+
