@@ -2,6 +2,8 @@
  * 
  */
 // 연관검색어
+
+
 $(function() {
 	$(".sr-input").keyup(function() {
 
@@ -30,11 +32,13 @@ $(function() {
 			suggestedItem.className = "item"
 
 			suggestedItem.addEventListener('click', function(e) {
-				document.getElementById("name").value = this.textContent.split(' ')[0];
+				document.getElementById("input_text").value = this.textContent;
+				recommendBox.classList.add('invisible');
 			});
 
 			suggestedItem.appendChild(player_content);
 			suggestedItems.appendChild(suggestedItem);
 		}
+
 	})
 })
