@@ -56,9 +56,11 @@
 	<!-- 왼쪽 고정된 네비게이션 바 -->
 	<div class="left-navbar">
 		<!-- 로고 넣는곳 -->
-		<div class="navbar-logo">
+		<div class="left-navbar-logo">
 			<a href="goMain"><h2>🅒🅗🅘🅒🅚🅔🅝.🅖🅖</h2></a>
 		</div>
+		<div class="blank"></div>
+		<hr class="hrhr"></hr>
 		<a href="goMain"> <i class="fas fa-home"></i> 홈
 		</a> <a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드
 		</a> <a href="#"> <i class="fas fa-utensils"></i> 메뉴
@@ -84,7 +86,7 @@
 					<option value="chi_menu" name="menu_search">메뉴</option>
 				</select> 
 				<input type="text" class="sr-input" name="sr_input" placeholder="Search" autocomplete="off">
-				<input type="submit" value="검색버튼">
+				<button type="submit" class="sr-input-btn">검색버튼</button>
 				<!-- 추천창 -->
 				<div id="suggestion_box" class="invisible">
 					<div id=suggested_items></div>
