@@ -16,7 +16,7 @@
     <style>
 .map_wrap, .map_wrap * {margin:0;padding:0;font-family:'Malgun Gothic',dotum,'돋움',sans-serif;font-size:12px;}
 .map_wrap a, .map_wrap a:hover, .map_wrap a:active{color:#000;text-decoration: none;}
-.map_wrap {position:relative;width:100%;height:500px;}
+.map_wrap {position:relative;width:60%;height:500px;}
 #menu_wrap {position:absolute;top:0;left:0;bottom:0;width:250px;margin:10px 0 30px 10px;padding:5px;overflow-y:auto;background:rgba(255, 255, 255, 0.7);z-index: 1;font-size:12px;border-radius: 10px;}
 .bg_white {background:#fff;}
 #menu_wrap hr {display: block; height: 1px;border: 0; border-top: 2px solid #5F5F5F;margin:3px 0;}
@@ -60,12 +60,12 @@
 			<a href="goMain"><h2>🅒🅗🅘🅒🅚🅔🅝.🅖🅖</h2></a>
 		</div>
 		<div class="blank"></div>
+		<!-- hr 태그는 수평선용임 -->
 		<hr class="hrhr"></hr>
-		<a href="goMain"> <i class="fas fa-home"></i> 홈
-		</a> <a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드
-		</a> <a href="#"> <i class="fas fa-utensils"></i> 메뉴
-		</a> <a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지
-		</a>
+		<a href="goMain"> <i class="fas fa-home"></i> 홈</a> 
+		<a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드</a> 
+		<a href="#"> <i class="fas fa-utensils"></i> 메뉴</a> 
+		<a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지</a>
 		<!-- 여기에 추가 메뉴 항목을 추가할 수 있습니다. -->
 	</div>
 
@@ -143,10 +143,11 @@
 			</div>
 		</div>
 		<!-- 여기는 마이차트 부분입니다 -->
-		<div style="float: right">
+		<div style="float: right" class="chart_wrap">
 			<canvas id="myChart" style="height: 490px; width: 850px"></canvas>
 		</div>
 		<div id="Chart2" style="height: 490px; width: 850px"></div>
+		<div class="Brand-Logo-Img"><img alt="" src=""></div>
 	</div>
 	<!-- 검색추천, 자동완성  js문 -->
 	<script src="assets/js/Main.js"></script>

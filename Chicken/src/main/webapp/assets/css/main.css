@@ -44,6 +44,10 @@ body {
 	align-items: center;
 }
 
+.left-navbar a:hover{
+	background-color: #757575;
+}
+
 .left-navbar a i {
 	margin-right: 10px;
 }
@@ -175,14 +179,20 @@ nav.navbar {
 	padding: 20px;
 }
 
+.map_wrap{
+	width: 60%;
+	float: left;
+}
 #map {
 	margin-left: 245px;
-	width: 688px;
+	width: 60%;
 	height: 490px;
 	border: 1px solid;
 	border-color: #333;
 }
-
+.chart_wrap{
+	width: 40%;
+}
 
 @keyframes jittery {
 
