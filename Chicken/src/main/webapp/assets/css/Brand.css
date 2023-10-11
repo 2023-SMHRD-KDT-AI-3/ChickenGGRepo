@@ -91,6 +91,9 @@ nav.navbar {
 	flex-direction: column;
 	/* 아이디와 비밀번호를 위아래로 나열하도록 설정 */
 }
+.register-button {
+	margin-top: 40px;
+}
 
 .login-input input {
 	margin-bottom: 10px;
@@ -104,6 +107,7 @@ nav.navbar {
 	border: none;
 	padding: 5px 10px;
 	cursor: pointer;
+	margin-left: 50px;
 }
 
 .Logout-Container {
@@ -176,18 +180,23 @@ h1 {
 }
 
 .compare {
-	margin-left: 1480px;
-	background-color: #F5F5F5;
-	color: #FFA500;
+	margin-left: 1460px;
+	background-color: #FFA500;
+	color: #F5F5F5;
 	border: none;
 	cursor: pointer;
 	font-size: 22px;
 	font-weight: 300;
 	display: inline;
+	border-radius: 50%;
 }
 
 #compare_list {
 	margin-left: 160px;
+}
+
+span {
+	color: #FFA500;
 }
 
 

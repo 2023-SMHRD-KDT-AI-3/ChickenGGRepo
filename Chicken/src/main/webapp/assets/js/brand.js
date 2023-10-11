@@ -16,6 +16,5 @@ function getCheckboxValue()  {
   });
   
   // 출력
-  document.getElementById('compare_list').innerText
-    = result;
+  document.querySelector('#compare_list').innerText = result;
 }
