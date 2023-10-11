@@ -183,6 +183,7 @@ nav.navbar {
 	width: 60%;
 	float: left;
 }
+
 #map {
 	margin-left: 245px;
 	width: 60%;
@@ -190,9 +191,11 @@ nav.navbar {
 	border: 1px solid;
 	border-color: #333;
 }
-.chart_wrap{
+
+.chart-wrap{
 	width: 40%;
 }
+
 
 @keyframes jittery {
 
