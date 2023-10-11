@@ -5,20 +5,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+<title>치킨 연구소 마이페이지</title>
 <link rel="stylesheet" href="assets/css/MyPage.css"></link>
 </head>
 <body>
 	<!-- 왼쪽 고정된 네비게이션 바 -->
 	<div class="left-navbar">
 		<!-- 로고 넣는곳 -->
-		<div class="navbar-logo">
+		<div class="left-navbar-logo">
 			<a href="goMain"><h2>🅒🅗🅘🅒🅚🅔🅝.🅖🅖</h2></a>
 		</div>
-		<a href="goMain"> <i class="fas fa-home"></i> 홈</a>
-		<a href="#"> <i class="fas fa-list"></i> 브랜드</a>
-		<a href="#"> <i class="fas fa-utensils"></i> 메뉴</a>
-		<a href="#"> <i class="fas fa-trophy"></i> 마이페이지</a> 
+		<!-- hr 태그는 수평선용임 -->
+		<hr class="hrhr"></hr>
+		<div class="left-navbar-menu-logo">
+			<a href="goMain"> <i class="fas fa-home"></i> 홈</a> 
+			<a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드</a> 
+			<a href="#"> <i class="fas fa-utensils"></i> 메뉴</a> 
+			<a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지</a>
+		</div>
 		<!-- 여기에 추가 메뉴 항목을 추가할 수 있습니다. -->
 	</div>
 
@@ -73,24 +78,49 @@
 	<wrapper class="MP_Container">
 		<div class="MP_Content">
 			<c:if test="${empty info}">
-				<h1>Chicken.GG</h1>
-				<form action="login" method="post" class="MP_Login">
-					<table>
-						<tr>
-							<td>
-								<input type="text" placeholder="아이디" name="id"></td>
-							<td>
-								<button class="login-button">로그인</button>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<input type="password" placeholder="비밀번호" name="pw">
-							</td>
-						</tr>
-					</table>
-				</form>
-				<a href="Register.jsp"><button class="register-button">회원가입</button></a>
+				<div class="non-LogIn">
+					<form action="Register" method="post">
+        			<div class="wrapper">
+            			<div class="title">
+            				<h2>로그인</h2>
+            			</div>
+            			<div class="form-group">
+                			<label for="username">아이디:</label>
+                			<input id="username" type="text" name="id" placeholder="아이디를 입력하세요." required>
+                			<div id="usernameError"></div>
+            			</div>
+            			<div class="form-group">
+                			<label for="password">비밀번호:</label>
+                			<input id="password" type="password" name="pw" placeholder="비밀번호를 입력하세요." required>
+            			</div>
+            			<div class="form-group">
+                			<button id="logInButton" disabled>로그인버튼</button>
+            			</div>
+            			<span class="slideshow-container">
+                 <div class="Slidesbackground">
+                    <div class="mySlides fade">
+                    <img src="images/chickPromotion/bbq 광고.png" class="slideshow-image">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/chickPromotion/bhc 광고.png" class="slideshow-image">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/chickPromotion/교촌 광고.png" class="slideshow-image">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/chickPromotion/굽네 광고.png" class="slideshow-image">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/chickPromotion/멕시카나 광고.png" class="slideshow-image">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/chickPromotion/호식이 광고.png" class="slideshow-image">
+                    </div>
+                </div>
+             </span>
+        			</div>
+   					</form>
+   				</div>
 			</c:if>
 			<c:if test="${!empty info}">
 				<div class="MyPage">
@@ -111,5 +141,6 @@
 		</div>
 	</wrapper>
 
+	<script src="assets/js/MyPage.js"></script>
 </body>
 </html>

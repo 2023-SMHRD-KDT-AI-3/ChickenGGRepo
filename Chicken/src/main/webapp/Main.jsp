@@ -199,7 +199,6 @@
 	cursor: default;
 	color: #777;
 }
->>>>>>> branch 'master' of https://github.com/2023-SMHRD-KDT-AI-3/ChickenGGRepo.git
 </style>
 </head>
 <body>
@@ -209,13 +208,14 @@
 		<div class="left-navbar-logo">
 			<a href="goMain"><h2>🅒🅗🅘🅒🅚🅔🅝.🅖🅖</h2></a>
 		</div>
-		<div class="blank"></div>
 		<!-- hr 태그는 수평선용임 -->
 		<hr class="hrhr"></hr>
-		<a href="goMain"> <i class="fas fa-home"></i> 홈</a> 
-		<a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드</a> 
-		<a href="#"> <i class="fas fa-utensils"></i> 메뉴</a> 
-		<a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지</a>
+		<div class="left-navbar-menu-logo">
+			<a href="goMain"> <i class="fas fa-home"></i> 홈</a> 
+			<a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드</a> 
+			<a href="#"> <i class="fas fa-utensils"></i> 메뉴</a> 
+			<a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지</a>
+		</div>
 		<!-- 여기에 추가 메뉴 항목을 추가할 수 있습니다. -->
 	</div>
 

@@ -1,92 +1,116 @@
 @charset "EUC-KR";
 
-
 /* 왼쪽 고정 네비게이션 바 스타일 */
-        .left-navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            background-color: #333;
-            color: white;
-            width: 200px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-        }
+.left-navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: #333;
+	color: white;
+	width: 200px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	z-index: 30;
+}
 
-        .left-navbar a {
-            text-decoration: none;
-            color: white;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-        }
+.left-navbar-logo {
+	max-width: 150px;
+	/* 로고 이미지의 최대 너비 설정 */
+	margin-top: 30px;
+}
 
-        .left-navbar a i {
-            margin-right: 10px;
-        }
+.blank {
+	height: 20px;
+}
 
-        body {
-			font-family: Arial, sans-serif;
-    		display: flex;
-    		justify-content: center;
-    		align-items: center;
-   			height: 100vh;
-		}
+.hrhr {
+	width: 100%;
+	color: white;
+	margin-bottom: 40px;
+}
 
-		.wrapper {
-    		background-color: #ffffff;
-    		padding: 20px;
-    		border-radius: 8px;
-    		box-shadow: 0px 0px 10px 0px #000000;
-    		max-width: 400px;
-    		width: 100%;
-    		margin-left: 100px;
-		}
+.left-navbar-menu-logo{
+	padding: 10px;
+    font-size: 20px;
+}
 
-		.title {
-    		text-align: center;
-		}
+.left-navbar a {
+	text-decoration: none;
+	color: white;
+	display: flex;
+	align-items: center;
+	padding-bottom: 50px;
+}
 
-		.form-group {
-    		margin-bottom: 15px;
-		}
+.left-navbar a:hover{
+	background-color: #757575;
+}
 
-		label {
-    		display: block;
-    		font-weight: bold;
-		}
+.left-navbar a i {
+	margin-right: 10px;
+}
 
-		input[type="text"],
-		input[type="password"] {
-    		width: 95%;
-    		padding: 10px;
-    		margin-top: 5px;
-    		margin-bottom: 5px;
-    		border: 1px solid #ccc;
-    		border-radius: 5px;
-		}
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #F5F5F5;
+}
 
-		.error {
-    		color: red;
-    		font-size: 12px;
-    		margin-top: 5px;
-    		display: none;
-		}
+.wrapper {
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 10px 0px #000000;
+	max-width: 400px;
+	width: 100%;
+	margin-left: 100px;
+}
 
-		button {
-    		background-color: #007bff;
-    		color: #fff;
-    		border: none;
-    		padding: 10px 20px;
-    		border-radius: 5px;
-    		cursor: pointer;
-		}
+.title {
+	text-align: center;
+}
 
-		button:disabled {
-    		background-color: #ccc;
-    		cursor: not-allowed;
-		}
-		
-		
+.form-group {
+	margin-bottom: 15px;
+}
+
+label {
+	display: block;
+	font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+	width: 95%;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.error {
+	color: red;
+	font-size: 12px;
+	margin-top: 5px;
+	display: none;
+}
+
+button {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
