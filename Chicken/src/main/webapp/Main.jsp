@@ -28,7 +28,7 @@
 
 .map_wrap {
 	position: relative;
-	width: 100%;
+	width: 60%;
 	height: 500px;
 }
 
@@ -205,9 +205,11 @@
 	<!-- 왼쪽 고정된 네비게이션 바 -->
 	<div class="left-navbar">
 		<!-- 로고 넣는곳 -->
-		<div class="navbar-logo">
+		<div class="left-navbar-logo">
 			<a href="goMain"><h2>🅒🅗🅘🅒🅚🅔🅝.🅖🅖</h2></a>
 		</div>
+		<div class="blank"></div>
+		<hr class="hrhr"></hr>
 		<a href="goMain"> <i class="fas fa-home"></i> 홈
 		</a> <a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드
 		</a> <a href="#"> <i class="fas fa-utensils"></i> 메뉴
@@ -231,9 +233,10 @@
 				<select name="sr">
 					<option value="chi_brand" name="brand_search">브랜드</option>
 					<option value="chi_menu" name="menu_search">메뉴</option>
-				</select> <input type="text" class="sr-input" name="sr_input"
-					placeholder="Search" autocomplete="off"> <input
-					type="submit" value="검색버튼">
+
+				</select> 
+				<input type="text" class="sr-input" name="sr_input" placeholder="Search" autocomplete="off">
+				<button type="submit" class="sr-input-btn">검색버튼</button>
 				<!-- 추천창 -->
 				<div id="suggestion_box" class="invisible">
 					<div id=suggested_items></div>
@@ -272,7 +275,7 @@
 	<!-- 페이지 콘텐츠 -->
 	<div class="content">
 		<!-- 여기에 페이지 콘텐츠를 추가합니다. -->
-		<div class="map_wrap" style="float:left">
+		<div class="map_wrap">
 			<div id="map"></div>
 
 			<div id="menu_wrap" class="bg_white" style="display: none">
@@ -289,9 +292,9 @@
 				키워드 : <input type="text" value="치킨집" id="keyword" size="15">
 				<button type="submit">검색하기</button>
 			</form>
-			<div style="float: right">
-				<canvas id="myChart" style="height: 490px; width: 850px"></canvas>
-			</div>
+		</div>
+		<div style="float: right" class="chart-wrap">
+			<canvas id="myChart" style="height: 490px; width: 850px"></canvas>
 		</div>
 		<!-- 여기는 마이차트 부분입니다 -->
 		<div id="Chart2" style="height: 490px; width: 850px"></div>

@@ -1,138 +1,230 @@
 @charset "EUC-KR";
 
+
+body {
+	background-color: #F5F5F5;
+	margin: 0;
+	padding: 0;
+}
+
 /* 왼쪽 고정 네비게이션 바 스타일 */
-        .left-navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            background-color: #333;
-            color: white;
-            width: 200px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-        }
+.left-navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: #333;
+	color: white;
+	width: 200px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
 
-        .left-navbar a {
-            text-decoration: none;
-            color: white;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-        }
+.left-navbar-logo {
+	max-width: 150px;
+	/* 로고 이미지의 최대 너비 설정 */
+	margin-bottom: 20px;
+}
 
-        .left-navbar a i {
-            margin-right: 10px;
-        }
+.blank {
+	height: 20px;
+}
 
-        /* 네비게이션 바 스타일 */
-        nav.navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #FFA500;
-            padding: 10px 20px;
-            margin-left: 220px;
-            height: 150px;
-        }
+.hrhr {
+	width: 100%;
+	color: white;
+}
 
-        .navbar-logo {
-            max-width: 150px; /* 로고 이미지의 최대 너비 설정 */
-        }
+.left-navbar a {
+	text-decoration: none;
+	color: white;
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+}
 
-        .navbar-logo img {
-            height: auto;
-            max-width: 100%;
-            display: block;
-        }
+.left-navbar a i {
+	margin-right: 10px;
+}
 
-        /* 로그인 및 검색 부분 스타일 */
-        .login-search {
-            display: flex;
-            align-items: center;
-        }
+/* 네비게이션 바 스타일 */
+nav.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #FFA500;
+	padding: 10px 20px;
+	margin-left: 220px;
+	height: 150px;
+}
 
-        .sr-input {
-            background-color: transparent;
-            border-radius: 50px;
-            &:hover,
-       		&:focus {
-            	padding: 12px 0;
-            	outline: 0;
-            	border: 1px solid transparent;
-            	border-bottom: 1px solid #575756;
-            	border-radius: 0;
-            	background-position: 100% center;
-        }
-        }
-        
-        /* 검색추천, 자동완성 */
-        .invisible{
-    		display: none;
-		}
+.navbar-logo {
+	max-width: 150px;
+	/* 로고 이미지의 최대 너비 설정 */
+}
+
+.navbar-logo img {
+	height: auto;
+	max-width: 100%;
+	display: block;
+}
+
+/* 로그인 및 검색 부분 스타일 */
+.login-search {
+	display: flex;
+	align-items: center;
+}
+
+.login-serch select {
+	border-radius: 20px;
+	background-color: #f0d264;
+	box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.sr-input {
+	background-color: transparent;
+	border-radius: 50px;
+
+	&:hover,
+	&:focus {
+		padding: 12px 0;
+		outline: 0;
+		border: 1px solid transparent;
+		border-bottom: 1px solid #575756;
+		border-radius: 0;
+		background-position: 100% center;
+	}
+}
+
+.sr-input-btn{
+	margin-right: 10px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.sr-input-btn:hover {
+	animation: jittery 4s infinite;
+}
+
+/* 검색추천, 자동완성 */
+
+.invisible {
+	display: none;
+}
 
 
-		#suggestion_box {
-    		margin-top: 1px;
-    		background: white;
-    		padding: 0 10px;
-    		border: 1px solid black;
-		}
+#suggestion_box {
+	margin-top: 1px;
+	background: white;
+	padding: 0 10px;
+	border: 1px solid black;
+}
 
-		#suggested_items{
-    		height:100px;
-    		width: 250px;
-    		overflow: auto; /* 스크롤바 추가 */
-		}
+#suggested_items {
+	height: 100px;
+	width: 250px;
+	overflow: auto;
+	/* 스크롤바 추가 */
+}
 
-		/* 마우스 올리면 색 변화 */
-		.item:hover{
-    		color: #fff;
-    		background-color: lightgreen;
-		}
-		
-		
-		/* 로그인, 회원가입 */
-        .login-input {
-    		margin-right: 10px;
-    		display: flex;
-    		flex-direction: column; /* 아이디와 비밀번호를 위아래로 나열하도록 설정 */
-		}
-
-		.login-input input {
-   			 margin-bottom: 10px; /* 입력 필드 간 간격을 추가하여 위아래로 나열되도록 조정 */
-		}
+/* 마우스 올리면 색 변화 */
+.item:hover {
+	color: #fff;
+	background-color: lightgreen;
+}
 
 
-        .login-button {
-            background-color: #333;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-        
-        .Logout-Container{
-			flex-direction: column;
-			
-		}
-        
-        .Logout-Btn{
-			background-color: #F27405;
-			padding: 10px 20px;
-    		border-radius: 5px;
-    		cursor: pointer;
-		}
+/* 로그인, 회원가입 */
+.login-input {
+	margin-right: 10px;
+	display: flex;
+	flex-direction: column;
+	/* 아이디와 비밀번호를 위아래로 나열하도록 설정 */
+}
 
-        /* 본문 내용 스타일 */
-        .content {
-            margin-top: 140px;
-            padding: 20px;
-        }
+.login-input input {
+	margin-bottom: 10px;
+	/* 입력 필드 간 간격을 추가하여 위아래로 나열되도록 조정 */
+}
 
-        #map{
-            margin-left: 250px;
-            width: 688px;
-            height: 490px;
-        }
+
+.login-button {
+	background-color: #333;
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.Logout-Container {
+	flex-direction: column;
+
+}
+
+.Logout-Btn {
+	background-color: #F27405;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/* 본문 내용 스타일 */
+.content {
+	margin-top: 140px;
+	padding: 20px;
+}
+
+.map_wrap {
+	margin-left: 245px;
+	float: left;
+}
+
+#map {
+	margin-left: 245px;
+	width: 60%;
+	height: 490px;
+	border: 1px solid;
+	border-color: #333;
+}
+
+.chart-wrap{
+	width: 40%;
+}
+
+
+@keyframes jittery {
+
+	5%,
+	50% {
+		transform: scale(1);
+	}
+
+	10% {
+		transform: scale(0.9);
+	}
+
+	15% {
+		transform: scale(1.15);
+	}
+
+	20% {
+		transform: scale(1.15) rotate(-5deg);
+	}
+
+	25% {
+		transform: scale(1.15) rotate(5deg);
+	}
+
+	30% {
+		transform: scale(1.15) rotate(-3deg);
+	}
+
+	35% {
+		transform: scale(1.15) rotate(2deg);
+	}
+
+	40% {
+		transform: scale(1.15) rotate(0);
+	}
+}

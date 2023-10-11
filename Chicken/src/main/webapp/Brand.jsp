@@ -38,8 +38,9 @@
 					<option value="chi_brand">브랜드</option>
 					<option value="chi_menu">메뉴</option>
 					<option value="store_name">가게명</option>
-				</select> <input type="text" class="sr-input" name="sr_input"
-					placeholder="Search"> <input type="submit" value="검색버튼">
+				</select> 
+				<input type="text" class="sr-input" name="sr_input" placeholder="Search" autocomplete="off">
+				<button type="submit" class="sr-input-btn">검색버튼</button>
 			</form>
 			<c:if test="${empty info}">
 				<form action="login" method="post" class="login-input">
@@ -81,6 +82,7 @@
 		<div>
 			<div class="firstLine">
 				<button type="button" class="logobox"><img alt="bbq" src="images/brandlogo/logo-bbq.jpg" class="logosize"></button>
+				
 				<button type="button" class="logobox"><img alt="bhc" src="images/brandlogo/logo-bhc.png" class="logosize"></button>
 				<button type="button" class="logobox"><img alt="gyochon" src="images/brandlogo/logo-gyochon.png" class="logosize"></button>
 			</div>
