@@ -16,12 +16,6 @@ function getCheckboxValue()  {
   });
   
   // 출력
-  document.getElementById('result').innerText
+  document.getElementById('compare_list').innerText
     = result;
 }
-let compare_list = document.getElementById("compare_list")
-let logobox = document.getElementsByName("brandCompare")
-$("input:checkbox[name=brandCompare]:checked").each(function(){
-	var checkVal = $(this).val();
-	compare_list.innerHTML+=`<span>${checkVal}</span>`
-})

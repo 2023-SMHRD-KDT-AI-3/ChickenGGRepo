@@ -75,8 +75,8 @@
 		<div class="brandlogo">
 			<div>
 				<div>
-					<h1>브랜드</h1>
-					<div id="compare_list">시발</div>
+					<h1>BRAND</h1>
+					<div id="compare_list"></div>
 					<button type="submit" class="compare">비교하기</button>
 					<hr>
 				</div>
