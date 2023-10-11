@@ -236,7 +236,7 @@
 					<option value="chi_menu" name="menu_search">메뉴</option>
 
 				</select> 
-				<input type="text" class="sr-input" name="sr_input" placeholder="Search" autocomplete="off">
+				<input type="text" class="sr-input" id="input_text" name="sr_input" placeholder="Search" autocomplete="off" value=" ">
 				<button type="submit" class="sr-input-btn">검색버튼</button>
 				<!-- 추천창 -->
 				<div id="suggestion_box" class="invisible">
@@ -350,13 +350,30 @@
 		        // 정상적으로 검색이 완료됐으면
 		        // 검색 목록과 마커를 표출합니다
 		        displayPlaces(data);
+		        var MapBrand = [];
 		        for (var i=0; i<data.length; i++ ){
-		        	console.log((data[i].place_name).substr(0,3));
+		        	MapBrand.push((data[i].place_name).substr(0,3));
 		        }
-		        
+		        console.log(MapBrand);
+		        $.ajax({
+					url : 'CheckBrand',
+					type : 'post',
+					data : {'MapBrand':MapBrand},
+					contentType: "application/x-www-form-urlencoded; charset=UTF-8",
+					success : function(res){
+						// 차트를 만듭니다.
+						console.log("여기왔니?");
+						console.log(res);
+						console.log(res[0].brand_name);
+		        		makingChart(res);
+					},
+					error : function(request,status,error){
+						alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+					}
+		        })
 		        
 		        // 차트를 만듭니다.
-		        makingChart();
+		        //makingChart();
 		        // 페이지 번호를 표출합니다
 		        displayPagination(pagination);
 
@@ -534,7 +551,6 @@
 
 	<script>
 	function makingChart(){
-		console.log("하고있니?");
         const ctx = document.getElementById('myChart').getContext('2d');
         const myChart = new Chart(ctx, {
         	type : 'bar',
