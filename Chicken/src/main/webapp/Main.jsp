@@ -199,6 +199,7 @@
 	cursor: default;
 	color: #777;
 }
+>>>>>>> branch 'master' of https://github.com/2023-SMHRD-KDT-AI-3/ChickenGGRepo.git
 </style>
 </head>
 <body>
@@ -209,12 +210,12 @@
 			<a href="goMain"><h2>🅒🅗🅘🅒🅚🅔🅝.🅖🅖</h2></a>
 		</div>
 		<div class="blank"></div>
+		<!-- hr 태그는 수평선용임 -->
 		<hr class="hrhr"></hr>
-		<a href="goMain"> <i class="fas fa-home"></i> 홈
-		</a> <a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드
-		</a> <a href="#"> <i class="fas fa-utensils"></i> 메뉴
-		</a> <a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지
-		</a>
+		<a href="goMain"> <i class="fas fa-home"></i> 홈</a> 
+		<a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드</a> 
+		<a href="#"> <i class="fas fa-utensils"></i> 메뉴</a> 
+		<a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지</a>
 		<!-- 여기에 추가 메뉴 항목을 추가할 수 있습니다. -->
 	</div>
 
@@ -293,11 +294,13 @@
 				<button type="submit">검색하기</button>
 			</form>
 		</div>
+		<!-- 여기는 마이차트 부분입니다 -->
 		<div style="float: right" class="chart-wrap">
 			<canvas id="myChart" style="height: 490px; width: 850px"></canvas>
 		</div>
 		<!-- 여기는 마이차트 부분입니다 -->
 		<div id="Chart2" style="height: 490px; width: 850px"></div>
+		<div class="Brand-Logo-Img"><img alt="" src=""></div>
 	</div>
 	<!-- 검색추천, 자동완성  js문 -->
 	<script src="assets/js/Main.js"></script>

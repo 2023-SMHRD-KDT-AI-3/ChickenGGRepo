@@ -44,6 +44,10 @@ body {
 	align-items: center;
 }
 
+.left-navbar a:hover{
+	background-color: #757575;
+}
+
 .left-navbar a i {
 	margin-right: 10px;
 }
@@ -175,8 +179,8 @@ nav.navbar {
 	padding: 20px;
 }
 
-.map_wrap {
-	margin-left: 245px;
+.map_wrap{
+	width: 60%;
 	float: left;
 }
 
