@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="false"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	isELIgnored="false" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
@@ -52,8 +52,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>
-								<input type="password" placeholder="비밀번호" name="pw">
+							<td><input type="password" placeholder="비밀번호" name="pw">
 							</td>
 						</tr>
 					</table>
@@ -71,32 +70,79 @@
 		</div>
 	</nav>
 
-
-	<div class="brandlogo">
-		<div>
+	<form action="#" method="post">
+		<div class="brandlogo">
 			<div>
-				<h1>브랜드</h1>
+				<div>
+					<h1>브랜드</h1>
+					<button type="submit" class="compare">비교하기</button>
+					<hr>
+				</div>
+			</div>
+			<div>
+				<div class="firstLine">
+					<input type="checkbox" class="logocheck" name="brandCompare"
+						value="bbq">
+					<button class="logobox" name="chickenbrand" value="bbq">
+						<img alt="bbq" src="images/brandlogo/logo-bbq.jpg"
+							class="logosize">
+					</button>
+					<input type="checkbox" class="logocheck" name="brandCompare"
+						value="bhc">
+					<button class="logobox" name="chickenbrand" value="bhc">
+						<img alt="bhc" src="images/brandlogo/logo-bhc.png"
+							class="logosize">
+					</button>
+					<input type="checkbox" class="logocheck" name="brandCompare"
+						value="gyochon">
+					<button class="logobox" name="chickenbrand" value="gyochon">
+						<img alt="gyochon" src="images/brandlogo/logo-gyochon.png"
+							class="logosize">
+					</button>
+				</div>
+				<div class="secondLine">
+					<input type="checkbox" class="logocheck" name="brandCompare"
+						value="goobne">
+					<button class="logobox" name="chickenbrand" value="goobne">
+						<img alt="goobne" src="images/brandlogo/logo-goobne.png"
+							class="logosize">
+					</button>
+					<input type="checkbox" class="logocheck" name="brandCompare"
+						value="hosigi">
+					<button class="logobox" name="chickenbrand" value="hosigi">
+						<img alt="hosigi" src="images/brandlogo/logo-hosigi.png"
+							class="logosize">
+					</button>
+					<input type="checkbox" class="logocheck" name="brandCompare"
+						value="jadam">
+					<button class="logobox" name="chickenbrand" value="jadam">
+						<img alt="jadam" src="images/brandlogo/logo-jadam.png"
+							class="logosize">
+					</button>
+				</div>
+				<div class="thirdLine">
+					<input type="checkbox" class="logocheck" name="brandCompare"
+						value="ajukeo">
+					<button class="logobox" name="chickenbrand" value="ajukeo">
+						<img alt="ajukeo" src="images/brandlogo/logo-ajukeo.jpg"
+							class="logosize">
+					</button>
+					<input type="checkbox" class="logocheck" name="brandCompare"
+						value="mexicana">
+					<button class="logobox" name="chickenbrand" value="mexicana">
+						<img alt="mexicana" src="images/brandlogo/logo-mexicana.png"
+							class="logosize">
+					</button>
+					<input type="checkbox" class="logocheck" name="brandCompare"
+						value="chickenplus">
+					<button class="logobox" name="chickenbrand" value="chickenplus">
+						<img alt="chickenplus" src="images/brandlogo/logo-chickenplus.png"
+							class="logosize">
+					</button>
+				</div>
 			</div>
 		</div>
-		<div>
-			<div class="firstLine">
-				<button type="button" class="logobox"><img alt="bbq" src="images/brandlogo/logo-bbq.jpg" class="logosize"></button>
-				<button type="button" class="logobox"><img alt="bhc" src="images/brandlogo/logo-bhc.png" class="logosize"></button>
-				<button type="button" class="logobox"><img alt="gyochon" src="images/brandlogo/logo-gyochon.png" class="logosize"></button>
-			</div>
-			<div class="secondLine">
-				<button type="button" class="logobox"><img alt="goobne" src="images/brandlogo/logo-goobne.png" class="logosize"></button>
-				<button type="button" class="logobox"><img alt="hosigi" src="images/brandlogo/logo-hosigi.png" class="logosize"></button>
-				<button type="button" class="logobox"><img alt="jadam" src="images/brandlogo/logo-jadam.png" class="logosize"></button>
-			</div>
-			<div class="thirdLine">
-				<button type="button" class="logobox"><img alt="ajukeo" src="images/brandlogo/logo-ajukeo.jpg" class="logosize"></button>
-				<button type="button" class="logobox"><img alt="mexicana" src="images/brandlogo/logo-mexicana.png" class="logosize"></button>
-				<button type="button" class="logobox"><img alt="chickenplus" src="images/brandlogo/logo-chickenplus.png" class="logosize"></button>
-			</div>
-		</div>
-	</div>
-
+	</form>
 
 </body>
 </html>
