@@ -5,6 +5,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<script src="https://kit.fontawesome.com/3a115195d8.js"
+	crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 <title>치킨 연구소 마이페이지</title>
 <link rel="stylesheet" href="assets/css/MyPage.css"></link>
@@ -36,43 +38,34 @@
 				alt="치킨 연구소 로고"></a>
 		</div>
 
-		<!-- 로그인 및 검색 부분 -->
 		<div class="login-search">
-			<form action="" method="post">
-				<select name="sr">
+			<form action="" method="post" class="sr">
+				<select name="sr" class="select">
+					<option selected>선택</option>
 					<option value="chi_brand">브랜드</option>
 					<option value="chi_menu">메뉴</option>
 				</select> <input type="text" class="sr-input" name="sr_input"
 					placeholder="Search" autocomplete="off">
-				<button type="submit" class="sr-input-btn">검색버튼</button>
+				<button type="submit" class="sr-input-btn">
+					<i class="fa-solid fa-drumstick-bite fa-2xl"></i>
+				</button>
 			</form>
+		</div>
+		<div class="regi-login">
 			<c:if test="${empty info}">
-				<form action="login" method="post" class="login-input">
-					<table>
-						<tr>
-							<td><input type="text" placeholder="아이디" name="id">
-							</td>
-							<td rowspan="2">
-								<button class="login-button">로그인</button>
-							</td>
-						</tr>
-						<tr>
-							<td><input type="password" placeholder="비밀번호" name="pw">
-							</td>
-						</tr>
-					</table>
-				</form>
+				<a href="MyPage.jsp"><button class="login-button">로그인</button></a>
 				<a href="Register.jsp"><button class="register-button">회원가입</button></a>
 			</c:if>
-			<div class="Logout-Container">
-				<c:if test="${!empty info}">
-					<h1>${info.nick}님환영합니다!</h1>
-					<form action="Logout" method="post">
-						<button class="Logout-Btn">로그아웃</button>
-					</form>
-				</c:if>
-			</div>
 		</div>
+		<div class="Logout-Container">
+			<c:if test="${!empty info}">
+				<h1>${info.nick}님환영합니다!</h1>
+				<form action="Logout" method="post">
+					<button class="Logout-Btn">로그아웃</button>
+				</form>
+			</c:if>
+		</div>
+
 	</nav>
 	<wrapper class="MP_Container">
 	<div class="MP_Content">

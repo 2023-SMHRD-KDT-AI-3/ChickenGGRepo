@@ -137,7 +137,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="Brand_Chart"></div>
+	<div id="Brand_Chart" style="width: 500px; margin-left: 250px"></div>
 	<script src="assets/js/brand.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	<script>
@@ -146,87 +146,118 @@
 			SearchOneBrand(this.value);
 		});
 		function SearchOneBrand(val) {
-			$.ajax({
-				url : 'OneBrand',
-				type : 'post',
-				data : {
-					'Brand' : val
-				},
-				success : function(res) {
-					// 차트를 만듭니다.
-					console.log("Ajax성공!");
-					console.log(res);
-				},
-				error : function(request, status, error) {
-					alert("code:" + request.status + "\n" + "message:"
-							+ request.responseText + "\n" + "error:" + error);
-				}
-			})
+			$
+					.ajax({
+						url : 'OneBrand',
+						type : 'post',
+						data : {
+							'Brand' : val
+						},
+						success : function(res) {
+							// 차트를 만듭니다.
+							console.log("Ajax성공!");
+							console.log(res);
+							makingChart(res);
+							contentType: "application/x-www-form-urlencoded; charset=UTF-8";
+						},
+						error : function(request, status, error) {
+							alert("code:" + request.status + "\n" + "message:"
+									+ request.responseText + "\n" + "error:"
+									+ error);
+						}
+					})
 		}
 	</script>
+	<!-- Chart.js -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 	<script>
 		function makingChart(result) {
-			console.log(result[0].brand_name);
-			let brand_listname = [];
-			let brand_listprice = [];
-			let brand_listmin = [];
-			let brand_sunsal = [];
-			for (var i = 0; i < result.length; i++) {
-				brand_listname.push(result[i].brand_name);
-				brand_listprice.push(result[i].avg_price);
-				brand_listmin.push(result[i].min_price);
-				brand_sunsal.push(result[i].boneless);
-			}
-			document.getElementById("myChart1").innerHTML = '<canvas id="myChart" style="height: 490px; width: 850px"></canvas>'
+			document.getElementById("Brand_Chart").innerHTML = '<canvas id="myChart" style="height: 500px; width: 500px"></canvas>'
+			console.log(result.Brand);
 			const ctx = document.getElementById('myChart').getContext('2d');
-			const myChart = new Chart(ctx, {
-				plugins : [ ChartDataLabels ],
-				type : 'bar',
-				data : {
-					labels : brand_listname, //브랜드 이름 가져와서 X축에 넣기
-					datasets : [
-							{
-								data : brand_listprice,
-								backgroundColor : [ 'rgba(255, 99, 132, 0.2)',
-										'rgba(54, 162, 235, 0.2)',
-										'rgba(255, 206, 86, 0.2)',
-										'rgba(75, 192, 192, 0.2)',
-										'rgba(153, 102, 255, 0.2)' ],
-								borderColor : [ 'rgba(255, 99, 132, 1)',
-										'rgba(54, 162, 235, 1)',
-										'rgba(255, 206, 86, 1)',
-										'rgba(75, 192, 192, 1)',
-										'rgba(153, 102, 255, 1)' ],
-								borderWidth : 1
+			const myChart = new Chart(
+					ctx,
+					{
+						plugins : [ ChartDataLabels ],
+						type : 'doughnut',
+						data : {
+							datasets : [
+									/* Outer doughnut data starts*/
+									{
+										data : [ result.Calories, 245 ],
+										backgroundColor : [
+												'rgb(255, 99, 132)',
+												'rgb(255, 159, 64)' ],
+										label : 'Doughnut 1',
+										datalabels : {
+											formatter : function(value, context) {
+												return context.chart.data.datasets[0].data[context.dataIndex]
+														+ 'Kcal';
+											}
+										}
+									},
+									/* Outer doughnut data ends*/
+									/* Inner doughnut data starts*/
+									{
+										data : [ result.Protein, 27 ],
+										backgroundColor : [
+												'rgb(255, 99, 132)',
+												'rgb(255, 159, 64)' ],
+										label : 'Doughnut 2',
+										datalabels : {
+											formatter : function(value, context) {
+												return context.chart.data.datasets[1].data[context.dataIndex]
+														+ 'g';
+											}
+										}
+									},
+									{
+										data : [ result.Price, 15000 ],
+										backgroundColor : [
+												'rgb(255, 99, 132)',
+												'rgb(255, 159, 64)' ],
+										label : 'Doughnut 3',
+										datalabels : {
+											formatter : function(value, context) {
+												return context.chart.data.datasets[2].data[context.dataIndex]
+														+ '원';
+											}
+										}
+									},
+							/* Inner doughnut data ends*/
+							],
+							labels : [ result.Brand, "평균" ]
+						},
+						options : {
+							responsive : true,
+							legend : {
+								position : 'top',
 							},
-							{
-								data : brand_listmin,
-								backgroundColor : [ 'rgba(255, 99, 132, 0.2)',
-										'rgba(54, 162, 235, 0.2)',
-										'rgba(255, 206, 86, 0.2)',
-										'rgba(75, 192, 192, 0.2)',
-										'rgba(153, 102, 255, 0.2)' ],
-								borderColor : [ 'rgba(255, 99, 132, 1)',
-										'rgba(54, 162, 235, 1)',
-										'rgba(255, 206, 86, 1)',
-										'rgba(75, 192, 192, 1)',
-										'rgba(153, 102, 255, 1)' ],
-								borderWidth : 1
-							} ]
-				},
-				options : {
-					scales : {
-						yAxes : [ {
-							ticks : { // 최소값, 최대값, 틱범위
-								min : 13000,
-								max : 25000,
-								stepSize : 3000
-							}
-						} ]
-					}
-
-				}
-			});
+							title : {
+								display : true,
+								text : 'Chart.js Doughnut Chart'
+							},
+							animation : {
+								animateScale : true,
+								animateRotate : true
+							},
+							tooltips : {
+								callbacks : {
+									label : function(item, data) {
+										console.log(data.labels, item);
+										return data.datasets[item.datasetIndex].label
+												+ ": "
+												+ data.labels[item.index]
+												+ ": "
+												+ data.datasets[item.datasetIndex].data[item.index];
+									}
+								}
+							},
+						}
+					});
 		}
 	</script>
 

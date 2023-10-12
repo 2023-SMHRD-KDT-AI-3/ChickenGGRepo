@@ -85,15 +85,14 @@ nav.navbar {
 
 .select {
 	height: 56px;
-	margin: 0px;
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 50px;
-	position:fixed;
+	float: left;
+
 	
 }
 .sr-input {
-	margin-left: 63px;
-	background-color: transparent;
+	background-color: white;
 	border-top-right-radius: 50px;
 	border-bottom-right-radius: 50px;
 	width: 500px;
