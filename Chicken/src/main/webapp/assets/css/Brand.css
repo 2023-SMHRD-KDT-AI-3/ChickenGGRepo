@@ -111,20 +111,10 @@ nav.navbar {
 	animation: jittery 4s infinite;
 }
 
-.login-input {
-	margin-right: 10px;
-	display: flex;
-	flex-direction: column;
-	/* 아이디와 비밀번호를 위아래로 나열하도록 설정 */
-}
+
 
 .register-button {
 	
-}
-
-.login-input input {
-	margin-bottom: 10px;
-	/* 입력 필드 간 간격을 추가하여 위아래로 나열되도록 조정 */
 }
 
 
