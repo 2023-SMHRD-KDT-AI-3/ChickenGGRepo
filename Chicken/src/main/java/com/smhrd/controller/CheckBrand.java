@@ -25,14 +25,18 @@ public class CheckBrand extends HttpServlet {
 		System.out.println(MapBrand[0]);
 		// 메인페이지 로드 전에 chart.js 사용하기 위해 로드
 		BrandDAO dao = new BrandDAO();
-		String [] MyBrand = {"교촌", "BBQ" , "자담치킨", "굽네치킨", "처갓집" , "호식이" , "페리카나"};
-		String [] TopBrand = {"교촌", "BBQ" , "굽네치킨", "몰루" , "페리카나", "자담치킨" , "계동치킨"};
+//		String [] MyBrand = {"교촌", "BBQ" , "자담치", "굽네치", "처갓집" , "호식이" , "페리카"};
+		String [] MyBrand = {"60계","BBQ","교촌","굽네치","김삿갓","꺳잎두","네네치","노랑통","둥근이",
+				"또래오","또봉이","멕시카","멕시칸","부리나","불로만","수일통","순살만","아주커","양동가",
+				"오빠통","용천통","자담치","지코바","처갓집","치순이","치킨플","친구통","투존치","티바두","페리카",
+				"푸라닭","호식이","후라이","훌랄라"};
+		String [] TopBrand = MapBrand;
 		ArrayList<Brand> FinalBrand = new ArrayList<Brand>();
 		int num = 0;
-		for (int i = 0; i < MyBrand.length; i++) {
-			for (int j = 0; j < TopBrand.length; j++) {
-				if (TopBrand[j].equals(MyBrand[i])) {
-					FinalBrand.add(dao.getinfo(TopBrand[j]));
+		for (int i = 0; i < TopBrand.length; i++) {
+			for (int j = 0; j < MyBrand.length; j++) {
+				if (TopBrand[i].equals(MyBrand[j])) {
+					FinalBrand.add(dao.getinfo(TopBrand[i]));
 					num++;
 					break;
 				}

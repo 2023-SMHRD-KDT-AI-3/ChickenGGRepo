@@ -228,7 +228,6 @@
 				alt="치킨 연구소 로고">
 			</a>
 		</div>
-		<button onclick="destroyChart()">차트 지우기</button>
 		<!-- 로그인 및 검색 부분 -->
 		<div class="login-search">
 			<form action="" method="post">
@@ -651,7 +650,7 @@
 	                 type : 'bar',
 	                 data : {
 	                    labels : [ //브랜드 이름 가져와서 X축에 넣기
-							finallabel+'최소값평균' , '치킨최소값평균' , finallabel+'평균값' , '치킨평균값'
+							finallabel+'최소값' , '치킨최소값평균' , finallabel+'평균값' , '치킨평균값'
 	                    	],
 	                    datasets : [ {
 	                       data : [ //브랜드 이름별 평균 가격 가져와서 Y축에 넣기
@@ -682,9 +681,6 @@
 	                 		}
 	              });
 	      }
-	}
-	function destroyChart(){
-		myChart.destroy();
 	}
    </script>
 
