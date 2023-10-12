@@ -5,7 +5,10 @@
 	<select id="fivebrand" resultType="com.smhrd.model.Brand">
 		select * from t_brand where brand_name like "${value}%"
 	</select>
-
+	
+	<select id="searchmenu" resultType="com.smhrd.model.Menu">
+		select calories, protein, menu_name, menu_price, brand_name from t_info as tf join t_menu as tm ON tf.menu_num = tm.menu_num where brand_name="${value}";
+	</select>
 
 
 </mapper>

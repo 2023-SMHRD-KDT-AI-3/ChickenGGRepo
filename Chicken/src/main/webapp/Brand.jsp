@@ -5,7 +5,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<script src="https://kit.fontawesome.com/3a115195d8.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/3a115195d8.js"
+	crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 <title>치킨연구소 브랜드 페이지</title>
 <link rel="stylesheet" href="assets/css/Brand.css"></link>
@@ -43,11 +44,12 @@
 					<option value="chi_brand">브랜드</option>
 					<option value="chi_menu">메뉴</option>
 					<option value="store_name">가게명</option>
-				</select> 
-				<input type="text" class="sr-input" name="sr_input"
+				</select> <input type="text" class="sr-input" name="sr_input"
 					placeholder="Search" autocomplete="off">
 				<button type="submit" class="sr-input-btn">검색버튼</button>
-  				<button><i class="fa-solid fa-drumstick-bite"></i></button>
+				<button>
+					<i class="fa-solid fa-drumstick-bite"></i>
+				</button>
 			</form>
 		</div>
 		<div class="regi-login">
@@ -67,80 +69,161 @@
 
 	</nav>
 
-	<form action="#" method="post">
-		<div class="brandlogo">
+	<div class="brandlogo">
+		<div>
 			<div>
-				<div>
-					<h1 class="brand">BRAND</h1>
-					<button type="submit" class="compare">비교하기</button>
-					<span id="compare_list"></span>
-					<hr>
-				</div>
-			</div>
-			<div>
-				<div class="firstLine">
-					<input type="checkbox" class="logocheck" name="brandCompare"
-						value="BBQ" onclick="getCheckboxValue()" />
-					<button class="logobox" name="chickenbrand" value="bbq">
-						<img alt="bbq" src="images/brandlogo/logo-bbq.jpg"
-							class="logosize">
-					</button>
-					<input type="checkbox" class="logocheck" name="brandCompare"
-						value="BHC" onclick="getCheckboxValue()" />
-					<button class="logobox" name="chickenbrand" value="bhc">
-						<img alt="bhc" src="images/brandlogo/logo-bhc.png"
-							class="logosize">
-					</button>
-					<input type="checkbox" class="logocheck" name="brandCompare"
-						value="교촌" onclick="getCheckboxValue()" />
-					<button class="logobox" name="chickenbrand" value="gyochon">
-						<img alt="gyochon" src="images/brandlogo/logo-gyochon.png"
-							class="logosize">
-					</button>
-				</div>
-				<div class="secondLine">
-					<input type="checkbox" class="logocheck" name="brandCompare"
-						value="굽네" onclick="getCheckboxValue()">
-					<button class="logobox" name="chickenbrand" value="goobne">
-						<img alt="goobne" src="images/brandlogo/logo-goobne.png"
-							class="logosize">
-					</button>
-					<input type="checkbox" class="logocheck" name="brandCompare"
-						value="호식이" onclick="getCheckboxValue()">
-					<button class="logobox" name="chickenbrand" value="hosigi">
-						<img alt="hosigi" src="images/brandlogo/logo-hosigi.png"
-							class="logosize">
-					</button>
-					<input type="checkbox" class="logocheck" name="brandCompare"
-						value="자담" onclick="getCheckboxValue()">
-					<button class="logobox" name="chickenbrand" value="jadam">
-						<img alt="jadam" src="images/brandlogo/logo-jadam.png"
-							class="logosize">
-					</button>
-				</div>
-				<div class="thirdLine">
-					<input type="checkbox" class="logocheck" name="brandCompare"
-						value="아주커" onclick="getCheckboxValue()">
-					<button class="logobox" name="chickenbrand" value="ajukeo">
-						<img alt="ajukeo" src="images/brandlogo/logo-ajukeo.jpg"
-							class="logosize">
-					</button>
-					<input type="checkbox" class="logocheck" name="brandCompare"
-						value="멕시카나" onclick="getCheckboxValue()">
-					<button class="logobox" name="chickenbrand" value="mexicana">
-						<img alt="mexicana" src="images/brandlogo/logo-mexicana.png"
-							class="logosize">
-					</button>
-					<input type="checkbox" class="logocheck" name="brandCompare"
-						value="치킨플러스" onclick="getCheckboxValue()">
-					<button class="logobox" name="chickenbrand" value="chickenplus">
-						<img alt="chickenplus" src="images/brandlogo/logo-chickenplus.png"
-							class="logosize">
-					</button>
-				</div>
+				<h1 class="brand">BRAND</h1>
+				<button type="submit" class="compare">비교하기</button>
+				<span id="compare_list"></span>
+				<hr>
 			</div>
 		</div>
+		<div>
+			<div class="firstLine">
+				<input type="checkbox" class="logocheck" name="brandCompare"
+					value="BBQ" onclick="getCheckboxValue()" />
+				<button class="logobox" name="chickenbrand" value="BBQ">
+					<img alt="bbq" src="images/brandlogo/logo-bbq.jpg" class="logosize">
+				</button>
+				<input type="checkbox" class="logocheck" name="brandCompare"
+					value="BHC" onclick="getCheckboxValue()" />
+				<button class="logobox" name="chickenbrand" value="BHC">
+					<img alt="bhc" src="images/brandlogo/logo-bhc.png" class="logosize">
+				</button>
+				<input type="checkbox" class="logocheck" name="brandCompare"
+					value="교촌" onclick="getCheckboxValue()" />
+				<button class="logobox" name="chickenbrand" value="교촌">
+					<img alt="gyochon" src="images/brandlogo/logo-gyochon.png"
+						class="logosize">
+				</button>
+			</div>
+			<div class="secondLine">
+				<input type="checkbox" class="logocheck" name="brandCompare"
+					value="굽네" onclick="getCheckboxValue()">
+				<button class="logobox" name="chickenbrand" value="goobne">
+					<img alt="goobne" src="images/brandlogo/logo-goobne.png"
+						class="logosize">
+				</button>
+				<input type="checkbox" class="logocheck" name="brandCompare"
+					value="호식이" onclick="getCheckboxValue()">
+				<button class="logobox" name="chickenbrand" value="hosigi">
+					<img alt="hosigi" src="images/brandlogo/logo-hosigi.png"
+						class="logosize">
+				</button>
+				<input type="checkbox" class="logocheck" name="brandCompare"
+					value="자담" onclick="getCheckboxValue()">
+				<button class="logobox" name="chickenbrand" value="jadam">
+					<img alt="jadam" src="images/brandlogo/logo-jadam.png"
+						class="logosize">
+				</button>
+			</div>
+			<div class="thirdLine">
+				<input type="checkbox" class="logocheck" name="brandCompare"
+					value="아주커" onclick="getCheckboxValue()">
+				<button class="logobox" name="chickenbrand" value="ajukeo">
+					<img alt="ajukeo" src="images/brandlogo/logo-ajukeo.jpg"
+						class="logosize">
+				</button>
+				<input type="checkbox" class="logocheck" name="brandCompare"
+					value="멕시카나" onclick="getCheckboxValue()">
+				<button class="logobox" name="chickenbrand" value="mexicana">
+					<img alt="mexicana" src="images/brandlogo/logo-mexicana.png"
+						class="logosize">
+				</button>
+				<input type="checkbox" class="logocheck" name="brandCompare"
+					value="치킨플러스" onclick="getCheckboxValue()">
+				<button class="logobox" name="chickenbrand" value="chickenplus">
+					<img alt="chickenplus" src="images/brandlogo/logo-chickenplus.png"
+						class="logosize">
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="Brand_Chart"></div>
+	<script src="assets/js/brand.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script>
+		$('.logobox').click(function(){
+			  console.log(this.value);
+			  SearchOneBrand(this.value);
+		});
+		function SearchOneBrand(val){
+	        $.ajax({
+				url : 'OneBrand',
+				type : 'post',
+				data : {'Brand':val},
+				success : function(res){
+					// 차트를 만듭니다.
+					console.log("Ajax성공!");
+					console.log(res);
+				},
+				error : function(request,status,error){
+					alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+				}
+	        })
+		}
+		</script>
+	<script>
+		function makingChart(result){
+			console.log(result[0].brand_name);
+			let brand_listname = [];
+			let brand_listprice = [];
+			let brand_listmin = [];
+			let brand_sunsal = [];
+			for (var i = 0; i < result.length; i++) {
+				brand_listname.push(result[i].brand_name);
+				brand_listprice.push(result[i].avg_price);
+				brand_listmin.push(result[i].min_price);
+				brand_sunsal.push(result[i].boneless);
+			}
+			document.getElementById("myChart1").innerHTML = '<canvas id="myChart" style="height: 490px; width: 850px"></canvas>'
+	        const ctx = document.getElementById('myChart').getContext('2d');
+	        const myChart = new Chart(ctx, {
+	        	plugins: [ChartDataLabels],
+	        	type : 'bar',
+	        	data : {
+	            	labels : brand_listname, //브랜드 이름 가져와서 X축에 넣기
+		            datasets : [ {
+		               data : brand_listprice,
+		               backgroundColor : [ 'rgba(255, 99, 132, 0.2)',
+		                     'rgba(54, 162, 235, 0.2)',
+		                     'rgba(255, 206, 86, 0.2)',
+		                     'rgba(75, 192, 192, 0.2)',
+		                     'rgba(153, 102, 255, 0.2)'],
+		               borderColor : [ 'rgba(255, 99, 132, 1)',
+		                     'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
+		                     'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'],
+		               borderWidth : 1
+		            },
+		            {
+			               data : brand_listmin,
+			               backgroundColor : [ 'rgba(255, 99, 132, 0.2)',
+			                     'rgba(54, 162, 235, 0.2)',
+			                     'rgba(255, 206, 86, 0.2)',
+			                     'rgba(75, 192, 192, 0.2)',
+			                     'rgba(153, 102, 255, 0.2)'],
+			               borderColor : [ 'rgba(255, 99, 132, 1)',
+			                     'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
+			                     'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'],
+			               borderWidth : 1
+			            }]
+		         },
+		         options : {
+		            scales : {
+		                yAxes: [
+		                    {
+		                      ticks: { // 최소값, 최대값, 틱범위
+		                        min: 13000,
+		                        max: 25000,
+		                        stepSize: 3000
+		                      }
+		                    }]
+		            	}
 
-		<script src="assets/js/brand.js"></script>
+		         }
+		      });
+		}
+		</script>
+
 </body>
 </html>

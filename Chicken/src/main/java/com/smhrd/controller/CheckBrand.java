@@ -34,6 +34,9 @@ public class CheckBrand extends HttpServlet {
 		ArrayList<Brand> FinalBrand = new ArrayList<Brand>();
 		int num = 0;
 		for (int i = 0; i < TopBrand.length; i++) {
+			if (TopBrand[i].equals("교촌치")) {
+				TopBrand[i] = "교촌";
+			}
 			for (int j = 0; j < MyBrand.length; j++) {
 				if (TopBrand[i].equals(MyBrand[j])) {
 					FinalBrand.add(dao.getinfo(TopBrand[i]));
