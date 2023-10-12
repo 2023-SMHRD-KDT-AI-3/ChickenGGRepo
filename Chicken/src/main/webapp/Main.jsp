@@ -551,6 +551,9 @@
 	</script>
 
 	<script>
+	function chartdestroy(){
+		myChart.destroy();
+	}
 	function makingChart(result){
 		console.log(result[0].brand_name);
 		let brand_listname = [];
@@ -681,9 +684,6 @@
 	                 		}
 	              });
 	      }
-	}
-	function chartdestroy(){
-		myChart.destroy();
 	}
 
    </script>
