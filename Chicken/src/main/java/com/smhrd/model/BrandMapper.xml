@@ -3,7 +3,7 @@
 <mapper namespace="com.smhrd.model.BrandMapper">
 
 	<select id="fivebrand" resultType="com.smhrd.model.Brand">
-		select * from t_brand where brand_name = "${value}"
+		select * from t_brand where brand_name like "${value}%"
 	</select>
 
 

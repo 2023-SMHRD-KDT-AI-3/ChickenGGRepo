@@ -211,10 +211,11 @@
 		<!-- hr 태그는 수평선용임 -->
 		<hr class="hrhr"></hr>
 		<div class="left-navbar-menu-logo">
-			<a href="goMain"> <i class="fas fa-home"></i> 홈</a> 
-			<a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드</a> 
-			<a href="#"> <i class="fas fa-utensils"></i> 메뉴</a> 
-			<a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지</a>
+			<a href="goMain"> <i class="fas fa-home"></i> 홈
+			</a> <a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드
+			</a> <a href="#"> <i class="fas fa-utensils"></i> 메뉴
+			</a> <a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지
+			</a>
 		</div>
 		<!-- 여기에 추가 메뉴 항목을 추가할 수 있습니다. -->
 	</div>
@@ -227,7 +228,6 @@
 				alt="치킨 연구소 로고">
 			</a>
 		</div>
-
 		<!-- 로그인 및 검색 부분 -->
 		<div class="login-search">
 			<form action="" method="post">
@@ -235,9 +235,9 @@
 					<option value="chi_brand" name="brand_search">브랜드</option>
 					<option value="chi_menu" name="menu_search">메뉴</option>
 
-				</select> 
-				<input type="text" class="sr-input" id="input_text" name="sr_input" placeholder="Search" autocomplete="off" value=" ">
-				<button type="submit" class="sr-input-btn">검색버튼</button>
+				</select> <input type="text" class="sr-input" id="input_text" name="sr_input"
+					placeholder="Search" autocomplete="off" value=" ">
+				<button type="submit" class="sr-input-btn" id="map_btn">검색버튼</button>
 				<!-- 추천창 -->
 				<div id="suggestion_box" class="invisible">
 					<div id=suggested_items></div>
@@ -281,9 +281,7 @@
 
 			<div id="menu_wrap" class="bg_white" style="display: none">
 				<div class="option">
-					<div>
-
-					</div>
+					<div></div>
 				</div>
 				<hr>
 				<ul id="placesList"></ul>
@@ -295,18 +293,22 @@
 			</form>
 		</div>
 		<!-- 여기는 마이차트 부분입니다 -->
-		<div style="float: right" class="chart-wrap">
-			<canvas id="myChart" style="height: 490px; width: 850px"></canvas>
+		<div style="float: right" class="chart-wrap" id="myChart1">
+		<!-- <canvas id="myChart" style="height: 490px; width: 850px"></canvas>  -->
 		</div>
 		<!-- 여기는 마이차트 부분입니다 -->
 		<div id="Chart2" style="height: 490px; width: 850px"></div>
-		<div class="Brand-Logo-Img"><img alt="" src=""></div>
+		<div class="Brand-Logo-Img">
+			<img alt="" src="">
+		</div>
 	</div>
 	<!-- 검색추천, 자동완성  js문 -->
 	<script src="assets/js/Main.js"></script>
-
+	<!-- 차트.js 및 플러그인 -->
 	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+		src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 	<script type="text/javascript"
 		src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7e2b526848581a881e6fb021763237d6&libraries=services"></script>
 
@@ -332,14 +334,12 @@
 		ps.keywordSearch('치킨', placesSearchCB, {location : center}); 
 		
 		function searchPlaces() {
-
 		    var keyword = document.getElementById('keyword').value;
 		    var latlng = map.getCenter();
 		    if (!keyword.replace(/^\s+|\s+$/g, '')) {
 		        alert('키워드를 입력해주세요!');
 		        return false;
 		    }
-
 		    // 장소검색 객체를 통해 키워드로 장소검색을 요청합니다
 		    ps.keywordSearch(keyword, placesSearchCB, {location : latlng}); 
 		}
@@ -362,7 +362,7 @@
 					contentType: "application/x-www-form-urlencoded; charset=UTF-8",
 					success : function(res){
 						// 차트를 만듭니다.
-						console.log("여기왔니?");
+						console.log("Ajax성공!");
 						console.log(res);
 						console.log(res[0].brand_name);
 		        		makingChart(res);
@@ -550,22 +550,27 @@
 	</script>
 
 	<script>
-	function makingChart(){
+	function makingChart(result){
+		console.log(result[0].brand_name);
+		let brand_listname = [];
+		let brand_listprice = [];
+		let brand_listmin = [];
+		let brand_sunsal = [];
+		for (var i = 0; i < result.length; i++) {
+			brand_listname.push(result[i].brand_name);
+			brand_listprice.push(result[i].avg_price);
+			brand_listmin.push(result[i].min_price);
+			brand_sunsal.push(result[i].boneless);
+		}
+		document.getElementById("myChart1").innerHTML = '<canvas id="myChart" style="height: 490px; width: 850px"></canvas>'
         const ctx = document.getElementById('myChart').getContext('2d');
         const myChart = new Chart(ctx, {
+        	plugins: [ChartDataLabels],
         	type : 'bar',
         	data : {
-            	labels : [ //브랜드 이름 가져와서 X축에 넣기
-					<c:forEach var="brand" items="${FinalBrand}" varStatus="status">
-					'${brand.brand_name}',
-					</c:forEach>
-	            	],
+            	labels : brand_listname, //브랜드 이름 가져와서 X축에 넣기
 	            datasets : [ {
-	               data : [ //브랜드 이름별 평균 가격 가져와서 Y축에 넣기
-	   				<c:forEach var="brand" items="${FinalBrand}" varStatus="status">
-					${brand.min_price},
-					</c:forEach>
-	               ],
+	               data : brand_listprice,
 	               backgroundColor : [ 'rgba(255, 99, 132, 0.2)',
 	                     'rgba(54, 162, 235, 0.2)',
 	                     'rgba(255, 206, 86, 0.2)',
@@ -575,7 +580,19 @@
 	                     'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
 	                     'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'],
 	               borderWidth : 1
-	            } ]
+	            },
+	            {
+		               data : brand_listmin,
+		               backgroundColor : [ 'rgba(255, 99, 132, 0.2)',
+		                     'rgba(54, 162, 235, 0.2)',
+		                     'rgba(255, 206, 86, 0.2)',
+		                     'rgba(75, 192, 192, 0.2)',
+		                     'rgba(153, 102, 255, 0.2)'],
+		               borderColor : [ 'rgba(255, 99, 132, 1)',
+		                     'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
+		                     'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'],
+		               borderWidth : 1
+		            }]
 	         },
 	         options : {
 	            scales : {
@@ -588,36 +605,38 @@
 	                      }
 	                    }]
 	            	}
-	         		}
+
+	         }
 	      });
 	      document.getElementById("myChart").onclick = function(evt) {
-	          var activePoints = myChart.getElementsAtEvent(evt);
-	
+	    	  var label = null;
+	          var activePoints = myChart.getElementsAtEventForMode(evt, 'nearest', { intersect: true }, true);
 	          if(activePoints.length > 0)
 	          {
-	              var clickedElementindex = activePoints[0]["_index"];
-	              var label = myChart.data.labels[clickedElementindex];
+	        	  const firstPoint = activePoints[0];
+	              label = myChart.data.labels[firstPoint.index];
+	              const value = myChart.data.datasets[firstPoint.datasetIndex].data[firstPoint.index];
 	              console.log("label : " + label);
 	          }
-		  
-	
 	      // 클릭시 getChart 만들기
 		  makeChart2(label)
 	      }
 	      function makeChart2(label){
-		      console.log(label)
-		      var finallabel;
-		      var finalmin;
-		      var finalavg;
-		      console.log(${brand[0].brand_name})
-		      var arr = new Array();
-			  <c:forEach var="brand" items="${FinalBrand}" varStatus="status">
-			     arr.push({brand_name:"${brand.brand_name}",
-			    	      min_price:"${brand.min_price}",
-			    		  avg_price:"${brand.avg_price}"})
-			  </c:forEach>
-	          for (var i = 0; i < 5; i++) {
-				if(label == arr[i].brand_name){
+		  		console.log(label)
+		      	console.log("차트2")
+		      	console.log(result)
+		        var finallabel;
+		        var finalmin;
+		        var finalavg;
+		        console.log(${brand[0].brand_name})
+		        var arr = new Array();
+				for (var i = 0; i < result.length; i++) {
+						arr.push({brand_name:result[i].brand_name,
+					    min_price:result[i].min_price,
+					    avg_price:result[i].avg_price})
+				  }
+	          	for (var i = 0; i < 5; i++) {
+					if(label == arr[i].brand_name){
 	        		finallabel = arr[i].brand_name
 	        		finalmin = arr[i].min_price
 	        		finalavg = arr[i].avg_price
@@ -625,13 +644,13 @@
 					}
 				}
 	
-	          document.getElementById("Chart2").innerHTML = '<canvas id="getChart" style="height: 200px; width: 450px; margin-left: 250px;"></canvas>'
+	          	document.getElementById("Chart2").innerHTML = '<canvas id="getChart" style="height: 200px; width: 450px; margin-left: 250px;"></canvas>'
 	              const gct = document.getElementById('getChart').getContext('2d');
-	              const myChart = new Chart(gct, {
+	              const myChart2 = new Chart(gct, {
 	                 type : 'bar',
 	                 data : {
 	                    labels : [ //브랜드 이름 가져와서 X축에 넣기
-							finallabel+'최소값평균' , '치킨최소값평균' , finallabel+'평균값' , '치킨평균값'
+							finallabel+'최소값' , '치킨최소값평균' , finallabel+'평균값' , '치킨평균값'
 	                    	],
 	                    datasets : [ {
 	                       data : [ //브랜드 이름별 평균 가격 가져와서 Y축에 넣기

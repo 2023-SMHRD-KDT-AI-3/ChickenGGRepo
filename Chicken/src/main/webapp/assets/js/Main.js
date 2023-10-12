@@ -22,7 +22,7 @@ $(function() {
 		recommendBox.appendChild(suggestedItems);
 
 		// item별 리스트
-		var items = ['강백호', '박해민', '이정후', '원태인', '구자욱', '오승환'];
+		var items = ['비비큐', 'bbq', 'bhc' , '교촌' , '굽네' , '호식이두마리치킨', '자담치킨', '아주커치킨', '멕시카나치킨', '치킨플러스'];
 
 		// for문 돌면서 item 추가
 		for (var i in items) {

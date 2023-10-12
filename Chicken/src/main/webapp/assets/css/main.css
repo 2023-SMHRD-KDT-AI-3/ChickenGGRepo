@@ -19,7 +19,6 @@ body {
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
-	z-index: 30;
 }
 
 .left-navbar-logo {
