@@ -42,7 +42,6 @@
 				<select name="sr">
 					<option value="chi_brand">브랜드</option>
 					<option value="chi_menu">메뉴</option>
-					<option value="store_name">가게명</option>
 				</select> <input type="text" class="sr-input" name="sr_input"
 					placeholder="Search" autocomplete="off">
 				<button type="submit" class="sr-input-btn">검색버튼</button>
@@ -131,17 +130,86 @@
 			</div>
 		</c:if>
 		<c:if test="${!empty info}">
-			<div class="MyPage">
-				<div class="MyPage-Container">
-					<div class="My-Profile">
-						<div class="Profile-Img">
-							<img src="images/images.png">
+			<!-- 로그인 마이페이지 내용 부분 -->
+			<div class="MP-LogIn-Container">
+				<div class="MP-LogIn-Frame">
+					<div class="Profile-Complex">
+						<div class="Complex-Header">
+							<div class="Complex-Header-Text">
+								<h3>My Account</h3>
+							</div>
 						</div>
-						<h1>${info.nick}님의 마이페이지</h1>
-						<div class="MyPage-Content">
-							<p>id</p>
-							<p>pw</p>
-							<p>nick</p>
+						<hr class="MP-HR"></hr>
+						<div class="Complex-Content">
+							<div class="Complex-ID">
+								<div class="ID-Text">
+									<h5>아이디</h5>
+								</div>
+								<div class="Complex-ID-Container">${info.id}</div>
+								<hr class="MP-HR"></hr>
+								<div class="PW-Text">
+									<h5>비밀번호</h5>
+								</div>
+								<div class="Complex-PW-Container">${info.pw}</div>
+								<hr class="MP-HR"></hr>
+								<div class="Fix-Frame">
+									<form action="" method="post">
+										<div class="Fix-Container">
+											<div class=".Fix-PW-Input">
+												<input type="text" required> <label>비밀번호 수정</label>
+												<span></span>
+											</div>
+										</div>
+										<div class="Fix-PW-Btn">
+											<button class="PW-BtnFloat">비밀번호 수정</button>
+										</div>
+									</form>
+								</div>
+								<hr class="MP-HR"></hr>
+								<div class="Nick-Text">
+									<h5>nick</h5>
+								</div>
+								<div class="Complex-Nick-Container">${info.nick}</div>
+								<hr class="MP-HR"></hr>
+								<div class="Fix-Frame">
+									<form action="" method="post">
+										<div class="Fix-Container">
+											<div class="Fix-Nick-Input">
+												<input type="text" required> <label>닉네임수정</label> <span></span>
+											</div>
+										</div>
+										<div class="Fix-Nick-Btn">
+											<button class="Nick-BtnFloat">비밀번호 수정</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="Profile-Summary">
+						<div class="Profile-Image">
+							<img src="images/기본 프로필 이미지.png">
+						</div>
+						<div class="Profile-Summary-Text">
+							<div>${info.nick}</div>
+							<div>가입일 연결해주세요</div>
+						</div>
+						<div>
+							<div>
+								<h4>한줄평 작성</h4>
+							</div>
+							<div>
+								<div>
+									<textarea>
+								한줄평 쓰는곳(기존거를 처음에 띄워둠 애니메이션 hover, focus 사용)
+							</textarea>
+								</div>
+								<div>
+									<form>
+										<button>한줄평 제출</button>
+									</form>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
