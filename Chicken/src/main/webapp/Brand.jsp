@@ -136,66 +136,8 @@
 			</button>
 		</div>
 	</div>
-	<div>
-		<div class="firstLine">
-			<input type="checkbox" class="logocheck" name="brandCompare"
-				value="BBQ" onclick="getCheckboxValue()" />
-			<button class="logobox" name="chickenbrand" value="BBQ">
-				<img alt="bbq" src="images/brandlogo/logo-bbq.jpg" class="logosize">
-			</button>
-			<input type="checkbox" class="logocheck" name="brandCompare"
-				value="BHC" onclick="getCheckboxValue()" />
-			<button class="logobox" name="chickenbrand" value="BHC">
-				<img alt="bhc" src="images/brandlogo/logo-bhc.png" class="logosize">
-			</button>
-			<input type="checkbox" class="logocheck" name="brandCompare"
-				value="교촌" onclick="getCheckboxValue()" />
-			<button class="logobox" name="chickenbrand" value="교촌">
-				<img alt="gyochon" src="images/brandlogo/logo-gyochon.png"
-					class="logosize">
-			</button>
-		</div>
-		<div class="secondLine">
-			<input type="checkbox" class="logocheck" name="brandCompare"
-				value="굽네" onclick="getCheckboxValue()">
-			<button class="logobox" name="chickenbrand" value="goobne">
-				<img alt="goobne" src="images/brandlogo/logo-goobne.png"
-					class="logosize">
-			</button>
-			<input type="checkbox" class="logocheck" name="brandCompare"
-				value="호식이" onclick="getCheckboxValue()">
-			<button class="logobox" name="chickenbrand" value="hosigi">
-				<img alt="hosigi" src="images/brandlogo/logo-hosigi.png"
-					class="logosize">
-			</button>
-			<input type="checkbox" class="logocheck" name="brandCompare"
-				value="자담" onclick="getCheckboxValue()">
-			<button class="logobox" name="chickenbrand" value="jadam">
-				<img alt="jadam" src="images/brandlogo/logo-jadam.png"
-					class="logosize">
-			</button>
-		</div>
-		<div class="thirdLine">
-			<input type="checkbox" class="logocheck" name="brandCompare"
-				value="아주커" onclick="getCheckboxValue()">
-			<button class="logobox" name="chickenbrand" value="ajukeo">
-				<img alt="ajukeo" src="images/brandlogo/logo-ajukeo.jpg"
-					class="logosize">
-			</button>
-			<input type="checkbox" class="logocheck" name="brandCompare"
-				value="멕시카나" onclick="getCheckboxValue()">
-			<button class="logobox" name="chickenbrand" value="mexicana">
-				<img alt="mexicana" src="images/brandlogo/logo-mexicana.png"
-					class="logosize">
-			</button>
-			<input type="checkbox" class="logocheck" name="brandCompare"
-				value="치킨플러스" onclick="getCheckboxValue()">
-			<button class="logobox" name="chickenbrand" value="chickenplus">
-				<img alt="chickenplus" src="images/brandlogo/logo-chickenplus.png"
-					class="logosize">
-			</button>
-		</div>
-	</div>
+	
+	
 	<div id="Brand_Chart"></div>
 	<script src="assets/js/brand.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
