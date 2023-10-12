@@ -148,22 +148,17 @@ nav.navbar {
 	cursor: pointer;
 }
 
-/* 마이페이지 내용 */
+/* 비활성 마이페이지 내용 */
 
 .non-LogIn {
 	display: flex;
 	justify-content: center;
 	margin-left: 250px;
-	margin-top: 100px;
+	margin-top: 50px;
 }
 
 .wrapper {
-	background-color: #ffffff;
-	padding: 20px;
-	border-radius: 8px;
-	box-shadow: 0px 0px 10px 0px #000000;
-	max-width: 400px;
-	width: 100%;
+	width: 500px;
 	height: 500px;
 }
 
@@ -183,9 +178,9 @@ label {
 .form-group input[type="text"],
 .form-group input[type="password"] {
 	width: 95%;
-	padding: 10px;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
 }
@@ -197,6 +192,10 @@ label {
 	display: none;
 }
 
+.logInButton-Container{
+	height: 50px;
+}
+
 #logInButton {
 	background-color: #007bff;
 	color: #fff;
@@ -204,6 +203,7 @@ label {
 	padding: 10px 20px;
 	border-radius: 5px;
 	cursor: pointer;
+	float: right;
 }
 
 #logInButton:disabled {
@@ -226,8 +226,8 @@ label {
 }
 .mySlides {
     border-radius:3%;
-    width: 389px;
-    height: 200px;
+    width: 500px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -246,9 +246,12 @@ label {
     animation-duration: 1.5s;
 }
 
+/* 활성 마이페이지 */
+
 /* 프로필 사진 위치 조정 */
 .MyPage .MyPage-Container .My-Profile {
 	padding: 25px 20px;
+	justify-items: center;
 	text-align: center;
 	max-width: 350px;
 	display: flex;
