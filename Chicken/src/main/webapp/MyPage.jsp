@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" isELIgnored="false"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	isELIgnored="false" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
@@ -19,10 +19,11 @@
 		<!-- hr 태그는 수평선용임 -->
 		<hr class="hrhr"></hr>
 		<div class="left-navbar-menu-logo">
-			<a href="goMain"> <i class="fas fa-home"></i> 홈</a> 
-			<a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드</a> 
-			<a href="#"> <i class="fas fa-utensils"></i> 메뉴</a> 
-			<a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지</a>
+			<a href="goMain"> <i class="fas fa-home"></i> 홈
+			</a> <a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드
+			</a> <a href="#"> <i class="fas fa-utensils"></i> 메뉴
+			</a> <a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지
+			</a>
 		</div>
 		<!-- 여기에 추가 메뉴 항목을 추가할 수 있습니다. -->
 	</div>
@@ -42,8 +43,8 @@
 					<option value="chi_brand">브랜드</option>
 					<option value="chi_menu">메뉴</option>
 					<option value="store_name">가게명</option>
-				</select> 
-				<input type="text" class="sr-input" name="sr_input" placeholder="Search" autocomplete="off">
+				</select> <input type="text" class="sr-input" name="sr_input"
+					placeholder="Search" autocomplete="off">
 				<button type="submit" class="sr-input-btn">검색버튼</button>
 			</form>
 			<c:if test="${empty info}">
@@ -57,8 +58,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>
-								<input type="password" placeholder="비밀번호" name="pw">
+							<td><input type="password" placeholder="비밀번호" name="pw">
 							</td>
 						</tr>
 					</table>
@@ -76,69 +76,78 @@
 		</div>
 	</nav>
 	<wrapper class="MP_Container">
-		<div class="MP_Content">
-			<c:if test="${empty info}">
-				<div class="non-LogIn">
-					<form action="Register" method="post">
-        			<div class="wrapper">
-            			<div class="title">
-            				<h2>로그인</h2>
-            			</div>
-            			<div class="form-group">
-                			<label for="username">아이디:</label>
-                			<input id="username" type="text" name="id" placeholder="아이디를 입력하세요." required>
-                			<div id="usernameError"></div>
-            			</div>
-            			<div class="form-group">
-                			<label for="password">비밀번호:</label>
-                			<input id="password" type="password" name="pw" placeholder="비밀번호를 입력하세요." required>
-            			</div>
-            			<div class="form-group">
-                			<button id="logInButton" disabled>로그인버튼</button>
-            			</div>
-            			<span class="slideshow-container">
-                 <div class="Slidesbackground">
-                    <div class="mySlides fade">
-                    <img src="images/chickPromotion/bbq 광고.png" class="slideshow-image">
-                    </div>
-                    <div class="mySlides fade">
-                        <img src="images/chickPromotion/bhc 광고.png" class="slideshow-image">
-                    </div>
-                    <div class="mySlides fade">
-                        <img src="images/chickPromotion/교촌 광고.png" class="slideshow-image">
-                    </div>
-                    <div class="mySlides fade">
-                        <img src="images/chickPromotion/굽네 광고.png" class="slideshow-image">
-                    </div>
-                    <div class="mySlides fade">
-                        <img src="images/chickPromotion/멕시카나 광고.png" class="slideshow-image">
-                    </div>
-                    <div class="mySlides fade">
-                        <img src="images/chickPromotion/호식이 광고.png" class="slideshow-image">
-                    </div>
-                </div>
-             </span>
-        			</div>
-   					</form>
-   				</div>
-			</c:if>
-			<c:if test="${!empty info}">
-				<div class="MyPage">
-					<div class="MyPage-Container">
-						<div class="My-Profile">
-							<div class="Profile-Img">
-								<img src="images/images.png">
+	<div class="MP_Content">
+		<c:if test="${empty info}">
+			<div class="non-LogIn">
+				<form action="Register" method="post">
+					<div class="wrapper">
+						<div class="title">
+							<h2>로그인</h2>
+						</div>
+						<div class="form-group">
+							<label for="username">아이디:</label> <input id="username"
+								type="text" name="id" placeholder="아이디를 입력하세요." required>
+							<div id="usernameError"></div>
+						</div>
+						<div class="form-group">
+							<label for="password">비밀번호:</label> <input id="password"
+								type="password" name="pw" placeholder="비밀번호를 입력하세요." required>
+						</div>
+						<div class="form-group">
+							<div class="logInButton-Container">
+								<button id="logInButton" disabled>로그인버튼</button>
 							</div>
-							<div class="MyPage-Content">
-								<p>id</p>
-								<p>pw</p>
-								<p>nick</p>
+						</div>
+						<span class="slideshow-container">
+							<div class="Slidesbackground">
+								<div class="mySlides fade">
+									<img src="images/chickPromotion/bbq 광고.png"
+										class="slideshow-image">
+								</div>
+								<div class="mySlides fade">
+									<img src="images/chickPromotion/bhc 광고.png"
+										class="slideshow-image">
+								</div>
+								<div class="mySlides fade">
+									<img src="images/chickPromotion/교촌 광고.png"
+										class="slideshow-image">
+								</div>
+								<div class="mySlides fade">
+									<img src="images/chickPromotion/굽네 광고.png"
+										class="slideshow-image">
+								</div>
+								<div class="mySlides fade">
+									<img src="images/chickPromotion/멕시카나 광고.png"
+										class="slideshow-image">
+								</div>
+								<div class="mySlides fade">
+									<img src="images/chickPromotion/호식이 광고.png"
+										class="slideshow-image">
+								</div>
 							</div>
+						</span>
+					</div>
+				</form>
+			</div>
+		</c:if>
+		<c:if test="${!empty info}">
+			<div class="MyPage">
+				<div class="MyPage-Container">
+					<div class="My-Profile">
+						<div class="Profile-Img">
+							<img src="images/images.png">
+						</div>
+						<h1>${info.nick}님의 마이페이지</h1>
+						<div class="MyPage-Content">
+							<p>id</p>
+							<p>pw</p>
+							<p>nick</p>
 						</div>
 					</div>
 				</div>
-			</c:if>
-		</div>
+			</div>
+		</c:if>
+	</div>
 	</wrapper>
 
 	<script src="assets/js/MyPage.js"></script>
