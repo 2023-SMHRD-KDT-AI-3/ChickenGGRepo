@@ -18,3 +18,6 @@ function getCheckboxValue()  {
   // 출력
   document.querySelector('#compare_list').innerText = result;
 }
+
+
+
