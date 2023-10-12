@@ -206,10 +206,6 @@ label {
 	float: right;
 }
 
-#logInButton:disabled {
-	background-color: #ccc;
-	cursor: not-allowed;
-}
 
 /* 광고 넣기*/
 

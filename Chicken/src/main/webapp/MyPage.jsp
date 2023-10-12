@@ -79,7 +79,7 @@
 	<div class="MP_Content">
 		<c:if test="${empty info}">
 			<div class="non-LogIn">
-				<form action="Register" method="post">
+				<form action="login" method="post">
 					<div class="wrapper">
 						<div class="title">
 							<h2>로그인</h2>
@@ -95,7 +95,7 @@
 						</div>
 						<div class="form-group">
 							<div class="logInButton-Container">
-								<button id="logInButton" disabled>로그인버튼</button>
+								<button id="logInButton">로그인버튼</button>
 							</div>
 						</div>
 						<span class="slideshow-container">

@@ -27,13 +27,17 @@ public class LoginService extends HttpServlet {
 		UserDAO dao = new UserDAO();
 		t_user info = dao.login(user);
 		System.out.println(info);
+		String url = null;
 		if(info != null) {
 			// 로그인 성공!
 			// 세션 영역을 서블릿에서 사용하기 위해서는 객체 선언부터 필요하다!
-			 HttpSession session = request.getSession();
-			 session.setAttribute("info", info);
+			HttpSession session = request.getSession();
+			session.setAttribute("info", info);
+			url = "goMain";
+		}else {
+			url = "MyPage.jsp";
 		}
-		RequestDispatcher rd = request.getRequestDispatcher("goMain");
+		RequestDispatcher rd = request.getRequestDispatcher(url);
 		rd.forward(request, response);
 	}
 
