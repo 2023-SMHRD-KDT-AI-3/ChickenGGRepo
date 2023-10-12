@@ -81,15 +81,14 @@ nav.navbar {
 }
 
 /* 로그인 및 검색 부분 스타일 */
-.login-search {
-	height: 120px;
-}
+.login-search {}
 
 .sr-input {
 	background-color: transparent;
 	border-radius: 50px;
 	width: 500px;
 	height: 50px;
+
 	&:hover,
 	&:focus {
 		padding: 12px 0;
@@ -102,8 +101,9 @@ nav.navbar {
 }
 
 .sr-input-btn {
-	margin-right: 10px;
-	margin-left: 10px;
+	background-color: #FFA500;
+	padding: 10px 20px;
+	border-radius: 5px;
 	cursor: pointer;
 }
 
@@ -112,35 +112,47 @@ nav.navbar {
 }
 
 
-
 .register-button {
-	
-}
-
-
-.login-button {
-	
-}
-
-.Logout-Container {
-	flex-direction: column;
-
-}
-
-.Logout-Btn {
-	background-color: #F27405;
+	background-color: #FFA500;
 	padding: 10px 20px;
 	border-radius: 5px;
 	cursor: pointer;
 }
 
+.register-button:hover {
+	animation: jittery 4s infinite;
+}
+
+.login-button {
+	background-color: #FFA500;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.login-button:hover {
+	animation: jittery 4s infinite;
+}
+
+.Logout-Btn {
+	background-color: #FFA500;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.Logout-Btn:hover {
+	animation: jittery 4s infinite;
+}
+
 .sr {
-	margin-right: 500px;
+	padding-left: 150px;
 }
 
 .regi-login {
-	margin-left: 950px;
-	height: 20px;
+	padding-left: 200px;
+	margin-left: 200px;
+	height: 40px;
 }
 
 /* 추가 스타일 */
@@ -184,10 +196,9 @@ nav.navbar {
 	height: 90px;
 }
 
-h1 {
+.brand {
 	font-size: 65px;
 	color: #FFA500;
-
 	margin-top: 45px;
 	margin-left: 160px;
 	margin-bottom: 5px;
@@ -202,7 +213,7 @@ h1 {
 }
 
 .compare {
-	background-color:#806940;
+	background-color: #806940;
 	margin-left: 1480px;
 	color: white;
 	padding: 15px 25px;
