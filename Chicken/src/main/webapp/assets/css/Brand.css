@@ -37,9 +37,9 @@ body {
 	margin-bottom: 40px;
 }
 
-.left-navbar-menu-logo{
+.left-navbar-menu-logo {
 	padding: 10px;
-    font-size: 20px;
+	font-size: 20px;
 }
 
 .left-navbar a {
@@ -50,7 +50,7 @@ body {
 	padding-bottom: 50px;
 }
 
-.left-navbar a:hover{
+.left-navbar a:hover {
 	background-color: #757575;
 }
 
@@ -82,14 +82,14 @@ nav.navbar {
 
 /* 로그인 및 검색 부분 스타일 */
 .login-search {
-	display: flex;
-	align-items: center;
+	height: 120px;
 }
 
 .sr-input {
 	background-color: transparent;
 	border-radius: 50px;
-
+	width: 500px;
+	height: 50px;
 	&:hover,
 	&:focus {
 		padding: 12px 0;
@@ -111,29 +111,15 @@ nav.navbar {
 	animation: jittery 4s infinite;
 }
 
-.login-input {
-	margin-right: 10px;
-	display: flex;
-	flex-direction: column;
-	/* 아이디와 비밀번호를 위아래로 나열하도록 설정 */
-}
-.register-button {
-	margin-top: 40px;
-}
 
-.login-input input {
-	margin-bottom: 10px;
-	/* 입력 필드 간 간격을 추가하여 위아래로 나열되도록 조정 */
+
+.register-button {
+	
 }
 
 
 .login-button {
-	background-color: #333;
-	color: white;
-	border: none;
-	padding: 5px 10px;
-	cursor: pointer;
-	margin-left: 50px;
+	
 }
 
 .Logout-Container {
@@ -146,6 +132,15 @@ nav.navbar {
 	padding: 10px 20px;
 	border-radius: 5px;
 	cursor: pointer;
+}
+
+.sr {
+	margin-right: 500px;
+}
+
+.regi-login {
+	margin-left: 950px;
+	height: 20px;
 }
 
 /* 추가 스타일 */
@@ -171,6 +166,7 @@ nav.navbar {
 	background-color: white;
 	border-color: #FFA500;
 }
+
 .firstLine {
 	margin-top: 15px;
 }
@@ -206,15 +202,25 @@ h1 {
 }
 
 .compare {
-	margin-left: 1460px;
-	background-color: #FFA500;
-	color: #F5F5F5;
-	border: none;
-	cursor: pointer;
-	font-size: 22px;
-	font-weight: 300;
-	display: inline;
-	border-radius: 50%;
+	background-color:#806940;
+	margin-left: 1480px;
+	color: white;
+	padding: 15px 25px;
+	display: inline-block;
+	border: 1px solid rgba(0, 0, 0, 0.21);
+	border-bottom-color: rgba(0, 0, 0, 0.34);
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.34) inset,
+		0 2px 0 -1px rgba(0, 0, 0, 0.13),
+		0 3px 0 -1px rgba(0, 0, 0, 0.08),
+		0 3px 13px -1px rgba(0, 0, 0, 0.21);
+}
+
+.compare:active {
+	top: 1px;
+	border-color: rgba(0, 0, 0, 0.34) rgba(0, 0, 0, 0.21) rgba(0, 0, 0, 0.21);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.89), 0 1px rgba(0, 0, 0, 0.05) inset;
+	position: relative;
 }
 
 #compare_list {
@@ -224,6 +230,7 @@ h1 {
 span {
 	color: #FFA500;
 }
+
 
 
 @keyframes jittery {
@@ -261,4 +268,3 @@ span {
 		transform: scale(1.15) rotate(0);
 	}
 }
-

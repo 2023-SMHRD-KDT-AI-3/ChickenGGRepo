@@ -19,10 +19,11 @@
 		<!-- hr 태그는 수평선용임 -->
 		<hr class="hrhr"></hr>
 		<div class="left-navbar-menu-logo">
-			<a href="goMain"> <i class="fas fa-home"></i> 홈</a> 
-			<a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드</a> 
-			<a href="#"> <i class="fas fa-utensils"></i> 메뉴</a> 
-			<a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지</a>
+			<a href="goMain"> <i class="fas fa-home"></i> 홈
+			</a> <a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드
+			</a> <a href="#"> <i class="fas fa-utensils"></i> 메뉴
+			</a> <a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지
+			</a>
 		</div>
 		<!-- 여기에 추가 메뉴 항목을 추가할 수 있습니다. -->
 	</div>
@@ -36,23 +37,22 @@
 		</div>
 
 		<div class="login-search">
-			<form action="" method="post">
+			<div class="regi-login">
+				<c:if test="${empty info}">
+					<a href="MyPage.jsp"><button class="login-button">로그인</button></a>
+				</c:if>
+				<a href="Register.jsp"><button class="register-button">회원가입</button></a>
+			</div>
+			<form action="" method="post" class="sr">
 				<select name="sr">
 					<option value="chi_brand">브랜드</option>
 					<option value="chi_menu">메뉴</option>
 					<option value="store_name">가게명</option>
-				</select> <input type="text" class="sr-input" name="sr_input"
+				</select> 
+				<input type="text" class="sr-input" name="sr_input"
 					placeholder="Search" autocomplete="off">
 				<button type="submit" class="sr-input-btn">검색버튼</button>
 			</form>
-			<c:if test="${empty info}">
-				<form action="login" method="post" class="login-input">
-					<input type="text" placeholder="아이디" name="id"> 
-					<button class="login-button">로그인</button>
-					<input type="password" placeholder="비밀번호" name="pw">
-				</form>
-				<a href="Register.jsp"><button class="register-button">회원가입</button></a>
-			</c:if>
 			<div class="Logout-Container">
 				<c:if test="${!empty info}">
 					<h1>${info.nick}님환영합니다!</h1>
