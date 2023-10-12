@@ -1,4 +1,4 @@
-@charset "EUC-KR";
+@charset "UTF-8";
 
 body {
 	background-color: #F5F5F5;
@@ -37,9 +37,9 @@ body {
 	margin-bottom: 40px;
 }
 
-.left-navbar-menu-logo{
+.left-navbar-menu-logo {
 	padding: 10px;
-    font-size: 20px;
+	font-size: 20px;
 }
 
 .left-navbar a {
@@ -50,7 +50,7 @@ body {
 	padding-bottom: 50px;
 }
 
-.left-navbar a:hover{
+.left-navbar a:hover {
 	background-color: #757575;
 }
 
@@ -162,7 +162,7 @@ nav.navbar {
 	height: 500px;
 }
 
-.title{
+.title {
 	text-align: center;
 }
 
@@ -192,7 +192,7 @@ label {
 	display: none;
 }
 
-.logInButton-Container{
+.logInButton-Container {
 	height: 50px;
 }
 
@@ -206,68 +206,292 @@ label {
 	float: right;
 }
 
-#logInButton:disabled {
-	background-color: #ccc;
-	cursor: not-allowed;
-}
 
 /* 광고 넣기*/
 
 .Slidesbackground {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 
 }
-.slideshow-image{
-    border-radius:3%;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+
+.slideshow-image {
+	border-radius: 3%;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
 }
+
 .mySlides {
-    border-radius:3%;
-    width: 500px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+	border-radius: 3%;
+	width: 500px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
 }
 
 .slideshow-container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin: auto;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin: auto;
 }
 
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
 }
 
 /* 활성 마이페이지 */
 
-/* 프로필 사진 위치 조정 */
-.MyPage .MyPage-Container .My-Profile {
-	padding: 25px 20px;
-	justify-items: center;
-	text-align: center;
-	max-width: 350px;
+.MP-LogIn-Container {
+	width: 90%;
+	height: 800px;
+	padding-left: 250px;
+	padding-top: 50px;
+
+}
+
+.MP-LogIn-Frame {
+	width: 92%;
+	height: 800px;
 	display: flex;
 }
 
-/* 프로필 사진 위치 조정 */
-.MP_Container .MyPage .MyPage-Container .My-Profile .Profile-Img img {
-	position: absolute;
-	top: -50px;
-	left: 50%;
-	transform: translateX(-50%);
+.Profile-Complex {
+	width: 60%;
+	height: 100%;
+	flex-direction: column;
 }
 
-.Profile-Img {
-	width: 100px;
-	height: 100px;
+.Profile-Complex,
+.Profile-Summary {
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 0px #9E9E9E;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.Complex-Header {
+	width: 100%;
+	height: 10%;
+	align-items: center;
+	display: flex;
+}
+
+.Complex-Header-Text {
+	width: 70%;
+	padding-left: 30px;
+}
+
+.Complex-ID div {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-left: 20px;
+}
+
+.Complex-ID-Container,
+.Complex-PW-Container,
+.Complex-Nick-Container {
+	width: 60%;
+	border-radius: 20px;
+	box-shadow: 0px 0px 5px 0px gray;
+	padding: 10px;
+	margin-left: 20px;
+}
+
+.Fix-Frame {
+	display: flex;
+}
+
+.Fix-Frame button {
+	width: 40%;
+}
+
+.Fix-Container {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.Fix-Container div {
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.Fix-Container input {
+	font-size: 15px;
+	color: #222222;
+	width: 300px;
+	border: none;
+	border-bottom: solid #aaaaaa 1px;
+	padding-bottom: 10px;
+	position: relative;
+	background: none;
+	z-index: 5;
+}
+
+.Fix-Container input::placeholder {
+	color: #aaaaaa;
+}
+
+.Fix-Container input:focus {
+	outline: none;
+}
+
+.Fix-Container span {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0%;
+	/* right로만 바꿔주면 오 - 왼 */
+	background-color: #666;
+	width: 0;
+	height: 2px;
+	border-radius: 2px;
+	transition: 0.5s;
+}
+
+.Fix-Container label {
+	position: absolute;
+	color: #aaa;
+	left: 20px;
+	font-size: 20px;
+	bottom: 8px;
+	transition: all .2s;
+}
+
+.Fix-Container input:focus~label,
+.Fix-Container input:valid~label {
+	font-size: 16px;
+	bottom: 40px;
+	color: #666;
+	font-weight: bold;
+}
+
+.Fix-Container input:focus~span,
+.Fix-Container input:valid~span {
+	width: 80%;
+}
+
+/* 비밀번호 수정 버튼 */
+.Fix-PW-Btn button {
+	display: block;
+	position: relative;
+	float: left;
+	width: 140px;
+	padding: 0;
+	margin: 10px 20px 10px 0;
+	font-weight: 600;
+	text-align: center;
+	line-height: 30px;
+	color: #FFF;
+	border-radius: 5px;
+	transition: all 0.2s;
+}
+
+.PW-BtnFloat {
+	background: none;
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.PW-BtnFloat:before {
+	content: '바꾸기';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 140px;
+	height: 30px;
+	border-radius: 5px;
+	transition: all 0.2s;
+}
+
+.PW-BtnFloat:before {
+	background-color: #FFAA40;
+}
+
+.PW-BtnFloat:before {
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+.PW-BtnFloat:hover:before {
+	margin-top: -2px;
+	margin-left: 0px;
+	transform: scale(1.1, 1.1);
+	-ms-transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
+}
+
+/* 닉네임 수정 버튼 */
+.Fix-Nick-Btn button {
+	display: block;
+	position: relative;
+	float: left;
+	width: 140px;
+	padding: 0;
+	margin: 10px 20px 10px 0;
+	font-weight: 600;
+	text-align: center;
+	line-height: 30px;
+	color: #FFF;
+	border-radius: 5px;
+	transition: all 0.2s;
+}
+
+.Nick-BtnFloat {
+	background: none;
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.Nick-BtnFloat:before {
+	content: '바꾸기';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 140px;
+	height: 30px;
+	border-radius: 5px;
+	transition: all 0.2s;
+}
+
+.Nick-BtnFloat:before {
+	background-color: #FFAA40;
+}
+
+.Nick-BtnFloat:before {
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+.Nick-BtnFloat:hover:before {
+	margin-top: -2px;
+	margin-left: 0px;
+	transform: scale(1.1, 1.1);
+	-ms-transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
+}
+
+.Profile-Summary {
+	width: 30%;
+	height: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.Profile-Image {}
+
+.Profile-Summary-Text {
+	width: 100%;
+	display: flex;
 }
 
 
@@ -308,10 +532,11 @@ label {
 }
 
 @keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
 }
