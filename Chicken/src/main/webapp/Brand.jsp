@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<script src="https://kit.fontawesome.com/3a115195d8.js" crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 <title>치킨연구소 브랜드 페이지</title>
 <link rel="stylesheet" href="assets/css/Brand.css"></link>
@@ -37,12 +38,6 @@
 		</div>
 
 		<div class="login-search">
-			<div class="regi-login">
-				<c:if test="${empty info}">
-					<a href="MyPage.jsp"><button class="login-button">로그인</button></a>
-				</c:if>
-				<a href="Register.jsp"><button class="register-button">회원가입</button></a>
-			</div>
 			<form action="" method="post" class="sr">
 				<select name="sr">
 					<option value="chi_brand">브랜드</option>
@@ -52,23 +47,31 @@
 				<input type="text" class="sr-input" name="sr_input"
 					placeholder="Search" autocomplete="off">
 				<button type="submit" class="sr-input-btn">검색버튼</button>
+  				<button><i class="fa-solid fa-drumstick-bite"></i></button>
 			</form>
-			<div class="Logout-Container">
-				<c:if test="${!empty info}">
-					<h1>${info.nick}님환영합니다!</h1>
-					<form action="Logout" method="post">
-						<button class="Logout-Btn">로그아웃</button>
-					</form>
-				</c:if>
-			</div>
 		</div>
+		<div class="regi-login">
+			<c:if test="${empty info}">
+				<a href="MyPage.jsp"><button class="login-button">로그인</button></a>
+				<a href="Register.jsp"><button class="register-button">회원가입</button></a>
+			</c:if>
+		</div>
+		<div class="Logout-Container">
+			<c:if test="${!empty info}">
+				<h1>${info.nick}님환영합니다!</h1>
+				<form action="Logout" method="post">
+					<button class="Logout-Btn">로그아웃</button>
+				</form>
+			</c:if>
+		</div>
+
 	</nav>
 
 	<form action="#" method="post">
 		<div class="brandlogo">
 			<div>
 				<div>
-					<h1>BRAND</h1>
+					<h1 class="brand">BRAND</h1>
 					<button type="submit" class="compare">비교하기</button>
 					<span id="compare_list"></span>
 					<hr>
