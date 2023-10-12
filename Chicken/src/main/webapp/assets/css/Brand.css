@@ -83,9 +83,19 @@ nav.navbar {
 /* 로그인 및 검색 부분 스타일 */
 .login-search {}
 
+.select {
+	height: 56px;
+	margin: 0px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	position:fixed;
+	
+}
 .sr-input {
+	margin-left: 63px;
 	background-color: transparent;
-	border-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
 	width: 500px;
 	height: 50px;
 
@@ -101,11 +111,13 @@ nav.navbar {
 }
 
 .sr-input-btn {
+	width: 56px;
+	height: 56px;
 	background-color: #FFA500;
-	padding: 10px 20px;
-	border-radius: 5px;
 	cursor: pointer;
+	border-radius: 50%;
 }
+
 
 .sr-input-btn:hover {
 	animation: jittery 4s infinite;
@@ -113,9 +125,10 @@ nav.navbar {
 
 
 .register-button {
-	background-color: #FFA500;
+	background-color: #FFD280;
 	padding: 10px 20px;
 	border-radius: 5px;
+	border: none;
 	cursor: pointer;
 }
 
@@ -124,9 +137,10 @@ nav.navbar {
 }
 
 .login-button {
-	background-color: #FFA500;
+	background-color: #FFD280;
 	padding: 10px 20px;
 	border-radius: 5px;
+	border: none;
 	cursor: pointer;
 }
 
@@ -135,9 +149,10 @@ nav.navbar {
 }
 
 .Logout-Btn {
-	background-color: #FFA500;
+	background-color: #FFD280;
 	padding: 10px 20px;
 	border-radius: 5px;
+	border: none;
 	cursor: pointer;
 }
 
@@ -179,6 +194,10 @@ nav.navbar {
 	border-color: #FFA500;
 }
 
+.line {
+	margin-left: 100px;
+}
+
 .firstLine {
 	margin-top: 15px;
 }
@@ -200,22 +219,24 @@ nav.navbar {
 	font-size: 65px;
 	color: #FFA500;
 	margin-top: 45px;
-	margin-left: 160px;
+	margin-left: 100px;
 	margin-bottom: 5px;
 }
 
 .logocheck {
 	margin-left: 110px;
+	margin-top: 40px;
 	position: relative;
-	bottom: 70px;
-	zoom: 1.5;
+	bottom: 50px;
+	zoom: 2;
 	color: #FFA500;
 }
 
 .compare {
-	background-color: #806940;
-	margin-left: 1480px;
-	color: white;
+	background-color: #FFD280;
+	margin-left: 1520px;
+	color: #5C4C2E;
+	border-radius: 5%;
 	padding: 15px 25px;
 	display: inline-block;
 	border: 1px solid rgba(0, 0, 0, 0.21);

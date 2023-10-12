@@ -39,15 +39,15 @@
 
 		<div class="login-search">
 			<form action="" method="post" class="sr">
-				<select name="sr">
+				<select name="sr" class="select">
+					<option selected>선택</option>
 					<option value="chi_brand">브랜드</option>
 					<option value="chi_menu">메뉴</option>
 					<option value="store_name">가게명</option>
 				</select> 
 				<input type="text" class="sr-input" name="sr_input"
 					placeholder="Search" autocomplete="off">
-				<button type="submit" class="sr-input-btn">검색버튼</button>
-  				<button><i class="fa-solid fa-drumstick-bite"></i></button>
+  				<button type="submit" class="sr-input-btn"><i class="fa-solid fa-drumstick-bite fa-2xl"></i></button>
 			</form>
 		</div>
 		<div class="regi-login">
@@ -68,16 +68,16 @@
 	</nav>
 
 	<form action="#" method="post">
-		<div class="brandlogo">
+		<div >
 			<div>
-				<div>
+				<div class="brandlogo">
 					<h1 class="brand">BRAND</h1>
 					<button type="submit" class="compare">비교하기</button>
 					<span id="compare_list"></span>
 					<hr>
 				</div>
 			</div>
-			<div>
+			<div class="line">
 				<div class="firstLine">
 					<input type="checkbox" class="logocheck" name="brandCompare"
 						value="BBQ" onclick="getCheckboxValue()" />
