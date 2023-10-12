@@ -228,7 +228,7 @@
 				alt="치킨 연구소 로고">
 			</a>
 		</div>
-
+		<button onclick="destroyChart()">차트 지우기</button>
 		<!-- 로그인 및 검색 부분 -->
 		<div class="login-search">
 			<form action="" method="post">
@@ -238,7 +238,7 @@
 
 				</select> <input type="text" class="sr-input" id="input_text" name="sr_input"
 					placeholder="Search" autocomplete="off" value=" ">
-				<button type="submit" class="sr-input-btn" id="map_btn" onclick="chartdestroy()">검색버튼</button>
+				<button type="submit" class="sr-input-btn" id="map_btn">검색버튼</button>
 				<!-- 추천창 -->
 				<div id="suggestion_box" class="invisible">
 					<div id=suggested_items></div>
@@ -294,8 +294,8 @@
 			</form>
 		</div>
 		<!-- 여기는 마이차트 부분입니다 -->
-		<div style="float: right" class="chart-wrap">
-			<canvas id="myChart" style="height: 490px; width: 850px"></canvas>
+		<div style="float: right" class="chart-wrap" id="myChart1">
+		<!-- <canvas id="myChart" style="height: 490px; width: 850px"></canvas>  -->
 		</div>
 		<!-- 여기는 마이차트 부분입니다 -->
 		<div id="Chart2" style="height: 490px; width: 850px"></div>
@@ -551,9 +551,6 @@
 	</script>
 
 	<script>
-	function chartdestroy(){
-		myChart.destroy();
-	}
 	function makingChart(result){
 		console.log(result[0].brand_name);
 		let brand_listname = [];
@@ -566,6 +563,7 @@
 			brand_listmin.push(result[i].min_price);
 			brand_sunsal.push(result[i].boneless);
 		}
+		document.getElementById("myChart1").innerHTML = '<canvas id="myChart" style="height: 490px; width: 850px"></canvas>'
         const ctx = document.getElementById('myChart').getContext('2d');
         const myChart = new Chart(ctx, {
         	plugins: [ChartDataLabels],
@@ -649,7 +647,7 @@
 	
 	          	document.getElementById("Chart2").innerHTML = '<canvas id="getChart" style="height: 200px; width: 450px; margin-left: 250px;"></canvas>'
 	              const gct = document.getElementById('getChart').getContext('2d');
-	              const myChart = new Chart(gct, {
+	              const myChart2 = new Chart(gct, {
 	                 type : 'bar',
 	                 data : {
 	                    labels : [ //브랜드 이름 가져와서 X축에 넣기
@@ -685,7 +683,9 @@
 	              });
 	      }
 	}
-
+	function destroyChart(){
+		myChart.destroy();
+	}
    </script>
 
 </body>
