@@ -9,9 +9,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="https://kit.fontawesome.com/3a115195d8.js"
+	crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 <title>치킨 연구소</title>
-<link rel="stylesheet" href="assets/css/main.css"></link>
+<link rel="stylesheet" href="assets/css/main.css?ver=1"></link>
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <style>
 .map_wrap, .map_wrap * {
@@ -224,52 +226,38 @@
 	<nav class="navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="navbar-logo">
-			<a href="goMain" id="navbar_logoimg"> <img src="images/하얀닭.png"
-				alt="치킨 연구소 로고">
-			</a>
+			<a href="goMain" id="navbar_logoimg"><img src="images/하얀닭.png"
+				alt="치킨 연구소 로고"></a>
 		</div>
-		<!-- 로그인 및 검색 부분 -->
-		<div class="login-search">
-			<form action="" method="post">
-				<select name="sr">
-					<option value="chi_brand" name="brand_search">브랜드</option>
-					<option value="chi_menu" name="menu_search">메뉴</option>
-				</select> <input type="text" class="sr-input" id="input_text" name="sr_input"
-					placeholder="Search" autocomplete="off" value=" ">
-				<button type="submit" class="sr-input-btn" id="map_btn">검색버튼</button>
-				<!-- 추천창 -->
-				<div id="suggestion_box" class="invisible">
-					<div id=suggested_items></div>
-				</div>
-			</form>
 
+		<div class="login-search">
+			<form action="" method="post" class="sr">
+				<select name="sr" class="select">
+					<option selected>선택</option>
+					<option value="chi_brand">브랜드</option>
+					<option value="chi_menu">메뉴</option>
+				</select> <input type="text" class="sr-input" name="sr_input"
+					placeholder="Search" autocomplete="off">
+				<button type="submit" class="sr-input-btn">
+					<i class="fa-solid fa-drumstick-bite fa-2xl"></i>
+				</button>
+			</form>
+		</div>
+		<div class="regi-login">
 			<c:if test="${empty info}">
-				<form action="login" method="post" class="login-input">
-					<table>
-						<tr>
-							<td><input type="text" placeholder="아이디" name="id">
-							</td>
-							<td rowspan="2">
-								<button class="login-button">로그인</button>
-							</td>
-						</tr>
-						<tr>
-							<td><input type="password" placeholder="비밀번호" name="pw">
-							</td>
-						</tr>
-					</table>
-				</form>
+				<a href="MyPage.jsp"><button class="login-button">로그인</button></a>
 				<a href="Register.jsp"><button class="register-button">회원가입</button></a>
 			</c:if>
-			<div class="Logout-Container">
-				<c:if test="${!empty info}">
-					<h1>${info.nick}님환영합니다!</h1>
-					<form action="Logout" method="post">
-						<button class="Logout-Btn">로그아웃</button>
-					</form>
-				</c:if>
-			</div>
 		</div>
+		<div class="Logout-Container">
+			<c:if test="${!empty info}">
+				<h1>${info.nick}님환영합니다!</h1>
+				<form action="Logout" method="post">
+					<button class="Logout-Btn">로그아웃</button>
+				</form>
+			</c:if>
+		</div>
+
 	</nav>
 
 	<!-- 페이지 콘텐츠 -->

@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "EUC-KR";
 
 body {
 	background-color: #F5F5F5;
@@ -81,14 +81,22 @@ nav.navbar {
 }
 
 /* 로그인 및 검색 부분 스타일 */
-.login-search {
-	display: flex;
-	align-items: center;
-}
+.login-search {}
 
+.select {
+	height: 56px;
+	margin: 0px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	float: left;
+	
+}
 .sr-input {
-	background-color: transparent;
-	border-radius: 50px;
+	background-color: white;
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	width: 500px;
+	height: 50px;
 
 	&:hover,
 	&:focus {
@@ -102,50 +110,64 @@ nav.navbar {
 }
 
 .sr-input-btn {
-	margin-right: 10px;
-	margin-left: 10px;
+	width: 56px;
+	height: 56px;
+	background-color: #FFA500;
 	cursor: pointer;
+	border-radius: 50%;
 }
+
 
 .sr-input-btn:hover {
 	animation: jittery 4s infinite;
 }
 
-.testtest {
-	display: block;
-}
 
-.login-input {
-	margin-right: 10px;
-	display: flex;
-	flex-direction: column;
-	/* 아이디와 비밀번호를 위아래로 나열하도록 설정 */
-}
-
-.login-input input {
-	margin-bottom: 10px;
-	/* 입력 필드 간 간격을 추가하여 위아래로 나열되도록 조정 */
-}
-
-
-.login-button {
-	background-color: #333;
-	color: white;
+.register-button {
+	background-color: #FFD280;
+	padding: 10px 20px;
+	border-radius: 5px;
 	border: none;
-	padding: 5px 10px;
 	cursor: pointer;
 }
 
-.Logout-Container {
-	flex-direction: column;
+.register-button:hover {
+	animation: jittery 4s infinite;
+}
 
+.login-button {
+	background-color: #FFD280 !important;
+	padding: 10px 20px !important;
+	border-radius: 5px;
+	color: black !important;
+	border: none;
+	cursor: pointer;
+}
+
+.login-button:hover {
+	animation: jittery 4s infinite;
 }
 
 .Logout-Btn {
-	background-color: #F27405;
+	background-color: #FFD280 !important;
 	padding: 10px 20px;
 	border-radius: 5px;
+	border: none;
 	cursor: pointer;
+}
+
+.Logout-Btn:hover {
+	animation: jittery 4s infinite;
+}
+
+.sr {
+	padding-left: 150px;
+}
+
+.regi-login {
+	padding-left: 200px;
+	margin-left: 200px;
+	height: 40px;
 }
 
 /* 비활성 마이페이지 내용 */
