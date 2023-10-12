@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<script src="https://kit.fontawesome.com/3a115195d8.js" crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 <title>치킨연구소 브랜드 페이지</title>
 <link rel="stylesheet" href="assets/css/Brand.css"></link>
@@ -46,7 +47,7 @@
 				<input type="text" class="sr-input" name="sr_input"
 					placeholder="Search" autocomplete="off">
 				<button type="submit" class="sr-input-btn">검색버튼</button>
-  </button>
+  				<button><i class="fa-solid fa-drumstick-bite"></i></button>
 			</form>
 		</div>
 		<div class="regi-login">
