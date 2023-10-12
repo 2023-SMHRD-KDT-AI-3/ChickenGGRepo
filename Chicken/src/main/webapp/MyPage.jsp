@@ -192,7 +192,10 @@
 						</div>
 						<div class="Profile-Summary-Text">
 							<div>${info.nick}</div>
-							<div>가입일 연결해주세요</div>
+							<div>
+								<h4>가입일</h3>
+							</div>
+							<div>${info.created_at}</div>
 						</div>
 						<div>
 							<div>
