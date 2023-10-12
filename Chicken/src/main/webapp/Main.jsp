@@ -234,7 +234,6 @@
 				<select name="sr">
 					<option value="chi_brand" name="brand_search">브랜드</option>
 					<option value="chi_menu" name="menu_search">메뉴</option>
-
 				</select> <input type="text" class="sr-input" id="input_text" name="sr_input"
 					placeholder="Search" autocomplete="off" value=" ">
 				<button type="submit" class="sr-input-btn" id="map_btn">검색버튼</button>
