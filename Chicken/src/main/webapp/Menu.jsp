@@ -80,7 +80,7 @@
 	<!-- 치킨 사진 슬라이드 -->
 	<div class="main-slider">
 		<div class="item item-1">
-			<img src="images/brandlogo/logo-bbq.jpg" class="Menu-Slide-Logo">
+			<img src="images/Menu_brandlogo/logo-bbq.jpg" class="Menu-Slide-Logo">
 			<div class="inner-slider">
 				<div class="goods bbq-1">
 					<img src="images/chickMenu/BBQ/레드착착.png">
@@ -91,7 +91,7 @@
 			</div>
 		</div>
 		<div class="item item-2">
-			<img src="images/brandlogo/logo-bhc.png" class="Menu-Slide-Logo">
+			<img src="images/Menu_brandlogo/logo-bhc.png" class="Menu-Slide-Logo">
 			<div class="inner-slider">
 				<div class="goods bhc-1"></div>
 				<div class="goods bhc-2"></div>
@@ -100,7 +100,7 @@
 			</div>
 		</div>
 		<div class="item item-3">
-			<img src="images/brandlogo/logo-kyochon.jpg" class="Menu-Slide-Logo">
+			<img src="images/Menu_brandlogo/logo-kyochon.jpg" class="Menu-Slide-Logo">
 			<div class="inner-slider">
 				<div class="goods kyochon-1">
 					<img src="images/chickMenu/교촌/교촌순살.png">
@@ -123,7 +123,7 @@
 			</div>
 		</div>
 		<div class="item item-4">
-			<img src="images/brandlogo/logo-goobne.png" class="Menu-Slide-Logo">
+			<img src="images/Menu_brandlogo/logo-goobne.png" class="Menu-Slide-Logo">
 			<div class="inner-slider">
 				<div class="goods goods-1"></div>
 				<div class="goods goods-2"></div>
@@ -132,7 +132,7 @@
 			</div>
 		</div>
 		<div class="item item-5">
-			<img src="images/brandlogo/logo-hosigi.png" class="Menu-Slide-Logo">
+			<img src="images/Menu_brandlogo/logo-hosigi.png" class="Menu-Slide-Logo">
 			<div class="inner-slider">
 				<div class="goods goods-1"></div>
 				<div class="goods goods-2"></div>
@@ -141,7 +141,7 @@
 			</div>
 		</div>
 		<div class="item item-6">
-			<img src="images/brandlogo/logo-jadam.png" class="Menu-Slide-Logo">
+			<img src="images/Menu_brandlogo/logo-jadam.png" class="Menu-Slide-Logo">
 			<div class="inner-slider">
 				<div class="goods goods-1"></div>
 				<div class="goods goods-2"></div>
@@ -150,7 +150,7 @@
 			</div>
 		</div>
 		<div class="item item-7">
-			<img src="images/brandlogo/logo-ajukeo.jpg" class="Menu-Slide-Logo">
+			<img src="images/Menu_brandlogo/logo-ajukeo.jpg" class="Menu-Slide-Logo">
 			<div class="inner-slider">
 				<div class="goods goods-1"></div>
 				<div class="goods goods-2"></div>
@@ -159,7 +159,7 @@
 			</div>
 		</div>
 		<div class="item item-8">
-			<img src="images/brandlogo/logo-mexicana.png" class="Menu-Slide-Logo">
+			<img src="images/Menu_brandlogo/logo-mexicana.png" class="Menu-Slide-Logo">
 			<div class="inner-slider">
 				<div class="goods goods-1"></div>
 				<div class="goods goods-2"></div>
@@ -168,7 +168,7 @@
 			</div>
 		</div>
 		<div class="item item-9">
-			<img src="images/brandlogo/logo-chickenplus.png" class="Menu-Slide-Logo">
+			<img src="images/Menu_brandlogo/logo-chickenplus.png" class="Menu-Slide-Logo">
 			<div class="inner-slider">
 				<div class="goods goods-1"></div>
 				<div class="goods goods-2"></div>
