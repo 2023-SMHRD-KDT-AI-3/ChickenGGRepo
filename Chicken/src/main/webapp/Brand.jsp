@@ -113,7 +113,11 @@
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="교촌" onclick="getCheckboxValue()" />
 				<button class="logobox" name="chickenbrand" value="교촌">
+<<<<<<< HEAD
+					<img alt="gyochon" src="images/brandlogo/logo-kyochon.jpg"
+=======
 					<img alt="gyochon" src="images/brandlogo/logo-gyochon2-removebg-preview.png"
+>>>>>>> branch 'master' of https://github.com/2023-SMHRD-KDT-AI-3/ChickenGGRepo.git
 						class="logosize">
 				</button>
 			</div>
