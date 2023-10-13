@@ -160,7 +160,7 @@
 								</div>
 								<hr class="MP-HR"></hr>
 								<div class="Nick-Text">
-									<h5>nick</h5>
+									<h5>NICKNAME</h5>
 								</div>
 								<div class="Complex-Nick-Container">${info.nick}</div>
 								<hr class="MP-HR"></hr>
@@ -184,11 +184,11 @@
 							<img src="images/기본 프로필 이미지.png">
 						</div>
 						<div class="Profile-Summary-Text">
-							<div>${info.nick}</div>
+							<div><span>${info.nick}</span></div>
 							<div>
 								<h4>가입일</h3>
 							</div>
-							<div>${info.created_at}</div>
+							<div><span>${info.created_at}</span></div>
 						</div>
 						<div>
 							<div>
@@ -196,7 +196,7 @@
 							</div>
 							<div>
 								<div>
-									<textarea>
+									<textarea class="textarea">
 								한줄평 쓰는곳(기존거를 처음에 띄워둠 애니메이션 hover, focus 사용)
 							</textarea>
 								</div>
