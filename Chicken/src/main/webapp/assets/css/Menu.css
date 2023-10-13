@@ -252,6 +252,92 @@ body > div.main-slider.slick-initialized.slick-slider.slick-dotted > div{
 	align-items: center;
 }
 
+#slick-slide01 > div{
+	margin-bottom: 498px !important;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	width: 80%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#slick-slide02 > div{
+	margin-bottom: 498px !important;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	width: 80%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#slick-slide03 > div{
+	margin-bottom: 498px !important;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	width: 80%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#slick-slide04 > div{
+	margin-bottom: 498px !important;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	width: 80%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#slick-slide05 > div{
+	margin-bottom: 498px !important;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	width: 80%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#slick-slide06 > div{
+	margin-bottom: 498px !important;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	width: 80%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+#slick-slide07 > div{
+	margin-bottom: 498px !important;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	width: 80%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+#slick-slide08 > div{
+	margin-bottom: 498px !important;
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	width: 80%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
 body > div.main-slider.slick-initialized.slick-slider.slick-dotted > div > div{
 	height: 100%;
 }
@@ -262,14 +348,24 @@ body > div.main-slider.slick-initialized.slick-slider.slick-dotted > div > div{
 	opacity: 20%;
 }
 
+/* 바깥 슬라이더 버튼*/
 #slick-slide > div > button.slick-prev.slick-arrow{
 	border: 1px solid black;
+	font-size: 10px;
+	line-height: 5px;
 }
 
 #slick-slide > div > button.slick-next.slick-arrow{
 	border: 1px solid black;
 }
 
+/* 안쪽 슬라이더 내용 */
+
+
+/* 안쪽 슬라이더 버튼*/
+#slick-slide08 > div > button.slick-next.slick-arrow{
+	border: 1px black solid;
+}
 
 /* 이 밑은 예전꺼 쓸수도 있고 아닐수도 있고*/
 .logobox {

@@ -85,9 +85,21 @@
 				<div class="goods bbq-1">
 					<img src="images/chickMenu/BBQ/레드착착.png">
 				</div>
-				<div class="goods bbq-2"></div>
-				<div class="goods bbq-3"></div>
-				<div class="goods bbq-4"></div>
+				<div class="goods bbq-2">
+					<img src="images/chickMenu/BBQ/황올.png">
+				</div>
+				<div class="goods bbq-3">
+					<img src="images/chickMenu/BBQ/단짠갈릭.jpg">
+				</div>
+				<div class="goods bbq-4">
+					<img src="images/chickMenu/BBQ/바삭갈릭.jpg">
+				</div>
+				<div class="goods bbq-4">
+					<img src="images/chickMenu/BBQ/블랙페퍼.png">
+				</div>
+				<div class="goods bbq-4">
+					<img src="images/chickMenu/BBQ/착착갈릭.jpg">
+				</div>
 			</div>
 		</div>
 		<div class="item item-2">
@@ -125,55 +137,55 @@
 		<div class="item item-4">
 			<img src="images/Menu_brandlogo/logo-goobne.png" class="Menu-Slide-Logo">
 			<div class="inner-slider">
-				<div class="goods goods-1"></div>
-				<div class="goods goods-2"></div>
-				<div class="goods goods-3"></div>
-				<div class="goods goods-4"></div>
+				<div class="goods goobne-1"></div>
+				<div class="goods goobne-2"></div>
+				<div class="goods goobne-3"></div>
+				<div class="goods goobne-4"></div>
 			</div>
 		</div>
 		<div class="item item-5">
 			<img src="images/Menu_brandlogo/logo-hosigi.png" class="Menu-Slide-Logo">
 			<div class="inner-slider">
-				<div class="goods goods-1"></div>
-				<div class="goods goods-2"></div>
-				<div class="goods goods-3"></div>
-				<div class="goods goods-4"></div>
+				<div class="goods hosigi-1"></div>
+				<div class="goods hosigi-2"></div>
+				<div class="goods hosigi-3"></div>
+				<div class="goods hosigi-4"></div>
 			</div>
 		</div>
 		<div class="item item-6">
 			<img src="images/Menu_brandlogo/logo-jadam.png" class="Menu-Slide-Logo">
 			<div class="inner-slider">
-				<div class="goods goods-1"></div>
-				<div class="goods goods-2"></div>
-				<div class="goods goods-3"></div>
-				<div class="goods goods-4"></div>
+				<div class="goods jadam-1"></div>
+				<div class="goods jadam-2"></div>
+				<div class="goods jadam-3"></div>
+				<div class="goods jadam-4"></div>
 			</div>
 		</div>
 		<div class="item item-7">
 			<img src="images/Menu_brandlogo/logo-ajukeo.jpg" class="Menu-Slide-Logo">
 			<div class="inner-slider">
-				<div class="goods goods-1"></div>
-				<div class="goods goods-2"></div>
-				<div class="goods goods-3"></div>
-				<div class="goods goods-4"></div>
+				<div class="goods ajukeo-1"></div>
+				<div class="goods ajukeo-2"></div>
+				<div class="goods ajukeo-3"></div>
+				<div class="goods ajukeo-4"></div>
 			</div>
 		</div>
 		<div class="item item-8">
 			<img src="images/Menu_brandlogo/logo-mexicana.png" class="Menu-Slide-Logo">
 			<div class="inner-slider">
-				<div class="goods goods-1"></div>
-				<div class="goods goods-2"></div>
-				<div class="goods goods-3"></div>
-				<div class="goods goods-4"></div>
+				<div class="goods mexicana-1"></div>
+				<div class="goods mexicana-2"></div>
+				<div class="goods mexicana-3"></div>
+				<div class="goods mexicana-4"></div>
 			</div>
 		</div>
 		<div class="item item-9">
 			<img src="images/Menu_brandlogo/logo-chickenplus.png" class="Menu-Slide-Logo">
 			<div class="inner-slider">
-				<div class="goods goods-1"></div>
-				<div class="goods goods-2"></div>
-				<div class="goods goods-3"></div>
-				<div class="goods goods-4"></div>
+				<div class="goods chickenplus-1"></div>
+				<div class="goods chickenplus-2"></div>
+				<div class="goods chickenplus-3"></div>
+				<div class="goods chickenplus-4"></div>
 			</div>
 		</div>
 	</div>
