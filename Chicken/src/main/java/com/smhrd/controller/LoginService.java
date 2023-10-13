@@ -1,6 +1,7 @@
 package com.smhrd.controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -19,6 +20,7 @@ public class LoginService extends HttpServlet {
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
+		response.setContentType("text/html; charset=UTF-8");
 		// 유저에 비교할 id, pw 입력
 		t_user user = new t_user();
 		user.setId(id);
@@ -35,6 +37,9 @@ public class LoginService extends HttpServlet {
 			session.setAttribute("info", info);
 			url = "goMain";
 		}else {
+			PrintWriter writer = response.getWriter();
+			writer.println("<script>alert('로그인 실패!'); location.href='MyPage.jsp';</script>"); 
+			writer.close();
 			url = "MyPage.jsp";
 		}
 		RequestDispatcher rd = request.getRequestDispatcher(url);

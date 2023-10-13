@@ -60,7 +60,7 @@
 		</div>
 
 		<div class="login-search">
-			<form action="" method="post" class="sr">
+			<form action="Search" method="post" class="sr">
 				<select name="sr" class="select">
 					<option selected>선택</option>
 					<option value="chi_brand">브랜드</option>
@@ -190,7 +190,7 @@
 					console.log("ManyBrandAjax성공!");
 					console.log(res);
 					ManyBrandChart(res)
-					var min_calories = res[0].caloreis;
+					var min_calories = res[0].calories;
 					console.log(min_calories);
 					var finalNum = 0;
 					for (var i = 0; i < res.length; i++) {
@@ -436,6 +436,17 @@
 		
 		
 	</script>
-
+	<script type="text/javascript">
+	  $(document).ready(function(){
+		  var data = '<c:out value="${SearchRes}"/>';
+		  console.log(data);
+		  setTimeout(function() {
+			  if (data) {
+				  console.log("왔니?")
+				  SearchOneBrand(data);
+				}
+			}, 300);
+	  });
+	</script>
 </body>
 </html>

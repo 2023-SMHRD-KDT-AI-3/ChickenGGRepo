@@ -31,7 +31,7 @@ public class RegisterService extends HttpServlet {
 		}else {
 			System.out.println("실패...");
 		}
-		RequestDispatcher rd = request.getRequestDispatcher("goMain");
+		RequestDispatcher rd = request.getRequestDispatcher("LogOut.java");
 		rd.forward(request, response);
 	}
 
