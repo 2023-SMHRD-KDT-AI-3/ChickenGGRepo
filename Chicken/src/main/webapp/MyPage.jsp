@@ -23,7 +23,7 @@
 		<div class="left-navbar-menu-logo">
 			<a href="goMain"> <i class="fas fa-home"></i> 홈
 			</a> <a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드
-			</a> <a href="#"> <i class="fas fa-utensils"></i> 메뉴
+			</a> <a href="Menu.jsp"> <i class="fas fa-utensils"></i> 메뉴
 			</a> <a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지
 			</a>
 		</div>
