@@ -351,8 +351,6 @@ body > div.main-slider.slick-initialized.slick-slider.slick-dotted > div > div{
 /* 바깥 슬라이더 버튼*/
 #slick-slide > div > button.slick-prev.slick-arrow{
 	border: 1px solid black;
-	font-size: 10px;
-	line-height: 5px;
 }
 
 #slick-slide > div > button.slick-next.slick-arrow{
