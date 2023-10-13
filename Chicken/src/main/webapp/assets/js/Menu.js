@@ -45,7 +45,7 @@ function showSlides(n) {
 
 function getCheckboxValue() {
 	// 선택된 목록 가져오기
-	const query = 'input[name="brandCompare"]:checked';
+	const query = 'input[name="menuCompare"]:checked';
 	const selectedEls =
 		document.querySelectorAll(query);
 
