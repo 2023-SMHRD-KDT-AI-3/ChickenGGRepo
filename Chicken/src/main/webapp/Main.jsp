@@ -579,10 +579,15 @@
 		                     'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
 		                     'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'],
 		               borderWidth : 1
-		            }]
+		            }],
 	         },
 	         options : {
-	            scales : {
+	        	 plugins :{
+	        		 legend :{
+	        			 display : false
+	        		 }
+	        	 },
+	             scales : {
 	                yAxes: [
 	                    {
 	                      ticks: { // 최소값, 최대값, 틱범위
@@ -592,7 +597,6 @@
 	                      }
 	                    }]
 	            	}
-
 	         }
 	      });
 	      document.getElementById("myChart").onclick = function(evt) {
@@ -655,6 +659,11 @@
 	                    } ]
 	                 },
 	                 options : {
+	    	        	 plugins :{
+	    	        		 legend :{
+	    	        			 display : false
+	    	        		 }
+	    	        	 },
 	                    scales : {
 	                        yAxes: [
 	                            {
