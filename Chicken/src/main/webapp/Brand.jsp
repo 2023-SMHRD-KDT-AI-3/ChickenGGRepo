@@ -10,13 +10,34 @@
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 <title>치킨연구소 브랜드 페이지</title>
 <link rel="stylesheet" href="assets/css/Brand.css"></link>
+<style>
+@font-face {
+	font-family: 'GongGothicMedium';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Giants-Inline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	font-family: GongGothicMedium;
+}
+</style>
 </head>
 <body>
 	<!-- 왼쪽 고정된 네비게이션 바 -->
 	<div class="left-navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="left-navbar-logo">
-			<a href="goMain"><h2>🅒🅗🅘🅒🅚🅔🅝.🅖🅖</h2></a>
+			<a href="goMain" ><h2 style="font-size : 30px; 'font-family:'Giants-Inline'">CHICKEN.GG</h2></a>
 		</div>
 		<!-- hr 태그는 수평선용임 -->
 		<hr class="hrhr"></hr>
@@ -34,7 +55,7 @@
 	<nav class="navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="navbar-logo">
-			<a href="goMain" id="navbar_logoimg"><img src="images/하얀닭.png"
+			<a href="goMain" id="navbar_logoimg"><img width="100px" src="images/하얀닭.png"
 				alt="치킨 연구소 로고"></a>
 		</div>
 
@@ -45,7 +66,7 @@
 					<option value="chi_brand">브랜드</option>
 					<option value="chi_menu">메뉴</option>
 				</select> <input type="text" class="sr-input" name="sr_input"
-					placeholder="Search" autocomplete="off">
+					placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Search" autocomplete="off">
 				<button type="submit" class="sr-input-btn">
 					<i class="fa-solid fa-drumstick-bite fa-2xl"></i>
 				</button>
@@ -70,9 +91,10 @@
 	<div>
 		<div class="brandlogo">
 			<h1 class="brand">BRAND</h1>
-			<button type="submit" class="compare" id="totalcompare">비교하기</button>
-			<span id="compare_list"></span>
-			<hr>
+			<span id="compare_list">선택한 브랜드 >> </span>
+			<br><br>
+			<br>
+			<button type="submit" class="compare" id="totalcompare">비교하기</button><br>
 		</div>
 	</div>
 	<div class="line">
@@ -137,14 +159,21 @@
 			</div>
 		</div>
 	</div>
-	<div id="Brand_Chart" style="width: 500px; margin-left: 250px"></div>
+	
+	<div id="Brand_Chart1" style="width: 500px; margin-left: 250px; float:left;"></div>
+	<div id="Brand_Chart" style="width: 500px; float:right"></div>
 	<script src="assets/js/brand.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	<script>
 		$('#totalcompare').click(function() {
-			var CBL = $('#compare_list')[0].innerText.split(/\s+/g);
+			var CBL = $('#compare_list')[0].innerText;
+			CBL = CBL.slice(11).trimStart().trimEnd();
+			CBL = CBL.split(/\s+/g);
 			console.log(CBL);
-			if (CBL.length > 5) {
+			if (CBL.length < 2){
+				alert("최소 2개는 선택해주세요!")
+			}
+			else if (CBL.length > 5) {
 				alert("최대 5개까지만 선택해주세요!");
 			} else {
 				SearchManyBrand(CBL);
@@ -160,8 +189,19 @@
 				success : function(res) {
 					console.log("ManyBrandAjax성공!");
 					console.log(res);
-					console.log(res[0].calories);
 					ManyBrandChart(res)
+					var min_calories = res[0].caloreis;
+					console.log(min_calories);
+					var finalNum = 0;
+					for (var i = 0; i < res.length; i++) {
+						console.log(res[i].calories)
+						if(res[i].calories < min_calories){
+							console.log("??");
+							finalNum = i;
+						}
+					}
+					console.log(res[finalNum].brand_name);
+					makingChart(res[finalNum]);
 				},
 				error: function(){
 					alert("실패..");
@@ -169,7 +209,7 @@
 			})
 		}
 		function ManyBrandChart(result) {
-			document.getElementById("Brand_Chart").innerHTML = '<canvas id="myChart" style="height: 500px; width: 500px"></canvas>'
+			document.getElementById("Brand_Chart1").innerHTML = '<canvas id="myChart" style="height: 500px; width: 500px"></canvas>'
 			let brand_name = [];
 			let brand_price = [];
 			let brand_calories = [];
@@ -291,8 +331,8 @@
 							// 차트를 만듭니다.
 							console.log("Ajax성공!");
 							console.log(res);
-							makingChart(res);
 							contentType: "application/x-www-form-urlencoded; charset=UTF-8";
+							makingChart(res);
 						},
 						error : function(request, status, error) {
 							alert("code:" + request.status + "\n" + "message:"
@@ -309,9 +349,9 @@
 		src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 	<script>
 		function makingChart(result) {
-			document.getElementById("Brand_Chart").innerHTML = '<canvas id="myChart" style="height: 500px; width: 500px"></canvas>'
-			console.log(result.Brand);
-			const ctx = document.getElementById('myChart').getContext('2d');
+			document.getElementById("Brand_Chart").innerHTML = '<canvas id="myChart2" style="height: 500px; width: 500px"></canvas>'
+			console.log(result.brand_name);
+			const ctx = document.getElementById('myChart2').getContext('2d');
 			const myChart = new Chart(
 					ctx,
 					{
@@ -321,7 +361,7 @@
 							datasets : [
 									/* Outer doughnut data starts*/
 									{
-										data : [ result.Calories, 245 ],
+										data : [ result.calories, 245 ],
 										backgroundColor : [
 												'rgb(255, 99, 132)',
 												'rgb(255, 159, 64)' ],
@@ -336,7 +376,7 @@
 									/* Outer doughnut data ends*/
 									/* Inner doughnut data starts*/
 									{
-										data : [ result.Protein, 27 ],
+										data : [ result.protein, 27 ],
 										backgroundColor : [
 												'rgb(255, 99, 132)',
 												'rgb(255, 159, 64)' ],
@@ -349,7 +389,7 @@
 										}
 									},
 									{
-										data : [ result.Price, 15000 ],
+										data : [ result.menu_price, 15000 ],
 										backgroundColor : [
 												'rgb(255, 99, 132)',
 												'rgb(255, 159, 64)' ],
@@ -363,7 +403,7 @@
 									},
 							/* Inner doughnut data ends*/
 							],
-							labels : [ result.Brand, "평균" ]
+							labels : [ result.brand_name, "평균" ]
 						},
 						options : {
 							responsive : true,
@@ -393,6 +433,8 @@
 						},
 					});
 		}
+		
+		
 	</script>
 
 </body>

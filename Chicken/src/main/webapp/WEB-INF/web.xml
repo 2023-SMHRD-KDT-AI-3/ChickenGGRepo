@@ -52,6 +52,12 @@
   	<description></description>
   	<servlet-class>com.smhrd.controller.ManyBrand</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>PWFix</servlet-name>
+  	<display-name>PWFix</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.PWFix</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>GoMain</servlet-name>
   	<url-pattern>/goMain</url-pattern>
@@ -83,5 +89,9 @@
   <servlet-mapping>
   	<servlet-name>ManyBrand</servlet-name>
   	<url-pattern>/ManyBrand</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>PWFix</servlet-name>
+  	<url-pattern>/PWFix</url-pattern>
   </servlet-mapping>
 </web-app>

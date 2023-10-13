@@ -146,7 +146,7 @@
 								<div class="Complex-PW-Container">${info.pw}</div>
 								<hr class="MP-HR"></hr>
 								<div class="Fix-Frame">
-									<form action="" method="post">
+									<form action="PWFix" method="post">
 										<div class="Fix-Container">
 											<div class=".Fix-PW-Input">
 												<input type="text" required> <label>비밀번호 수정</label>
@@ -172,7 +172,7 @@
 											</div>
 										</div>
 										<div class="Fix-Nick-Btn">
-											<button class="Nick-BtnFloat">비밀번호 수정</button>
+											<button class="Nick-BtnFloat">닉네임 수정</button>
 										</div>
 									</form>
 								</div>
