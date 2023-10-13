@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,9 +9,11 @@
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 <title>메뉴 별 치킨연구소</title>
 <link rel="stylesheet" href="assets/css/Menu.css"></link>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
 </head>
 <body>
-<!-- 왼쪽 고정된 네비게이션 바 -->
+	<!-- 왼쪽 고정된 네비게이션 바 -->
 	<div class="left-navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="left-navbar-logo">
@@ -74,68 +76,67 @@
 			<hr>
 		</div>
 	</div>
-	<div class="line">
-		<div>
-			<div class="firstLine">
-				<input type="checkbox" class="logocheck" name="brandCompare"
-					value="BBQ" onclick="getCheckboxValue()" />
-				<button class="logobox" name="chickenbrand" value="BBQ">
-					<img alt="bbq" src="images/brandlogo/logo-bbq.jpg" class="logosize">
-				</button>
-				<input type="checkbox" class="logocheck" name="brandCompare"
-					value="BHC" onclick="getCheckboxValue()" />
-				<button class="logobox" name="chickenbrand" value="BHC">
-					<img alt="bhc" src="images/brandlogo/logo-bhc.png" class="logosize">
-				</button>
-				<input type="checkbox" class="logocheck" name="brandCompare"
-					value="교촌" onclick="getCheckboxValue()" />
-				<button class="logobox" name="chickenbrand" value="교촌">
-					<img alt="gyochon" src="images/brandlogo/logo-gyochon.png"
-						class="logosize">
-				</button>
+	<!-- 치킨 사진 슬라이드 -->
+	<div class="slideshow-container">
+		<div class="Slidesbackground">
+			<div class="mySlides">
+				<input type="checkbox" class="logocheck" name="menuCompare" value="교촌순살" onclick="getCheckboxValue()" />
+				<img src="images/chickMenu/교촌/교촌순살.png">
 			</div>
-			<div class="secondLine">
-				<input type="checkbox" class="logocheck" name="brandCompare"
-					value="굽네" onclick="getCheckboxValue()">
-				<button class="logobox" name="chickenbrand" value="goobne">
-					<img alt="goobne" src="images/brandlogo/logo-goobne.png"
-						class="logosize">
-				</button>
-				<input type="checkbox" class="logocheck" name="brandCompare"
-					value="호식이" onclick="getCheckboxValue()">
-				<button class="logobox" name="chickenbrand" value="hosigi">
-					<img alt="hosigi" src="images/brandlogo/logo-hosigi.png"
-						class="logosize">
-				</button>
-				<input type="checkbox" class="logocheck" name="brandCompare"
-					value="자담" onclick="getCheckboxValue()">
-				<button class="logobox" name="chickenbrand" value="jadam">
-					<img alt="jadam" src="images/brandlogo/logo-jadam.png"
-						class="logosize">
-				</button>
+			<div class="mySlides">
+				<input type="checkbox" class="logocheck" name="menuCompare" value="교촌오리지널" onclick="getCheckboxValue()" />
+				<img src="images/chickMenu/교촌/교촌오리지널.png">
 			</div>
-			<div class="thirdLine">
-				<input type="checkbox" class="logocheck" name="brandCompare"
-					value="아주커" onclick="getCheckboxValue()">
-				<button class="logobox" name="chickenbrand" value="ajukeo">
-					<img alt="ajukeo" src="images/brandlogo/logo-ajukeo.jpg"
-						class="logosize">
-				</button>
-				<input type="checkbox" class="logocheck" name="brandCompare"
-					value="멕시카나" onclick="getCheckboxValue()">
-				<button class="logobox" name="chickenbrand" value="mexicana">
-					<img alt="mexicana" src="images/brandlogo/logo-mexicana.png"
-						class="logosize">
-				</button>
-				<input type="checkbox" class="logocheck" name="brandCompare"
-					value="치킨플러스" onclick="getCheckboxValue()">
-				<button class="logobox" name="chickenbrand" value="chickenplus">
-					<img alt="chickenplus" src="images/brandlogo/logo-chickenplus.png"
-						class="logosize">
-				</button>
+			<div class="mySlides">
+				<input type="checkbox" class="logocheck" name="menuCompare" value="교촌윙" onclick="getCheckboxValue()" />
+				<img src="images/chickMenu/교촌/교촌윙.png">
+			</div>
+			<div class="mySlides">
+				<img src="images/chickMenu/교촌/교촌콤보.png">
+			</div>
+			<div class="mySlides">
+				<img src="images/chickMenu/교촌/레드순살.png">
+			</div>
+			<div class="mySlides">
+				<img src="images/chickMenu/교촌/레드오리지널.png">
+			</div>
+			<div class="mySlides">
+				<img src="images/chickMenu/교촌/레드윙.png">
+			</div>
+			<div class="mySlides">
+				<img src="images/chickMenu/교촌/레드콤보.png">
+			</div>
+			<div class="mySlides">
+				<img src="images/chickMenu/교촌/반반오리지널.png">
+			</div>
+			<div class="mySlides">
+				<img src="images/chickMenu/교촌/블랙시크릿순살.png">
+			</div>
+			<div class="mySlides">
+				<img src="images/chickMenu/교촌/블랙시크릿오리지널.png">
+			</div>
+			<div class="mySlides">
+				<img src="images/chickMenu/교촌/블랙시크릿콤보.png">
+			</div>
+			<div class="mySlides">
+				<img src="images/chickMenu/교촌/허니순살.png">
+			</div>
+			<div class="mySlides">
+				<img src="images/chickMenu/교촌/허니오리지널.png">
+			</div>
+			<div class="mySlides">
+				<img src="images/chickMenu/교촌/허니점보윙.png">
+			</div>
+			<div class="mySlides">
+				<img src="images/chickMenu/교촌/허니콤보.png">
 			</div>
 		</div>
+		<div class="Menu-Slide-Button">
+			<button class="prev" onclick="plusSlides(-1)">이전</button>
+			<button class="next" onclick="plusSlides(1)">다음</button>
+		</div>
 	</div>
+	<div style="text-align: center; margin-top: 5px;">치킨사진 모음관</div>
 	<script src="assets/js/Menu.js"></script>
 </body>
 </html>

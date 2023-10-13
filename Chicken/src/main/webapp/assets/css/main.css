@@ -135,6 +135,21 @@ nav.navbar {
 	animation: jittery 4s infinite;
 }
 
+.LogIn-Image-Container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.Main-LogIn-Image{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	margin-right: 200px;
+	margin-top: 100px;
+}
+
 .login-button {
 	background-color: #FFD280 !important;
 	padding: 10px 20px !important;

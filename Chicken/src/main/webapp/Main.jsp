@@ -251,7 +251,12 @@
 		</div>
 		<div class="Logout-Container">
 			<c:if test="${!empty info}">
-				<h1>${info.nick}님환영합니다!</h1>
+				<div class="LogIn-Image-Container">
+					<div class="Main-LogIn-Image">
+						<img src="images/기본 프로필 이미지.png">
+					</div>
+				</div>
+				<h1>${info.nick}님</h1>
 				<form action="Logout" method="post">
 					<button class="Logout-Btn">로그아웃</button>
 				</form>
