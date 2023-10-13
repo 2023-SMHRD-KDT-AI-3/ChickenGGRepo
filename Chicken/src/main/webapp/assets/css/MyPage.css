@@ -515,7 +515,14 @@ label {
 
 .Profile-Summary-Text {
 	width: 100%;
+	text-align: center;
 
+}
+
+.textarea {
+	width: 450px;
+	height: 100px;
+	resize: none;
 }
 
 

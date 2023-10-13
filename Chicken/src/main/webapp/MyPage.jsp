@@ -160,7 +160,7 @@
 								</div>
 								<hr class="MP-HR"></hr>
 								<div class="Nick-Text">
-									<h5>nick</h5>
+									<h5>NICKNAME</h5>
 								</div>
 								<div class="Complex-Nick-Container">${info.nick}</div>
 								<hr class="MP-HR"></hr>
@@ -168,7 +168,7 @@
 									<form action="" method="post">
 										<div class="Fix-Container">
 											<div class="Fix-Nick-Input">
-												<input type="text" required> <label>닉네임수정</label> <span></span>
+												<input type="text" required> <label>닉네임수정</label>
 											</div>
 										</div>
 										<div class="Fix-Nick-Btn">
@@ -196,7 +196,7 @@
 							</div>
 							<div>
 								<div>
-									<textarea>
+									<textarea class="textarea">
 								한줄평 쓰는곳(기존거를 처음에 띄워둠 애니메이션 hover, focus 사용)
 							</textarea>
 								</div>
