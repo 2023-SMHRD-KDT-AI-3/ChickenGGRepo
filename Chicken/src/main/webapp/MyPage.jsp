@@ -184,11 +184,11 @@
 							<img src="images/기본 프로필 이미지.png">
 						</div>
 						<div class="Profile-Summary-Text">
-							<div>${info.nick}</div>
+							<div><span>${info.nick}</span></div>
 							<div>
 								<h4>가입일</h3>
 							</div>
-							<div>${info.created_at}</div>
+							<div><span>${info.created_at}</span></div>
 						</div>
 						<div>
 							<div>
