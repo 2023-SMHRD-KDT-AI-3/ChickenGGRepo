@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	isELIgnored="false" pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,11 +7,11 @@
 <script src="https://kit.fontawesome.com/3a115195d8.js"
 	crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
-<title>치킨연구소 브랜드 페이지</title>
-<link rel="stylesheet" href="assets/css/Brand.css"></link>
+<title>메뉴 별 치킨연구소</title>
+<link rel="stylesheet" href="assets/css/Menu.css"></link>
 </head>
 <body>
-	<!-- 왼쪽 고정된 네비게이션 바 -->
+<!-- 왼쪽 고정된 네비게이션 바 -->
 	<div class="left-navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="left-navbar-logo">
@@ -69,7 +68,7 @@
 	</nav>
 	<div>
 		<div class="brandlogo">
-			<h1 class="brand">BRAND</h1>
+			<h1 class="brand">MENU</h1>
 			<button type="submit" class="compare">비교하기</button>
 			<span id="compare_list"></span>
 			<hr>
@@ -137,129 +136,6 @@
 			</div>
 		</div>
 	</div>
-	<div id="Brand_Chart" style="width: 500px; margin-left: 250px"></div>
-	<script src="assets/js/brand.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-	<script>
-		$('.logobox').click(function() {
-			console.log(this.value);
-			SearchOneBrand(this.value);
-		});
-		function SearchOneBrand(val) {
-			$
-					.ajax({
-						url : 'OneBrand',
-						type : 'post',
-						data : {
-							'Brand' : val
-						},
-						success : function(res) {
-							// 차트를 만듭니다.
-							console.log("Ajax성공!");
-							console.log(res);
-							makingChart(res);
-							contentType: "application/x-www-form-urlencoded; charset=UTF-8";
-						},
-						error : function(request, status, error) {
-							alert("code:" + request.status + "\n" + "message:"
-									+ request.responseText + "\n" + "error:"
-									+ error);
-						}
-					})
-		}
-	</script>
-	<!-- Chart.js -->
-	<script
-		src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
-	<script>
-		function makingChart(result) {
-			document.getElementById("Brand_Chart").innerHTML = '<canvas id="myChart" style="height: 500px; width: 500px"></canvas>'
-			console.log(result.Brand);
-			const ctx = document.getElementById('myChart').getContext('2d');
-			const myChart = new Chart(
-					ctx,
-					{
-						plugins : [ ChartDataLabels ],
-						type : 'doughnut',
-						data : {
-							datasets : [
-									/* Outer doughnut data starts*/
-									{
-										data : [ result.Calories, 245 ],
-										backgroundColor : [
-												'rgb(255, 99, 132)',
-												'rgb(255, 159, 64)' ],
-										label : 'Doughnut 1',
-										datalabels : {
-											formatter : function(value, context) {
-												return context.chart.data.datasets[0].data[context.dataIndex]
-														+ 'Kcal';
-											}
-										}
-									},
-									/* Outer doughnut data ends*/
-									/* Inner doughnut data starts*/
-									{
-										data : [ result.Protein, 27 ],
-										backgroundColor : [
-												'rgb(255, 99, 132)',
-												'rgb(255, 159, 64)' ],
-										label : 'Doughnut 2',
-										datalabels : {
-											formatter : function(value, context) {
-												return context.chart.data.datasets[1].data[context.dataIndex]
-														+ 'g';
-											}
-										}
-									},
-									{
-										data : [ result.Price, 15000 ],
-										backgroundColor : [
-												'rgb(255, 99, 132)',
-												'rgb(255, 159, 64)' ],
-										label : 'Doughnut 3',
-										datalabels : {
-											formatter : function(value, context) {
-												return context.chart.data.datasets[2].data[context.dataIndex]
-														+ '원';
-											}
-										}
-									},
-							/* Inner doughnut data ends*/
-							],
-							labels : [ result.Brand, "평균" ]
-						},
-						options : {
-							responsive : true,
-							legend : {
-								position : 'top',
-							},
-							title : {
-								display : true,
-								text : 'Chart.js Doughnut Chart'
-							},
-							animation : {
-								animateScale : true,
-								animateRotate : true
-							},
-							tooltips : {
-								callbacks : {
-									label : function(item, data) {
-										console.log(data.labels, item);
-										return data.datasets[item.datasetIndex].label
-												+ ": "
-												+ data.labels[item.index]
-												+ ": "
-												+ data.datasets[item.datasetIndex].data[item.index];
-									}
-								}
-							},
-						},
-					});
-		}
-	</script>
-
+	<script src="assets/js/Menu.js"></script>
 </body>
 </html>
