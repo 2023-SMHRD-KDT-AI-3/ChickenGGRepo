@@ -559,7 +559,14 @@ label {
 
 .Profile-Summary-Text {
 	width: 100%;
-	display: flex;
+	text-align: center;
+
+}
+
+.textarea {
+	width: 400px;
+	height: 100px;
+	resize: none;
 }
 
 

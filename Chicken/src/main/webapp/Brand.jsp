@@ -103,17 +103,17 @@
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="BBQ" onclick="getCheckboxValue()" />
 				<button class="logobox" name="chickenbrand" value="BBQ">
-					<img alt="bbq" src="images/brandlogo/logo-bbq.jpg" class="logosize">
+					<img alt="bbq" src="images/brandlogo/logo-bbq-removebg.png" class="logosize">
 				</button>
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="BHC" onclick="getCheckboxValue()" />
 				<button class="logobox" name="chickenbrand" value="BHC">
-					<img alt="bhc" src="images/brandlogo/logo-bhc.png" class="logosize">
+					<img alt="bhc" src="images/brandlogo/logo-bhc-removebg.png" class="logosize">
 				</button>
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="교촌" onclick="getCheckboxValue()" />
 				<button class="logobox" name="chickenbrand" value="교촌">
-					<img alt="gyochon" src="images/brandlogo/logo-gyochon.png"
+					<img alt="gyochon" src="images/brandlogo/logo-gyochon2-removebg-preview.png"
 						class="logosize">
 				</button>
 			</div>
@@ -121,19 +121,19 @@
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="굽네치킨" onclick="getCheckboxValue()">
 				<button class="logobox" name="chickenbrand" value="굽네치킨">
-					<img alt="goobne" src="images/brandlogo/logo-goobne.png"
+					<img alt="goobne" src="images/brandlogo/logo-goobne-removebg.png"
 						class="logosize">
 				</button>
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="호식이두마리치킨" onclick="getCheckboxValue()">
 				<button class="logobox" name="chickenbrand" value="호식이두마리치킨">
-					<img alt="hosigi" src="images/brandlogo/logo-hosigi.png"
+					<img alt="hosigi" src="images/brandlogo/logo-hosigi-removebg.png"
 						class="logosize">
 				</button>
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="자담치킨" onclick="getCheckboxValue()">
 				<button class="logobox" name="chickenbrand" value="자담치킨">
-					<img alt="jadam" src="images/brandlogo/logo-jadam.png"
+					<img alt="jadam" src="images/brandlogo/logo-jadam-removebg.png"
 						class="logosize">
 				</button>
 			</div>
@@ -141,19 +141,19 @@
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="아주커치킨" onclick="getCheckboxValue()">
 				<button class="logobox" name="chickenbrand" value="아주커치킨">
-					<img alt="ajukeo" src="images/brandlogo/logo-ajukeo.jpg"
+					<img alt="ajukeo" src="images/brandlogo/logo-ajukeo-removebg.png"
 						class="logosize">
 				</button>
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="멕시카나" onclick="getCheckboxValue()">
 				<button class="logobox" name="chickenbrand" value="멕시카나">
-					<img alt="mexicana" src="images/brandlogo/logo-mexicana.png"
+					<img alt="mexicana" src="images/brandlogo/logo-mexicana-removebg.png"
 						class="logosize">
 				</button>
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="치킨플러스" onclick="getCheckboxValue()">
 				<button class="logobox" name="chickenbrand" value="치킨플러스">
-					<img alt="chickenplus" src="images/brandlogo/logo-chickenplus.png"
+					<img alt="chickenplus" src="images/brandlogo/logo-chickenplus-removebg.png"
 						class="logosize">
 				</button>
 			</div>
