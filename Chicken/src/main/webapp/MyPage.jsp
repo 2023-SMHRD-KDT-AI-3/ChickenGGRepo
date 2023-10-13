@@ -23,7 +23,7 @@
 		<div class="left-navbar-menu-logo">
 			<a href="goMain"> <i class="fas fa-home"></i> 홈
 			</a> <a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드
-			</a> <a href="#"> <i class="fas fa-utensils"></i> 메뉴
+			</a> <a href="Menu.jsp"> <i class="fas fa-utensils"></i> 메뉴
 			</a> <a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지
 			</a>
 		</div>
@@ -146,7 +146,7 @@
 								<div class="Complex-PW-Container">${info.pw}</div>
 								<hr class="MP-HR"></hr>
 								<div class="Fix-Frame">
-									<form action="" method="post">
+									<form action="PWFix" method="post">
 										<div class="Fix-Container">
 											<div class=".Fix-PW-Input">
 												<input type="text" required> <label>비밀번호 수정</label>
@@ -172,7 +172,7 @@
 											</div>
 										</div>
 										<div class="Fix-Nick-Btn">
-											<button class="Nick-BtnFloat">비밀번호 수정</button>
+											<button class="Nick-BtnFloat">닉네임 수정</button>
 										</div>
 									</form>
 								</div>

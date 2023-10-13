@@ -38,10 +38,10 @@ public class OneBrand extends HttpServlet {
 		Price = Price/menu.size();
         JsonObject jsonObject = new JsonObject();
 		Gson g=new Gson();
-        jsonObject.addProperty("Calories", Calories);
-        jsonObject.addProperty("Protein", Protein);
-        jsonObject.addProperty("Price", Price);
-        jsonObject.addProperty("Brand", Brand);
+        jsonObject.addProperty("calories", Calories);
+        jsonObject.addProperty("protein", Protein);
+        jsonObject.addProperty("menu_price", Price);
+        jsonObject.addProperty("brand_name", Brand);
         String json = g.toJson(jsonObject);
         response.setContentType("text/json;charset=utf-8");
 		PrintWriter out= response.getWriter();
