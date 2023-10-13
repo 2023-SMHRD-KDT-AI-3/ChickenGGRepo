@@ -21,6 +21,11 @@ body {
 	z-index: 30;
 }
 
+.left-navbar * {
+	font-family:'Giants-Inline';
+	
+}
+
 .left-navbar-logo {
 	max-width: 150px;
 	/* 로고 이미지의 최대 너비 설정 */
@@ -84,42 +89,54 @@ nav.navbar {
 .login-search {}
 
 .select {
+	border : 0px !important;
+	font-size: 18px;
+	padding-left: 15px;
 	height: 56px;
+	width: 90px;
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 50px;
 	float: left;
 
-	
+
 }
+
 .sr-input {
 	background-color: white;
 	border-top-right-radius: 50px;
 	border-bottom-right-radius: 50px;
 	width: 500px;
-	height: 50px;
+	height: 54px;
+	font-size: 20px;
+	outline: 0;
+	border : 0px !important;
 
 	&:hover,
 	&:focus {
-		padding: 12px 0;
 		outline: 0;
-		border: 1px solid transparent;
-		border-bottom: 1px solid #575756;
 		border-radius: 0;
 		background-position: 100% center;
+		border-style: solid;
+		border: 1px black;
 	}
 }
 
 .sr-input-btn {
+	border: 3px solid orange;
+
 	width: 56px;
 	height: 56px;
-	background-color: #FFA500;
+	background-color: white;
 	cursor: pointer;
 	border-radius: 50%;
+	margin-left: 10px;
+
 }
 
 
 .sr-input-btn:hover {
 	animation: jittery 4s infinite;
+
 }
 
 
@@ -159,9 +176,7 @@ nav.navbar {
 	animation: jittery 4s infinite;
 }
 
-.sr {
-	padding-left: 150px;
-}
+
 
 .regi-login {
 	padding-left: 200px;
@@ -183,15 +198,21 @@ nav.navbar {
 
 .brandlogo {
 	margin-left: 250px;
-	margin-top: 10px;
+	margin-top: 90px;
+	margin-bottom: 70px;
+	padding-left: 60px;
 }
 
 .logobox {
+	border-style: solid;
+	border-width: 2px;
 	width: 330px;
 	height: 165px;
 	background-color: white;
 	border-color: #FFA500;
 }
+
+
 
 .line {
 	margin-left: 100px;
@@ -215,10 +236,9 @@ nav.navbar {
 }
 
 .brand {
-	font-size: 65px;
+	font-size: 45px;
 	color: #FFA500;
 	margin-top: 45px;
-	margin-left: 100px;
 	margin-bottom: 5px;
 }
 
@@ -232,11 +252,11 @@ nav.navbar {
 }
 
 .compare {
+	font-size: 20px;
 	background-color: #FFD280;
-	margin-left: 1520px;
 	color: #5C4C2E;
 	border-radius: 5%;
-	padding: 15px 25px;
+	padding: 10px 20px;
 	display: inline-block;
 	border: 1px solid rgba(0, 0, 0, 0.21);
 	border-bottom-color: rgba(0, 0, 0, 0.34);
@@ -255,12 +275,14 @@ nav.navbar {
 }
 
 #compare_list {
-	margin-left: 160px;
+	font-size: 25px;
+	color: #a96d24
 }
 
 span {
 	color: #FFA500;
 }
+
 
 
 

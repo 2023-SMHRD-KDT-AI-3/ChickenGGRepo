@@ -12,11 +12,11 @@ function getCheckboxValue()  {
   // 선택된 목록에서 value 찾기
   let result = '';
   selectedEls.forEach((el) => {
-    result += el.value + ' ';
+    result += el.value + '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;';
   });
   
   // 출력
-  document.querySelector('#compare_list').innerText = result;
+  document.querySelector('#compare_list').innerHTML ='선택한 브랜드 >>&nbsp;&nbsp;&nbsp; ' +  result;
 }
 
 
