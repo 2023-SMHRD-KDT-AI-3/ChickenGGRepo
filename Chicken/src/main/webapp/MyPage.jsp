@@ -160,15 +160,17 @@
 								</div>
 								<hr class="MP-HR"></hr>
 								<div class="Nick-Text">
-									<h5>NICKNAME</h5>
+									<h5>nick</h5>
 								</div>
 								<div class="Complex-Nick-Container">${info.nick}</div>
 								<hr class="MP-HR"></hr>
 								<div class="Fix-Frame">
 									<form action="NickFix" method="post">
 										<div class="Fix-Container">
+
 											<div class="Fix-Nick-Input">
 												<input type="text" name="nick" required> <label>닉네임수정</label> <span></span>
+
 											</div>
 										</div>
 										<div class="Fix-Nick-Btn">
@@ -182,14 +184,10 @@
 					<div class="Profile-Summary">
 						<div class="Profile-Image">
 							<img src="images/기본 프로필 이미지.png">
+							<div class=Profile-nick>${info.nick}</div>
 						</div>
-						<div class="Profile-Summary-Text">
-							<div><span>${info.nick}</span></div>
-							<div>
-								<h4>가입일</h3>
-							</div>
-							<div><span>${info.created_at}</span></div>
-						</div>
+						<div class="Profile-text">
+
 						<div>
 							<div>
 								<h4>한줄평 작성</h4>
@@ -202,9 +200,20 @@
 								</div>
 								<div>
 									<form>
-										<button>한줄평 제출</button>
+										<button class="textarea-button">한줄평 제출</button>
 									</form>
 								</div>
+								<div calss="Profile-date">
+									<h4>가입일</h4>
+									<div class="Profile-Summary-Text">
+
+
+										<div>${info.created_at}</div>
+									</div>
+								</div>
+								</div>
+
+
 							</div>
 						</div>
 					</div>

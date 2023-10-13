@@ -112,8 +112,10 @@
 				</button>
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="교촌" onclick="getCheckboxValue()" />
+
 				<button class="logobox" name="chickenbrand" value="교촌">
 					<img alt="gyochon" src="images/brandlogo/logo-gyochon2-removebg-preview.png">
+
 				</button>
 			</div>
 			<div class="secondLine">
