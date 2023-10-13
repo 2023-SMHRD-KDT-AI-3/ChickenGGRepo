@@ -182,29 +182,36 @@
 					<div class="Profile-Summary">
 						<div class="Profile-Image">
 							<img src="images/기본 프로필 이미지.png">
+							<div class=Profile-nick>${info.nick}</div>
 						</div>
-						<div class="Profile-Summary-Text">
-							<div>${info.nick}</div>
-							<div>
-								<h4>가입일</h3>
-							</div>
-							<div>${info.created_at}</div>
-						</div>
+						<div class="Profile-text">
+
 						<div>
 							<div>
 								<h4>한줄평 작성</h4>
 							</div>
 							<div>
 								<div>
-									<textarea>
+									<textarea class="textarea">
 								한줄평 쓰는곳(기존거를 처음에 띄워둠 애니메이션 hover, focus 사용)
 							</textarea>
 								</div>
 								<div>
 									<form>
-										<button>한줄평 제출</button>
+										<button class="textarea-button">한줄평 제출</button>
 									</form>
 								</div>
+								<div calss="Profile-date">
+									<h4>가입일</h4>
+									<div class="Profile-Summary-Text">
+
+
+										<div>${info.created_at}</div>
+									</div>
+								</div>
+								</div>
+
+
 							</div>
 						</div>
 					</div>
