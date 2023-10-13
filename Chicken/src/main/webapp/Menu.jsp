@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,6 +9,27 @@
 	crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 <title>메뉴 별 치킨연구소</title>
+<style>
+@font-face {
+	font-family: 'GongGothicMedium';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Giants-Inline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	font-family: GongGothicMedium;
+}
+</style>
 <link rel="stylesheet" href="assets/css/Menu.css"></link>
 <link rel="stylesheet" href="assets/css/slick.css"></link>
 <link rel="stylesheet" href="assets/css/slick-theme.css"></link>
@@ -18,7 +40,7 @@
 	<div class="left-navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="left-navbar-logo">
-			<a href="goMain"><h2>🅒🅗🅘🅒🅚🅔🅝.🅖🅖</h2></a>
+			<a href="goMain" ><h2 style="font-size : 30px; 'font-family:'Giants-Inline'">CHICKEN.GG</h2></a>
 		</div>
 		<!-- hr 태그는 수평선용임 -->
 		<hr class="hrhr"></hr>
@@ -36,18 +58,18 @@
 	<nav class="navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="navbar-logo">
-			<a href="goMain" id="navbar_logoimg"><img src="images/하얀닭.png"
+			<a href="goMain" id="navbar_logoimg"><img width="100px" src="images/하얀닭.png"
 				alt="치킨 연구소 로고"></a>
 		</div>
 
 		<div class="login-search">
-			<form action="" method="post" class="sr">
+			<form action="Search" method="post" class="sr">
 				<select name="sr" class="select">
 					<option selected>선택</option>
 					<option value="chi_brand">브랜드</option>
 					<option value="chi_menu">메뉴</option>
 				</select> <input type="text" class="sr-input" name="sr_input"
-					placeholder="Search" autocomplete="off">
+					placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Search" autocomplete="off">
 				<button type="submit" class="sr-input-btn">
 					<i class="fa-solid fa-drumstick-bite fa-2xl"></i>
 				</button>
