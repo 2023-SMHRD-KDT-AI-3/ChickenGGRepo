@@ -9,8 +9,9 @@
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 <title>메뉴 별 치킨연구소</title>
 <link rel="stylesheet" href="assets/css/Menu.css"></link>
-<link rel="stylesheet"
-	href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+<link rel="stylesheet" href="assets/css/slick.css"></link>
+<link rel="stylesheet" href="assets/css/slick-theme.css"></link>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
 	<!-- 왼쪽 고정된 네비게이션 바 -->
@@ -77,66 +78,122 @@
 		</div>
 	</div>
 	<!-- 치킨 사진 슬라이드 -->
-	<div class="slideshow-container">
-		<div class="Slidesbackground">
-			<div class="mySlides">
-				<input type="checkbox" class="logocheck" name="menuCompare" value="교촌순살" onclick="getCheckboxValue()" />
-				<img src="images/chickMenu/교촌/교촌순살.png">
-			</div>
-			<div class="mySlides">
-				<input type="checkbox" class="logocheck" name="menuCompare" value="교촌오리지널" onclick="getCheckboxValue()" />
-				<img src="images/chickMenu/교촌/교촌오리지널.png">
-			</div>
-			<div class="mySlides">
-				<input type="checkbox" class="logocheck" name="menuCompare" value="교촌윙" onclick="getCheckboxValue()" />
-				<img src="images/chickMenu/교촌/교촌윙.png">
-			</div>
-			<div class="mySlides">
-				<img src="images/chickMenu/교촌/교촌콤보.png">
-			</div>
-			<div class="mySlides">
-				<img src="images/chickMenu/교촌/레드순살.png">
-			</div>
-			<div class="mySlides">
-				<img src="images/chickMenu/교촌/레드오리지널.png">
-			</div>
-			<div class="mySlides">
-				<img src="images/chickMenu/교촌/레드윙.png">
-			</div>
-			<div class="mySlides">
-				<img src="images/chickMenu/교촌/레드콤보.png">
-			</div>
-			<div class="mySlides">
-				<img src="images/chickMenu/교촌/반반오리지널.png">
-			</div>
-			<div class="mySlides">
-				<img src="images/chickMenu/교촌/블랙시크릿순살.png">
-			</div>
-			<div class="mySlides">
-				<img src="images/chickMenu/교촌/블랙시크릿오리지널.png">
-			</div>
-			<div class="mySlides">
-				<img src="images/chickMenu/교촌/블랙시크릿콤보.png">
-			</div>
-			<div class="mySlides">
-				<img src="images/chickMenu/교촌/허니순살.png">
-			</div>
-			<div class="mySlides">
-				<img src="images/chickMenu/교촌/허니오리지널.png">
-			</div>
-			<div class="mySlides">
-				<img src="images/chickMenu/교촌/허니점보윙.png">
-			</div>
-			<div class="mySlides">
-				<img src="images/chickMenu/교촌/허니콤보.png">
+	<div class="main-slider">
+		<div class="item item-1">
+			<img src="images/brandlogo/logo-bbq.jpg" class="Menu-Slide-Logo">
+			<div class="inner-slider">
+				<div class="goods bbq-1">
+					<img src="images/chickMenu/BBQ/레드착착.png">
+				</div>
+				<div class="goods bbq-2"></div>
+				<div class="goods bbq-3"></div>
+				<div class="goods bbq-4"></div>
 			</div>
 		</div>
-		<div class="Menu-Slide-Button">
-			<button class="prev" onclick="plusSlides(-1)">이전</button>
-			<button class="next" onclick="plusSlides(1)">다음</button>
+		<div class="item item-2">
+			<img src="images/brandlogo/logo-bhc.png" class="Menu-Slide-Logo">
+			<div class="inner-slider">
+				<div class="goods bhc-1"></div>
+				<div class="goods bhc-2"></div>
+				<div class="goods bhc-3"></div>
+				<div class="goods bhc-4"></div>
+			</div>
+		</div>
+		<div class="item item-3">
+			<img src="images/brandlogo/logo-kyochon.jpg" class="Menu-Slide-Logo">
+			<div class="inner-slider">
+				<div class="goods kyochon-1">
+					<img src="images/chickMenu/교촌/교촌순살.png">
+				</div>
+				<div class="goods kyochon-2">
+					<img src="images/chickMenu/교촌/교촌오리지널.png">
+				</div>
+				<div class="goods kyochon-3">
+					<img src="images/chickMenu/교촌/교촌윙.png">
+				</div>
+				<div class="goods kyochon-4">
+					<img src="images/chickMenu/교촌/교촌콤보.png">
+				</div>
+				<div class="goods kyochon-5">
+					<img src="images/chickMenu/교촌/레드순살.png">
+				</div>
+				<div class="goods kyochon-6">
+					<img src="images/chickMenu/교촌/레드오리지널.png">
+				</div>
+			</div>
+		</div>
+		<div class="item item-4">
+			<img src="images/brandlogo/logo-goobne.png" class="Menu-Slide-Logo">
+			<div class="inner-slider">
+				<div class="goods goods-1"></div>
+				<div class="goods goods-2"></div>
+				<div class="goods goods-3"></div>
+				<div class="goods goods-4"></div>
+			</div>
+		</div>
+		<div class="item item-5">
+			<img src="images/brandlogo/logo-hosigi.png" class="Menu-Slide-Logo">
+			<div class="inner-slider">
+				<div class="goods goods-1"></div>
+				<div class="goods goods-2"></div>
+				<div class="goods goods-3"></div>
+				<div class="goods goods-4"></div>
+			</div>
+		</div>
+		<div class="item item-6">
+			<img src="images/brandlogo/logo-jadam.png" class="Menu-Slide-Logo">
+			<div class="inner-slider">
+				<div class="goods goods-1"></div>
+				<div class="goods goods-2"></div>
+				<div class="goods goods-3"></div>
+				<div class="goods goods-4"></div>
+			</div>
+		</div>
+		<div class="item item-7">
+			<img src="images/brandlogo/logo-ajukeo.jpg" class="Menu-Slide-Logo">
+			<div class="inner-slider">
+				<div class="goods goods-1"></div>
+				<div class="goods goods-2"></div>
+				<div class="goods goods-3"></div>
+				<div class="goods goods-4"></div>
+			</div>
+		</div>
+		<div class="item item-8">
+			<img src="images/brandlogo/logo-mexicana.png" class="Menu-Slide-Logo">
+			<div class="inner-slider">
+				<div class="goods goods-1"></div>
+				<div class="goods goods-2"></div>
+				<div class="goods goods-3"></div>
+				<div class="goods goods-4"></div>
+			</div>
+		</div>
+		<div class="item item-9">
+			<img src="images/brandlogo/logo-chickenplus.png" class="Menu-Slide-Logo">
+			<div class="inner-slider">
+				<div class="goods goods-1"></div>
+				<div class="goods goods-2"></div>
+				<div class="goods goods-3"></div>
+				<div class="goods goods-4"></div>
+			</div>
 		</div>
 	</div>
-	<div style="text-align: center; margin-top: 5px;">치킨사진 모음관</div>
 	<script src="assets/js/Menu.js"></script>
+	<script src="assets/js/slick.js"></script>
+	<script src="assets/js/slick.min.js"></script>
+
+	<!-- 슬라이더 애니메이션 -->
+	<script type="text/javascript">
+		var mainSlider = $('.main-slider');
+		var innerSlider = $('.inner-slider');
+
+		mainSlider.slick({
+			slidesToShow : 1,
+			dots : true,
+		});
+
+		innerSlider.slick({
+			slidesToShow : 3,
+		})
+	</script>
 </body>
 </html>
