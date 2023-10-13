@@ -94,7 +94,7 @@
 			<span id="compare_list">선택한 브랜드 >> </span>
 			<br><br>
 			<br>
-			<button type="submit" class="compare">비교하기</button><br>
+			<button type="submit" class="compare" id="totalcompare">비교하기</button><br>
 		</div>
 	</div>
 	<div class="line">
@@ -103,102 +103,127 @@
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="BBQ" onclick="getCheckboxValue()" />
 				<button class="logobox" name="chickenbrand" value="BBQ">
-					<img alt="bbq" src="images/brandlogo/logo-bbq.jpg" class="logosize">
+					<img alt="bbq" src="images/brandlogo/logo-bbq-removebg.png" class="logosize">
 				</button>
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="BHC" onclick="getCheckboxValue()" />
 				<button class="logobox" name="chickenbrand" value="BHC">
-					<img alt="bhc" src="images/brandlogo/logo-bhc.png" class="logosize">
+					<img alt="bhc" src="images/brandlogo/logo-bhc-removebg.png" class="logosize">
 				</button>
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="교촌" onclick="getCheckboxValue()" />
 				<button class="logobox" name="chickenbrand" value="교촌">
+<<<<<<< HEAD
 					<img alt="gyochon" src="images/brandlogo/logo-kyochon.jpg"
+=======
+					<img alt="gyochon" src="images/brandlogo/logo-gyochon2-removebg-preview.png"
+>>>>>>> branch 'master' of https://github.com/2023-SMHRD-KDT-AI-3/ChickenGGRepo.git
 						class="logosize">
 				</button>
 			</div>
 			<div class="secondLine">
 				<input type="checkbox" class="logocheck" name="brandCompare"
-					value="굽네" onclick="getCheckboxValue()">
-				<button class="logobox" name="chickenbrand" value="goobne">
-					<img alt="goobne" src="images/brandlogo/logo-goobne.png"
+					value="굽네치킨" onclick="getCheckboxValue()">
+				<button class="logobox" name="chickenbrand" value="굽네치킨">
+					<img alt="goobne" src="images/brandlogo/logo-goobne-removebg.png"
 						class="logosize">
 				</button>
 				<input type="checkbox" class="logocheck" name="brandCompare"
-					value="호식이" onclick="getCheckboxValue()">
-				<button class="logobox" name="chickenbrand" value="hosigi">
-					<img alt="hosigi" src="images/brandlogo/logo-hosigi.png"
+					value="호식이두마리치킨" onclick="getCheckboxValue()">
+				<button class="logobox" name="chickenbrand" value="호식이두마리치킨">
+					<img alt="hosigi" src="images/brandlogo/logo-hosigi-removebg.png"
 						class="logosize">
 				</button>
 				<input type="checkbox" class="logocheck" name="brandCompare"
-					value="자담" onclick="getCheckboxValue()">
-				<button class="logobox" name="chickenbrand" value="jadam">
-					<img alt="jadam" src="images/brandlogo/logo-jadam.png"
+					value="자담치킨" onclick="getCheckboxValue()">
+				<button class="logobox" name="chickenbrand" value="자담치킨">
+					<img alt="jadam" src="images/brandlogo/logo-jadam-removebg.png"
 						class="logosize">
 				</button>
 			</div>
 			<div class="thirdLine">
 				<input type="checkbox" class="logocheck" name="brandCompare"
-					value="아주커" onclick="getCheckboxValue()">
-				<button class="logobox" name="chickenbrand" value="ajukeo">
-					<img alt="ajukeo" src="images/brandlogo/logo-ajukeo.jpg"
+					value="아주커치킨" onclick="getCheckboxValue()">
+				<button class="logobox" name="chickenbrand" value="아주커치킨">
+					<img alt="ajukeo" src="images/brandlogo/logo-ajukeo-removebg.png"
 						class="logosize">
 				</button>
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="멕시카나" onclick="getCheckboxValue()">
-				<button class="logobox" name="chickenbrand" value="mexicana">
-					<img alt="mexicana" src="images/brandlogo/logo-mexicana.png"
+				<button class="logobox" name="chickenbrand" value="멕시카나">
+					<img alt="mexicana" src="images/brandlogo/logo-mexicana-removebg.png"
 						class="logosize">
 				</button>
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="치킨플러스" onclick="getCheckboxValue()">
-				<button class="logobox" name="chickenbrand" value="chickenplus">
-					<img alt="chickenplus" src="images/brandlogo/logo-chickenplus.png"
+				<button class="logobox" name="chickenbrand" value="치킨플러스">
+					<img alt="chickenplus" src="images/brandlogo/logo-chickenplus-removebg.png"
 						class="logosize">
 				</button>
 			</div>
 		</div>
 	</div>
-	<div id="Brand_Chart" style="width: 500px; margin-left: 250px"></div>
+	
+	<div id="Brand_Chart1" style="width: 500px; margin-left: 250px; float:left;"></div>
+	<div id="Brand_Chart" style="width: 500px; float:right"></div>
 	<script src="assets/js/brand.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	<script>
-		$('.logobox').click(function() {
-			console.log(this.value);
-			SearchOneBrand(this.value);
+		$('#totalcompare').click(function() {
+			var CBL = $('#compare_list')[0].innerText;
+			CBL = CBL.slice(11).trimStart().trimEnd();
+			CBL = CBL.split(/\s+/g);
+			console.log(CBL);
+			if (CBL.length < 2){
+				alert("최소 2개는 선택해주세요!")
+			}
+			else if (CBL.length > 5) {
+				alert("최대 5개까지만 선택해주세요!");
+			} else {
+				SearchManyBrand(CBL);
+			}
 		});
-		function SearchOneBrand(val) {
-			$
-					.ajax({
-						url : 'OneBrand',
-						type : 'post',
-						data : {
-							'Brand' : val
-						},
-						success : function(res) {
-							// 차트를 만듭니다.
-							console.log("Ajax성공!");
-							console.log(res);
-							makingChart(res);
-							contentType: "application/x-www-form-urlencoded; charset=UTF-8";
-						},
-						error : function(request, status, error) {
-							alert("code:" + request.status + "\n" + "message:"
-									+ request.responseText + "\n" + "error:"
-									+ error);
+		function SearchManyBrand(CBL) {
+			$.ajax({
+				url : 'ManyBrand',
+				type : 'post',
+				data:{
+					'Brands' : CBL
+				},
+				success : function(res) {
+					console.log("ManyBrandAjax성공!");
+					console.log(res);
+					ManyBrandChart(res)
+					var min_calories = res[0].caloreis;
+					console.log(min_calories);
+					var finalNum = 0;
+					for (var i = 0; i < res.length; i++) {
+						console.log(res[i].calories)
+						if(res[i].calories < min_calories){
+							console.log("??");
+							finalNum = i;
 						}
-					})
+					}
+					console.log(res[finalNum].brand_name);
+					makingChart(res[finalNum]);
+				},
+				error: function(){
+					alert("실패..");
+				}
+			})
 		}
-	</script>
-	<!-- Chart.js -->
-	<script
-		src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
-	<script
-		src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
-	<script>
-		function makingChart(result) {
-			document.getElementById("Brand_Chart").innerHTML = '<canvas id="myChart" style="height: 500px; width: 500px"></canvas>'
-			console.log(result.Brand);
+		function ManyBrandChart(result) {
+			document.getElementById("Brand_Chart1").innerHTML = '<canvas id="myChart" style="height: 500px; width: 500px"></canvas>'
+			let brand_name = [];
+			let brand_price = [];
+			let brand_calories = [];
+			let brand_protein = [];
+			for (var i = 0; i < result.length; i++) {
+				brand_name.push(result[i].brand_name);
+				brand_price.push(result[i].menu_price);
+				brand_calories.push(result[i].calories);
+				brand_protein.push(result[i].protein);
+			}
 			const ctx = document.getElementById('myChart').getContext('2d');
 			const myChart = new Chart(
 					ctx,
@@ -209,10 +234,13 @@
 							datasets : [
 									/* Outer doughnut data starts*/
 									{
-										data : [ result.Calories, 245 ],
+										data : brand_calories,
 										backgroundColor : [
 												'rgb(255, 99, 132)',
-												'rgb(255, 159, 64)' ],
+												'rgb(255, 159, 64)',
+												'rgb(250, 15, 64)',
+												'rgb(205, 159, 64)',
+												'rgb(25, 159, 64)'],
 										label : 'Doughnut 1',
 										datalabels : {
 											formatter : function(value, context) {
@@ -224,10 +252,13 @@
 									/* Outer doughnut data ends*/
 									/* Inner doughnut data starts*/
 									{
-										data : [ result.Protein, 27 ],
+										data : brand_protein,
 										backgroundColor : [
 												'rgb(255, 99, 132)',
-												'rgb(255, 159, 64)' ],
+												'rgb(255, 159, 64)',
+												'rgb(250, 15, 64)',
+												'rgb(205, 159, 64)',
+												'rgb(25, 159, 64)' ],
 										label : 'Doughnut 2',
 										datalabels : {
 											formatter : function(value, context) {
@@ -237,10 +268,13 @@
 										}
 									},
 									{
-										data : [ result.Price, 15000 ],
+										data : brand_price,
 										backgroundColor : [
 												'rgb(255, 99, 132)',
-												'rgb(255, 159, 64)' ],
+												'rgb(255, 159, 64)',
+												'rgb(250, 15, 64)',
+												'rgb(205, 159, 64)',
+												'rgb(25, 159, 64)' ],
 										label : 'Doughnut 3',
 										datalabels : {
 											formatter : function(value, context) {
@@ -251,7 +285,7 @@
 									},
 							/* Inner doughnut data ends*/
 							],
-							labels : [ result.Brand, "평균" ]
+							labels : brand_name
 						},
 						options : {
 							responsive : true,
@@ -278,7 +312,129 @@
 									}
 								}
 							},
+						},
+					});
+		}
+	</script>
+
+	<!-- 하나만 클릭시 평균과 비교해주는  -->
+	<script>
+		$('.logobox').click(function() {
+			console.log(this.value);
+			SearchOneBrand(this.value);
+		});
+		function SearchOneBrand(val) {
+			$
+					.ajax({
+						url : 'OneBrand',
+						type : 'post',
+						data : {
+							'Brand' : val
+						},
+						success : function(res) {
+							// 차트를 만듭니다.
+							console.log("Ajax성공!");
+							console.log(res);
+							contentType: "application/x-www-form-urlencoded; charset=UTF-8";
+							makingChart(res);
+						},
+						error : function(request, status, error) {
+							alert("code:" + request.status + "\n" + "message:"
+									+ request.responseText + "\n" + "error:"
+									+ error);
 						}
+					})
+		}
+	</script>
+	<!-- Chart.js -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+	<script>
+		function makingChart(result) {
+			document.getElementById("Brand_Chart").innerHTML = '<canvas id="myChart2" style="height: 500px; width: 500px"></canvas>'
+			console.log(result.brand_name);
+			const ctx = document.getElementById('myChart2').getContext('2d');
+			const myChart = new Chart(
+					ctx,
+					{
+						plugins : [ ChartDataLabels ],
+						type : 'doughnut',
+						data : {
+							datasets : [
+									/* Outer doughnut data starts*/
+									{
+										data : [ result.calories, 245 ],
+										backgroundColor : [
+												'rgb(255, 99, 132)',
+												'rgb(255, 159, 64)' ],
+										label : 'Doughnut 1',
+										datalabels : {
+											formatter : function(value, context) {
+												return context.chart.data.datasets[0].data[context.dataIndex]
+														+ 'Kcal';
+											}
+										}
+									},
+									/* Outer doughnut data ends*/
+									/* Inner doughnut data starts*/
+									{
+										data : [ result.protein, 27 ],
+										backgroundColor : [
+												'rgb(255, 99, 132)',
+												'rgb(255, 159, 64)' ],
+										label : 'Doughnut 2',
+										datalabels : {
+											formatter : function(value, context) {
+												return context.chart.data.datasets[1].data[context.dataIndex]
+														+ 'g';
+											}
+										}
+									},
+									{
+										data : [ result.menu_price, 15000 ],
+										backgroundColor : [
+												'rgb(255, 99, 132)',
+												'rgb(255, 159, 64)' ],
+										label : 'Doughnut 3',
+										datalabels : {
+											formatter : function(value, context) {
+												return context.chart.data.datasets[2].data[context.dataIndex]
+														+ '원';
+											}
+										}
+									},
+							/* Inner doughnut data ends*/
+							],
+							labels : [ result.brand_name, "평균" ]
+						},
+						options : {
+							responsive : true,
+							legend : {
+								position : 'top',
+							},
+							title : {
+								display : true,
+								text : 'Chart.js Doughnut Chart'
+							},
+							animation : {
+								animateScale : true,
+								animateRotate : true
+							},
+							tooltips : {
+								callbacks : {
+									label : function(item, data) {
+										console.log(data.labels, item);
+										return data.datasets[item.datasetIndex].label
+												+ ": "
+												+ data.labels[item.index]
+												+ ": "
+												+ data.datasets[item.datasetIndex].data[item.index];
+									}
+								}
+							},
+						},
 					});
 		}
 		
