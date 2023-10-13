@@ -309,9 +309,26 @@ label {
 	height: 70px;
 	resize: none;
 	margin-right: 5%;
-	border-radius: 20%;
+	background: none;
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+
 
 }
+
+.textarea-button {
+	background: none;
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.textarea-button {
+	
+	border-radius: 5px;
+	transition: all 0.2s;
+	background-color: #FFAA40;
+	color: white;
+}
+
 .PW-BtnFloat {
 	background: none;
 	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
