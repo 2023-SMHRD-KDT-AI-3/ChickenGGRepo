@@ -14,4 +14,13 @@
 	<select id="check" parameterType="string" resultType="com.smhrd.model.t_user">
 		select * from t_user where id = #{id}
 	</select>
+	
+	<update id="pwchange" parameterType="com.smhrd.model.t_user">
+		update t_user set pw = #{pw} where id = #{id}
+	</update>
+	
+	<update id="nickchange" parameterType="com.smhrd.model.t_user">
+		update t_user set nick = #{nick} where id = #{id}
+	</update>
+
 </mapper>

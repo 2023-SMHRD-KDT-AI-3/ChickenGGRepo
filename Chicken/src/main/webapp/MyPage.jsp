@@ -149,7 +149,7 @@
 									<form action="PWFix" method="post">
 										<div class="Fix-Container">
 											<div class=".Fix-PW-Input">
-												<input type="text" required> <label>비밀번호 수정</label>
+												<input type="text" name="pw" required> <label>비밀번호 수정</label>
 												<span></span>
 											</div>
 										</div>
@@ -165,10 +165,12 @@
 								<div class="Complex-Nick-Container">${info.nick}</div>
 								<hr class="MP-HR"></hr>
 								<div class="Fix-Frame">
-									<form action="" method="post">
+									<form action="NickFix" method="post">
 										<div class="Fix-Container">
+
 											<div class="Fix-Nick-Input">
-												<input type="text" required> <label>닉네임수정</label> <span></span>
+												<input type="text" name="nick" required> <label>닉네임수정</label> <span></span>
+
 											</div>
 										</div>
 										<div class="Fix-Nick-Btn">

@@ -26,6 +26,18 @@ public class UserDAO {
 		sqlSession.close();
 		return user;
 	}
+	public int changepw(t_user user) {
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		int res = sqlSession.update("pwchange", user);
+		sqlSession.close();
+		return res;
+	}
+	public int changenick(t_user user) {
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		int res = sqlSession.update("nickchange", user);
+		sqlSession.close();
+		return res;
+	}
 	
 	
 	
