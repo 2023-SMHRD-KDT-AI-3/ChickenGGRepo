@@ -21,6 +21,11 @@ body {
 	z-index: 30;
 }
 
+.left-navbar * {
+	font-family:'Giants-Inline';
+	
+}
+
 .left-navbar-logo {
 	max-width: 150px;
 	/* 로고 이미지의 최대 너비 설정 */
@@ -70,6 +75,7 @@ nav.navbar {
 }
 
 .navbar-logo {
+	padding-left: 50px;
 	max-width: 150px;
 	/* 로고 이미지의 최대 너비 설정 */
 }
@@ -84,11 +90,15 @@ nav.navbar {
 .login-search {}
 
 .select {
+	border : 0px !important;
+	font-size: 18px;
+	padding-left: 15px;
 	height: 56px;
-	margin: 0px;
+	width: 90px;
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 50px;
 	float: left;
+
 
 }
 
@@ -97,30 +107,37 @@ nav.navbar {
 	border-top-right-radius: 50px;
 	border-bottom-right-radius: 50px;
 	width: 500px;
-	height: 50px;
+	height: 54px;
+	font-size: 20px;
+	outline: 0;
+	border : 0px !important;
 
 	&:hover,
 	&:focus {
-		padding: 12px 0;
 		outline: 0;
-		border: 1px solid transparent;
-		border-bottom: 1px solid #575756;
 		border-radius: 0;
 		background-position: 100% center;
+		border-style: solid;
+		border: 1px black;
 	}
 }
 
 .sr-input-btn {
+	border: 3px solid orange;
+
 	width: 56px;
 	height: 56px;
-	background-color: #FFA500;
+	background-color: white;
 	cursor: pointer;
 	border-radius: 50%;
+	margin-left: 10px;
+
 }
 
 
 .sr-input-btn:hover {
 	animation: jittery 4s infinite;
+
 }
 
 
@@ -137,10 +154,9 @@ nav.navbar {
 }
 
 .login-button {
-	background-color: #FFD280 !important;
-	padding: 10px 20px !important;
+	background-color: #FFD280;
+	padding: 10px 20px;
 	border-radius: 5px;
-	color: black !important;
 	border: none;
 	cursor: pointer;
 }
@@ -150,7 +166,7 @@ nav.navbar {
 }
 
 .Logout-Btn {
-	background-color: #FFD280 !important;
+	background-color: #FFD280;
 	padding: 10px 20px;
 	border-radius: 5px;
 	border: none;
@@ -161,12 +177,10 @@ nav.navbar {
 	animation: jittery 4s infinite;
 }
 
-.sr {
-	padding-left: 150px;
-}
+
 
 .regi-login {
-	padding-left: 200px;
+	padding-left: 180px;
 	margin-left: 200px;
 	height: 40px;
 }
@@ -296,6 +310,7 @@ label {
 	box-shadow: 0px 0px 5px 0px #9E9E9E;
 	margin-left: 5%;
 	margin-right: 5%;
+	padding-bottom: 20px;
 }
 
 .Profile-Image {
@@ -304,38 +319,40 @@ label {
 }
 
 .textarea {
-
-	width: 180%;
-	height: 70px;
+	width: 377px;
+	height: 130px;
 	resize: none;
 	margin-right: 5%;
 	background: none;
 	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
-
-
+	border-radius: 3px;
 }
-
-.textarea-button {
-	background: none;
-	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
-
+.Fix-textarea {
+	float: right;
+	width: 140px;
 }
-
-.textarea-button {
-	
+.Fix-textarea button {
+	display: block;
+	position: relative;
+	float: left;
+	width: 140px;
+	padding: 0;
+	margin: 10px 20px 10px 0;
+	font-weight: 600;
+	text-align: center;
+	line-height: 30px;
+	color: #FFF;
 	border-radius: 5px;
 	transition: all 0.2s;
-	background-color: #FFAA40;
-	color: white;
+	border: none;
 }
-
-.PW-BtnFloat {
+.textarea-button {
 	background: none;
 	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
 }
 
-.PW-BtnFloat:before {
-	content: '바꾸기';
+.textarea-button:before {
+	content: '한줄평 제출';
 	display: block;
 	position: absolute;
 	top: 0;
@@ -344,6 +361,23 @@ label {
 	height: 30px;
 	border-radius: 5px;
 	transition: all 0.2s;
+}
+
+.textarea-button:before {
+	background-color: #FFAA40;
+}
+
+.textarea-button:before {
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+.textarea-button:hover:before {
+	margin-top: -2px;
+	margin-left: 0px;
+	transform: scale(1.1, 1.1);
+	-ms-transform: scale(1.1, 1.1);
+	-webkit-transform: scale(1.1, 1.1);
+	box-shadow: 0px 5px 5px -2px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -581,11 +615,7 @@ label {
 
 }
 
-.textarea {
-	width: 400px;
-	height: 100px;
-	resize: none;
-}
+
 
 
 @keyframes jittery {
