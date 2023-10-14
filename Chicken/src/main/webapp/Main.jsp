@@ -610,22 +610,14 @@
 	        		 legend :{
 	        			 display : false
 	        		 }
-	               
-	         
 	        	 },
 	             scales : {
-	            	
-	            	 
-	                yAxes: [
-	                    {
-	                    
+	                y: {
+	                      min: 13000,
+	                      suggestedMax: 20000,
 	                      ticks: { // 최소값, 최대값, 틱범위
-	                        min: 13000,
-	                        max: 25000,
 	                        stepSize: 3000    }
-	                    	                                    	                     	                 
-	                    
-	                    }]
+	                    }
 	            	}
 	         }
 	      });
@@ -696,15 +688,14 @@
 	    	        		 }
 	    	        	 },
 	                    scales : {
-	                        yAxes: [
+	                        y: 
 	                            {
+	                              min: 13000,
+	                              suggestedMax: 20000,
 	                              ticks: { // 최소값, 최대값, 틱범위
-	                                min: 13000,
-	                                max: 25000,
 	                                stepSize: 3000
-	                                
 	                              }
-	                            }]
+	                            }
 	                    	}
 	                 	}
 	              });
