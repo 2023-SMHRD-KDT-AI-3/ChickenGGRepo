@@ -9,6 +9,7 @@
 	crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 <title>치킨 연구소 마이페이지</title>
+<link rel="stylesheet" href="assets/css/MyPage.css"></link>
 <style>
 @font-face {
 	font-family: 'GongGothicMedium';
@@ -30,7 +31,6 @@
 	font-family: GongGothicMedium;
 }
 </style>
-<link rel="stylesheet" href="assets/css/MyPage.css"></link>
 </head>
 <body>
 	<!-- 왼쪽 고정된 네비게이션 바 -->
