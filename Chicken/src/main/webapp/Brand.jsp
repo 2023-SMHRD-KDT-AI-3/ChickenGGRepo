@@ -196,17 +196,22 @@
 					ManyBrandChart(res)
 					var min_calories = res[0].calories;
 					var min_price = res[0].menu_price;
+					console.log(min_calories);
 					var finalNum = 0;
 					var priceNum = 0;
 					for (var i = 0; i < res.length; i++) {
 						if(res[i].calories < min_calories){
+							console.log(res[i].calories);
+							min_calories = res[i].calories;
 							finalNum = i;
 						}
 						if(res[i].menu_price < min_price){
+							min_price = res[i].min_price;
 							priceNum = i;
 						}
 					}
 					console.log(res[finalNum].brand_name);
+					console.log(res[priceNum].brand_name);
 					smallcal_brand = res[finalNum];
 					smallprice_brand = res[priceNum];
 					makingChart(res[finalNum]);
