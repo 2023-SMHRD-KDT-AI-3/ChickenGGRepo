@@ -106,7 +106,7 @@
 		<div class="inner-grp">
 			<!-- 1번 브랜드 -->
 			<div class="inner">
-				<h2>BBQ</h2>
+				<img src="images/Menu_brandlogo/logo-bbq.jpg" class="brand-box">
 				<div class="slider">
 					<div class="slider-btn-wrapper slider-btn-wrapper-left">
 						<!-- 왼쪽 화살표 -->
@@ -114,44 +114,76 @@
 					</div>
 					<div class="item-wrapper">
 						<div class="item">
-							<input type="checkbox" class="logocheck" name="brandCompare"
-								value="BBQ" onclick="getCheckboxValue()" />
-							<button class="logobox" name="chickenbrand" value="BBQ">
-								<img src="images/Menu_brandlogo/logo-bbq.jpg" />
-								<div class="info-text">
-									<h2>황금올리브</h2>
-								</div>
-							</button>
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="brandCompare"
+									value="BBQ" onclick="getCheckboxValue()" />
+								<button class="logobox" name="chickenbrand" value="BBQ">
+									<img src="images/chickMenu/BBQ/단짠갈릭.jpg" />
+									<div class="info-text">
+										<h2>황금올리브</h2>
+									</div>
+								</button>
+							</div>
 						</div>
 						<div class="item">
-							<input type="checkbox" class="logocheck" name="brandCompare"
-								value="BBQ" onclick="getCheckboxValue()" />
-							<button class="logobox" name="chickenbrand" value="BBQ">
-								<img src="images/Menu_brandlogo/logo-bbq.jpg" />
-								<div class="info-text">
-									<h2>황금올리브</h2>
-								</div>
-							</button>
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="brandCompare"
+									value="BBQ" onclick="getCheckboxValue()" />
+								<button class="logobox" name="chickenbrand" value="BBQ">
+									<img src="images/chickMenu/BBQ/레드착착.png" />
+									<div class="info-text">
+										<h2>황금올리브</h2>
+									</div>
+								</button>
+							</div>
 						</div>
 						<div class="item">
-							<input type="checkbox" class="logocheck" name="brandCompare"
-								value="BBQ" onclick="getCheckboxValue()" />
-							<button class="logobox" name="chickenbrand" value="BBQ">
-								<img src="images/Menu_brandlogo/logo-bbq.jpg" />
-								<div class="info-text">
-									<h2>황금올리브</h2>
-								</div>
-							</button>
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="brandCompare"
+									value="BBQ" onclick="getCheckboxValue()" />
+								<button class="logobox" name="chickenbrand" value="BBQ">
+									<img src="images/chickMenu/BBQ/바삭갈릭.jpg" />
+									<div class="info-text">
+										<h2>황금올리브</h2>
+									</div>
+								</button>
+							</div>
 						</div>
 						<div class="item">
-							<input type="checkbox" class="logocheck" name="brandCompare"
-								value="BBQ" onclick="getCheckboxValue()" />
-							<button class="logobox" name="chickenbrand" value="BBQ">
-								<img src="images/Menu_brandlogo/logo-bbq.jpg" />
-								<div class="info-text">
-									<h2>황금올리브</h2>
-								</div>
-							</button>
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="brandCompare"
+									value="BBQ" onclick="getCheckboxValue()" />
+								<button class="logobox" name="chickenbrand" value="BBQ">
+									<img src="images/chickMenu/BBQ/블랙 페퍼.png" />
+									<div class="info-text">
+										<h2>황금올리브</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="brandCompare"
+									value="BBQ" onclick="getCheckboxValue()" />
+								<button class="logobox" name="chickenbrand" value="BBQ">
+									<img src="images/chickMenu/BBQ/착착갈릭.jpg" />
+									<div class="info-text">
+										<h2>황금올리브</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="brandCompare"
+									value="BBQ" onclick="getCheckboxValue()" />
+								<button class="logobox" name="chickenbrand" value="BBQ">
+									<img src="images/chickMenu/BBQ/황올.png" />
+									<div class="info-text">
+										<h2>황금올리브</h2>
+									</div>
+								</button>
+							</div>
 						</div>
 					</div>
 					<div class="slider-btn-wrapper slider-btn-wrapper-right">
@@ -191,188 +223,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- 3번 브랜드 -->
-			<div class="inner">
-				<h2>Kyochon</h2>
-				<div class="slider">
-					<div class="slider-btn-wrapper slider-btn-wrapper-left">
-						<!-- 왼쪽 화살표 -->
-						<button id="left-btn" class="slider-btn">⬅Left</button>
-					</div>
-					<div class="item-wrapper">
-						<div class="item">
-							<img src="images/Menu_brandlogo/logo-kyochon.jpg" />
-							<div class="info-text">
-								<h2>황금올리브</h2>
-							</div>
-						</div>
-						<div class="item">
-							<img src="../image/BBQ/착착갈릭.jpg" />
-						</div>
-						<div class="item">
-							<img src="../image/BBQ/블랙 페퍼.png" />
-						</div>
-						<div class="item">
-							<img src="../image/BBQ/바삭갈릭.jpg" />
-						</div>
-					</div>
-					<div class="slider-btn-wrapper slider-btn-wrapper-right">
-						<!-- 오른쪽 화살표 -->
-						<button id="right-btn" class="slider-btn">Right➡</button>
-					</div>
-				</div>
-			</div>
-			<!-- 4번 브랜드 -->
-			<div class="inner">
-				<h2>굽네치킨</h2>
-				<div class="slider">
-					<div class="slider-btn-wrapper slider-btn-wrapper-left">
-						<!-- 왼쪽 화살표 -->
-						<button id="left-btn" class="slider-btn">⬅Left</button>
-					</div>
-					<div class="item-wrapper">
-						<div class="item">
-							<img src="images/Menu_brandlogo/logo-goobne.png" />
-							<div class="info-text">
-								<h2>황금올리브</h2>
-							</div>
-						</div>
-						<div class="item">
-							<img src="../image/BBQ/착착갈릭.jpg" />
-						</div>
-						<div class="item">
-							<img src="../image/BBQ/블랙 페퍼.png" />
-						</div>
-						<div class="item">
-							<img src="../image/BBQ/바삭갈릭.jpg" />
-						</div>
-					</div>
-					<div class="slider-btn-wrapper slider-btn-wrapper-right">
-						<!-- 오른쪽 화살표 -->
-						<button id="right-btn" class="slider-btn">Right➡</button>
-					</div>
-				</div>
-			</div>
-			<div class="inner">
-				<h2>BHC</h2>
-				<div class="slider">
-					<div class="slider-btn-wrapper slider-btn-wrapper-left">
-						<!-- 왼쪽 화살표 -->
-						<button id="left-btn" class="slider-btn">⬅Left</button>
-					</div>
-					<div class="item-wrapper">
-						<div class="item">
-							<img src="images/Menu_brandlogo/logo-bbq.jpg" />
-							<div class="info-text">
-								<h2>황금올리브</h2>
-							</div>
-						</div>
-						<div class="item">
-							<img src="../image/BBQ/착착갈릭.jpg" />
-						</div>
-						<div class="item">
-							<img src="../image/BBQ/블랙 페퍼.png" />
-						</div>
-						<div class="item">
-							<img src="../image/BBQ/바삭갈릭.jpg" />
-						</div>
-					</div>
-					<div class="slider-btn-wrapper slider-btn-wrapper-right">
-						<!-- 오른쪽 화살표 -->
-						<button id="right-btn" class="slider-btn">Right➡</button>
-					</div>
-				</div>
-			</div>
-			<div class="inner">
-				<h2>BHC</h2>
-				<div class="slider">
-					<div class="slider-btn-wrapper slider-btn-wrapper-left">
-						<!-- 왼쪽 화살표 -->
-						<button id="left-btn" class="slider-btn">⬅Left</button>
-					</div>
-					<div class="item-wrapper">
-						<div class="item">
-							<img src="images/Menu_brandlogo/logo-bbq.jpg" />
-							<div class="info-text">
-								<h2>황금올리브</h2>
-							</div>
-						</div>
-						<div class="item">
-							<img src="../image/BBQ/착착갈릭.jpg" />
-						</div>
-						<div class="item">
-							<img src="../image/BBQ/블랙 페퍼.png" />
-						</div>
-						<div class="item">
-							<img src="../image/BBQ/바삭갈릭.jpg" />
-						</div>
-					</div>
-					<div class="slider-btn-wrapper slider-btn-wrapper-right">
-						<!-- 오른쪽 화살표 -->
-						<button id="right-btn" class="slider-btn">Right➡</button>
-					</div>
-				</div>
-			</div>
-			<div class="inner">
-				<h2>BHC</h2>
-				<div class="slider">
-					<div class="slider-btn-wrapper slider-btn-wrapper-left">
-						<!-- 왼쪽 화살표 -->
-						<button id="left-btn" class="slider-btn">⬅Left</button>
-					</div>
-					<div class="item-wrapper">
-						<div class="item">
-							<img src="images/Menu_brandlogo/logo-bbq.jpg" />
-							<div class="info-text">
-								<h2>황금올리브</h2>
-							</div>
-						</div>
-						<div class="item">
-							<img src="../image/BBQ/착착갈릭.jpg" />
-						</div>
-						<div class="item">
-							<img src="../image/BBQ/블랙 페퍼.png" />
-						</div>
-						<div class="item">
-							<img src="../image/BBQ/바삭갈릭.jpg" />
-						</div>
-					</div>
-					<div class="slider-btn-wrapper slider-btn-wrapper-right">
-						<!-- 오른쪽 화살표 -->
-						<button id="right-btn" class="slider-btn">Right➡</button>
-					</div>
-				</div>
-			</div>
-			<div class="inner">
-				<h2>BHC</h2>
-				<div class="slider">
-					<div class="slider-btn-wrapper slider-btn-wrapper-left">
-						<!-- 왼쪽 화살표 -->
-						<button id="left-btn" class="slider-btn">⬅Left</button>
-					</div>
-					<div class="item-wrapper">
-						<div class="item">
-							<img src="images/Menu_brandlogo/logo-bbq.jpg" />
-							<div class="info-text">
-								<h2>황금올리브</h2>
-							</div>
-						</div>
-						<div class="item">
-							<img src="../image/BBQ/착착갈릭.jpg" />
-						</div>
-						<div class="item">
-							<img src="../image/BBQ/블랙 페퍼.png" />
-						</div>
-						<div class="item">
-							<img src="../image/BBQ/바삭갈릭.jpg" />
-						</div>
-					</div>
-					<div class="slider-btn-wrapper slider-btn-wrapper-right">
-						<!-- 오른쪽 화살표 -->
-						<button id="right-btn" class="slider-btn">Right➡</button>
-					</div>
-				</div>
-			</div>
+
 		</div>
 	</div>
 	</div>
