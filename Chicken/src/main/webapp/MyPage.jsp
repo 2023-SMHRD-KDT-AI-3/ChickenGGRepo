@@ -9,6 +9,27 @@
 	crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
 <title>치킨 연구소 마이페이지</title>
+<style>
+@font-face {
+	font-family: 'GongGothicMedium';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff')
+		format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Giants-Inline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+	font-family: GongGothicMedium;
+}
+</style>
 <link rel="stylesheet" href="assets/css/MyPage.css"></link>
 </head>
 <body>
@@ -16,7 +37,7 @@
 	<div class="left-navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="left-navbar-logo">
-			<a href="goMain"><h2>🅒🅗🅘🅒🅚🅔🅝.🅖🅖</h2></a>
+			<a href="goMain" ><h2 style="font-size : 30px; 'font-family:'Giants-Inline'">CHICKEN.GG</h2></a>
 		</div>
 		<!-- hr 태그는 수평선용임 -->
 		<hr class="hrhr"></hr>
@@ -34,18 +55,18 @@
 	<nav class="navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="navbar-logo">
-			<a href="goMain" id="navbar_logoimg"><img src="images/하얀닭.png"
+			<a href="goMain" id="navbar_logoimg"><img width="100px" src="images/하얀닭.png"
 				alt="치킨 연구소 로고"></a>
 		</div>
 
 		<div class="login-search">
-			<form action="" method="post" class="sr">
+			<form action="Search" method="post" class="sr">
 				<select name="sr" class="select">
 					<option selected>선택</option>
 					<option value="chi_brand">브랜드</option>
 					<option value="chi_menu">메뉴</option>
 				</select> <input type="text" class="sr-input" name="sr_input"
-					placeholder="Search" autocomplete="off">
+					placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Search" autocomplete="off">
 				<button type="submit" class="sr-input-btn">
 					<i class="fa-solid fa-drumstick-bite fa-2xl"></i>
 				</button>
@@ -160,15 +181,17 @@
 								</div>
 								<hr class="MP-HR"></hr>
 								<div class="Nick-Text">
-									<h5>NICKNAME</h5>
+									<h5>nick</h5>
 								</div>
 								<div class="Complex-Nick-Container">${info.nick}</div>
 								<hr class="MP-HR"></hr>
 								<div class="Fix-Frame">
 									<form action="NickFix" method="post">
 										<div class="Fix-Container">
+
 											<div class="Fix-Nick-Input">
 												<input type="text" name="nick" required> <label>닉네임수정</label> <span></span>
+
 											</div>
 										</div>
 										<div class="Fix-Nick-Btn">
@@ -182,14 +205,10 @@
 					<div class="Profile-Summary">
 						<div class="Profile-Image">
 							<img src="images/기본 프로필 이미지.png">
+							<div class=Profile-nick>${info.nick}</div>
 						</div>
-						<div class="Profile-Summary-Text">
-							<div><span>${info.nick}</span></div>
-							<div>
-								<h4>가입일</h3>
-							</div>
-							<div><span>${info.created_at}</span></div>
-						</div>
+						<div class="Profile-text">
+
 						<div>
 							<div>
 								<h4>한줄평 작성</h4>
@@ -202,9 +221,20 @@
 								</div>
 								<div>
 									<form>
-										<button>한줄평 제출</button>
+										<button class="textarea-button">한줄평 제출</button>
 									</form>
 								</div>
+								<div calss="Profile-date">
+									<h4>가입일</h4>
+									<div class="Profile-Summary-Text">
+
+
+										<div>${info.created_at}</div>
+									</div>
+								</div>
+								</div>
+
+
 							</div>
 						</div>
 					</div>

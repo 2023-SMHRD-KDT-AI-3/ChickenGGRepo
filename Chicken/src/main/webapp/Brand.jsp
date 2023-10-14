@@ -114,6 +114,7 @@
 					value="교촌" onclick="getCheckboxValue()" />
 				<button class="logobox" name="chickenbrand" value="교촌">
 					<img alt="gyochon" src="images/brandlogo/logo-gyochon2-removebg-preview.png">
+
 				</button>
 			</div>
 			<div class="secondLine">
@@ -160,7 +161,9 @@
 	</div>
 	
 	<div id="Brand_Chart1" style="width: 500px; margin-left: 250px; float:left;"></div>
+	<div id="Brand_Select" style="float:left"></div>
 	<div id="Brand_Chart" style="width: 500px; float:right"></div>
+	<div id="Brand_Between" style="float:right"></div>
 	<script src="assets/js/brand.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	<script>
@@ -178,6 +181,8 @@
 				SearchManyBrand(CBL);
 			}
 		});
+		var smallcal_brand = null;
+		var smallprice_brand = null;
 		function SearchManyBrand(CBL) {
 			$.ajax({
 				url : 'ManyBrand',
@@ -190,16 +195,20 @@
 					console.log(res);
 					ManyBrandChart(res)
 					var min_calories = res[0].calories;
-					console.log(min_calories);
+					var min_price = res[0].menu_price;
 					var finalNum = 0;
+					var priceNum = 0;
 					for (var i = 0; i < res.length; i++) {
-						console.log(res[i].calories)
 						if(res[i].calories < min_calories){
-							console.log("??");
 							finalNum = i;
+						}
+						if(res[i].menu_price < min_price){
+							priceNum = i;
 						}
 					}
 					console.log(res[finalNum].brand_name);
+					smallcal_brand = res[finalNum];
+					smallprice_brand = res[priceNum];
 					makingChart(res[finalNum]);
 				},
 				error: function(){
@@ -207,8 +216,16 @@
 				}
 			})
 		}
+		// 브랜드 비교할 목적 선택시
+	    function calories_click() {
+	    	makingChart(smallcal_brand);
+	    }
+		function price_click(){
+			makingChart(smallprice_brand);
+		}
 		function ManyBrandChart(result) {
 			document.getElementById("Brand_Chart1").innerHTML = '<canvas id="myChart" style="height: 500px; width: 500px"></canvas>'
+			document.getElementById("Brand_Select").innerHTML = '<button id="calories_select" onclick="calories_click()">칼로리 제일 적은 브랜드</button><br><button id="price_select" onclick="price_click()">가격 제일 적은 브랜드</button>'
 			let brand_name = [];
 			let brand_price = [];
 			let brand_calories = [];
@@ -348,6 +365,8 @@
 		src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 	<script>
 		function makingChart(result) {
+			document.getElementById("Brand_Between").innerHTML = '선택한 브랜드 : '+result.brand_name+' <br> 단백질 평균: '+result.protein+
+			'g <br> 칼로리 평균 : '+result.calories+'Kcal <br> 평균 가격 : '+result.menu_price+'원'
 			document.getElementById("Brand_Chart").innerHTML = '<canvas id="myChart2" style="height: 500px; width: 500px"></canvas>'
 			console.log(result.brand_name);
 			const ctx = document.getElementById('myChart2').getContext('2d');
@@ -447,5 +466,6 @@
 			}, 300);
 	  });
 	</script>
+
 </body>
 </html>

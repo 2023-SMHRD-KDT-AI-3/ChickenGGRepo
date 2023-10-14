@@ -89,8 +89,9 @@ nav.navbar {
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 50px;
 	float: left;
-	
+
 }
+
 .sr-input {
 	background-color: white;
 	border-top-right-radius: 50px;
@@ -295,6 +296,67 @@ label {
 	box-shadow: 0px 0px 5px 0px #9E9E9E;
 	margin-left: 5%;
 	margin-right: 5%;
+}
+
+.Profile-Image {
+	margin-left: 0%;
+
+}
+
+.textarea {
+
+	width: 180%;
+	height: 70px;
+	resize: none;
+	margin-right: 5%;
+	background: none;
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.textarea-button {
+	background: none;
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.textarea-button {
+	
+	border-radius: 5px;
+	transition: all 0.2s;
+	background-color: #FFAA40;
+	color: white;
+}
+
+.PW-BtnFloat {
+	background: none;
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.PW-BtnFloat:before {
+	content: '바꾸기';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 140px;
+	height: 30px;
+	border-radius: 5px;
+	transition: all 0.2s;
+}
+
+
+
+.Profile-nick {
+
+	margin-left: 30%;
+	font-size: 30px;
+
+}
+
+.Profile-text {
+	margin-right: 0%;
 }
 
 .Complex-Header {
