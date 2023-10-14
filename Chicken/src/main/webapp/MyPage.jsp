@@ -21,10 +21,12 @@
 }
 
 @font-face {
-    font-family: 'Giants-Inline';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Giants-Inline';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2')
+		format('woff2');
+	font-weight: normal;
+	font-style: normal;
 }
 
 * {
@@ -37,15 +39,16 @@
 	<div class="left-navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="left-navbar-logo">
-			<a href="goMain" ><h2 style="font-size : 30px; 'font-family:'Giants-Inline'">CHICKEN.GG</h2></a>
+			<a href="goMain"><h2
+					style="font-size: 30px; ' font-family: 'Giants-Inline'">CHICKEN.GG</h2></a>
 		</div>
 		<!-- hr 태그는 수평선용임 -->
 		<hr class="hrhr"></hr>
 		<div class="left-navbar-menu-logo">
-			<a href="goMain"> <i class="fas fa-home"></i> 홈
-			</a> <a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드
-			</a> <a href="Menu.jsp"> <i class="fas fa-utensils"></i> 메뉴
-			</a> <a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지
+			<a href="goMain"> <i class="fas fa-home"></i>&nbsp; 홈
+			</a> <a href="Brand.jsp"> <i class="fas fa-list"></i>&nbsp; 브랜드
+			</a> <a href="Menu.jsp"> <i class="fas fa-utensils"></i>&nbsp; 메뉴
+			</a> <a href="MyPage.jsp"> <i class="fas fa-trophy"></i>&nbsp; 마이페이지
 			</a>
 		</div>
 		<!-- 여기에 추가 메뉴 항목을 추가할 수 있습니다. -->
@@ -55,8 +58,8 @@
 	<nav class="navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="navbar-logo">
-			<a href="goMain" id="navbar_logoimg"><img width="100px" src="images/하얀닭.png"
-				alt="치킨 연구소 로고"></a>
+			<a href="goMain" id="navbar_logoimg"><img width="100px"
+				src="images/하얀닭.png" alt="치킨 연구소 로고"></a>
 		</div>
 
 		<div class="login-search">
@@ -170,8 +173,8 @@
 									<form action="PWFix" method="post">
 										<div class="Fix-Container">
 											<div class=".Fix-PW-Input">
-												<input type="text" name="pw" required> <label>비밀번호 수정</label>
-												<span></span>
+												<input type="text" name="pw" required> <label>비밀번호
+													수정</label> <span></span>
 											</div>
 										</div>
 										<div class="Fix-PW-Btn">
@@ -190,7 +193,8 @@
 										<div class="Fix-Container">
 
 											<div class="Fix-Nick-Input">
-												<input type="text" name="nick" required> <label>닉네임수정</label> <span></span>
+												<input type="text" name="nick" required> <label>닉네임수정</label>
+												<span></span>
 
 											</div>
 										</div>
@@ -209,29 +213,25 @@
 						</div>
 						<div class="Profile-text">
 
-						<div>
 							<div>
-								<h4>한줄평 작성</h4>
-							</div>
-							<div>
-								<div>
-									<textarea class="textarea">
-								한줄평 쓰는곳(기존거를 처음에 띄워둠 애니메이션 hover, focus 사용)
-							</textarea>
-								</div>
-								<div>
-									<form>
-										<button class="textarea-button">한줄평 제출</button>
-									</form>
-								</div>
 								<div calss="Profile-date">
 									<h4>가입일</h4>
 									<div class="Profile-Summary-Text">
-
-
 										<div>${info.created_at}</div>
 									</div>
 								</div>
+								<div>
+									<h4>한줄평 작성</h4>
+								</div>
+								<div>
+									<form>
+										<div>
+											<textarea class="textarea"></textarea>
+										</div>
+										<div class="Fix-textarea">
+											<button class="textarea-button">한줄평 제출</button>
+										</div>
+									</form>
 								</div>
 
 

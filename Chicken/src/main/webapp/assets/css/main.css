@@ -21,6 +21,11 @@ body {
 	z-index: 30;
 }
 
+.left-navbar * {
+	font-family:'Giants-Inline';
+	
+}
+
 .left-navbar-logo {
 	max-width: 150px;
 	/* 로고 이미지의 최대 너비 설정 */
@@ -70,6 +75,7 @@ nav.navbar {
 }
 
 .navbar-logo {
+	padding-left: 50px;
 	max-width: 150px;
 	/* 로고 이미지의 최대 너비 설정 */
 }
@@ -84,42 +90,54 @@ nav.navbar {
 .login-search {}
 
 .select {
+	border : 0px !important;
+	font-size: 18px;
+	padding-left: 15px;
 	height: 56px;
-	margin: 0px;
+	width: 90px;
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 50px;
 	float: left;
-	
+
+
 }
+
 .sr-input {
 	background-color: white;
 	border-top-right-radius: 50px;
 	border-bottom-right-radius: 50px;
 	width: 500px;
-	height: 50px;
+	height: 54px;
+	font-size: 20px;
+	outline: 0;
+	border : 0px !important;
 
 	&:hover,
 	&:focus {
-		padding: 12px 0;
 		outline: 0;
-		border: 1px solid transparent;
-		border-bottom: 1px solid #575756;
 		border-radius: 0;
 		background-position: 100% center;
+		border-style: solid;
+		border: 1px black;
 	}
 }
 
 .sr-input-btn {
+	border: 3px solid orange;
+
 	width: 56px;
 	height: 56px;
-	background-color: #FFA500;
+	background-color: white;
 	cursor: pointer;
 	border-radius: 50%;
+	margin-left: 10px;
+
 }
 
 
 .sr-input-btn:hover {
 	animation: jittery 4s infinite;
+
 }
 
 
@@ -135,26 +153,10 @@ nav.navbar {
 	animation: jittery 4s infinite;
 }
 
-.LogIn-Image-Container{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: relative;
-}
-
-.Main-LogIn-Image{
-	width: 100px;
-	height: 100px;
-	position: absolute;
-	margin-right: 200px;
-	margin-top: 100px;
-}
-
 .login-button {
-	background-color: #FFD280 !important;
-	padding: 10px 20px !important;
+	background-color: #FFD280;
+	padding: 10px 20px;
 	border-radius: 5px;
-	color: black !important;
 	border: none;
 	cursor: pointer;
 }
@@ -164,7 +166,7 @@ nav.navbar {
 }
 
 .Logout-Btn {
-	background-color: #FFD280 !important;
+	background-color: #FFD280;
 	padding: 10px 20px;
 	border-radius: 5px;
 	border: none;
@@ -175,76 +177,12 @@ nav.navbar {
 	animation: jittery 4s infinite;
 }
 
-.sr {
-	padding-left: 150px;
-}
+
 
 .regi-login {
-	padding-left: 200px;
+	padding-left: 180px;
 	margin-left: 200px;
 	height: 40px;
-}
-
-/* 검색추천, 자동완성 */
-
-.invisible {
-	display: none;
-}
-
-
-#suggestion_box {
-	margin-top: 1px;
-	background: white;
-	padding: 0 10px;
-	border: 1px solid black;
-}
-
-#suggested_items {
-	height: 100px;
-	width: 250px;
-	overflow: auto;
-	/* 스크롤바 추가 */
-}
-
-/* 마우스 올리면 색 변화 */
-.item:hover {
-	color: #fff;
-	background-color: lightgreen;
-}
-
-
-/* 로그인, 회원가입 */
-.login-input {
-	margin-right: 10px;
-	display: flex;
-	flex-direction: column;
-	/* 아이디와 비밀번호를 위아래로 나열하도록 설정 */
-}
-
-.login-input input {
-	margin-bottom: 10px;
-	/* 입력 필드 간 간격을 추가하여 위아래로 나열되도록 조정 */
-}
-
-
-.login-button {
-	background-color: #333;
-	color: white;
-	border: none;
-	padding: 5px 10px;
-	cursor: pointer;
-}
-
-.Logout-Container {
-	flex-direction: column;
-
-}
-
-.Logout-Btn {
-	background-color: #F27405;
-	padding: 10px 20px;
-	border-radius: 5px;
-	cursor: pointer;
 }
 
 /* 본문 내용 스타일 */

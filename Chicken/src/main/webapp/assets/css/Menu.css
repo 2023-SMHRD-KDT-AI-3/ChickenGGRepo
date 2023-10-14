@@ -199,7 +199,9 @@ nav.navbar {
 
 .brandlogo {
 	margin-left: 250px;
-	margin-top: 10px;
+	margin-top: 90px;
+	margin-bottom: 70px;
+	padding-left: 60px;
 }
 
 /* 슬라이드 애니메이션 부분 CSS */
@@ -306,10 +308,9 @@ body > div.main-slider.slick-initialized.slick-slider.slick-dotted > div > div{
 }
 
 .brand {
-	font-size: 65px;
+	font-size: 45px;
 	color: #FFA500;
 	margin-top: 45px;
-	margin-left: 100px;
 	margin-bottom: 5px;
 }
 
@@ -323,11 +324,11 @@ body > div.main-slider.slick-initialized.slick-slider.slick-dotted > div > div{
 }
 
 .compare {
+	font-size: 20px;
 	background-color: #FFD280;
-	margin-left: 1520px;
 	color: #5C4C2E;
 	border-radius: 5%;
-	padding: 15px 25px;
+	padding: 10px 20px;
 	display: inline-block;
 	border: 1px solid rgba(0, 0, 0, 0.21);
 	border-bottom-color: rgba(0, 0, 0, 0.34);
@@ -346,9 +347,6 @@ body > div.main-slider.slick-initialized.slick-slider.slick-dotted > div > div{
 }
 
 #compare_list {
-	margin-left: 160px;
-}
-
-span {
-	color: #FFA500;
+	font-size: 25px;
+	color: #a96d24
 }

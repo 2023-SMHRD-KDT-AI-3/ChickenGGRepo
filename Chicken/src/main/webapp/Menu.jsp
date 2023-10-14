@@ -8,8 +8,11 @@
 <script src="https://kit.fontawesome.com/3a115195d8.js"
 	crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <title>메뉴 별 치킨연구소</title>
 <link rel="stylesheet" href="assets/css/Menu.css"></link>
+<link rel="stylesheet" href="assets/css/slick.css"></link>
+<link rel="stylesheet" href="assets/css/slick-theme.css"></link>
 <style>
 @font-face {
 	font-family: 'GongGothicMedium';
@@ -31,10 +34,6 @@
 	font-family: GongGothicMedium;
 }
 </style>
-<link rel="stylesheet" href="assets/css/Menu.css"></link>
-<link rel="stylesheet" href="assets/css/slick.css"></link>
-<link rel="stylesheet" href="assets/css/slick-theme.css"></link>
-<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
 	<!-- 왼쪽 고정된 네비게이션 바 -->
@@ -46,10 +45,10 @@
 		<!-- hr 태그는 수평선용임 -->
 		<hr class="hrhr"></hr>
 		<div class="left-navbar-menu-logo">
-			<a href="goMain"> <i class="fas fa-home"></i> 홈
-			</a> <a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드
-			</a> <a href="Menu.jsp"> <i class="fas fa-utensils"></i> 메뉴
-			</a> <a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지
+			<a href="goMain"> <i class="fas fa-home"></i>&nbsp; 홈
+			</a> <a href="Brand.jsp"> <i class="fas fa-list"></i>&nbsp; 브랜드
+			</a> <a href="Menu.jsp"> <i class="fas fa-utensils"></i>&nbsp; 메뉴
+			</a> <a href="MyPage.jsp"> <i class="fas fa-trophy"></i>&nbsp; 마이페이지
 			</a>
 		</div>
 		<!-- 여기에 추가 메뉴 항목을 추가할 수 있습니다. -->
@@ -97,7 +96,6 @@
 			<h1 class="brand">MENU</h1>
 			<button type="submit" class="compare">비교하기</button>
 			<span id="compare_list"></span>
-			<hr>
 		</div>
 	</div>
 	<!-- 치킨 사진 슬라이드 -->
