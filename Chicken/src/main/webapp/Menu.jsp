@@ -100,115 +100,23 @@
 		</div>
 	</div>
 	<!-- 치킨 사진 슬라이드 -->
-	<div class="main-slider">
-		<div class="item item-1">
-			<img src="images/Menu_brandlogo/logo-bbq.jpg" class="Menu-Slide-Logo">
-			<div class="inner-slider">
-				<div class="goods bbq-1">
-					<img src="images/chickMenu/BBQ/레드착착.png">
-				</div>
-				<div class="goods bbq-2">
-					<img src="images/chickMenu/BBQ/황올.png">
-				</div>
-				<div class="goods bbq-3">
-					<img src="images/chickMenu/BBQ/단짠갈릭.jpg">
-				</div>
-				<div class="goods bbq-4">
-					<img src="images/chickMenu/BBQ/바삭갈릭.jpg">
-				</div>
-				<div class="goods bbq-4">
-					<img src="images/chickMenu/BBQ/블랙페퍼.png">
-				</div>
-				<div class="goods bbq-4">
-					<img src="images/chickMenu/BBQ/착착갈릭.jpg">
+	<div class="Slider-Container">
+		<div class="big-Frame">
+			<div class="big-Slide">
+				<div class="big-Content">
+					<div class="small-Frame"></div>
+					<div class="small-Frame"></div>
+					<div class="small-Frame"></div>
+					<div class="small-Frame"></div>
+					<div class="small-Frame"></div>
+					<div class="small-Frame"></div>
+					<div class="small-Frame"></div>
+					<div class="small-Frame"></div>
+					<div class="small-Frame"></div>
 				</div>
 			</div>
-		</div>
-		<div class="item item-2">
-			<img src="images/Menu_brandlogo/logo-bhc.png" class="Menu-Slide-Logo">
-			<div class="inner-slider">
-				<div class="goods bhc-1"></div>
-				<div class="goods bhc-2"></div>
-				<div class="goods bhc-3"></div>
-				<div class="goods bhc-4"></div>
-			</div>
-		</div>
-		<div class="item item-3">
-			<img src="images/Menu_brandlogo/logo-kyochon.jpg" class="Menu-Slide-Logo">
-			<div class="inner-slider">
-				<div class="goods kyochon-1">
-					<img src="images/chickMenu/교촌/교촌순살.png">
-				</div>
-				<div class="goods kyochon-2">
-					<img src="images/chickMenu/교촌/교촌오리지널.png">
-				</div>
-				<div class="goods kyochon-3">
-					<img src="images/chickMenu/교촌/교촌윙.png">
-				</div>
-				<div class="goods kyochon-4">
-					<img src="images/chickMenu/교촌/교촌콤보.png">
-				</div>
-				<div class="goods kyochon-5">
-					<img src="images/chickMenu/교촌/레드순살.png">
-				</div>
-				<div class="goods kyochon-6">
-					<img src="images/chickMenu/교촌/레드오리지널.png">
-				</div>
-			</div>
-		</div>
-		<div class="item item-4">
-			<img src="images/Menu_brandlogo/logo-goobne.png" class="Menu-Slide-Logo">
-			<div class="inner-slider">
-				<div class="goods goobne-1"></div>
-				<div class="goods goobne-2"></div>
-				<div class="goods goobne-3"></div>
-				<div class="goods goobne-4"></div>
-			</div>
-		</div>
-		<div class="item item-5">
-			<img src="images/Menu_brandlogo/logo-hosigi.png" class="Menu-Slide-Logo">
-			<div class="inner-slider">
-				<div class="goods hosigi-1"></div>
-				<div class="goods hosigi-2"></div>
-				<div class="goods hosigi-3"></div>
-				<div class="goods hosigi-4"></div>
-			</div>
-		</div>
-		<div class="item item-6">
-			<img src="images/Menu_brandlogo/logo-jadam.png" class="Menu-Slide-Logo">
-			<div class="inner-slider">
-				<div class="goods jadam-1"></div>
-				<div class="goods jadam-2"></div>
-				<div class="goods jadam-3"></div>
-				<div class="goods jadam-4"></div>
-			</div>
-		</div>
-		<div class="item item-7">
-			<img src="images/Menu_brandlogo/logo-ajukeo.jpg" class="Menu-Slide-Logo">
-			<div class="inner-slider">
-				<div class="goods ajukeo-1"></div>
-				<div class="goods ajukeo-2"></div>
-				<div class="goods ajukeo-3"></div>
-				<div class="goods ajukeo-4"></div>
-			</div>
-		</div>
-		<div class="item item-8">
-			<img src="images/Menu_brandlogo/logo-mexicana.png" class="Menu-Slide-Logo">
-			<div class="inner-slider">
-				<div class="goods mexicana-1"></div>
-				<div class="goods mexicana-2"></div>
-				<div class="goods mexicana-3"></div>
-				<div class="goods mexicana-4"></div>
-			</div>
-		</div>
-		<div class="item item-9">
-			<img src="images/Menu_brandlogo/logo-chickenplus.png" class="Menu-Slide-Logo">
-			<div class="inner-slider">
-				<div class="goods chickenplus-1"></div>
-				<div class="goods chickenplus-2"></div>
-				<div class="goods chickenplus-3"></div>
-				<div class="goods chickenplus-4"></div>
-			</div>
+			<button class="big-Previous"></button>
+			<button class="small-Previous"></button>
 		</div>
 	</div>
 	<script src="assets/js/Menu.js"></script>
@@ -216,18 +124,6 @@
 	<script src="assets/js/slick.min.js"></script>
 
 	<!-- 슬라이더 애니메이션 -->
-	<script type="text/javascript">
-		var mainSlider = $('.main-slider');
-		var innerSlider = $('.inner-slider');
-
-		mainSlider.slick({
-			slidesToShow : 1,
-			dots : true,
-		});
-
-		innerSlider.slick({
-			slidesToShow : 3,
-		})
-	</script>
+	
 </body>
 </html>

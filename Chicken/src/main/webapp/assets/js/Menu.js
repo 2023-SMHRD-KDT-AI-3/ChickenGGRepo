@@ -3,7 +3,12 @@
  */
 
 /* 슬라이드 애니메이션 JS */
-
+let imageIndex = 0;
+let position = 0;
+const Big_Image_Width = 0; /*이따 설정할 이미지 크기만큼 */
+const bigBtnPrevious = document.querySelector(".big-Previous");
+const bigBtnNext = document.querySelector(".big-Next");
+const images = document.querySelector(".images");
 
 
 //brand checkbox 목록 기능
