@@ -212,10 +212,12 @@
 }
 
 @font-face {
-    font-family: 'Giants-Inline';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Giants-Inline';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2')
+		format('woff2');
+	font-weight: normal;
+	font-style: normal;
 }
 
 * {
@@ -228,15 +230,16 @@
 	<div class="left-navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="left-navbar-logo">
-			<a href="goMain" ><h2 style="font-size : 30px; 'font-family:'Giants-Inline'">CHICKEN.GG</h2></a>
+			<a href="goMain"><h2
+					style="font-size: 30px; ' font-family: 'Giants-Inline'">CHICKEN.GG</h2></a>
 		</div>
 		<!-- hr 태그는 수평선용임 -->
 		<hr class="hrhr"></hr>
 		<div class="left-navbar-menu-logo">
-			<a href="goMain"> <i class="fas fa-home"></i> 홈
-			</a> <a href="Brand.jsp"> <i class="fas fa-list"></i> 브랜드
-			</a> <a href="Menu.jsp"> <i class="fas fa-utensils"></i> 메뉴
-			</a> <a href="MyPage.jsp"> <i class="fas fa-trophy"></i> 마이페이지
+			<a href="goMain"> <i class="fas fa-home"></i>&nbsp; 홈
+			</a> <a href="Brand.jsp"> <i class="fas fa-list"></i>&nbsp; 브랜드
+			</a> <a href="Menu.jsp"> <i class="fas fa-utensils"></i>&nbsp; 메뉴
+			</a> <a href="MyPage.jsp"> <i class="fas fa-trophy"></i>&nbsp; 마이페이지
 			</a>
 		</div>
 		<!-- 여기에 추가 메뉴 항목을 추가할 수 있습니다. -->
@@ -246,8 +249,8 @@
 	<nav class="navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="navbar-logo">
-			<a href="goMain" id="navbar_logoimg"><img width="100px" src="images/하얀닭.png"
-				alt="치킨 연구소 로고"></a>
+			<a href="goMain" id="navbar_logoimg"><img width="100px"
+				src="images/하얀닭.png" alt="치킨 연구소 로고"></a>
 		</div>
 
 		<div class="login-search">
@@ -301,7 +304,7 @@
 		</div>
 		<!-- 여기는 마이차트 부분입니다 -->
 		<div style="float: right" class="chart-wrap" id="myChart1">
-		<!-- <canvas id="myChart" style="height: 490px; width: 850px"></canvas>  -->
+			<!-- <canvas id="myChart" style="height: 490px; width: 850px"></canvas>  -->
 		</div>
 		<!-- 여기는 마이차트 부분입니다 -->
 		<div id="Chart2" style="height: 490px; width: 850px"></div>
@@ -578,11 +581,12 @@
             	labels : brand_listname, //브랜드 이름 가져와서 X축에 넣기
 	            datasets : [ {
 	               data : brand_listprice,
-	               backgroundColor : [ 'rgba(255, 99, 132, 0.2)',
-	                     'rgba(54, 162, 235, 0.2)',
-	                     'rgba(255, 206, 86, 0.2)',
-	                     'rgba(75, 192, 192, 0.2)',
-	                     'rgba(153, 102, 255, 0.2)'],
+	              
+	               backgroundColor : [ 'rgba(255, 99, 132, 100)',
+	                     'rgba(54, 162, 235, 100)',
+	                     'rgba(255, 206, 86, 100)',
+	                     'rgba(75, 192, 192, 100)',
+	                     'rgba(153, 102, 255, 100)'],
 	               borderColor : [ 'rgba(255, 99, 132, 1)',
 	                     'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
 	                     'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'],
@@ -590,11 +594,11 @@
 	            },
 	            {
 		               data : brand_listmin,
-		               backgroundColor : [ 'rgba(255, 99, 132, 0.2)',
-		                     'rgba(54, 162, 235, 0.2)',
-		                     'rgba(255, 206, 86, 0.2)',
-		                     'rgba(75, 192, 192, 0.2)',
-		                     'rgba(153, 102, 255, 0.2)'],
+		               backgroundColor : [ 'rgba(255, 99, 132, 100)',
+		                     'rgba(54, 162, 235, 100)',
+		                     'rgba(255, 206, 86, 100)',
+		                     'rgba(75, 192, 192, 100)',
+		                     'rgba(153, 102, 255, 100)'],
 		               borderColor : [ 'rgba(255, 99, 132, 1)',
 		                     'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
 		                     'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'],
@@ -606,19 +610,26 @@
 	        		 legend :{
 	        			 display : false
 	        		 }
+	               
+	         
 	        	 },
 	             scales : {
+	            	
+	            	 
 	                yAxes: [
 	                    {
+	                    
 	                      ticks: { // 최소값, 최대값, 틱범위
 	                        min: 13000,
 	                        max: 25000,
-	                        stepSize: 3000
-	                      }
+	                        stepSize: 3000    }
+	                    	                                    	                     	                 
+	                    
 	                    }]
 	            	}
 	         }
 	      });
+        
 	      document.getElementById("myChart").onclick = function(evt) {
 	    	  var label = null;
 	          var activePoints = myChart.getElementsAtEventForMode(evt, 'nearest', { intersect: true }, true);
@@ -667,11 +678,11 @@
 	                       data : [ //브랜드 이름별 평균 가격 가져와서 Y축에 넣기
 								finalmin , 15000 , finalavg , 18000
 	                       ],
-	                       backgroundColor : [ 'rgba(255, 99, 132, 0.2)',
-	                             'rgba(54, 162, 235, 0.2)',
-	                             'rgba(255, 206, 86, 0.2)',
-	                             'rgba(75, 192, 192, 0.2)',
-	                             'rgba(153, 102, 255, 0.2)'],
+	                       backgroundColor : [ 'rgba(255, 99, 132, 100)',
+	                             'rgba(54, 162, 235, 100)',
+	                             'rgba(255, 206, 86, 100)',
+	                             'rgba(75, 192, 192, 100)',
+	                             'rgba(153, 102, 255, 100)'],
 	                       borderColor : [ 'rgba(255, 99, 132, 1)',
 	                             'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
 	                             'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'],
@@ -691,6 +702,7 @@
 	                                min: 13000,
 	                                max: 25000,
 	                                stepSize: 3000
+	                                
 	                              }
 	                            }]
 	                    	}
