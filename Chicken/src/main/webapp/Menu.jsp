@@ -24,10 +24,12 @@
 }
 
 @font-face {
-    font-family: 'Giants-Inline';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Giants-Inline';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2')
+		format('woff2');
+	font-weight: normal;
+	font-style: normal;
 }
 
 * {
@@ -40,7 +42,8 @@
 	<div class="left-navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="left-navbar-logo">
-			<a href="goMain" ><h2 style="font-size : 30px; 'font-family:'Giants-Inline'">CHICKEN.GG</h2></a>
+			<a href="goMain"><h2
+					style="font-size: 30px; ' font-family: 'Giants-Inline'">CHICKEN.GG</h2></a>
 		</div>
 		<!-- hr 태그는 수평선용임 -->
 		<hr class="hrhr"></hr>
@@ -58,8 +61,8 @@
 	<nav class="navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="navbar-logo">
-			<a href="goMain" id="navbar_logoimg"><img width="100px" src="images/하얀닭.png"
-				alt="치킨 연구소 로고"></a>
+			<a href="goMain" id="navbar_logoimg"><img width="100px"
+				src="images/하얀닭.png" alt="치킨 연구소 로고"></a>
 		</div>
 
 		<div class="login-search">
@@ -99,30 +102,285 @@
 		</div>
 	</div>
 	<!-- 치킨 사진 슬라이드 -->
-	<div class="Slider-Container">
-		<div class="big-Frame">
-			<div class="big-Slide">
-				<div class="big-Content">
-					<div class="small-Frame"></div>
-					<div class="small-Frame"></div>
-					<div class="small-Frame"></div>
-					<div class="small-Frame"></div>
-					<div class="small-Frame"></div>
-					<div class="small-Frame"></div>
-					<div class="small-Frame"></div>
-					<div class="small-Frame"></div>
-					<div class="small-Frame"></div>
+	<div class="outer">
+		<div class="inner-grp">
+			<!-- 1번 브랜드 -->
+			<div class="inner">
+				<h2>BBQ</h2>
+				<div class="slider">
+					<div class="slider-btn-wrapper slider-btn-wrapper-left">
+						<!-- 왼쪽 화살표 -->
+						<button id="left-btn" class="slider-btn">⬅Left</button>
+					</div>
+					<div class="item-wrapper">
+						<div class="item">
+							<input type="checkbox" class="logocheck" name="brandCompare"
+								value="BBQ" onclick="getCheckboxValue()" />
+							<button class="logobox" name="chickenbrand" value="BBQ">
+								<img src="images/Menu_brandlogo/logo-bbq.jpg" />
+								<div class="info-text">
+									<h2>황금올리브</h2>
+								</div>
+							</button>
+						</div>
+						<div class="item">
+							<input type="checkbox" class="logocheck" name="brandCompare"
+								value="BBQ" onclick="getCheckboxValue()" />
+							<button class="logobox" name="chickenbrand" value="BBQ">
+								<img src="images/Menu_brandlogo/logo-bbq.jpg" />
+								<div class="info-text">
+									<h2>황금올리브</h2>
+								</div>
+							</button>
+						</div>
+						<div class="item">
+							<input type="checkbox" class="logocheck" name="brandCompare"
+								value="BBQ" onclick="getCheckboxValue()" />
+							<button class="logobox" name="chickenbrand" value="BBQ">
+								<img src="images/Menu_brandlogo/logo-bbq.jpg" />
+								<div class="info-text">
+									<h2>황금올리브</h2>
+								</div>
+							</button>
+						</div>
+						<div class="item">
+							<input type="checkbox" class="logocheck" name="brandCompare"
+								value="BBQ" onclick="getCheckboxValue()" />
+							<button class="logobox" name="chickenbrand" value="BBQ">
+								<img src="images/Menu_brandlogo/logo-bbq.jpg" />
+								<div class="info-text">
+									<h2>황금올리브</h2>
+								</div>
+							</button>
+						</div>
+					</div>
+					<div class="slider-btn-wrapper slider-btn-wrapper-right">
+						<!-- 오른쪽 화살표 -->
+						<button id="right-btn" class="slider-btn">Right➡</button>
+					</div>
 				</div>
 			</div>
-			<button class="big-Previous"></button>
-			<button class="small-Previous"></button>
+			<!-- 2번 브랜드 -->
+			<div class="inner">
+				<h2>BHC</h2>
+				<div class="slider">
+					<div class="slider-btn-wrapper slider-btn-wrapper-left">
+						<!-- 왼쪽 화살표 -->
+						<button id="left-btn" class="slider-btn">⬅Left</button>
+					</div>
+					<div class="item-wrapper">
+						<div class="item">
+							<img src="images/Menu_brandlogo/logo-bhc.png" />
+							<div class="info-text">
+								<h2>황금올리브</h2>
+							</div>
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/착착갈릭.jpg" />
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/블랙 페퍼.png" />
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/바삭갈릭.jpg" />
+						</div>
+					</div>
+					<div class="slider-btn-wrapper slider-btn-wrapper-right">
+						<!-- 오른쪽 화살표 -->
+						<button id="right-btn" class="slider-btn">Right➡</button>
+					</div>
+				</div>
+			</div>
+			<!-- 3번 브랜드 -->
+			<div class="inner">
+				<h2>Kyochon</h2>
+				<div class="slider">
+					<div class="slider-btn-wrapper slider-btn-wrapper-left">
+						<!-- 왼쪽 화살표 -->
+						<button id="left-btn" class="slider-btn">⬅Left</button>
+					</div>
+					<div class="item-wrapper">
+						<div class="item">
+							<img src="images/Menu_brandlogo/logo-kyochon.jpg" />
+							<div class="info-text">
+								<h2>황금올리브</h2>
+							</div>
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/착착갈릭.jpg" />
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/블랙 페퍼.png" />
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/바삭갈릭.jpg" />
+						</div>
+					</div>
+					<div class="slider-btn-wrapper slider-btn-wrapper-right">
+						<!-- 오른쪽 화살표 -->
+						<button id="right-btn" class="slider-btn">Right➡</button>
+					</div>
+				</div>
+			</div>
+			<!-- 4번 브랜드 -->
+			<div class="inner">
+				<h2>굽네치킨</h2>
+				<div class="slider">
+					<div class="slider-btn-wrapper slider-btn-wrapper-left">
+						<!-- 왼쪽 화살표 -->
+						<button id="left-btn" class="slider-btn">⬅Left</button>
+					</div>
+					<div class="item-wrapper">
+						<div class="item">
+							<img src="images/Menu_brandlogo/logo-goobne.png" />
+							<div class="info-text">
+								<h2>황금올리브</h2>
+							</div>
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/착착갈릭.jpg" />
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/블랙 페퍼.png" />
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/바삭갈릭.jpg" />
+						</div>
+					</div>
+					<div class="slider-btn-wrapper slider-btn-wrapper-right">
+						<!-- 오른쪽 화살표 -->
+						<button id="right-btn" class="slider-btn">Right➡</button>
+					</div>
+				</div>
+			</div>
+			<div class="inner">
+				<h2>BHC</h2>
+				<div class="slider">
+					<div class="slider-btn-wrapper slider-btn-wrapper-left">
+						<!-- 왼쪽 화살표 -->
+						<button id="left-btn" class="slider-btn">⬅Left</button>
+					</div>
+					<div class="item-wrapper">
+						<div class="item">
+							<img src="images/Menu_brandlogo/logo-bbq.jpg" />
+							<div class="info-text">
+								<h2>황금올리브</h2>
+							</div>
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/착착갈릭.jpg" />
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/블랙 페퍼.png" />
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/바삭갈릭.jpg" />
+						</div>
+					</div>
+					<div class="slider-btn-wrapper slider-btn-wrapper-right">
+						<!-- 오른쪽 화살표 -->
+						<button id="right-btn" class="slider-btn">Right➡</button>
+					</div>
+				</div>
+			</div>
+			<div class="inner">
+				<h2>BHC</h2>
+				<div class="slider">
+					<div class="slider-btn-wrapper slider-btn-wrapper-left">
+						<!-- 왼쪽 화살표 -->
+						<button id="left-btn" class="slider-btn">⬅Left</button>
+					</div>
+					<div class="item-wrapper">
+						<div class="item">
+							<img src="images/Menu_brandlogo/logo-bbq.jpg" />
+							<div class="info-text">
+								<h2>황금올리브</h2>
+							</div>
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/착착갈릭.jpg" />
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/블랙 페퍼.png" />
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/바삭갈릭.jpg" />
+						</div>
+					</div>
+					<div class="slider-btn-wrapper slider-btn-wrapper-right">
+						<!-- 오른쪽 화살표 -->
+						<button id="right-btn" class="slider-btn">Right➡</button>
+					</div>
+				</div>
+			</div>
+			<div class="inner">
+				<h2>BHC</h2>
+				<div class="slider">
+					<div class="slider-btn-wrapper slider-btn-wrapper-left">
+						<!-- 왼쪽 화살표 -->
+						<button id="left-btn" class="slider-btn">⬅Left</button>
+					</div>
+					<div class="item-wrapper">
+						<div class="item">
+							<img src="images/Menu_brandlogo/logo-bbq.jpg" />
+							<div class="info-text">
+								<h2>황금올리브</h2>
+							</div>
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/착착갈릭.jpg" />
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/블랙 페퍼.png" />
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/바삭갈릭.jpg" />
+						</div>
+					</div>
+					<div class="slider-btn-wrapper slider-btn-wrapper-right">
+						<!-- 오른쪽 화살표 -->
+						<button id="right-btn" class="slider-btn">Right➡</button>
+					</div>
+				</div>
+			</div>
+			<div class="inner">
+				<h2>BHC</h2>
+				<div class="slider">
+					<div class="slider-btn-wrapper slider-btn-wrapper-left">
+						<!-- 왼쪽 화살표 -->
+						<button id="left-btn" class="slider-btn">⬅Left</button>
+					</div>
+					<div class="item-wrapper">
+						<div class="item">
+							<img src="images/Menu_brandlogo/logo-bbq.jpg" />
+							<div class="info-text">
+								<h2>황금올리브</h2>
+							</div>
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/착착갈릭.jpg" />
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/블랙 페퍼.png" />
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/바삭갈릭.jpg" />
+						</div>
+					</div>
+					<div class="slider-btn-wrapper slider-btn-wrapper-right">
+						<!-- 오른쪽 화살표 -->
+						<button id="right-btn" class="slider-btn">Right➡</button>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+	</div>
+	<div class="btn-grp">
+		<button class="button-left">⬅Left</button>
+		<button class="button-right">Right➡</button>
+	</div>
 	<script src="assets/js/Menu.js"></script>
-	<script src="assets/js/slick.js"></script>
-	<script src="assets/js/slick.min.js"></script>
 
-	<!-- 슬라이더 애니메이션 -->
-	
 </body>
 </html>

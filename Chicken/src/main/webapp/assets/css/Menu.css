@@ -205,7 +205,121 @@ nav.navbar {
 }
 
 /* 슬라이드 애니메이션 부분 CSS */
+.outer {
+    border: 6px solid #525252;
+    width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
 
+.inner-grp {
+    display: flex;
+    transition: all 0.3s ease-out;
+    height: 100%;
+}
+
+.inner {
+    color: #141313;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0px;
+}
+
+
+.inner:nth-of-type(1) {
+    background-image: url("images/Menu-brandlogo/logo-bbq.jpg");
+    background-size: 100% 100%;
+    opacity: 40%;
+}
+
+.inner:nth-of-type(2) {
+    background-image: url("images/Menu-brandlogo/logo-bhc.png");
+    background-size: 100% 100%;
+    opacity: 40%;
+}
+
+.inner:nth-of-type(3) {
+    background-image: url("images/Menu-brandlogo/logo-kyochon.jpg");
+    background-size: 100% 100%;
+    opacity: 40%;
+}
+
+.inner:nth-of-type(4) {
+    background-image: url("images/Menu-brandlogo/logo-bhc.png");
+    background-size: 100% 100%;
+    opacity: 40%;
+}
+
+.inner:nth-of-type(5) {
+    background-image: url("images/Menu-brandlogo/logo-bhc.png");
+    background-size: 100% 100%;
+    opacity: 40%;
+}
+
+.inner:nth-of-type(6) {
+    background-image: url("images/Menu-brandlogo/logo-bhc.png");
+    background-size: 100% 100%;
+    opacity: 40%;
+}
+
+.inner:nth-of-type(7) {
+    background-image: url("images/Menu-brandlogo/logo-bhc.png");
+    background-size: 100% 100%;
+    opacity: 40%;
+}
+
+.inner:nth-of-type(8) {
+    background-image: url("images/Menu-brandlogo/logo-bhc.png");
+    background-size: 100% 100%;
+    opacity: 40%;
+}
+
+.inner:nth-of-type(9) {
+    background-image: url("images/Menu-brandlogo/logo-bhc.png");
+    background-size: 100% 100%;
+    opacity: 40%;
+}
+
+.btn-grp {
+    text-align: center;
+}
+
+.btn-grp button {
+    border: none;
+    border-radius: 10px;
+    background-color: #525252;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+/* 작은 슬라이드*/
+.slider{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0px;
+}
+
+.item-wrapper{
+    display: flex;
+    overflow-x: hidden;
+    height: 100%;
+}
+.item{
+    height: 30%;
+}
+
+.item img{
+    width: 30%;
+    padding: 0 auto;
+}
 
 /* 이 밑은 예전꺼 쓸수도 있고 아닐수도 있고*/
 .logobox {
