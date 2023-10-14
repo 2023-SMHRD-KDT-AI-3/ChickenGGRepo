@@ -1,388 +1,368 @@
 @charset "EUC-KR";
 
 body {
-	background-color: #F5F5F5;
-	margin: 0;
-	padding: 0;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
 }
 
 /* 왼쪽 고정 네비게이션 바 스타일 */
 .left-navbar {
-	position: fixed;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	background-color: #333;
-	color: white;
-	width: 200px;
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	z-index: 30;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #333;
+    color: white;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 30;
 }
 
 .left-navbar * {
-	font-family:'Giants-Inline';
-	
+    font-family: 'Giants-Inline';
+
 }
 
 .left-navbar-logo {
-	max-width: 150px;
-	/* 로고 이미지의 최대 너비 설정 */
-	margin-top: 30px;
+    max-width: 150px;
+    /* 로고 이미지의 최대 너비 설정 */
+    margin-top: 30px;
 }
 
 .blank {
-	height: 20px;
+    height: 20px;
 }
 
 .hrhr {
-	width: 100%;
-	color: white;
-	margin-bottom: 40px;
+    width: 100%;
+    color: white;
+    margin-bottom: 40px;
 }
 
 .left-navbar-menu-logo {
-	padding: 10px;
-	font-size: 20px;
+    padding: 10px;
+    font-size: 20px;
 }
 
 .left-navbar a {
-	text-decoration: none;
-	color: white;
-	display: flex;
-	align-items: center;
-	padding-bottom: 50px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
 }
 
 .left-navbar a:hover {
-	background-color: #757575;
+    background-color: #757575;
 }
 
 .left-navbar a i {
-	margin-right: 10px;
+    margin-right: 10px;
 }
 
 /* 네비게이션 바 스타일 */
 nav.navbar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #FFA500;
-	padding: 10px 20px;
-	margin-left: 220px;
-	height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFA500;
+    padding: 10px 20px;
+    margin-left: 220px;
+    height: 150px;
 }
 
 .navbar-logo {
-	padding-left: 50px;
-	max-width: 150px;
-	/* 로고 이미지의 최대 너비 설정 */
+    padding-left: 50px;
+    max-width: 150px;
+    /* 로고 이미지의 최대 너비 설정 */
 }
 
 .navbar-logo img {
-	height: auto;
-	max-width: 100%;
-	display: block;
+    height: auto;
+    max-width: 100%;
+    display: block;
 }
 
 /* 로그인 및 검색 부분 스타일 */
 .login-search {}
 
 .select {
-	border : 0px !important;
-	font-size: 18px;
-	padding-left: 15px;
-	height: 56px;
-	width: 90px;
-	border-top-left-radius: 50px;
-	border-bottom-left-radius: 50px;
-	float: left;
+    border: 0px !important;
+    font-size: 18px;
+    padding-left: 15px;
+    height: 56px;
+    width: 90px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    float: left;
 
 
 }
 
 .sr-input {
-	background-color: white;
-	border-top-right-radius: 50px;
-	border-bottom-right-radius: 50px;
-	width: 500px;
-	height: 54px;
-	font-size: 20px;
-	outline: 0;
-	border : 0px !important;
+    background-color: white;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 500px;
+    height: 54px;
+    font-size: 20px;
+    outline: 0;
+    border: 0px !important;
 
-	&:hover,
-	&:focus {
-		outline: 0;
-		border-radius: 0;
-		background-position: 100% center;
-		border-style: solid;
-		border: 1px black;
-	}
+    &:hover,
+    &:focus {
+        outline: 0;
+        border-radius: 0;
+        background-position: 100% center;
+        border-style: solid;
+        border: 1px black;
+    }
 }
 
 .sr-input-btn {
-	border: 3px solid orange;
+    border: 3px solid orange;
 
-	width: 56px;
-	height: 56px;
-	background-color: white;
-	cursor: pointer;
-	border-radius: 50%;
-	margin-left: 10px;
+    width: 56px;
+    height: 56px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 10px;
 
 }
 
 
 .sr-input-btn:hover {
-	animation: jittery 4s infinite;
+    animation: jittery 4s infinite;
 
 }
 
 
 .register-button {
-	background-color: #FFD280;
-	padding: 10px 20px;
-	border-radius: 5px;
-	border: none;
-	cursor: pointer;
+    background-color: #FFD280;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
 .register-button:hover {
-	animation: jittery 4s infinite;
+    animation: jittery 4s infinite;
 }
 
 .login-button {
-	background-color: #FFD280;
-	padding: 10px 20px;
-	border-radius: 5px;
-	border: none;
-	cursor: pointer;
+    background-color: #FFD280;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
 .login-button:hover {
-	animation: jittery 4s infinite;
+    animation: jittery 4s infinite;
 }
 
 .Logout-Btn {
-	background-color: #FFD280;
-	padding: 10px 20px;
-	border-radius: 5px;
-	border: none;
-	cursor: pointer;
+    background-color: #FFD280;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
 .Logout-Btn:hover {
-	animation: jittery 4s infinite;
+    animation: jittery 4s infinite;
 }
 
 
 
 .regi-login {
-	padding-left: 180px;
-	margin-left: 200px;
-	height: 40px;
+    padding-left: 180px;
+    margin-left: 200px;
+    height: 40px;
 }
 
 /* 추가 스타일 */
 .content {
-	margin-top: 140px;
-	padding: 20px;
+    margin-top: 140px;
+    padding: 20px;
 }
 
 #map {
-	margin-left: 250px;
-	width: 688px;
-	height: 490px;
+    margin-left: 250px;
+    width: 688px;
+    height: 490px;
 }
 
 .brandlogo {
-	margin-left: 250px;
-	margin-top: 90px;
-	margin-bottom: 70px;
-	padding-left: 60px;
+    margin-left: 250px;
+    margin-top: 90px;
+    margin-bottom: 70px;
+    padding-left: 60px;
 }
 
 /* 슬라이드 애니메이션 부분 CSS */
-
-body > div.main-slider.slick-initialized.slick-slider.slick-dotted{
-	width: 70%;
-	height: 500px;
-	border: 1px black solid;
-	margin-left: 20%;
-	margin-right: 10%;
+.outer {
+    border: 6px solid #525252;
+    border-radius: 20px;
+    width: 80%;
+    height: 500px;
+    margin-left: 310px;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
-body > div.main-slider.slick-initialized.slick-slider.slick-dotted > button.slick-prev.slick-arrow{
-	border-radius: 20%;
-	border: 1px solid black;
-    float:left;
-    width:50px;
-    height:50px;
-    margin-left: -50px;
-    
+.inner-grp {
+    display: flex;
+    transition: all 0.3s ease-out;
+    height: 100%;
 }
 
-body > div.main-slider.slick-initialized.slick-slider.slick-dotted > button.slick-next.slick-arrow{
-	border-radius: 20%;
-	border: 1px solid black;
-    float:left;
-    width:50px;
-    height:50px;
-    margin-right: -50px;
+.inner {
+    color: #141313;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-body > div.main-slider.slick-initialized.slick-slider.slick-dotted > div{
-	width: 100%;
-	height: 100%;
+.brand-box{
+    width: 100%;
+    height: 100%;
+    opacity: 40%;
+    position: absolute;
 }
 
-.Menu-Slide-Logo{
-	width: 100%;
-	height: 100%;
-	opacity: 20%;
-	z-index: 1;
-}
-#slick-slide{
-	position: relative;
+.btn-grp {
+    text-align: center;
 }
 
-#slick-slide00 > div{
-	margin-bottom: 498px !important;
-	position: absolute;
-	z-index: 10;
-	top: 0;
-	width: 80%;
-	height: 100%;
-	display: flex;
-	align-items: center;
+.btn-grp button {
+    border: none;
+    border-radius: 10px;
+    background-color: #525252;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100px;
+    margin-top: 20px;
 }
 
-body > div.main-slider.slick-initialized.slick-slider.slick-dotted > div > div{
-	height: 100%;
+/* 작은 슬라이드*/
+.slider {
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    position: relative;
 }
 
-#slick-slide > img{
-	width: 100%;
-	height: 100%;
-	opacity: 20%;
-}
-
-#slick-slide > div > button.slick-prev.slick-arrow{
-	border: 1px solid black;
-}
-
-#slick-slide > div > button.slick-next.slick-arrow{
-	border: 1px solid black;
+.slider-btn-wrapper-left{
+    position: relative;
+    top: 65%;
+    left: -52%;
+    display: inline;
 }
 
 
-/* 이 밑은 예전꺼 쓸수도 있고 아닐수도 있고*/
-.logobox {
-	width: 330px;
-	height: 165px;
-	background-color: white;
-	border-color: #FFA500;
+.slider-btn-wrapper-right{
+    position: relative;
+    top: 65%;
+    right: 52%;
+    display: inline;
 }
 
-.line {
-	margin-left: 100px;
+.item-wrapper {
+    display: flex;
+    overflow-x: hidden;
+    height: 100%;
 }
 
-.firstLine {
-	margin-top: 15px;
+.item {
+    height: 80%;
+    position: relative;
 }
 
-.secondLine {
-	margin-top: 15px;
-}
-
-.thirdLine {
-	margin-top: 15px;
-}
-
-.logosize {
-	width: 180px;
-	height: 90px;
-}
-
-.brand {
-	font-size: 45px;
-	color: #FFA500;
-	margin-top: 45px;
-	margin-bottom: 5px;
+.item-content{
+    height: 100%;
+    width: 100%;
 }
 
 .logocheck {
-	margin-left: 110px;
-	margin-top: 40px;
-	position: relative;
-	bottom: 50px;
-	zoom: 2;
-	color: #FFA500;
+    zoom: 2;
+    color: #FFA500;
 }
 
+.logobox img{
+    width: 100%;
+    height: 80%;
+}
+
+/* 이 밑은 예전꺼 쓸수도 있고 아닐수도 있고*/
+.logobox {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    position: relative;
+    left: 50px;
+}
+
+.line {
+    margin-left: 100px;
+}
+
+.firstLine {
+    margin-top: 15px;
+}
+
+.secondLine {
+    margin-top: 15px;
+}
+
+.thirdLine {
+    margin-top: 15px;
+}
+
+.logosize {
+    width: 180px;
+    height: 90px;
+}
+
+.brand {
+    font-size: 45px;
+    color: #FFA500;
+    margin-top: 45px;
+    margin-bottom: 5px;
+}
+
+
+
 .compare {
-	font-size: 20px;
-	background-color: #FFD280;
-	color: #5C4C2E;
-	border-radius: 5%;
-	padding: 10px 20px;
-	display: inline-block;
-	border: 1px solid rgba(0, 0, 0, 0.21);
-	border-bottom-color: rgba(0, 0, 0, 0.34);
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
-	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.34) inset,
-		0 2px 0 -1px rgba(0, 0, 0, 0.13),
-		0 3px 0 -1px rgba(0, 0, 0, 0.08),
-		0 3px 13px -1px rgba(0, 0, 0, 0.21);
+    font-size: 20px;
+    background-color: #FFD280;
+    color: #5C4C2E;
+    border-radius: 5%;
+    padding: 10px 20px;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    border-bottom-color: rgba(0, 0, 0, 0.34);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.34) inset,
+        0 2px 0 -1px rgba(0, 0, 0, 0.13),
+        0 3px 0 -1px rgba(0, 0, 0, 0.08),
+        0 3px 13px -1px rgba(0, 0, 0, 0.21);
 }
 
 .compare:active {
-	top: 1px;
-	border-color: rgba(0, 0, 0, 0.34) rgba(0, 0, 0, 0.21) rgba(0, 0, 0, 0.21);
-	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.89), 0 1px rgba(0, 0, 0, 0.05) inset;
-	position: relative;
+    top: 1px;
+    border-color: rgba(0, 0, 0, 0.34) rgba(0, 0, 0, 0.21) rgba(0, 0, 0, 0.21);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.89), 0 1px rgba(0, 0, 0, 0.05) inset;
+    position: relative;
 }
 
 #compare_list {
-	font-size: 25px;
-	color: #a96d24
-}
-
-@keyframes jittery {
-
-	5%,
-	50% {
-		transform: scale(1);
-	}
-
-	10% {
-		transform: scale(0.9);
-	}
-
-	15% {
-		transform: scale(1.15);
-	}
-
-	20% {
-		transform: scale(1.15) rotate(-5deg);
-	}
-
-	25% {
-		transform: scale(1.15) rotate(5deg);
-	}
-
-	30% {
-		transform: scale(1.15) rotate(-3deg);
-	}
-
-	35% {
-		transform: scale(1.15) rotate(2deg);
-	}
-
-	40% {
-		transform: scale(1.15) rotate(0);
-	}
-}
+    font-size: 25px;
+    color: #a96d24
