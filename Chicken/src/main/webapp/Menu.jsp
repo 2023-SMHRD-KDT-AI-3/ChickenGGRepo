@@ -115,7 +115,7 @@
 					<div class="item-wrapper">
 						<div class="item">
 							<div class="item-content">
-								<input type="checkbox" class="logocheck" name="brandCompare"
+								<input type="checkbox" class="logocheck" name="menuCompare"
 									value="BBQ" onclick="getCheckboxValue()" />
 								<button class="logobox" name="chickenbrand" value="BBQ">
 									<img src="images/chickMenu/BBQ/단짠갈릭.jpg" />
@@ -127,7 +127,7 @@
 						</div>
 						<div class="item">
 							<div class="item-content">
-								<input type="checkbox" class="logocheck" name="brandCompare"
+								<input type="checkbox" class="logocheck" name="menuCompare"
 									value="BBQ" onclick="getCheckboxValue()" />
 								<button class="logobox" name="chickenbrand" value="BBQ">
 									<img src="images/chickMenu/BBQ/레드착착.png" />
@@ -139,7 +139,7 @@
 						</div>
 						<div class="item">
 							<div class="item-content">
-								<input type="checkbox" class="logocheck" name="brandCompare"
+								<input type="checkbox" class="logocheck" name="menuCompare"
 									value="BBQ" onclick="getCheckboxValue()" />
 								<button class="logobox" name="chickenbrand" value="BBQ">
 									<img src="images/chickMenu/BBQ/바삭갈릭.jpg" />
@@ -151,7 +151,7 @@
 						</div>
 						<div class="item">
 							<div class="item-content">
-								<input type="checkbox" class="logocheck" name="brandCompare"
+								<input type="checkbox" class="logocheck" name="menuCompare"
 									value="BBQ" onclick="getCheckboxValue()" />
 								<button class="logobox" name="chickenbrand" value="BBQ">
 									<img src="images/chickMenu/BBQ/블랙 페퍼.png" />
@@ -163,7 +163,7 @@
 						</div>
 						<div class="item">
 							<div class="item-content">
-								<input type="checkbox" class="logocheck" name="brandCompare"
+								<input type="checkbox" class="logocheck" name="menuCompare"
 									value="BBQ" onclick="getCheckboxValue()" />
 								<button class="logobox" name="chickenbrand" value="BBQ">
 									<img src="images/chickMenu/BBQ/착착갈릭.jpg" />
@@ -175,7 +175,7 @@
 						</div>
 						<div class="item">
 							<div class="item-content">
-								<input type="checkbox" class="logocheck" name="brandCompare"
+								<input type="checkbox" class="logocheck" name="menuCompare"
 									value="BBQ" onclick="getCheckboxValue()" />
 								<button class="logobox" name="chickenbrand" value="BBQ">
 									<img src="images/chickMenu/BBQ/황올.png" />
@@ -225,7 +225,6 @@
 			</div>
 
 		</div>
-	</div>
 	</div>
 	<div class="btn-grp">
 		<button class="button-left">⬅Left</button>

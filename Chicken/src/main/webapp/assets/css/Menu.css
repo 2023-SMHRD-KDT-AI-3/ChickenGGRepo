@@ -134,12 +134,10 @@ nav.navbar {
 
 }
 
-
 .sr-input-btn:hover {
     animation: jittery 4s infinite;
 
 }
-
 
 .register-button {
     background-color: #FFD280;
@@ -177,8 +175,6 @@ nav.navbar {
     animation: jittery 4s infinite;
 }
 
-
-
 .regi-login {
     padding-left: 180px;
     margin-left: 200px;
@@ -203,7 +199,41 @@ nav.navbar {
     margin-bottom: 70px;
     padding-left: 60px;
 }
+@keyframes jittery {
 
+	5%,
+	50% {
+		transform: scale(1);
+	}
+
+	10% {
+		transform: scale(0.9);
+	}
+
+	15% {
+		transform: scale(1.15);
+	}
+
+	20% {
+		transform: scale(1.15) rotate(-5deg);
+	}
+
+	25% {
+		transform: scale(1.15) rotate(5deg);
+	}
+
+	30% {
+		transform: scale(1.15) rotate(-3deg);
+	}
+
+	35% {
+		transform: scale(1.15) rotate(2deg);
+	}
+
+	40% {
+		transform: scale(1.15) rotate(0);
+	}
+}
 /* 슬라이드 애니메이션 부분 CSS */
 .outer {
     border: 6px solid #525252;
@@ -310,22 +340,6 @@ nav.navbar {
     left: 50px;
 }
 
-.line {
-    margin-left: 100px;
-}
-
-.firstLine {
-    margin-top: 15px;
-}
-
-.secondLine {
-    margin-top: 15px;
-}
-
-.thirdLine {
-    margin-top: 15px;
-}
-
 .logosize {
     width: 180px;
     height: 90px;
@@ -337,8 +351,6 @@ nav.navbar {
     margin-top: 45px;
     margin-bottom: 5px;
 }
-
-
 
 .compare {
     font-size: 20px;
@@ -365,4 +377,5 @@ nav.navbar {
 
 #compare_list {
     font-size: 25px;
-    color: #a96d24
+    color: #a96d24;
+    }
