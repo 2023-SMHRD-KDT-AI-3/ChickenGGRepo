@@ -108,10 +108,6 @@
 			<div class="inner">
 				<img src="images/Menu_brandlogo/logo-bbq.jpg" class="brand-box">
 				<div class="slider">
-					<div class="slider-btn-wrapper slider-btn-wrapper-left">
-						<!-- 왼쪽 화살표 -->
-						<button id="left-btn" class="slider-btn">⬅Left</button>
-					</div>
 					<div class="item-wrapper">
 						<div class="item">
 							<div class="item-content">
@@ -185,6 +181,10 @@
 								</button>
 							</div>
 						</div>
+					</div>
+					<div class="slider-btn-wrapper slider-btn-wrapper-left">
+						<!-- 왼쪽 화살표 -->
+						<button id="left-btn" class="slider-btn">⬅Left</button>
 					</div>
 					<div class="slider-btn-wrapper slider-btn-wrapper-right">
 						<!-- 오른쪽 화살표 -->

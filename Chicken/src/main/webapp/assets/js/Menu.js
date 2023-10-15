@@ -43,7 +43,7 @@ buttonRight.addEventListener("click", () => {
         rightBtnEl = document.getElementById('right-btn');
 
     function moveSlides(direction) { // B
-        const item = itemWrapperEl.querySelector('.item'),
+        const item = itemWrapperEl.querySelector('.logobox'),
             itemMargin = parseFloat(getComputedStyle(item).marginRight);
         itemWidth = itemMargin + item.offsetWidth + 2;
 

@@ -262,7 +262,6 @@ nav.navbar {
 
 .slider-btn-wrapper-left{
     position: relative;
-    top: 65%;
     left: -52%;
     display: inline;
 }
@@ -270,9 +269,8 @@ nav.navbar {
 
 .slider-btn-wrapper-right{
     position: relative;
-    top: 65%;
-    right: 52%;
     display: inline;
+    float: right;
 }
 
 .item-wrapper {
@@ -283,17 +281,20 @@ nav.navbar {
 
 .item {
     height: 80%;
-    position: relative;
 }
 
 .item-content{
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
 .logocheck {
     zoom: 2;
     color: #FFA500;
+    position: absolute;
+    margin-left: 30px;
+    z-index: 30;
 }
 
 .logobox img{
@@ -304,7 +305,7 @@ nav.navbar {
 /* 이 밑은 예전꺼 쓸수도 있고 아닐수도 있고*/
 .logobox {
     width: 400px;
-    height: 400px;
+    height: 300px;
     background-color: white;
     position: relative;
     left: 50px;
