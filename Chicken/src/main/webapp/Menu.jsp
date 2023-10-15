@@ -24,10 +24,12 @@
 }
 
 @font-face {
-    font-family: 'Giants-Inline';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Giants-Inline';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2')
+		format('woff2');
+	font-weight: normal;
+	font-style: normal;
 }
 
 * {
@@ -40,7 +42,8 @@
 	<div class="left-navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="left-navbar-logo">
-			<a href="goMain" ><h2 style="font-size : 30px; 'font-family:'Giants-Inline'">CHICKEN.GG</h2></a>
+			<a href="goMain"><h2
+					style="font-size: 30px; ' font-family: 'Giants-Inline'">CHICKEN.GG</h2></a>
 		</div>
 		<!-- hr 태그는 수평선용임 -->
 		<hr class="hrhr"></hr>
@@ -58,8 +61,8 @@
 	<nav class="navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="navbar-logo">
-			<a href="goMain" id="navbar_logoimg"><img width="100px" src="images/하얀닭.png"
-				alt="치킨 연구소 로고"></a>
+			<a href="goMain" id="navbar_logoimg"><img width="100px"
+				src="images/하얀닭.png" alt="치킨 연구소 로고"></a>
 		</div>
 
 		<div class="login-search">
@@ -99,122 +102,135 @@
 		</div>
 	</div>
 	<!-- 치킨 사진 슬라이드 -->
-	<div class="main-slider">
-		<div class="item item-1">
-			<img src="images/Menu_brandlogo/logo-bbq.jpg" class="Menu-Slide-Logo">
-			<div class="inner-slider">
-				<div class="goods bbq-1">
-					<img src="images/chickMenu/BBQ/레드착착.png">
+	<div class="outer">
+		<div class="inner-grp">
+			<!-- 1번 브랜드 -->
+			<div class="inner">
+				<img src="images/Menu_brandlogo/logo-bbq.jpg" class="brand-box">
+				<div class="slider">
+					<div class="item-wrapper">
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="BBQ" onclick="getCheckboxValue()" />
+								<button class="logobox" name="chickenbrand" value="BBQ">
+									<img src="images/chickMenu/BBQ/단짠갈릭.jpg" />
+									<div class="info-text">
+										<h2>황금올리브</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="BBQ" onclick="getCheckboxValue()" />
+								<button class="logobox" name="chickenbrand" value="BBQ">
+									<img src="images/chickMenu/BBQ/레드착착.png" />
+									<div class="info-text">
+										<h2>황금올리브</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="BBQ" onclick="getCheckboxValue()" />
+								<button class="logobox" name="chickenbrand" value="BBQ">
+									<img src="images/chickMenu/BBQ/바삭갈릭.jpg" />
+									<div class="info-text">
+										<h2>황금올리브</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="BBQ" onclick="getCheckboxValue()" />
+								<button class="logobox" name="chickenbrand" value="BBQ">
+									<img src="images/chickMenu/BBQ/블랙 페퍼.png" />
+									<div class="info-text">
+										<h2>황금올리브</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="BBQ" onclick="getCheckboxValue()" />
+								<button class="logobox" name="chickenbrand" value="BBQ">
+									<img src="images/chickMenu/BBQ/착착갈릭.jpg" />
+									<div class="info-text">
+										<h2>황금올리브</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="BBQ" onclick="getCheckboxValue()" />
+								<button class="logobox" name="chickenbrand" value="BBQ">
+									<img src="images/chickMenu/BBQ/황올.png" />
+									<div class="info-text">
+										<h2>황금올리브</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="slider-btn-wrapper slider-btn-wrapper-left">
+						<!-- 왼쪽 화살표 -->
+						<button id="left-btn" class="slider-btn">⬅Left</button>
+					</div>
+					<div class="slider-btn-wrapper slider-btn-wrapper-right">
+						<!-- 오른쪽 화살표 -->
+						<button id="right-btn" class="slider-btn">Right➡</button>
+					</div>
 				</div>
-				<div class="goods bbq-2"></div>
-				<div class="goods bbq-3"></div>
-				<div class="goods bbq-4"></div>
 			</div>
-		</div>
-		<div class="item item-2">
-			<img src="images/Menu_brandlogo/logo-bhc.png" class="Menu-Slide-Logo">
-			<div class="inner-slider">
-				<div class="goods bhc-1"></div>
-				<div class="goods bhc-2"></div>
-				<div class="goods bhc-3"></div>
-				<div class="goods bhc-4"></div>
-			</div>
-		</div>
-		<div class="item item-3">
-			<img src="images/Menu_brandlogo/logo-kyochon.jpg" class="Menu-Slide-Logo">
-			<div class="inner-slider">
-				<div class="goods kyochon-1">
-					<img src="images/chickMenu/교촌/교촌순살.png">
-				</div>
-				<div class="goods kyochon-2">
-					<img src="images/chickMenu/교촌/교촌오리지널.png">
-				</div>
-				<div class="goods kyochon-3">
-					<img src="images/chickMenu/교촌/교촌윙.png">
-				</div>
-				<div class="goods kyochon-4">
-					<img src="images/chickMenu/교촌/교촌콤보.png">
-				</div>
-				<div class="goods kyochon-5">
-					<img src="images/chickMenu/교촌/레드순살.png">
-				</div>
-				<div class="goods kyochon-6">
-					<img src="images/chickMenu/교촌/레드오리지널.png">
+			<!-- 2번 브랜드 -->
+			<div class="inner">
+				<h2>BHC</h2>
+				<div class="slider">
+					<div class="slider-btn-wrapper slider-btn-wrapper-left">
+						<!-- 왼쪽 화살표 -->
+						<button id="left-btn" class="slider-btn">⬅Left</button>
+					</div>
+					<div class="item-wrapper">
+						<div class="item">
+							<img src="images/Menu_brandlogo/logo-bhc.png" />
+							<div class="info-text">
+								<h2>황금올리브</h2>
+							</div>
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/착착갈릭.jpg" />
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/블랙 페퍼.png" />
+						</div>
+						<div class="item">
+							<img src="../image/BBQ/바삭갈릭.jpg" />
+						</div>
+					</div>
+					<div class="slider-btn-wrapper slider-btn-wrapper-right">
+						<!-- 오른쪽 화살표 -->
+						<button id="right-btn" class="slider-btn">Right➡</button>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="item item-4">
-			<img src="images/Menu_brandlogo/logo-goobne.png" class="Menu-Slide-Logo">
-			<div class="inner-slider">
-				<div class="goods goods-1"></div>
-				<div class="goods goods-2"></div>
-				<div class="goods goods-3"></div>
-				<div class="goods goods-4"></div>
-			</div>
-		</div>
-		<div class="item item-5">
-			<img src="images/Menu_brandlogo/logo-hosigi.png" class="Menu-Slide-Logo">
-			<div class="inner-slider">
-				<div class="goods goods-1"></div>
-				<div class="goods goods-2"></div>
-				<div class="goods goods-3"></div>
-				<div class="goods goods-4"></div>
-			</div>
-		</div>
-		<div class="item item-6">
-			<img src="images/Menu_brandlogo/logo-jadam.png" class="Menu-Slide-Logo">
-			<div class="inner-slider">
-				<div class="goods goods-1"></div>
-				<div class="goods goods-2"></div>
-				<div class="goods goods-3"></div>
-				<div class="goods goods-4"></div>
-			</div>
-		</div>
-		<div class="item item-7">
-			<img src="images/Menu_brandlogo/logo-ajukeo.jpg" class="Menu-Slide-Logo">
-			<div class="inner-slider">
-				<div class="goods goods-1"></div>
-				<div class="goods goods-2"></div>
-				<div class="goods goods-3"></div>
-				<div class="goods goods-4"></div>
-			</div>
-		</div>
-		<div class="item item-8">
-			<img src="images/Menu_brandlogo/logo-mexicana.png" class="Menu-Slide-Logo">
-			<div class="inner-slider">
-				<div class="goods goods-1"></div>
-				<div class="goods goods-2"></div>
-				<div class="goods goods-3"></div>
-				<div class="goods goods-4"></div>
-			</div>
-		</div>
-		<div class="item item-9">
-			<img src="images/Menu_brandlogo/logo-chickenplus.png" class="Menu-Slide-Logo">
-			<div class="inner-slider">
-				<div class="goods goods-1"></div>
-				<div class="goods goods-2"></div>
-				<div class="goods goods-3"></div>
-				<div class="goods goods-4"></div>
-			</div>
+
 		</div>
 	</div>
+	<div class="btn-grp">
+		<button class="button-left">⬅Left</button>
+		<button class="button-right">Right➡</button>
+	</div>
 	<script src="assets/js/Menu.js"></script>
-	<script src="assets/js/slick.js"></script>
-	<script src="assets/js/slick.min.js"></script>
 
-	<!-- 슬라이더 애니메이션 -->
-	<script type="text/javascript">
-		var mainSlider = $('.main-slider');
-		var innerSlider = $('.inner-slider');
-
-		mainSlider.slick({
-			slidesToShow : 1,
-			dots : true,
-		});
-
-		innerSlider.slick({
-			slidesToShow : 3,
-		})
-	</script>
 </body>
 </html>
