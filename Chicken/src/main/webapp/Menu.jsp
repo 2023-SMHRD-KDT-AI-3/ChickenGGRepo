@@ -104,11 +104,12 @@
 	<!-- 치킨 사진 슬라이드 -->
 	<div class="outer">
 		<div class="inner-grp">
-			<!-- 1번 브랜드 -->
+			<!-- 1번 브랜드 inner 클래스는 브랜드 양식 -->
 			<div class="inner">
 				<img src="images/Menu_brandlogo/logo-bbq.jpg" class="brand-box">
 				<div class="slider">
 					<div class="item-wrapper">
+					<!-- item 클래스가 메뉴 양식 -->
 						<div class="item">
 							<div class="item-content">
 								<input type="checkbox" class="logocheck" name="menuCompare"
