@@ -580,43 +580,60 @@
         	data : {
             	labels : brand_listname, //브랜드 이름 가져와서 X축에 넣기
 	            datasets : [ {
-	               data : brand_listprice,
+	                data : brand_listprice,
 	              
-	               backgroundColor : [ 'rgba(255, 99, 132, 100)',
+	                backgroundColor : [ 'rgba(255, 99, 132, 100)',
 	                     'rgba(54, 162, 235, 100)',
 	                     'rgba(255, 206, 86, 100)',
 	                     'rgba(75, 192, 192, 100)',
 	                     'rgba(153, 102, 255, 100)'],
-	               borderColor : [ 'rgba(255, 99, 132, 1)',
+	                borderColor : [ 'rgba(255, 99, 132, 1)',
 	                     'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
 	                     'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'],
-	               borderWidth : 1
+	                borderWidth : 1,
+					datalabels : {
+						formatter : function(value, context) {
+							return context.chart.data.datasets[0].data[context.dataIndex]
+									+ '원';
+						},
+	            		anchor:'end',
+	            		align:'top'
+					}
 	            },
 	            {
-		               data : brand_listmin,
-		               backgroundColor : [ 'rgba(255, 99, 132, 100)',
+		                data : brand_listmin,
+		                backgroundColor : [ 'rgba(255, 99, 132, 100)',
 		                     'rgba(54, 162, 235, 100)',
 		                     'rgba(255, 206, 86, 100)',
 		                     'rgba(75, 192, 192, 100)',
 		                     'rgba(153, 102, 255, 100)'],
-		               borderColor : [ 'rgba(255, 99, 132, 1)',
+		                borderColor : [ 'rgba(255, 99, 132, 1)',
 		                     'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
 		                     'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'],
-		               borderWidth : 1
+		                borderWidth : 1,
+						datalabels : {
+							formatter : function(value, context) {
+								return context.chart.data.datasets[0].data[context.dataIndex]
+										+ '원';
+							},
+		            		anchor:'end',
+		            		align:'top'
+						}
 		            }],
 	         },
 	         options : {
 	        	 plugins :{
 	        		 legend :{
-	        			 display : false
+	        			 display : true
 	        		 }
 	        	 },
 	             scales : {
-	                y: {
-	                      min: 13000,
-	                      suggestedMax: 20000,
-	                      ticks: { // 최소값, 최대값, 틱범위
-	                        stepSize: 3000    }
+	                y: { // 최소값, 최대값, 틱범위
+	                	beginAtZero : false,
+	                    min: 10000,
+	                    ticks: {
+	                      stepSize: 2000
+	                      }
 	                    }
 	            	}
 	         }
@@ -690,8 +707,8 @@
 	                    scales : {
 	                        y: 
 	                            {
-	                              min: 13000,
-	                              suggestedMax: 20000,
+	                              suggestedMin: 12000,
+	                              suggestedMax: 21000,
 	                              ticks: { // 최소값, 최대값, 틱범위
 	                                stepSize: 3000
 	                              }
