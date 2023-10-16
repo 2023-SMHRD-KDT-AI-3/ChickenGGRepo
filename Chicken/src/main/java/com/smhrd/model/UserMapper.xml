@@ -23,4 +23,16 @@
 		update t_user set nick = #{nick} where id = #{id}
 	</update>
 
+	<insert id="reviewinsert" parameterType="com.smhrd.model.Review_Table">
+		insert into t_review values(null, #{id}, #{menu_num}, #{review_content})
+	</insert>
+	
+	<delete id="reviewdelete" parameterType="com.smhrd.model.t_user">
+		delete from t_review where id = #{id}
+	</delete>
+	
+	<select id="findreview" parameterType="com.smhrd.model.t_user" resultType="com.smhrd.model.Review_Table">
+		select * from t_review where id = #{id}
+	</select>
+	
 </mapper>

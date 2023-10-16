@@ -48,7 +48,7 @@
 			<a href="goMain"> <i class="fas fa-home"></i>&nbsp; 홈
 			</a> <a href="Brand.jsp"> <i class="fas fa-list"></i>&nbsp; 브랜드
 			</a> <a href="Menu.jsp"> <i class="fas fa-utensils"></i>&nbsp; 메뉴
-			</a> <a href="MyPage.jsp"> <i class="fas fa-trophy"></i>&nbsp; 마이페이지
+			</a> <a href="GoMypage"> <i class="fas fa-trophy"></i>&nbsp; 마이페이지
 			</a>
 		</div>
 		<!-- 여기에 추가 메뉴 항목을 추가할 수 있습니다. -->
@@ -77,7 +77,7 @@
 		</div>
 		<div class="regi-login">
 			<c:if test="${empty info}">
-				<a href="MyPage.jsp"><button class="login-button">로그인</button></a>
+				<a href="GoMypage"><button class="login-button">로그인</button></a>
 				<a href="Register.jsp"><button class="register-button">회원가입</button></a>
 			</c:if>
 		</div>
@@ -224,9 +224,9 @@
 									<h4>한줄평 작성</h4>
 								</div>
 								<div>
-									<form>
+									<form action="review" method="post">
 										<div>
-											<textarea class="textarea"></textarea>
+											<textarea class="textarea" name="review_text">${Review_Content}</textarea>
 										</div>
 										<div class="Fix-textarea">
 											<button class="textarea-button">한줄평 제출</button>
@@ -245,5 +245,6 @@
 	</wrapper>
 
 	<script src="assets/js/MyPage.js"></script>
+
 </body>
 </html>

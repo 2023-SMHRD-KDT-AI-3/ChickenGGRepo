@@ -3,6 +3,7 @@ package com.smhrd.model;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import com.smhrd.controller.Review;
 import com.smhrd.db.SqlSessionManager;
 
 public class UserDAO {
@@ -37,6 +38,24 @@ public class UserDAO {
 		int res = sqlSession.update("nickchange", user);
 		sqlSession.close();
 		return res;
+	}
+	public int deletereview(t_user user) {
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		int res = sqlSession.delete("reviewdelete", user);
+		sqlSession.close();
+		return res;
+	}
+	public int review(Review_Table review) { // 유저에 한줄평 넣어주기
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		int res = sqlSession.insert("reviewinsert", review);
+		sqlSession.close();
+		return res;
+	}
+	public Review_Table findreview(t_user user) {
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		Review_Table review = sqlSession.selectOne("findreview", user);
+		sqlSession.close();
+		return review;
 	}
 	
 	

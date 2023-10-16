@@ -70,6 +70,18 @@
   	<description></description>
   	<servlet-class>com.smhrd.controller.Search</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Review</servlet-name>
+  	<display-name>Review</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.Review</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GoMypage</servlet-name>
+  	<display-name>GoMypage</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.GoMypage</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>GoMain</servlet-name>
   	<url-pattern>/goMain</url-pattern>
@@ -113,5 +125,13 @@
   <servlet-mapping>
   	<servlet-name>Search</servlet-name>
   	<url-pattern>/Search</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Review</servlet-name>
+  	<url-pattern>/review</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GoMypage</servlet-name>
+  	<url-pattern>/GoMypage</url-pattern>
   </servlet-mapping>
 </web-app>
