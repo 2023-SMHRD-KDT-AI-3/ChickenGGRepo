@@ -305,7 +305,7 @@ nav.navbar {
 
 .item-wrapper {
     display: flex;
-    overflow-x: hidden;
+    overflow: auto;
     height: 100%;
 }
 
