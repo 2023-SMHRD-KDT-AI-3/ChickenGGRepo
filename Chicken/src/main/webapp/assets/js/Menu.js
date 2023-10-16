@@ -3,6 +3,7 @@
  */
 
 /* 슬라이드 애니메이션 JS */
+/* 큰 슬라이드 */
 const outer = document.querySelector(".outer");
 const innerGrp = document.querySelector(".inner-grp");
 const inners = document.querySelectorAll(".inner");
@@ -36,7 +37,7 @@ buttonRight.addEventListener("click", () => {
 
 
 
-
+/* 작은 슬라이드 */
 (function () { // A   
     const itemWrapperEl = document.querySelector('.item-wrapper'),
         leftBtnEl = document.getElementById('left-btn'),
@@ -79,3 +80,5 @@ function getCheckboxValue() {
     // 출력
     document.querySelector('#compare_list').innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'+result;
 }
+
+

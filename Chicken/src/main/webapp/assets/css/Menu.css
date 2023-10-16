@@ -292,7 +292,7 @@ nav.navbar {
 
 .slider-btn-wrapper-left{
     position: relative;
-    left: -52%;
+    float: left;
     display: inline;
 }
 
