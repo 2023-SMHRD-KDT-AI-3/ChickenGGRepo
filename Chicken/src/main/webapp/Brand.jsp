@@ -357,9 +357,7 @@
 							makingChart(res);
 						},
 						error : function(request, status, error) {
-							alert("code:" + request.status + "\n" + "message:"
-									+ request.responseText + "\n" + "error:"
-									+ error);
+							alert("찾으시는 브랜드가 없거나 이름이 틀렸습니다!");
 						}
 					})
 		}

@@ -613,7 +613,7 @@
 					datalabels : {
 						
 						formatter : function(value, context) {
-							return context.chart.data.datasets[0].data[context.dataIndex]
+							return context.chart.data.datasets[1].data[context.dataIndex]
 										+ '원';
 							},
 		            		anchor:'end',
