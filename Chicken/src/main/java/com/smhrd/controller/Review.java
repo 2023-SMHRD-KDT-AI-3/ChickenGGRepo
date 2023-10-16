@@ -40,13 +40,15 @@ public class Review extends HttpServlet {
 		int res = dao.review(reviewtable);
 		if (res > 0) {
 			System.out.println("한줄평 등록 성공!");
+			session.setAttribute("Review_Content", review);
 			PrintWriter writer = response.getWriter();
 			writer.println("<script>alert('한줄평 등록 성공!'); location.href='MyPage.jsp';</script>"); 
 			writer.close();
 		}else {
 			System.out.println("한줄평 등록 실패");
 		}
-		response.sendRedirect("GoMypage");
+		RequestDispatcher rd = request.getRequestDispatcher("MyPage.jsp");
+		rd.forward(request, response);
 	}
 
 }

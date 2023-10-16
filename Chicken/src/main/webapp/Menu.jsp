@@ -97,7 +97,7 @@
 	<div>
 		<div class="brandlogo">
 			<h1 class="brand">MENU</h1>
-			<button type="submit" class="compare">비교하기</button>
+			<button type="submit" class="compare" onclick="compareclick()">비교하기</button>
 			<span id="compare_list"></span>
 		</div>
 	</div>
@@ -112,12 +112,13 @@
 					<!-- item 클래스가 메뉴 양식 -->
 						<div class="item">
 							<div class="item-content">
+							<!-- 각메뉴마다 id값에 menu_num값 넣기! -->
 								<input type="checkbox" class="logocheck" name="menuCompare"
-									value="BBQ" onclick="getCheckboxValue()" />
+									value="단짠갈릭" onclick="getCheckboxValue()" id="13"/>
 								<button class="logobox" name="chickenbrand" value="BBQ">
 									<img src="images/chickMenu/BBQ/단짠갈릭.jpg" />
 									<div class="info-text">
-										<h2>황금올리브</h2>
+										<h2>단짠갈릭</h2>
 									</div>
 								</button>
 							</div>
@@ -125,11 +126,11 @@
 						<div class="item">
 							<div class="item-content">
 								<input type="checkbox" class="logocheck" name="menuCompare"
-									value="BBQ" onclick="getCheckboxValue()" />
+									value="레드착착" onclick="getCheckboxValue()" id="48"/>
 								<button class="logobox" name="chickenbrand" value="BBQ">
 									<img src="images/chickMenu/BBQ/레드착착.png" />
 									<div class="info-text">
-										<h2>황금올리브</h2>
+										<h2>레드착착</h2>
 									</div>
 								</button>
 							</div>
@@ -232,6 +233,14 @@
 		<button class="button-right">Right➡</button>
 	</div>
 	<script src="assets/js/Menu.js"></script>
-
+	<script type="text/javascript">
+	function compareclick(){
+		$('input:checkbox[name=menuCompare]').each(function (index) {
+			if($(this).is(":checked")==true){
+		    	console.log($(this).attr('id'));
+		    }
+		})
+	}
+	</script>
 </body>
 </html>

@@ -24,7 +24,7 @@ public class GoMypage extends HttpServlet {
 			t_user user = (t_user) session.getAttribute("info");
 			Review_Table review = dao.findreview(user);
 			String review_text = review.getReview_content();
-			request.setAttribute("Review_Content", review_text);
+			session.setAttribute("Review_Content", review_text);
 			RequestDispatcher rd = request.getRequestDispatcher("MyPage.jsp");
 			rd.forward(request, response);
 		}
