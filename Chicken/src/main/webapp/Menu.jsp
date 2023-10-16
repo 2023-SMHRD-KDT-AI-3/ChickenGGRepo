@@ -109,12 +109,12 @@
 				<img src="images/Menu_brandlogo/logo-bbq.jpg" class="brand-box">
 				<div class="slider">
 					<div class="item-wrapper">
-					<!-- item 클래스가 메뉴 양식 -->
+						<!-- item 클래스가 메뉴 양식 -->
 						<div class="item">
 							<div class="item-content">
-							<!-- 각메뉴마다 id값에 menu_num값 넣기! -->
+								<!-- 각메뉴마다 id값에 menu_num값 넣기! -->
 								<input type="checkbox" class="logocheck" name="menuCompare"
-									value="단짠갈릭" onclick="getCheckboxValue()" id="13"/>
+									value="단짠갈릭" onclick="getCheckboxValue()" id="14" />
 								<button class="logobox" name="chickenbrand" value="BBQ">
 									<img src="images/chickMenu/BBQ/단짠갈릭.jpg" />
 									<div class="info-text">
@@ -126,7 +126,7 @@
 						<div class="item">
 							<div class="item-content">
 								<input type="checkbox" class="logocheck" name="menuCompare"
-									value="레드착착" onclick="getCheckboxValue()" id="48"/>
+									value="레드착착" onclick="getCheckboxValue()" id="48" />
 								<button class="logobox" name="chickenbrand" value="BBQ">
 									<img src="images/chickMenu/BBQ/레드착착.png" />
 									<div class="info-text">
@@ -138,7 +138,7 @@
 						<div class="item">
 							<div class="item-content">
 								<input type="checkbox" class="logocheck" name="menuCompare"
-									value="BBQ" onclick="getCheckboxValue()" />
+									value="BBQ" onclick="getCheckboxValue()" id="13" />
 								<button class="logobox" name="chickenbrand" value="BBQ">
 									<img src="images/chickMenu/BBQ/바삭갈릭.jpg" />
 									<div class="info-text">
@@ -150,7 +150,7 @@
 						<div class="item">
 							<div class="item-content">
 								<input type="checkbox" class="logocheck" name="menuCompare"
-									value="BBQ" onclick="getCheckboxValue()" />
+									value="BBQ" onclick="getCheckboxValue()" id="26" />
 								<button class="logobox" name="chickenbrand" value="BBQ">
 									<img src="images/chickMenu/BBQ/블랙 페퍼.png" />
 									<div class="info-text">
@@ -162,7 +162,7 @@
 						<div class="item">
 							<div class="item-content">
 								<input type="checkbox" class="logocheck" name="menuCompare"
-									value="BBQ" onclick="getCheckboxValue()" />
+									value="BBQ" onclick="getCheckboxValue()" id="15" />
 								<button class="logobox" name="chickenbrand" value="BBQ">
 									<img src="images/chickMenu/BBQ/착착갈릭.jpg" />
 									<div class="info-text">
@@ -174,7 +174,7 @@
 						<div class="item">
 							<div class="item-content">
 								<input type="checkbox" class="logocheck" name="menuCompare"
-									value="BBQ" onclick="getCheckboxValue()" />
+									value="BBQ" onclick="getCheckboxValue()" id="16" />
 								<button class="logobox" name="chickenbrand" value="BBQ">
 									<img src="images/chickMenu/BBQ/황올.png" />
 									<div class="info-text">
@@ -232,14 +232,242 @@
 		<button class="button-left">⬅Left</button>
 		<button class="button-right">Right➡</button>
 	</div>
+	<br><br><br><br><br>
+	<div id="Brand_Chart1" style="width: 500px; margin-left: 250px; float:left;"></div>
+	<div id="Brand_Select" style="float:left"></div>
+	<div id="Brand_Chart" style="width: 500px; float:right"></div>
+	<div id="Brand_Between" style="float:right"></div>
+	
 	<script src="assets/js/Menu.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	<script type="text/javascript">
-	function compareclick(){
-		$('input:checkbox[name=menuCompare]').each(function (index) {
-			if($(this).is(":checked")==true){
-		    	console.log($(this).attr('id'));
-		    }
-		})
+		function compareclick() {
+			var menu_num = [];
+			$('input:checkbox[name=menuCompare]').each(function(index) {
+				if ($(this).is(":checked") == true) {
+					console.log($(this).attr('id'));
+					menu_num.push($(this).attr('id'));
+				}
+			})
+			if (menu_num.length > 5) {
+				alert("최대 5개까지만 비교해 주세요!");
+			} else {
+				$.ajax({
+					url : 'ManyMenu',
+					type : 'post',
+					data : {
+						'Menus' : menu_num
+					},
+					success : function(res) {
+						console.log("메뉴 Ajax성공!");
+						console.log(res);
+						ManyBrandChart(res);
+					},
+					error : function() {
+						alert("실패..");
+					}
+				})
+			}
+		}
+	</script>
+		<!-- Chart.js -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+	<script>
+		function ManyBrandChart(result) {
+			document.getElementById("Brand_Chart1").innerHTML = '<canvas id="myChart" style="height: 500px; width: 500px"></canvas>'
+			document.getElementById("Brand_Select").innerHTML = '<button id="calories_select" onclick="calories_click()">칼로리 제일 적은 메뉴</button><br><button id="price_select" onclick="price_click()">가격 제일 적은 메뉴</button>'
+			let menu_name = [];
+			let brand_price = [];
+			let brand_calories = [];
+			let brand_protein = [];
+			for (var i = 0; i < result.length; i++) {
+				menu_name.push(result[i].menu_name);
+				brand_price.push(result[i].menu_price);
+				brand_calories.push(result[i].calories);
+				brand_protein.push(result[i].protein);
+			}
+			const ctx = document.getElementById('myChart').getContext('2d');
+			const myChart = new Chart(
+					ctx,
+					{
+						plugins : [ ChartDataLabels ],
+						type : 'doughnut',
+						data : {
+							datasets : [
+									/* Outer doughnut data starts*/
+									{
+										data : brand_calories,
+										backgroundColor : [
+												'rgb(255, 99, 132)',
+												'rgb(255, 159, 64)',
+												'rgb(250, 15, 64)',
+												'rgb(105, 130, 32)',
+												'rgb(25, 159, 64)' ],
+										label : 'Doughnut 1',
+										datalabels : {
+											formatter : function(value, context) {
+												return context.chart.data.datasets[0].data[context.dataIndex]
+														+ 'Kcal';
+											}
+										}
+									},
+									/* Outer doughnut data ends*/
+									/* Inner doughnut data starts*/
+									{
+										data : brand_protein,
+										backgroundColor : [
+												'rgb(255, 99, 132)',
+												'rgb(255, 159, 64)',
+												'rgb(250, 15, 64)',
+												'rgb(105, 130, 32)',
+												'rgb(25, 159, 64)' ],
+										label : 'Doughnut 2',
+										datalabels : {
+											formatter : function(value, context) {
+												return context.chart.data.datasets[1].data[context.dataIndex]
+														+ 'g';
+											}
+										}
+									},
+									{
+										data : brand_price,
+										backgroundColor : [
+												'rgb(255, 99, 132)',
+												'rgb(255, 159, 64)',
+												'rgb(250, 15, 64)',
+												'rgb(105, 130, 32)',
+												'rgb(25, 159, 64)' ],
+										label : 'Doughnut 3',
+										datalabels : {
+											formatter : function(value, context) {
+												return context.chart.data.datasets[2].data[context.dataIndex]
+														+ '원';
+											}
+										}
+									},
+							/* Inner doughnut data ends*/
+							],
+							labels : menu_name
+						},
+						options : {
+							responsive : true,
+							legend : {
+								position : 'top',
+							},
+							title : {
+								display : true,
+								text : 'Chart.js Doughnut Chart'
+							},
+							animation : {
+								animateScale : true,
+								animateRotate : true
+							},
+							tooltips : {
+								callbacks : {
+									label : function(item, data) {
+										console.log(data.labels, item);
+										return data.datasets[item.datasetIndex].label
+												+ ": "
+												+ data.labels[item.index]
+												+ ": "
+												+ data.datasets[item.datasetIndex].data[item.index];
+									}
+								}
+							},
+						},
+					});
+			makingChart(result[0]);
+		}
+	</script>
+	<script>
+	function makingChart(result) {
+		document.getElementById("Brand_Between").innerHTML = '선택한 메뉴 : '+result.menu_name+' <br> 단백질 평균: '+result.protein+
+		'g <br> 칼로리 평균 : '+result.calories+'Kcal <br> 평균 가격 : '+result.menu_price+'원'
+		document.getElementById("Brand_Chart").innerHTML = '<canvas id="myChart2" style="height: 500px; width: 500px"></canvas>'
+		const ctx = document.getElementById('myChart2').getContext('2d');
+		const myChart = new Chart(
+				ctx,
+				{
+					plugins : [ ChartDataLabels ],
+					type : 'doughnut',
+					data : {
+						datasets : [
+								/* Outer doughnut data starts*/
+								{
+									data : [ result.calories, 245 ],
+									backgroundColor : [
+											'rgb(255, 99, 132)',
+											'rgb(255, 159, 64)' ],
+									label : 'Doughnut 1',
+									datalabels : {
+										formatter : function(value, context) {
+											return context.chart.data.datasets[0].data[context.dataIndex]
+													+ 'Kcal';
+										}
+									}
+								},
+								/* Outer doughnut data ends*/
+								/* Inner doughnut data starts*/
+								{
+									data : [ result.protein, 27 ],
+									backgroundColor : [
+											'rgb(255, 99, 132)',
+											'rgb(255, 159, 64)' ],
+									label : 'Doughnut 2',
+									datalabels : {
+										formatter : function(value, context) {
+											return context.chart.data.datasets[1].data[context.dataIndex]
+													+ 'g';
+										}
+									}
+								},
+								{
+									data : [ result.menu_price, 15000 ],
+									backgroundColor : [
+											'rgb(255, 99, 132)',
+											'rgb(255, 159, 64)' ],
+									label : 'Doughnut 3',
+									datalabels : {
+										formatter : function(value, context) {
+											return context.chart.data.datasets[2].data[context.dataIndex]
+													+ '원';
+										}
+									}
+								},
+						/* Inner doughnut data ends*/
+						],
+						labels : [ result.menu_name, "평균" ]
+					},
+					options : {
+						responsive : true,
+						legend : {
+							position : 'top',
+						},
+						title : {
+							display : true,
+							text : 'Chart.js Doughnut Chart'
+						},
+						animation : {
+							animateScale : true,
+							animateRotate : true
+						},
+						tooltips : {
+							callbacks : {
+								label : function(item, data) {
+									console.log(data.labels, item);
+									return data.datasets[item.datasetIndex].label
+											+ ": "
+											+ data.labels[item.index]
+											+ ": "
+											+ data.datasets[item.datasetIndex].data[item.index];
+								}
+							}
+						},
+					},
+				});
 	}
 	</script>
 </body>

@@ -26,4 +26,12 @@ public class BrandDAO {
 		return menu;
 	}
 
+
+	public Menu Onemenu(String num) {
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		Menu Onemenu = sqlSession.selectOne("Onemenu", num);
+		sqlSession.close();
+		return Onemenu;
+	}
+
 }

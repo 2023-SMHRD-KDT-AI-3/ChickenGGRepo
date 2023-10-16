@@ -82,6 +82,12 @@
   	<description></description>
   	<servlet-class>com.smhrd.controller.GoMypage</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>ManyMenu</servlet-name>
+  	<display-name>ManyMenu</display-name>
+  	<description></description>
+  	<servlet-class>com.smhrd.controller.ManyMenu</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>GoMain</servlet-name>
   	<url-pattern>/goMain</url-pattern>
@@ -133,5 +139,9 @@
   <servlet-mapping>
   	<servlet-name>GoMypage</servlet-name>
   	<url-pattern>/GoMypage</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>ManyMenu</servlet-name>
+  	<url-pattern>/ManyMenu</url-pattern>
   </servlet-mapping>
 </web-app>

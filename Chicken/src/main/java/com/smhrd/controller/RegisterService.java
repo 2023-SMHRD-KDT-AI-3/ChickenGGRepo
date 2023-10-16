@@ -15,6 +15,7 @@ public class RegisterService extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
 		String id = request.getParameter("id");
 		String pw = request.getParameter("pw");
 		String nick = request.getParameter("nick");
@@ -31,7 +32,7 @@ public class RegisterService extends HttpServlet {
 		}else {
 			System.out.println("실패...");
 		}
-		RequestDispatcher rd = request.getRequestDispatcher("LogOut.java");
+		RequestDispatcher rd = request.getRequestDispatcher("Logout");
 		rd.forward(request, response);
 	}
 

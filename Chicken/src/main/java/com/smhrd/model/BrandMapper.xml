@@ -10,5 +10,8 @@
 		select calories, protein, menu_name, menu_price, brand_name from t_info as tf join t_menu as tm ON tf.menu_num = tm.menu_num where brand_name="${value}";
 	</select>
 
+	<select id="Onemenu" resultType="com.smhrd.model.Menu">
+		select calories, protein, tf.menu_num, menu_name, menu_price from t_info as tf join t_menu as tm ON tf.menu_num = tm.menu_num where tf.menu_num = "${value}";
+	</select>
 
 </mapper>
