@@ -17,10 +17,7 @@
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <style>
 .map_wrap, .map_wrap * {
-	margin: 0;
-	padding: 0;
-	font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;
-	font-size: 12px;
+
 }
 
 .map_wrap a, .map_wrap a:hover, .map_wrap a:active {
@@ -287,6 +284,13 @@
 	<div class="content">
 		<!-- 여기에 페이지 콘텐츠를 추가합니다. -->
 		<div class="map_wrap">
+			<div class="map-searchInput">
+				<form onsubmit="searchPlaces(); return false;" class="map-searchForm"
+					>
+					<input type="text" value="치킨집" id="keyword" size="15">
+					<button type="submit" class="map-searchBtn">검색하기</button>
+				</form>
+			</div>
 			<div id="map"></div>
 
 			<div id="menu_wrap" class="bg_white" style="display: none">
@@ -297,10 +301,6 @@
 				<ul id="placesList"></ul>
 				<div id="pagination"></div>
 			</div>
-			<form onsubmit="searchPlaces(); return false;">
-				키워드 : <input type="text" value="치킨집" id="keyword" size="15">
-				<button type="submit">검색하기</button>
-			</form>
 		</div>
 		<!-- 여기는 마이차트 부분입니다 -->
 		<div style="float: right" class="chart-wrap" id="myChart1">
@@ -308,9 +308,7 @@
 		</div>
 		<!-- 여기는 마이차트 부분입니다 -->
 		<div id="Chart2" style="height: 490px; width: 850px"></div>
-		<div class="Brand-Logo-Img">
-			<img alt="" src="">
-		</div>
+		
 	</div>
 	<!-- 검색추천, 자동완성  js문 -->
 	<script src="assets/js/Main.js"></script>
