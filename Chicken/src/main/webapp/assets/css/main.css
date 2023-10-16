@@ -55,13 +55,12 @@ body {
 	padding-bottom: 50px;
 }
 
-.left-navbar a:hover {
-	background-color: #757575;
-}
+
 
 .left-navbar a i {
 	margin-right: 10px;
 }
+
 
 /* 네비게이션 바 스타일 */
 nav.navbar {
@@ -221,9 +220,6 @@ nav.navbar {
 }
 
 #keyword {
-	width: 200px;
-	height: 33px;
-	border-radius: 3%;
 	display: none;
 }
 
