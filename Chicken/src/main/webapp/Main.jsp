@@ -634,7 +634,7 @@
 	                    ticks: {
 	                      stepSize: 2000
 	                      }
-	                    }
+	                   }
 	            	}
 	         }
 	      });
@@ -711,7 +711,7 @@
 	                              suggestedMax: 21000,
 	                              ticks: { // 최소값, 최대값, 틱범위
 	                                stepSize: 3000
-	                              }
+	                              } 
 	                            }
 	                    	}
 	                 	}
