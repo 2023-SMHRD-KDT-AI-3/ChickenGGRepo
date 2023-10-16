@@ -613,8 +613,8 @@
 	        	 },
 	             scales : {
 	                y: {
-	                      min: 13000,
-	                      suggestedMax: 20000,
+	                      suggestedMin: 13000,
+	                      suggestedMax: 25000,
 	                      ticks: { // 최소값, 최대값, 틱범위
 	                        stepSize: 3000    }
 	                    }
@@ -694,7 +694,7 @@
 	                              suggestedMax: 20000,
 	                              ticks: { // 최소값, 최대값, 틱범위
 	                                stepSize: 3000
-	                              }
+	                              } 
 	                            }
 	                    	}
 	                 	}
