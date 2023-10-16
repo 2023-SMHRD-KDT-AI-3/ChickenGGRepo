@@ -194,7 +194,7 @@ nav.navbar {
 	height: 400px;
 	border: 1px solid;
 	border-color: #333;
-	border-radius: 2%;
+	border-radius: 4px;
 }
 
 .chart-wrap {
@@ -218,7 +218,9 @@ nav.navbar {
 	border: none;
 	cursor: pointer;
 }
-
+.map-searchBtn:hover {
+	animation: jittery 4s infinite;
+}
 #keyword {
 	display: none;
 }

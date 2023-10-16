@@ -183,8 +183,8 @@
 			}
 			
 		});
+		
 		const $bottomBtn = document.querySelector("#totalcompare");
-
 		// 버튼 클릭 시 페이지 하단으로 이동
 		$bottomBtn.onclick = () => {
 		  window.scrollTo({ 
@@ -192,6 +192,7 @@
 		    behavior: "smooth" 
 		  });
 		};
+		
 		var smallcal_brand = null;
 		var smallprice_brand = null;
 		function SearchManyBrand(CBL) {
@@ -241,7 +242,8 @@
 		}
 		function ManyBrandChart(result) {
 			document.getElementById("Brand_Chart1").innerHTML = '<canvas id="myChart" style="height: 500px; width: 500px"></canvas>'
-			document.getElementById("Brand_Select").innerHTML = '<button id="calories_select" onclick="calories_click()">칼로리 제일 적은 브랜드</button><br><button id="price_select" onclick="price_click()">가격 제일 적은 브랜드</button>'
+			document.getElementById("Brand_Select").innerHTML = 
+				'<button id="calories_select" style="background-color: #FFD280; padding: 10px 20px !important; border-radius: 5px; border: none; cursor: pointer;" onclick="calories_click()">칼로리 제일 적은 브랜드</button><br><br><button id="price_select" style="background-color: #FFD280; padding: 10px 20px !important; border-radius: 5px; border: none; cursor: pointer;" onclick="price_click()">가격 제일 적은 브랜드</button>'
 			let brand_name = [];
 			let brand_price = [];
 			let brand_calories = [];

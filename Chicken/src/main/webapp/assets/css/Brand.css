@@ -198,6 +198,7 @@ nav.navbar {
 
 .compare {
 	font-size: 20px;
+	cursor: pointer;
 	background-color: #FFD280;
 	color: #5C4C2E;
 	border-radius: 5%;
@@ -264,7 +265,12 @@ nav.navbar {
 	accent-color: #FFA500;
 
 }
-
+#calories_select:hover {
+	animation: jittery 4s infinite;
+}
+#price_select:hover {
+	animation: jittery 4s infinite;
+}
 @keyframes jittery {
 
 	5%,

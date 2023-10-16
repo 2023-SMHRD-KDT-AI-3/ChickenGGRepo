@@ -55,10 +55,6 @@ body {
 	padding-bottom: 50px;
 }
 
-.left-navbar a:hover {
-	background-color: #757575;
-}
-
 .left-navbar a i {
 	margin-right: 10px;
 }
@@ -111,15 +107,6 @@ nav.navbar {
 	font-size: 20px;
 	outline: 0;
 	border : 0px !important;
-
-	&:hover,
-	&:focus {
-		outline: 0;
-		border-radius: 0;
-		background-position: 100% center;
-		border-style: solid;
-		border: 1px black;
-	}
 }
 
 .sr-input-btn {
@@ -237,14 +224,28 @@ label {
 }
 
 #logInButton {
-	background-color: #FFA500;
-	color: #fff;
-	border: none;
-	padding: 15px 20px;
-	border-radius: 5px;
-	cursor: pointer;
-	float: right;
 	width: 517px;
+	font-size: 20px;
+    cursor: pointer;
+    background-color: #FFD280;
+    color: #5C4C2E;
+    border-radius: 4px;
+    padding: 10px 20px;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    border-bottom-color: rgba(0, 0, 0, 0.34);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.34) inset,
+        0 2px 0 -1px rgba(0, 0, 0, 0.13),
+        0 3px 0 -1px rgba(0, 0, 0, 0.08),
+        0 3px 13px -1px rgba(0, 0, 0, 0.21);
+}
+
+#logInButton:active {
+	top: 1px;
+	border-color: rgba(0, 0, 0, 0.34) rgba(0, 0, 0, 0.21) rgba(0, 0, 0, 0.21);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.89), 0 1px rgba(0, 0, 0, 0.05) inset;
+	position: relative;
 }
 
 
