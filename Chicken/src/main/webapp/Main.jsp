@@ -580,20 +580,20 @@
         	data : {
             	labels : brand_listname, //브랜드 이름 가져와서 X축에 넣기
 	            datasets : [ {
-	                data : brand_listprice,
-	              
-	                backgroundColor : [ 'rgba(255, 99, 132, 100)',
-	                     'rgba(54, 162, 235, 100)',
-	                     'rgba(255, 206, 86, 100)',
-	                     'rgba(75, 192, 192, 100)',
-	                     'rgba(153, 102, 255, 100)'],
-	                borderColor : [ 'rgba(255, 99, 132, 1)',
-	                     'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
-	                     'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'],
-	                borderWidth : 1,
-					datalabels : {
-						formatter : function(value, context) {
-							return context.chart.data.datasets[0].data[context.dataIndex]
+	              data : brand_listprice,
+	              label: '선택된 브랜드 평균',
+	              backgroundColor : [ 'rgba(255, 99, 132, 100)',
+	                  'rgba(54, 162, 235, 100)',
+	                  'rgba(255, 206, 86, 100)',
+	                  'rgba(75, 192, 192, 100)',
+	                  'rgba(153, 102, 255, 100)'],
+	              borderColor : [ 'rgba(255, 99, 132, 1)',
+	                  'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
+	                  'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'],
+	              borderWidth : 1,
+				  datalabels : {
+					  formatter : function(value, context) {
+						  return context.chart.data.datasets[0].data[context.dataIndex]
 									+ '원';
 						},
 	            		anchor:'end',
@@ -601,19 +601,21 @@
 					}
 	            },
 	            {
-		                data : brand_listmin,
-		                backgroundColor : [ 'rgba(255, 99, 132, 100)',
+		            data : brand_listmin,
+	            	label : '브랜드 최소 치킨값',
+		            backgroundColor : [ 'rgba(255, 99, 132, 100)',
 		                     'rgba(54, 162, 235, 100)',
 		                     'rgba(255, 206, 86, 100)',
 		                     'rgba(75, 192, 192, 100)',
 		                     'rgba(153, 102, 255, 100)'],
-		                borderColor : [ 'rgba(255, 99, 132, 1)',
+		            borderColor : [ 'rgba(255, 99, 132, 1)',
 		                     'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
 		                     'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)'],
-		                borderWidth : 1,
-						datalabels : {
-							formatter : function(value, context) {
-								return context.chart.data.datasets[0].data[context.dataIndex]
+		            borderWidth : 1,
+					datalabels : {
+						
+						formatter : function(value, context) {
+							return context.chart.data.datasets[0].data[context.dataIndex]
 										+ '원';
 							},
 		            		anchor:'end',
@@ -707,8 +709,7 @@
 	                    scales : {
 	                        y: 
 	                            {
-	                              suggestedMin: 12000,
-	                              suggestedMax: 21000,
+	                              min: 12000,
 	                              ticks: { // 최소값, 최대값, 틱범위
 	                                stepSize: 3000
 	                              } 
