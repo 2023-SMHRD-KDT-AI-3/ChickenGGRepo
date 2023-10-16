@@ -21,10 +21,12 @@
 }
 
 @font-face {
-    font-family: 'Giants-Inline';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Giants-Inline';
+	src:
+		url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Inline.woff2')
+		format('woff2');
+	font-weight: normal;
+	font-style: normal;
 }
 
 * {
@@ -37,7 +39,8 @@
 	<div class="left-navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="left-navbar-logo">
-			<a href="goMain" ><h2 style="font-size : 30px; 'font-family:'Giants-Inline'">CHICKEN.GG</h2></a>
+			<a href="goMain"><h2
+					style="font-size: 30px; ' font-family: 'Giants-Inline'">CHICKEN.GG</h2></a>
 		</div>
 		<!-- hr 태그는 수평선용임 -->
 		<hr class="hrhr"></hr>
@@ -55,8 +58,8 @@
 	<nav class="navbar">
 		<!-- 로고 넣는곳 -->
 		<div class="navbar-logo">
-			<a href="goMain" id="navbar_logoimg"><img width="100px" src="images/하얀닭.png"
-				alt="치킨 연구소 로고"></a>
+			<a href="goMain" id="navbar_logoimg"><img width="100px"
+				src="images/하얀닭.png" alt="치킨 연구소 로고"></a>
 		</div>
 
 		<div class="login-search">
@@ -65,8 +68,7 @@
 					<option selected>선택</option>
 					<option value="chi_brand">브랜드</option>
 					<option value="chi_menu">메뉴</option>
-				</select> 
-				<input type="text" class="sr-input" name="sr_input"
+				</select> <input type="text" class="sr-input" name="sr_input"
 					placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Search" autocomplete="off">
 				<button type="submit" class="sr-input-btn">
 					<i class="fa-solid fa-drumstick-bite fa-2xl"></i>
@@ -92,10 +94,9 @@
 	<div>
 		<div class="brandlogo">
 			<h1 class="brand">BRAND</h1>
-			<span id="compare_list">선택한 브랜드 >> </span>
-			<br><br>
+			<span id="compare_list">선택한 브랜드 >> </span> <br> <br> <br>
+			<button type="submit" class="compare" id="totalcompare">비교하기</button>
 			<br>
-			<button type="submit" class="compare" id="totalcompare">비교하기</button><br>
 		</div>
 	</div>
 	<div class="line">
@@ -104,17 +105,20 @@
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="BBQ" onclick="getCheckboxValue()" />
 				<button class="logobox" name="chickenbrand" value="BBQ">
-					<img alt="bbq" src="images/brandlogo/logo-bbq-removebg.png" class="logosize">
+					<img alt="bbq" src="images/brandlogo/logo-bbq-removebg.png"
+						class="logosize">
 				</button>
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="BHC" onclick="getCheckboxValue()" />
 				<button class="logobox" name="chickenbrand" value="BHC">
-					<img alt="bhc" src="images/brandlogo/logo-bhc-removebg.png" class="logosize">
+					<img alt="bhc" src="images/brandlogo/logo-bhc-removebg.png"
+						class="logosize">
 				</button>
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="교촌" onclick="getCheckboxValue()" />
 				<button class="logobox" name="chickenbrand" value="교촌">
-					<img alt="gyochon" src="images/brandlogo/logo-gyochon2-removebg-preview.png">
+					<img alt="gyochon"
+						src="images/brandlogo/logo-gyochon2-removebg-preview.png">
 
 				</button>
 			</div>
@@ -148,23 +152,32 @@
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="멕시카나" onclick="getCheckboxValue()">
 				<button class="logobox" name="chickenbrand" value="멕시카나">
-					<img alt="mexicana" src="images/brandlogo/logo-mexicana-removebg.png"
-						class="logosize">
+					<img alt="mexicana"
+						src="images/brandlogo/logo-mexicana-removebg.png" class="logosize">
 				</button>
 				<input type="checkbox" class="logocheck" name="brandCompare"
 					value="치킨플러스" onclick="getCheckboxValue()">
 				<button class="logobox" name="chickenbrand" value="치킨플러스">
-					<img alt="chickenplus" src="images/brandlogo/logo-chickenplus-removebg.png"
+					<img alt="chickenplus"
+						src="images/brandlogo/logo-chickenplus-removebg.png"
 						class="logosize">
 				</button>
 			</div>
 		</div>
 	</div>
-	<br><br><br><br><br>
-	<div id="Brand_Chart1" style="width: 500px; margin-left: 400px; float:left;"></div>
-	<div id="Brand_Select" style="float:left"></div>
-	<div id="Brand_Chart" style="width: 500px; float:right; margin-right: 150px;"></div>
-	<div id="Brand_Between" style="float:right"></div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div>
+		<div id="Brand_Chart1"
+			style="width: 500px; margin-left: 370px; float: left;"></div>
+		<div id="Brand_Select" style="float: left"></div>
+		<div id="Brand_Chart"
+			style="width: 500px; float: right; margin-right: 120px;"></div>
+		<div id="Brand_Between" style="float: right"></div>
+	</div>
 	<script src="assets/js/brand.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	<script>
@@ -173,33 +186,39 @@
 			CBL = CBL.slice(11).trimStart().trimEnd();
 			CBL = CBL.split(/\s+/g);
 			console.log(CBL);
-			if (CBL.length < 2){
+			if (CBL.length < 2) {
 				alert("최소 2개는 선택해주세요!")
-			}
-			else if (CBL.length > 5) {
+			} else if (CBL.length > 5) {
 				alert("최대 5개까지만 선택해주세요!");
 			} else {
 				SearchManyBrand(CBL);
 			}
-			
+
 		});
-		
-		const $bottomBtn = document.querySelector("#totalcompare");
-		// 버튼 클릭 시 페이지 하단으로 이동
-		$bottomBtn.onclick = () => {
-		  window.scrollTo({ 
-		    top: document.body.scrollHeight, // <- 페이지 총 Height
-		    behavior: "smooth" 
-		  });
-		};
-		
+		// 버튼 요소를 가져오기
+		var scrollButton = document.getElementById("totalcompare");
+
+		// 클릭 이벤트에 함수를 연결
+		scrollButton.addEventListener("click", function() {
+			// 1초(1000 밀리초) 후에 스크롤 함수 실행
+			setTimeout(function() {
+				scrollDown();
+			}, 1000);
+		});
+
+		// 스크롤을 내리는 함수 정의
+		function scrollDown() {
+			// 원하는 스크롤 위치로 스크롤을 내립니다. 여기에서는 500 픽셀 아래로 스크롤합니다.
+			window.scrollBy(0, document.body.scrollHeight);
+		}
+
 		var smallcal_brand = null;
 		var smallprice_brand = null;
 		function SearchManyBrand(CBL) {
 			$.ajax({
 				url : 'ManyBrand',
 				type : 'post',
-				data:{
+				data : {
 					'Brands' : CBL
 				},
 				success : function(res) {
@@ -212,12 +231,12 @@
 					var finalNum = 0;
 					var priceNum = 0;
 					for (var i = 0; i < res.length; i++) {
-						if(res[i].calories < min_calories){
+						if (res[i].calories < min_calories) {
 							console.log(res[i].calories);
 							min_calories = res[i].calories;
 							finalNum = i;
 						}
-						if(res[i].menu_price < min_price){
+						if (res[i].menu_price < min_price) {
 							min_price = res[i].min_price;
 							priceNum = i;
 						}
@@ -228,22 +247,21 @@
 					smallprice_brand = res[priceNum];
 					makingChart(res[finalNum]);
 				},
-				error: function(){
+				error : function() {
 					alert("실패..");
 				}
 			})
 		}
 		// 브랜드 비교할 목적 선택시
-	    function calories_click() {
-	    	makingChart(smallcal_brand);
-	    }
-		function price_click(){
+		function calories_click() {
+			makingChart(smallcal_brand);
+		}
+		function price_click() {
 			makingChart(smallprice_brand);
 		}
 		function ManyBrandChart(result) {
 			document.getElementById("Brand_Chart1").innerHTML = '<canvas id="myChart" style="height: 500px; width: 500px"></canvas>'
-			document.getElementById("Brand_Select").innerHTML = 
-				'<button id="calories_select" style="background-color: #FFD280; padding: 10px 20px !important; border-radius: 5px; border: none; cursor: pointer;" onclick="calories_click()">칼로리 제일 적은 브랜드</button><br><br><button id="price_select" style="background-color: #FFD280; padding: 10px 20px !important; border-radius: 5px; border: none; cursor: pointer;" onclick="price_click()">가격 제일 적은 브랜드</button>'
+			document.getElementById("Brand_Select").innerHTML = '<button id="calories_select" style="background-color: #FFD280; padding: 10px 20px !important; border-radius: 5px; border: none; cursor: pointer;" onclick="calories_click()">칼로리 제일 적은 브랜드</button><br><br><button id="price_select" style="background-color: #FFD280; padding: 10px 20px !important; border-radius: 5px; border: none; cursor: pointer;" onclick="price_click()">가격 제일 적은 브랜드</button>'
 			let brand_name = [];
 			let brand_price = [];
 			let brand_calories = [];
@@ -270,7 +288,7 @@
 												'rgb(255, 159, 64)',
 												'rgb(250, 15, 64)',
 												'rgb(105, 130, 32)',
-												'rgb(25, 159, 64)'],
+												'rgb(25, 159, 64)' ],
 										label : 'Doughnut 1',
 										datalabels : {
 											formatter : function(value, context) {
@@ -352,7 +370,7 @@
 		$('.logobox').click(function() {
 			console.log(this.value);
 			SearchOneBrand(this.value);
-			
+
 		});
 		function SearchOneBrand(val) {
 			$
@@ -382,8 +400,10 @@
 		src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 	<script>
 		function makingChart(result) {
-			document.getElementById("Brand_Between").innerHTML = '선택한 브랜드 : '+result.brand_name+' <br> 단백질 평균: '+result.protein+
-			'g <br> 칼로리 평균 : '+result.calories+'Kcal <br> 평균 가격 : '+result.menu_price+'원'
+			document.getElementById("Brand_Between").innerHTML = '선택한 브랜드 : '
+					+ result.brand_name + ' <br> 단백질 평균: ' + result.protein
+					+ 'g <br> 칼로리 평균 : ' + result.calories
+					+ 'Kcal <br> 평균 가격 : ' + result.menu_price + '원'
 			document.getElementById("Brand_Chart").innerHTML = '<canvas id="myChart2" style="height: 500px; width: 500px"></canvas>'
 			console.log(result.brand_name);
 			const ctx = document.getElementById('myChart2').getContext('2d');
@@ -468,20 +488,18 @@
 						},
 					});
 		}
-		
-		
 	</script>
 	<script type="text/javascript">
-	  $(document).ready(function(){
-		  var data = '<c:out value="${SearchRes}"/>';
-		  console.log(data);
-		  setTimeout(function() {
-			  if (data) {
-				  console.log("왔니?")
-				  SearchOneBrand(data);
+		$(document).ready(function() {
+			var data = '<c:out value="${SearchRes}"/>';
+			console.log(data);
+			setTimeout(function() {
+				if (data) {
+					console.log("왔니?")
+					SearchOneBrand(data);
 				}
 			}, 300);
-	  });
+		});
 	</script>
 
 </body>

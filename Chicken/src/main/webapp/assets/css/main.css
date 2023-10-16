@@ -5,7 +5,21 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
+/* 스크롤바 막대 */
+::-webkit-scrollbar {
+	border-radius: 12px 12px 12px 12px;
+	opacity: 10%;
+}
+::-webkit-scrollbar-thumb {
+    background: #FFD280; /* 스크롤바 막대 색상 */
+    border-radius: 12px 12px 12px 12px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #FFA500;
+}
+::-webkit-scrollbar-button:no-button{
+	border-radius: 12px 12px 12px 12px;
+}
 /* 왼쪽 고정 네비게이션 바 스타일 */
 .left-navbar {
 	position: fixed;
