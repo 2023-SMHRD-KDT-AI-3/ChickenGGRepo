@@ -191,7 +191,7 @@ nav.navbar {
 	display: flex;
 	justify-content: center;
 	margin-left: 250px;
-	margin-top: 50px;
+	margin-top: 20px;
 }
 
 .wrapper {
@@ -201,10 +201,12 @@ nav.navbar {
 
 .title {
 	text-align: center;
+	font-size: 30px;
 }
 
 .form-group {
 	margin-bottom: 15px;
+	font-size: 23px;
 }
 
 label {
@@ -230,17 +232,19 @@ label {
 }
 
 .logInButton-Container {
+	width: 517px;
 	height: 50px;
 }
 
 #logInButton {
-	background-color: #007bff;
+	background-color: #FFA500;
 	color: #fff;
 	border: none;
-	padding: 10px 20px;
+	padding: 15px 20px;
 	border-radius: 5px;
 	cursor: pointer;
 	float: right;
+	width: 517px;
 }
 
 

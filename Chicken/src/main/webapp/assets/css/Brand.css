@@ -32,9 +32,6 @@ body {
 	margin-top: 30px;
 }
 
-.blank {
-	height: 20px;
-}
 
 .hrhr {
 	width: 100%;
@@ -53,10 +50,6 @@ body {
 	display: flex;
 	align-items: center;
 	padding-bottom: 50px;
-}
-
-.left-navbar a:hover {
-	background-color: #757575;
 }
 
 .left-navbar a i {
@@ -112,14 +105,6 @@ nav.navbar {
 	outline: 0;
 	border : 0px !important;
 
-	&:hover,
-	&:focus {
-		outline: 0;
-		border-radius: 0;
-		background-position: 100% center;
-		border-style: solid;
-		border: 1px black;
-	}
 }
 
 .sr-input-btn {

@@ -65,7 +65,8 @@
 					<option selected>선택</option>
 					<option value="chi_brand">브랜드</option>
 					<option value="chi_menu">메뉴</option>
-				</select> <input type="text" class="sr-input" name="sr_input"
+				</select> 
+				<input type="text" class="sr-input" name="sr_input"
 					placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Search" autocomplete="off">
 				<button type="submit" class="sr-input-btn">
 					<i class="fa-solid fa-drumstick-bite fa-2xl"></i>
@@ -160,9 +161,9 @@
 		</div>
 	</div>
 	<br><br><br><br><br>
-	<div id="Brand_Chart1" style="width: 500px; margin-left: 250px; float:left;"></div>
+	<div id="Brand_Chart1" style="width: 500px; margin-left: 400px; float:left;"></div>
 	<div id="Brand_Select" style="float:left"></div>
-	<div id="Brand_Chart" style="width: 500px; float:right"></div>
+	<div id="Brand_Chart" style="width: 500px; float:right; margin-right: 150px;"></div>
 	<div id="Brand_Between" style="float:right"></div>
 	<script src="assets/js/brand.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
@@ -180,7 +181,17 @@
 			} else {
 				SearchManyBrand(CBL);
 			}
+			
 		});
+		const $bottomBtn = document.querySelector("#totalcompare");
+
+		// 버튼 클릭 시 페이지 하단으로 이동
+		$bottomBtn.onclick = () => {
+		  window.scrollTo({ 
+		    top: document.body.scrollHeight, // <- 페이지 총 Height
+		    behavior: "smooth" 
+		  });
+		};
 		var smallcal_brand = null;
 		var smallprice_brand = null;
 		function SearchManyBrand(CBL) {
@@ -339,6 +350,7 @@
 		$('.logobox').click(function() {
 			console.log(this.value);
 			SearchOneBrand(this.value);
+			
 		});
 		function SearchOneBrand(val) {
 			$
