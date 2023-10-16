@@ -181,7 +181,17 @@
 			} else {
 				SearchManyBrand(CBL);
 			}
+			
 		});
+		const $bottomBtn = document.querySelector("#totalcompare");
+
+		// 버튼 클릭 시 페이지 하단으로 이동
+		$bottomBtn.onclick = () => {
+		  window.scrollTo({ 
+		    top: document.body.scrollHeight, // <- 페이지 총 Height
+		    behavior: "smooth" 
+		  });
+		};
 		var smallcal_brand = null;
 		var smallprice_brand = null;
 		function SearchManyBrand(CBL) {
@@ -340,6 +350,7 @@
 		$('.logobox').click(function() {
 			console.log(this.value);
 			SearchOneBrand(this.value);
+			
 		});
 		function SearchOneBrand(val) {
 			$

@@ -19,13 +19,4 @@ function getCheckboxValue()  {
   document.querySelector('#compare_list').innerHTML ='선택한 브랜드 >>&nbsp;&nbsp;&nbsp; ' +  result;
 }
 
-const $bottomBtn = document.querySelector("#totalcompare");
-
-// 버튼 클릭 시 페이지 하단으로 이동
-$bottomBtn.onclick = () => {
-  window.scrollTo({ 
-    top: document.body.scrollHeight, // <- 페이지 총 Height
-    behavior: "smooth" 
-  });
-};
 
