@@ -97,7 +97,7 @@
 	<div>
 		<div class="brandlogo">
 			<h1 class="brand">MENU</h1>
-			<button type="submit" class="compare" onclick="compareclick()">비교하기</button>
+			<button type="submit" class="compare" id="totalcompare" onclick="compareclick()">비교하기</button>
 			<span id="compare_list"></span>
 		</div>
 	</div>
@@ -1235,17 +1235,13 @@
 		<button class="button-left">⬅Left</button>
 		<button class="button-right">Right➡</button>
 	</div>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<div id="Brand_Chart1"
-		style="width: 500px; margin-left: 250px; float: left;"></div>
-	<div id="Brand_Select" style="float: left"></div>
-	<div id="Brand_Chart" style="width: 500px; float: right"></div>
-	<div id="Brand_Between" style="float: right"></div>
 
+	<br><br><br><br><br>
+	<div id="Brand_Chart1" style="width: 500px; margin-left: 370px; float:left;"></div>
+	<div id="Brand_Select" style="float:left"></div>
+	<div id="Brand_Chart" style="width: 500px; float:right; margin-right: 196px;"></div>
+	<div id="Brand_Between" style="float:right"></div>
+	
 	<script src="assets/js/Menu.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	<script type="text/javascript">
@@ -1332,6 +1328,22 @@
 			}
 		})
 	}
+		// 버튼 요소를 가져오기
+		var scrollButton = document.getElementById("totalcompare");
+
+		// 클릭 이벤트에 함수를 연결
+		scrollButton.addEventListener("click", function() {
+			// 1초(1000 밀리초) 후에 스크롤 함수 실행
+			setTimeout(function() {
+				scrollDown();
+			}, 1000);
+		});
+
+		// 스크롤을 내리는 함수 정의
+		function scrollDown() {
+			// 원하는 스크롤 위치로 스크롤을 내립니다. 여기에서는 500 픽셀 아래로 스크롤합니다.
+			window.scrollBy(0, document.body.scrollHeight);
+		}
 	</script>
 	<!-- Chart.js -->
 	<script
@@ -1341,7 +1353,7 @@
 	<script>
 		function ManyBrandChart(result) {
 			document.getElementById("Brand_Chart1").innerHTML = '<canvas id="myChart" style="height: 500px; width: 500px"></canvas>'
-			document.getElementById("Brand_Select").innerHTML = '<button id="calories_select" onclick="calories_click()">칼로리 제일 적은 메뉴</button><br><button id="price_select" onclick="price_click()">가격 제일 적은 메뉴</button>'
+			document.getElementById("Brand_Select").innerHTML = '<button id="calories_select" style="background-color: #FFD280; padding: 10px 20px !important; border-radius: 5px; border: none; cursor: pointer;" onclick="calories_click()">칼로리 제일 적은 메뉴</button><br><br><button id="price_select" style="background-color: #FFD280; padding: 10px 20px !important; border-radius: 5px; border: none; cursor: pointer;" onclick="price_click()">가격 제일 적은 메뉴</button>'
 			let menu_name = [];
 			let brand_price = [];
 			let brand_calories = [];

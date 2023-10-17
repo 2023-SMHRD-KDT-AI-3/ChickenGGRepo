@@ -285,6 +285,19 @@ nav.navbar {
 #price_select:hover {
 	animation: jittery 4s infinite;
 }
+
+#Brand_Between {
+	position: relative;
+	top: 222px;
+	left: 330px;
+}
+
+#Brand_Select {
+	position: relative;
+	top: 210px;
+	left: 83px;
+}
+
 @keyframes jittery {
 
 	5%,
