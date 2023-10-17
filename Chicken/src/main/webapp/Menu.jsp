@@ -1836,7 +1836,7 @@
 			<div class="inner">
 				<img src="images/Menu_brandlogo/logo-jadam.png" class="brand-box" />
 				<div class="slider">
-					<div class="item-wrapper">
+					<div class="item-wrapper jadam">
 						<div class="item">
 							<div class="item-content">
 								<input type="checkbox" class="logocheck" name="menuCompare"
@@ -2200,11 +2200,11 @@
 					</div>
 					<div class="slider-btn-wrapper slider-btn-wrapper-left">
 						<!-- 왼쪽 화살표 -->
-						<button id="left-btn" class="slider-btn">⬅Left</button>
+						<button id="left-jadam" class="slider-btn">⬅Left</button>
 					</div>
 					<div class="slider-btn-wrapper slider-btn-wrapper-right">
 						<!-- 오른쪽 화살표 -->
-						<button id="right-btn" class="slider-btn">Right➡</button>
+						<button id="right-jadam" class="slider-btn">Right➡</button>
 					</div>
 				</div>
 			</div>
