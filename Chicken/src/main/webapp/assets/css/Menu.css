@@ -311,10 +311,11 @@ nav.navbar {
 
 .slider-btn {
 	border: none;
-	border-radius: 3px;
+	border-radius: 10px;
 	background-color: #525252;
 	color: #fff;
 	cursor: pointer;
+	padding: 10px 10px;
 }
 
 .item-wrapper {
