@@ -311,10 +311,11 @@ nav.navbar {
 
 .slider-btn {
 	border: none;
-	border-radius: 3px;
+	border-radius: 10px;
 	background-color: #525252;
 	color: #fff;
 	cursor: pointer;
+	padding: 10px 10px;
 }
 
 .item-wrapper {
@@ -409,4 +410,16 @@ nav.navbar {
 #compare_list {
 	font-size: 25px;
 	color: #a96d24;
+}
+
+#Brand_Select {
+	position: relative;
+	top: 26px;
+	left: 83px;
+}
+
+#Brand_Between {
+	position: relative;
+	top: 160px;
+	right: 100px;
 }

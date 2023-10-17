@@ -170,13 +170,11 @@
 	<br>
 	<br>
 	<br>
-	<div>
-		<div id="Brand_Chart1"
-			style="width: 500px; margin-left: 370px; float: left;"></div>
-		<div id="Brand_Select" style="float: left"></div>
-		<div id="Brand_Chart"
-			style="width: 500px; float: right; margin-right: 196px;"></div>
-		<div id="Brand_Between" style="float: right"></div>
+	<div style="margin-left:400px; display:flex">
+		<div id="Brand_Chart1" style="width: 500px;"></div>
+		<div id="Brand_Select"></div>
+		<div id="Brand_Between"></div>
+		<div id="Brand_Chart" style="width: 500px;"></div>
 	</div>
 	<script src="assets/js/brand.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
