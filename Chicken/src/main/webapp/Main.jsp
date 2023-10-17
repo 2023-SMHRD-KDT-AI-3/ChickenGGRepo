@@ -17,7 +17,7 @@
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <style>
 .map_wrap, .map_wrap * {
-
+	
 }
 
 .map_wrap a, .map_wrap a:hover, .map_wrap a:active {
@@ -285,8 +285,8 @@
 		<!-- 여기에 페이지 콘텐츠를 추가합니다. -->
 		<div class="map_wrap">
 			<div class="map-searchInput">
-				<form onsubmit="searchPlaces(); return false;" class="map-searchForm"
-					>
+				<form onsubmit="searchPlaces(); return false;"
+					class="map-searchForm">
 					<input type="text" value="치킨집" id="keyword" size="15">
 					<button type="submit" class="map-searchBtn">검색하기</button>
 				</form>
@@ -302,14 +302,17 @@
 				<div id="pagination"></div>
 			</div>
 		</div>
+		<div class="review-show" style="float:left">${Reviews.nick}님:
+			${Reviews.review_content}</div>
+
 		<!-- 여기는 마이차트 부분입니다 -->
 		<div class="chart-wrap" id="myChart1">
 			<!-- <canvas id="myChart" style="height: 490px; width: 850px"></canvas>  -->
 		</div>
+		<div id="LeftChart2" style="float:left"></div>
 		<!-- 여기는 마이차트 부분입니다 -->
 		<div id="Chart2" style="height: 490px; width: 850px;"></div>
-		<div id="LeftChart2"></div>
-		<div class="review-show">${Reviews.nick}님: ${Reviews.review_content}</div>
+
 	</div>
 	<!-- 검색추천, 자동완성  js문 -->
 	<script src="assets/js/Main.js"></script>
@@ -691,7 +694,7 @@
 				}
 				document.getElementById("LeftChart2").innerHTML = '<p>선택한 브랜드 : '+finallabel+
 				'<br>브랜드 최소가격: '+finalmin+'원<br>브랜드 평균가격: '+finalavg+'원<br>브랜드 순살부위: '+finalboneless+'</p>'
-	          	document.getElementById("Chart2").innerHTML = '<canvas id="getChart" style="height: 200px; width: 450px; margin-left: 250px;"></canvas>'
+	          	document.getElementById("Chart2").innerHTML = '<canvas id="getChart" style="height: 200px; width: 450px; display:flex"></canvas>'
 	              const gct = document.getElementById('getChart').getContext('2d');
 	              const myChart2 = new Chart(gct, {
 	                 type : 'bar',
@@ -721,14 +724,25 @@
 	    	        		 }
 	    	        	 },
 	                    scales : {
-	                        y: 
-	                            {
-	                              min: 12000,
-	                              ticks: { // 최소값, 최대값, 틱범위
-	                                stepSize: 3000
-	                              } 
-	                            }
-	                    	}
+	                    	x: {
+	    	            		grid:{
+	    	            			display:false,
+	    	            			drawBorder:false
+	    	            		}
+	    	            	},
+	    	                y: { // 최소값, 최대값, 틱범위
+	    	                	grid:{
+	    	                		display: false,
+	    	                		drawBorder: false
+	    	                	},
+	    	                	
+	    	                	beginAtZero : false,
+	    	                    min: 10000,
+	    	                    ticks: {
+	    	                      display:false
+	    	                      }
+	    	                   }
+	    	            	}
 	                 	}
 	              });
 	      }

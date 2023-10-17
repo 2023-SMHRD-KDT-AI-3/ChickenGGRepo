@@ -2520,7 +2520,7 @@
 	<br>
 	<br>
 	<br>
-	<div style="margin-left:400px; display:flex">
+	<div style="margin-left:400px; display:inline-flex">
 		<div id="Brand_Chart1" style="width: 500px;"></div>
 		<div id="Brand_Select"></div>
 		<div id="Brand_Between"></div>
