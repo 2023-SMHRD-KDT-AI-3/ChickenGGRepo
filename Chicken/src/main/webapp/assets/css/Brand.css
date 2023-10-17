@@ -286,16 +286,16 @@ nav.navbar {
 	animation: jittery 4s infinite;
 }
 
-#Brand_Between {
-	position: relative;
-	top: 222px;
-	left: 330px;
-}
-
 #Brand_Select {
 	position: relative;
-	top: 210px;
+	top: 26px;
 	left: 83px;
+}
+
+#Brand_Between {
+	position: relative;
+	top: 160px;
+	right: 100px;
 }
 
 @keyframes jittery {

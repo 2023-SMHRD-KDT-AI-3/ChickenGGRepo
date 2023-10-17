@@ -97,7 +97,8 @@
 	<div>
 		<div class="brandlogo">
 			<h1 class="brand">MENU</h1>
-			<button type="submit" class="compare" id="totalcompare" onclick="compareclick()">비교하기</button>
+			<button type="submit" class="compare" id="totalcompare"
+				onclick="compareclick()">비교하기</button>
 			<span id="compare_list"></span>
 		</div>
 	</div>
@@ -1198,7 +1199,8 @@
 						<div class="item">
 							<div class="item-content">
 								<input type="checkbox" class="logocheck" name="menuCompare"
-									value="해바라기후라이드 후라이드반/양념반" onclick="getCheckboxValue()" id="1145" />
+									value="해바라기후라이드 후라이드반/양념반" onclick="getCheckboxValue()"
+									id="1145" />
 								<button class="logobox" name="chickenbrand" value="BHC">
 									<img src="images/chickMenu/BHC/반반치킨.png" />
 									<div class="info-text">
@@ -1744,7 +1746,8 @@
 			</div>
 			<!-- 9번 브랜드 -->
 			<div class="inner">
-				<img src="images/Menu_brandlogo/logo-chickenplus.png" class="brand-box" />
+				<img src="images/Menu_brandlogo/logo-chickenplus.png"
+					class="brand-box" />
 				<div class="slider">
 					<div class="item-wrapper"></div>
 					<div class="slider-btn-wrapper slider-btn-wrapper-left">
@@ -1765,12 +1768,17 @@
 		<button class="button-right">Right➡</button>
 	</div>
 
-	<br><br><br><br><br>
-	<div id="Brand_Chart1" style="width: 500px; margin-left: 370px; float:left;"></div>
-	<div id="Brand_Select" style="float:left"></div>
-	<div id="Brand_Chart" style="width: 500px; float:right; margin-right: 196px;"></div>
-	<div id="Brand_Between" style="float:right"></div>
-	
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div style="margin-left:400px; display:flex">
+		<div id="Brand_Chart1" style="width: 500px;"></div>
+		<div id="Brand_Select"></div>
+		<div id="Brand_Between"></div>
+		<div id="Brand_Chart" style="width: 500px;"></div>
+	</div>
 	<script src="assets/js/Menu.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	<script type="text/javascript">
@@ -1786,7 +1794,7 @@
 			})
 			if (menu_num.length > 5) {
 				alert("최대 5개까지만 비교해 주세요!");
-			} else if (menu_num.length < 2){
+			} else if (menu_num.length < 2) {
 				alert("최소 2개는 선택해 주세요!");
 			} else {
 				$.ajax({
@@ -1835,32 +1843,32 @@
 	</script>
 	<!-- 하나만 클릭시 나와주는 함수 -->
 	<script>
-	$('.logobox').click(function() {
-		console.log($(this).prev().attr('id'));
-		var menu_number = $(this).prev().attr('id');
-		compareone(menu_number);
-	});
-	function compareone(num){
-		$.ajax({
-			url : 'OneMenu',
-			type : 'post',
-			data : {
-				'Menu' : num
-			},
-			success : function(res) {
-				console.log("메뉴 Ajax성공!");
-				console.log(res);
-				if (res == null) {
+		$('.logobox').click(function() {
+			console.log($(this).prev().attr('id'));
+			var menu_number = $(this).prev().attr('id');
+			compareone(menu_number);
+		});
+		function compareone(num) {
+			$.ajax({
+				url : 'OneMenu',
+				type : 'post',
+				data : {
+					'Menu' : num
+				},
+				success : function(res) {
+					console.log("메뉴 Ajax성공!");
+					console.log(res);
+					if (res == null) {
+						alert("검색결과가 없거나 이름을 틀렸습니다!");
+					} else {
+						makingChart(res);
+					}
+				},
+				error : function() {
 					alert("검색결과가 없거나 이름을 틀렸습니다!");
-				}else{
-				makingChart(res);
 				}
-			},
-			error : function() {
-				alert("검색결과가 없거나 이름을 틀렸습니다!");
-			}
-		})
-	}
+			})
+		}
 		// 버튼 요소를 가져오기
 		var scrollButton = document.getElementById("totalcompare");
 
@@ -1991,29 +1999,31 @@
 		}
 	</script>
 	<script>
-	function makingChart(result) {
-		document.getElementById("Brand_Between").innerHTML = '선택한 메뉴 : '+result.menu_name+' <br> 단백질 : '+result.protein+
-		'g <br> 칼로리 : '+result.calories+'Kcal <br> 가격 : '+result.menu_price+'원'
-		document.getElementById("Brand_Chart").innerHTML = '<canvas id="myChart2" style="height: 500px; width: 500px"></canvas>'
-		const ctx = document.getElementById('myChart2').getContext('2d');
-		const myChart = new Chart(
-				ctx,
-				{
-					plugins : [ ChartDataLabels ],
-					type : 'doughnut',
-					data : {
-						datasets : [
-								/* Outer doughnut data starts*/
-								{
-									data : [ result.calories, 245 ],
-									backgroundColor : [
-											'rgb(255, 99, 132)',
-											'rgb(255, 159, 64)' ],
-									label : 'Doughnut 1',
-									datalabels : {
-										formatter : function(value, context) {
-											return context.chart.data.datasets[0].data[context.dataIndex]
-													+ 'Kcal';
+		function makingChart(result) {
+			document.getElementById("Brand_Between").innerHTML = '선택한 메뉴 : '
+					+ result.menu_name + ' <br> 단백질 : ' + result.protein
+					+ 'g <br> 칼로리 : ' + result.calories + 'Kcal <br> 가격 : '
+					+ result.menu_price + '원'
+			document.getElementById("Brand_Chart").innerHTML = '<canvas id="myChart2" style="height: 500px; width: 500px"></canvas>'
+			const ctx = document.getElementById('myChart2').getContext('2d');
+			const myChart = new Chart(
+					ctx,
+					{
+						plugins : [ ChartDataLabels ],
+						type : 'doughnut',
+						data : {
+							datasets : [
+									/* Outer doughnut data starts*/
+									{
+										data : [ result.calories, 245 ],
+										backgroundColor : [
+												'rgb(255, 99, 132)',
+												'rgb(255, 159, 64)' ],
+										label : 'Doughnut 1',
+										datalabels : {
+											formatter : function(value, context) {
+												return context.chart.data.datasets[0].data[context.dataIndex]
+														+ 'Kcal';
 											}
 										}
 									},
@@ -2078,10 +2088,10 @@
 					});
 		}
 	</script>
-		<script type="text/javascript">
+	<script type="text/javascript">
 		$(document).ready(function() {
 			var data = '<c:out value="${SearchRes}"/>';
-			var find = 'input[value ='+data+']';
+			var find = 'input[value =' + data + ']';
 			setTimeout(function() {
 				if (data) {
 					console.log($(find).attr("id"));
