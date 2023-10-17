@@ -1,5 +1,7 @@
 package com.smhrd.model;
 
+import java.util.ArrayList;
+
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
@@ -56,6 +58,12 @@ public class UserDAO {
 		Review_Table review = sqlSession.selectOne("findreview", user);
 		sqlSession.close();
 		return review;
+	}
+	public ArrayList<Review_Table> reviewall() {
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+		ArrayList<Review_Table> allreview = (ArrayList) sqlSession.selectList("allreview");
+		sqlSession.close();
+		return allreview;
 	}
 	
 	

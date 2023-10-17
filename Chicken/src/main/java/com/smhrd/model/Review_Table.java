@@ -12,4 +12,5 @@ public class Review_Table {
 	String id;
 	int menu_num;
 	String review_content;
+	String nick;
 }
