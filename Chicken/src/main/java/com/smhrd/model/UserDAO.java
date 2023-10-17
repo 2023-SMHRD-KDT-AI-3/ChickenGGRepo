@@ -57,6 +57,9 @@ public class UserDAO {
 		sqlSession.close();
 		return review;
 	}
+	public void reviewall() {
+		SqlSession sqlSession = sqlSessionFactory.openSession(true);
+	}
 	
 	
 	

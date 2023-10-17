@@ -29,7 +29,7 @@ public class CheckBrand extends HttpServlet {
 		String [] MyBrand = {"60계","BBQ","교촌","굽네치","김삿갓","꺳잎두","네네치","노랑통","둥근이",
 				"또래오","또봉이","멕시카","멕시칸","부리나","불로만","수일통","순살만","아주커","양동가",
 				"오빠통","용천통","자담치","지코바","처갓집","치순이","치킨플","친구통","투존치","티바두","페리카",
-				"푸라닭","호식이","후라이","훌랄라"};
+				"푸라닭","호식이","후라이","훌랄라","BHC"};
 		String [] TopBrand = MapBrand;
 		ArrayList<Brand> FinalBrand = new ArrayList<Brand>();
 		int num = 0;
