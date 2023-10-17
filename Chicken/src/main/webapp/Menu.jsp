@@ -1441,10 +1441,14 @@
 			success : function(res) {
 				console.log("메뉴 Ajax성공!");
 				console.log(res);
+				if (res == null) {
+					alert("검색결과가 없거나 이름을 틀렸습니다!");
+				}else{
 				makingChart(res);
+				}
 			},
 			error : function() {
-				alert("실패..");
+				alert("검색결과가 없거나 이름을 틀렸습니다!");
 			}
 		})
 	}
@@ -1668,11 +1672,12 @@
 		<script type="text/javascript">
 		$(document).ready(function() {
 			var data = '<c:out value="${SearchRes}"/>';
-			console.log(data);
+			var find = 'input[value ='+data+']';
 			setTimeout(function() {
 				if (data) {
-					//$('input[value=1]').attr("id");
-					console.log("왔니?")
+					console.log($(find).attr("id"));
+					var result = $(find).attr("id");
+					compareone(result);
 				}
 			}, 300);
 		});
