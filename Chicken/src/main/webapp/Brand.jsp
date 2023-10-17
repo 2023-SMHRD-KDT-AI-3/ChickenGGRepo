@@ -65,8 +65,8 @@
 		<div class="login-search">
 			<form action="Search" method="post" class="sr">
 				<select name="sr" class="select">
-					<option selected>선택</option>
-					<option value="chi_brand">브랜드</option>
+					<option>선택</option>
+					<option selected value="chi_brand">브랜드</option>
 					<option value="chi_menu">메뉴</option>
 				</select> <input type="text" class="sr-input" name="sr_input"
 					placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Search" autocomplete="off">
