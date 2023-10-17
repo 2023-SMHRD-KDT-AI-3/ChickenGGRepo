@@ -307,7 +307,8 @@
 			<!-- <canvas id="myChart" style="height: 490px; width: 850px"></canvas>  -->
 		</div>
 		<!-- 여기는 마이차트 부분입니다 -->
-		<div id="Chart2" style="height: 490px; width: 850px"></div>
+		<div id="Chart2" style="height: 490px; width: 850px; float:right"></div>
+		<div id="LeftChart2" style="float:right"></div>
 		
 	</div>
 	<!-- 검색추천, 자동완성  js문 -->
@@ -674,7 +675,7 @@
 	        		console.log(arr[i].brand_name)
 					}
 				}
-	
+				document.getElementById("LeftChart2").innerHTML = '<p>선택한 브랜드 : '+finallabel+'</p>'
 	          	document.getElementById("Chart2").innerHTML = '<canvas id="getChart" style="height: 200px; width: 450px; margin-left: 250px;"></canvas>'
 	              const gct = document.getElementById('getChart').getContext('2d');
 	              const myChart2 = new Chart(gct, {
