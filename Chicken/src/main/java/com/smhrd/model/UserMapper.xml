@@ -35,5 +35,7 @@
 		select * from t_review where id = #{id}
 	</select>
 	
-	<select id="allreview" resultType="com.smhrd.model.Review_Table"></select>
+	<select id="allreview" resultType="com.smhrd.model.Review_Table">
+		select * from t_review;
+	</select>
 </mapper>
