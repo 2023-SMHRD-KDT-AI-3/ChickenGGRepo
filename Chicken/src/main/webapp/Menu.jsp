@@ -1102,7 +1102,31 @@
 						<div class="item">
 							<div class="item-content">
 								<input type="checkbox" class="logocheck" name="menuCompare"
-									value="치퐁당윙" onclick="getCheckboxValue()" id="1111" />
+									value="hot후라이드윙" onclick="getCheckboxValue()" id="1137" />
+								<button class="logobox" name="chickenbrand" value="BHC">
+									<img src="images/chickMenu/BBQ/핫후라이드윙.png" />
+									<div class="info-text">
+										<h2>핫후라이드윙</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="hot후라이드스틱" onclick="getCheckboxValue()" id="1138" />
+								<button class="logobox" name="chickenbrand" value="BHC">
+									<img src="images/chickMenu/BBQ/핫후라이드스틱.png" />
+									<div class="info-text">
+										<h2>핫후라이드스틱</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="후라이드스틱" onclick="getCheckboxValue()" id="1139" />
 								<button class="logobox" name="chickenbrand" value="BHC">
 									<img src="images/chickMenu/BBQ/치퐁당윙.png" />
 									<div class="info-text">
