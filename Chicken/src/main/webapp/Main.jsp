@@ -309,7 +309,7 @@
 		<!-- 여기는 마이차트 부분입니다 -->
 		<div id="Chart2" style="height: 490px; width: 850px; float:right"></div>
 		<div id="LeftChart2" style="float:right"></div>
-		<div>${Reviews.nick}님: ${Reviews.review_content}</div>
+		<div>${Reviews.nick}님:  ${Reviews.review_content}</div>
 	</div>
 	<!-- 검색추천, 자동완성  js문 -->
 	<script src="assets/js/Main.js"></script>
