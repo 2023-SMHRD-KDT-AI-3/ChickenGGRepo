@@ -107,7 +107,6 @@
 		<div class="inner-grp">
 			<!-- 1번 브랜드 inner 클래스는 브랜드 양식 -->
 			<div class="inner">
-				<img src="images/Menu_brandlogo/logo-bbq.jpg" class="brand-box">
 				<div class="slider">
 					<div class="item-wrapper BBQ">
 						<!-- item 클래스가 메뉴 양식 -->
@@ -549,6 +548,7 @@
 						<!-- 왼쪽 화살표 -->
 						<button id="left-BBQ" class="slider-btn">⬅Left</button>
 					</div>
+					<b class="center-text">BBQ</b>
 					<div class="slider-btn-wrapper slider-btn-wrapper-right">
 						<!-- 오른쪽 화살표 -->
 						<button id="right-BBQ" class="slider-btn">Right➡</button>

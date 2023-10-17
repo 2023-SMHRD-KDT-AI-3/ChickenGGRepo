@@ -422,3 +422,7 @@ nav.navbar {
 	top: 160px;
 	right: 100px;
 }
+
+.center-text {
+	font-size: 40px;
+}
