@@ -2480,7 +2480,416 @@
 			<div class="inner">
 				<img src="images/Menu_brandlogo/logo-mexicana.png" class="brand-box" />
 				<div class="slider">
-					<div class="item-wrapper"></div>
+					<div class="item-wrapper">
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="치토스치킨" onclick="getCheckboxValue()" id="756" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/치토스.jpg" />
+									<div class="info-text">
+										<h2>치토스치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="순살치토스치킨" onclick="getCheckboxValue()" id="757" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/치토스순살.jpg" />
+									<div class="info-text">
+										<h2>치토스순살치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="양념치킨" onclick="getCheckboxValue()" id="758" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/양념.jpg" />
+									<div class="info-text">
+										<h2>양념치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="땡초치킨" onclick="getCheckboxValue()" id="759" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/땡초.jpg" />
+									<div class="info-text">
+										<h2>땡초치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="고메치킨" onclick="getCheckboxValue()" id="760" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/고메.png" />
+									<div class="info-text">
+										<h2>고메치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="뿌리새우치킨" onclick="getCheckboxValue()" id="761" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/뿌리새우.jpg" />
+									<div class="info-text">
+										<h2>뿌리새우치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="깐풍요리치킨" onclick="getCheckboxValue()" id="762" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/깐풍요리.jpg" />
+									<div class="info-text">
+										<h2>깐풍요리치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="리얼치킨꿔바로우" onclick="getCheckboxValue()" id="763" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/리얼꿔바로우.jpg" />
+									<div class="info-text">
+										<h2>리얼치킨꿔바로우</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="마늘알마니치킨" onclick="getCheckboxValue()" id="764" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/마늘알마니.png" />
+									<div class="info-text">
+										<h2>마늘알마니치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="모두의마요치킨" onclick="getCheckboxValue()" id="765" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/모두의마요.jpg" />
+									<div class="info-text">
+										<h2>모두의마요치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="강정치킨" onclick="getCheckboxValue()" id="766" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/강정.jpg" />
+									<div class="info-text">
+										<h2>강정치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="후라이드치킨" onclick="getCheckboxValue()" id="767" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/후라이드.png" />
+									<div class="info-text">
+										<h2>후라이드치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="반반치킨" onclick="getCheckboxValue()" id="768" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/반반.jpg" />
+									<div class="info-text">
+										<h2>반반치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="뿌리고(눈꽃치즈맛)" onclick="getCheckboxValue()" id="769" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/뿌리고눈꽃치즈.jpg" />
+									<div class="info-text">
+										<h2>뿌리고(눈꽃치즈맛)</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="간장치킨" onclick="getCheckboxValue()" id="770" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/간장.jpg" />
+									<div class="info-text">
+										<h2>간장치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="파닭치킨" onclick="getCheckboxValue()" id="771" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/파닭.jpg" />
+									<div class="info-text">
+										<h2>파닭치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="허니벌꿀치킨" onclick="getCheckboxValue()" id="772" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/허니벌꿀.jpg" />
+									<div class="info-text">
+										<h2>허니벌꿀치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="순살깐풍요리치킨" onclick="getCheckboxValue()" id="773" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/깐풍요리순살.jpg" />
+									<div class="info-text">
+										<h2>순살깐풍요리치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="순살마늘알마니치킨" onclick="getCheckboxValue()" id="774" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/마늘알마니순살.png" />
+									<div class="info-text">
+										<h2>순살마늘알마니치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="순살모두의마요치킨" onclick="getCheckboxValue()" id="775" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/모두의마요순살.jpg" />
+									<div class="info-text">
+										<h2>모두의마요순살치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="순살뿌리고(오리지널)" onclick="getCheckboxValue()" id="776" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/뿌리고후라이드순살.jpg" />
+									<div class="info-text">
+										<h2>순살뿌리고(오리지널)</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="순살뿌리고(매콤달콤한맛)" onclick="getCheckboxValue()" id="777" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/뿌리고매콤달콤순살.jpg" />
+									<div class="info-text">
+										<h2>뿌리고(매콤달콤한맛)</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="순살강정치킨" onclick="getCheckboxValue()" id="778" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/강정순살.jpg" />
+									<div class="info-text">
+										<h2>순살강정치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="순살땡초치킨" onclick="getCheckboxValue()" id="779" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/땡초순살.jpg" />
+									<div class="info-text">
+										<h2>순살땡초치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="순살후라이드" onclick="getCheckboxValue()" id="780" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/후라이드순살.jpg" />
+									<div class="info-text">
+										<h2>순살후라이드</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="순살양념" onclick="getCheckboxValue()" id="781" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/양념순살.jpg" />
+									<div class="info-text">
+										<h2>순살양념치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="순살반반치킨" onclick="getCheckboxValue()" id="782" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/반반순살.jpg" />
+									<div class="info-text">
+										<h2>순살반반치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="순살뿌리고(눈꽃치즈맛)" onclick="getCheckboxValue()" id="783" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/뿌리고눈꽃치즈순살.jpg" />
+									<div class="info-text">
+										<h2>순살뿌리고(눈꽃치즈맛)</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="순살간장치킨" onclick="getCheckboxValue()" id="784" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/간장순살.jpg" />
+									<div class="info-text">
+										<h2>순살간장치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="순살파닭" onclick="getCheckboxValue()" id="785" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/파닭순살.jpg" />
+									<div class="info-text">
+										<h2>순살파닭</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="순살허니벌꿀치킨" onclick="getCheckboxValue()" id="786" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/허니벌꿀순살.jpg" />
+									<div class="info-text">
+										<h2>순살허니벌꿀치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="멕시윙" onclick="getCheckboxValue()" id="787" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/멕시윙.jpg" />
+									<div class="info-text">
+										<h2>멕시윙</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="멕시핀" onclick="getCheckboxValue()" id="788" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/멕시핀.jpg" />
+									<div class="info-text">
+										<h2>멕시핀</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="멕시콤보" onclick="getCheckboxValue()" id="789" />
+								<button class="logobox" name="chickenbrand" value="멕시카나">
+									<img src="images/chickMenu/멕시카나/멕시콤보.jpg" />
+									<div class="info-text">
+										<h2>멕시콤보</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+					</div>
 					<div class="slider-btn-wrapper slider-btn-wrapper-left">
 						<!-- 왼쪽 화살표 -->
 						<button id="left-btn" class="slider-btn">⬅Left</button>
