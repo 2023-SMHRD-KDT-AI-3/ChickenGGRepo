@@ -347,10 +347,6 @@ nav.navbar {
 	height: 80%;
 }
 
-body div .outer div div:nth-child(6) div div .item-wrapper{
-	flex-direction: column !important;
-}
-
 /* 이 밑은 예전꺼 쓸수도 있고 아닐수도 있고*/
 .logobox {
 	cursor: pointer;
