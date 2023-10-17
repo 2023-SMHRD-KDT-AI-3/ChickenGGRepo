@@ -2396,16 +2396,75 @@
 						<div class="item">
 							<div class="item-content">
 								<input type="checkbox" class="logocheck" name="menuCompare"
-									value="후라이드치킨" onclick="getCheckboxValue()" id="543" />
+									value="버터링양념치킨" onclick="getCheckboxValue()" id="543" />
 								<button class="logobox" name="chickenbrand" value="아주커치킨">
-									<img src="images/chickMenu/아주커/후라이드.jpg" />
+									<img src="images/chickMenu/아주커/버터링.jpg" />
 									<div class="info-text">
-										<h2>후라이드치킨</h2>
+										<h2>버터링양념치킨</h2>
 									</div>
 								</button>
 							</div>
 						</div>
-						
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="버터링양념치킨순살" onclick="getCheckboxValue()" id="544" />
+								<button class="logobox" name="chickenbrand" value="아주커치킨">
+									<img src="images/chickMenu/아주커/버터링.jpg" />
+									<div class="info-text">
+										<h2>버터링양념치킨순살</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="버터링양념치킨윙봉" onclick="getCheckboxValue()" id="545" />
+								<button class="logobox" name="chickenbrand" value="아주커치킨">
+									<img src="images/chickMenu/아주커/버터링.jpg" />
+									<div class="info-text">
+										<h2>버터링양념치킨윙봉</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="the바삭아주커치킨" onclick="getCheckboxValue()" id="546" />
+								<button class="logobox" name="chickenbrand" value="아주커치킨">
+									<img src="images/chickMenu/아주커/더바삭후라이드.jpg" />
+									<div class="info-text">
+										<h2>the바삭후라이드치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="the바삭순살치킨" onclick="getCheckboxValue()" id="547" />
+								<button class="logobox" name="chickenbrand" value="아주커치킨">
+									<img src="images/chickMenu/아주커/더바삭순살.jpg" />
+									<div class="info-text">
+										<h2>the바삭순살치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="the바삭윙봉치킨" onclick="getCheckboxValue()" id="548" />
+								<button class="logobox" name="chickenbrand" value="아주커치킨">
+									<img src="images/chickMenu/아주커/더바삭윙봉.jpg" />
+									<div class="info-text">
+										<h2>the바삭윙봉치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
 					</div>
 					<div class="slider-btn-wrapper slider-btn-wrapper-left">
 						<!-- 왼쪽 화살표 -->
