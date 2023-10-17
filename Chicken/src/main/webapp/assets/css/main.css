@@ -93,6 +93,10 @@ nav.navbar {
 	/* 로고 이미지의 최대 너비 설정 */
 }
 
+.navbar-logo:hover {
+	animation: jittery 4s infinite;
+}
+
 .navbar-logo img {
 	height: auto;
 	max-width: 100%;

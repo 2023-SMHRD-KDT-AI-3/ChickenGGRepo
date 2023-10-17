@@ -4,6 +4,7 @@ body {
 	background-color: #F5F5F5;
 	margin: 0;
 	padding: 0;
+	overflow-x: hidden;
 }
 /* 스크롤바 막대 */
 ::-webkit-scrollbar {
@@ -88,6 +89,10 @@ nav.navbar {
 	padding-left: 50px;
 	max-width: 150px;
 	/* 로고 이미지의 최대 너비 설정 */
+}
+
+.navbar-logo:hover {
+	animation: jittery 4s infinite;
 }
 
 .navbar-logo img {
@@ -366,6 +371,7 @@ label {
 	border: none;
 }
 .textarea-button {
+	font-size: 13px;
 	background: none;
 	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
 }
