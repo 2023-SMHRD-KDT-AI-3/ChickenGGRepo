@@ -557,7 +557,6 @@
 			</div>
 			<!-- 2번 브랜드 -->
 			<div class="inner">
-				<img src="images/Menu_brandlogo/logo-bhc.png" class="brand-box" />
 				<div class="slider">
 					<div class="item-wrapper BHC">
 						<div class="item">
@@ -1226,6 +1225,7 @@
 						<!-- 왼쪽 화살표 -->
 						<button id="left-BHC" class="slider-btn">⬅Left</button>
 					</div>
+					<b class="center-text">BHC</b>
 					<div class="slider-btn-wrapper slider-btn-wrapper-right">
 						<!-- 오른쪽 화살표 -->
 						<button id="right-BHC" class="slider-btn">Right➡</button>
@@ -1234,7 +1234,6 @@
 			</div>
 			<!-- 3번 브랜드 -->
 			<div class="inner">
-				<img src="images/Menu_brandlogo/logo-kyochon.jpg" class="brand-box" />
 				<div class="slider">
 					<div class="item-wrapper gyochon">
 						<div class="item">
@@ -1530,6 +1529,7 @@
 						<!-- 왼쪽 화살표 -->
 						<button id="left-gyochon" class="slider-btn">⬅Left</button>
 					</div>
+					<b class="center-text">교촌</b>
 					<div class="slider-btn-wrapper slider-btn-wrapper-right">
 						<!-- 오른쪽 화살표 -->
 						<button id="right-gyochon" class="slider-btn">Right➡</button>
@@ -1538,7 +1538,6 @@
 			</div>
 			<!-- 4번 브랜드 -->
 			<div class="inner">
-				<img src="images/Menu_brandlogo/logo-goobne.png" class="brand-box" />
 				<div class="slider">
 					<div class="item-wrapper goobne">
 						<div class="item">
@@ -1678,6 +1677,7 @@
 						<!-- 왼쪽 화살표 -->
 						<button id="left-goobne" class="slider-btn">⬅Left</button>
 					</div>
+					<b class="center-text">굽네</b>
 					<div class="slider-btn-wrapper slider-btn-wrapper-right">
 						<!-- 오른쪽 화살표 -->
 						<button id="right-goobne" class="slider-btn">Right➡</button>
@@ -1686,7 +1686,6 @@
 			</div>
 			<!-- 5번 브랜드 -->
 			<div class="inner">
-				<img src="images/Menu_brandlogo/logo-hosigi.png" class="brand-box" />
 				<div class="slider">
 					<div class="item-wrapper hosigi">
 						<div class="item">
@@ -1826,6 +1825,7 @@
 						<!-- 왼쪽 화살표 -->
 						<button id="left-hosigi" class="slider-btn">⬅Left</button>
 					</div>
+					<b class="center-text">호식이두마리치킨</b>
 					<div class="slider-btn-wrapper slider-btn-wrapper-right">
 						<!-- 오른쪽 화살표 -->
 						<button id="right-hosigi" class="slider-btn">Right➡</button>
@@ -1834,7 +1834,6 @@
 			</div>
 			<!-- 6번 브랜드 -->
 			<div class="inner">
-				<img src="images/Menu_brandlogo/logo-jadam.png" class="brand-box" />
 				<div class="slider">
 					<div class="item-wrapper jadam">
 						<div class="item">
@@ -2202,6 +2201,7 @@
 						<!-- 왼쪽 화살표 -->
 						<button id="left-jadam" class="slider-btn">⬅Left</button>
 					</div>
+					<b class="center-text">자담치킨</b>
 					<div class="slider-btn-wrapper slider-btn-wrapper-right">
 						<!-- 오른쪽 화살표 -->
 						<button id="right-jadam" class="slider-btn">Right➡</button>
@@ -2210,9 +2210,8 @@
 			</div>
 			<!-- 7번 브랜드 -->
 			<div class="inner">
-				<img src="images/Menu_brandlogo/logo-ajukeo.jpg" class="brand-box" />
 				<div class="slider">
-					<div class="item-wrapper">
+					<div class="item-wrapper ajukeo">
 						<div class="item">
 							<div class="item-content">
 								<input type="checkbox" class="logocheck" name="menuCompare"
@@ -2468,19 +2467,19 @@
 					</div>
 					<div class="slider-btn-wrapper slider-btn-wrapper-left">
 						<!-- 왼쪽 화살표 -->
-						<button id="left-btn" class="slider-btn">⬅Left</button>
+						<button id="left-ajukeo" class="slider-btn">⬅Left</button>
 					</div>
+					<b class="center-text">아주커치킨</b>
 					<div class="slider-btn-wrapper slider-btn-wrapper-right">
 						<!-- 오른쪽 화살표 -->
-						<button id="right-btn" class="slider-btn">Right➡</button>
+						<button id="right-ajukeo" class="slider-btn">Right➡</button>
 					</div>
 				</div>
 			</div>
 			<!-- 8번 브랜드 -->
 			<div class="inner">
-				<img src="images/Menu_brandlogo/logo-mexicana.png" class="brand-box" />
 				<div class="slider">
-					<div class="item-wrapper">
+					<div class="item-wrapper mexicana">
 						<div class="item">
 							<div class="item-content">
 								<input type="checkbox" class="logocheck" name="menuCompare"
@@ -2892,20 +2891,19 @@
 					</div>
 					<div class="slider-btn-wrapper slider-btn-wrapper-left">
 						<!-- 왼쪽 화살표 -->
-						<button id="left-btn" class="slider-btn">⬅Left</button>
+						<button id="left-mexicana" class="slider-btn">⬅Left</button>
 					</div>
+					<b class="center-text">멕시카나</b>
 					<div class="slider-btn-wrapper slider-btn-wrapper-right">
 						<!-- 오른쪽 화살표 -->
-						<button id="right-btn" class="slider-btn">Right➡</button>
+						<button id="right-mexicana" class="slider-btn">Right➡</button>
 					</div>
 				</div>
 			</div>
 			<!-- 9번 브랜드 -->
 			<div class="inner">
-				<img src="images/Menu_brandlogo/logo-chickenplus.png"
-					class="brand-box" />
 				<div class="slider">
-					<div class="item-wrapper">
+					<div class="item-wrapper chickenplus">
 						<div class="item">
 							<div class="item-content">
 								<input type="checkbox" class="logocheck" name="menuCompare"
@@ -3329,11 +3327,12 @@
 					</div>
 					<div class="slider-btn-wrapper slider-btn-wrapper-left">
 						<!-- 왼쪽 화살표 -->
-						<button id="left-btn" class="slider-btn">⬅Left</button>
+						<button id="left-chickenplus" class="slider-btn">⬅Left</button>
 					</div>
+					<b class="center-text">치킨플러스</b>
 					<div class="slider-btn-wrapper slider-btn-wrapper-right">
 						<!-- 오른쪽 화살표 -->
-						<button id="right-btn" class="slider-btn">Right➡</button>
+						<button id="right-chickenplus" class="slider-btn">Right➡</button>
 					</div>
 				</div>
 			</div>

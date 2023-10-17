@@ -181,6 +181,78 @@ buttonRight.addEventListener("click", () => {
     leftBtnEl.addEventListener("click", e => moveSlides("left")); // C
     rightBtnEl.addEventListener("click", e => moveSlides("right"));
 })();
+
+(function () { // A   
+    const itemWrapperEl = document.querySelector('.ajukeo'),
+        leftBtnEl = document.getElementById('left-ajukeo'),
+        rightBtnEl = document.getElementById('right-ajukeo');
+
+    function moveSlides(direction) { // B
+        const item = itemWrapperEl.querySelector('.item'),
+            itemMargin = parseFloat(getComputedStyle(item).marginRight);
+        itemWidth = itemMargin + item.offsetWidth + 2;
+
+        let itemCount = Math.round(itemWrapperEl.scrollLeft / itemWidth);
+
+        if (direction === 'left') {
+            itemCount = itemCount - 1;
+        } else {
+            itemCount = itemCount + 1;
+        }
+        itemWrapperEl.scrollLeft = itemWidth * itemCount;
+    }
+
+    leftBtnEl.addEventListener("click", e => moveSlides("left")); // C
+    rightBtnEl.addEventListener("click", e => moveSlides("right"));
+})();
+
+(function () { // A   
+    const itemWrapperEl = document.querySelector('.mexicana'),
+        leftBtnEl = document.getElementById('left-mexicana'),
+        rightBtnEl = document.getElementById('right-mexicana');
+
+    function moveSlides(direction) { // B
+        const item = itemWrapperEl.querySelector('.item'),
+            itemMargin = parseFloat(getComputedStyle(item).marginRight);
+        itemWidth = itemMargin + item.offsetWidth + 2;
+
+        let itemCount = Math.round(itemWrapperEl.scrollLeft / itemWidth);
+
+        if (direction === 'left') {
+            itemCount = itemCount - 1;
+        } else {
+            itemCount = itemCount + 1;
+        }
+        itemWrapperEl.scrollLeft = itemWidth * itemCount;
+    }
+
+    leftBtnEl.addEventListener("click", e => moveSlides("left")); // C
+    rightBtnEl.addEventListener("click", e => moveSlides("right"));
+})();
+
+(function () { // A   
+    const itemWrapperEl = document.querySelector('.chickenplus'),
+        leftBtnEl = document.getElementById('left-chickenplus'),
+        rightBtnEl = document.getElementById('right-chickenplus');
+
+    function moveSlides(direction) { // B
+        const item = itemWrapperEl.querySelector('.item'),
+            itemMargin = parseFloat(getComputedStyle(item).marginRight);
+        itemWidth = itemMargin + item.offsetWidth + 2;
+
+        let itemCount = Math.round(itemWrapperEl.scrollLeft / itemWidth);
+
+        if (direction === 'left') {
+            itemCount = itemCount - 1;
+        } else {
+            itemCount = itemCount + 1;
+        }
+        itemWrapperEl.scrollLeft = itemWidth * itemCount;
+    }
+
+    leftBtnEl.addEventListener("click", e => moveSlides("left")); // C
+    rightBtnEl.addEventListener("click", e => moveSlides("right"));
+})();
 //brand checkbox 목록 기능
 
 function getCheckboxValue() {
