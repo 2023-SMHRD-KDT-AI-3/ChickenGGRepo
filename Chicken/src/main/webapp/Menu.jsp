@@ -1951,7 +1951,7 @@
 								<input type="checkbox" class="logocheck" name="menuCompare"
 									value="생그라나순살치킨" onclick="getCheckboxValue()" id="362" />
 								<button class="logobox" name="chickenbrand" value="자담치킨">
-									<img src="images/chickMenu/자담/생그라나순살치킨.jpg" />
+									<img src="images/chickMenu/자담/생그라나순살.jpg" />
 									<div class="info-text">
 										<h2>생그라나순살치킨</h2>
 									</div>
@@ -2327,7 +2327,7 @@
 								<input type="checkbox" class="logocheck" name="menuCompare"
 									value="양념윙봉" onclick="getCheckboxValue()" id="537" />
 								<button class="logobox" name="chickenbrand" value="아주커치킨">
-									<img src="images/chickMenu/아주커/양념윙봉.jpg" />
+									<img src="images/chickMenu/아주커/양념윙봉.png" />
 									<div class="info-text">
 										<h2>양념치킨윙봉</h2>
 									</div>
@@ -2533,11 +2533,11 @@
 						<div class="item">
 							<div class="item-content">
 								<input type="checkbox" class="logocheck" name="menuCompare"
-									value="고메치킨" onclick="getCheckboxValue()" id="760" />
+									value="고매치킨" onclick="getCheckboxValue()" id="760" />
 								<button class="logobox" name="chickenbrand" value="멕시카나">
-									<img src="images/chickMenu/멕시카나/고메.png" />
+									<img src="images/chickMenu/멕시카나/고매.png" />
 									<div class="info-text">
-										<h2>고메치킨</h2>
+										<h2>고매치킨</h2>
 									</div>
 								</button>
 							</div>
@@ -2948,7 +2948,7 @@
 								<input type="checkbox" class="logocheck" name="menuCompare"
 									value="아빠의제주깜슐랭" onclick="getCheckboxValue()" id="724" />
 								<button class="logobox" name="chickenbrand" value="치킨플러스">
-									<img src="images/chickMenu/치킨플러스/아빠의제주깜슐랭.png" />
+									<img src="images/chickMenu/치킨플러스/아빠제주깜슐랭.png" />
 									<div class="info-text">
 										<h2>아빠의제주깜슐랭</h2>
 									</div>
@@ -3056,7 +3056,7 @@
 								<input type="checkbox" class="logocheck" name="menuCompare"
 									value="마늘스테미나" onclick="getCheckboxValue()" id="733" />
 								<button class="logobox" name="chickenbrand" value="치킨플러스">
-									<img src="images/chickMenu/치킨플러스/마늘스테미나.png" />
+									<img src="images/chickMenu/치킨플러스/마늘스태미나.png" />
 									<div class="info-text">
 										<h2>마늘스테미나</h2>
 									</div>
@@ -3164,7 +3164,7 @@
 								<input type="checkbox" class="logocheck" name="menuCompare"
 									value="아빠의제주깜슐랭순살" onclick="getCheckboxValue()" id="742" />
 								<button class="logobox" name="chickenbrand" value="치킨플러스">
-									<img src="images/chickMenu/치킨플러스/아빠의제주깜슐랭.png" />
+									<img src="images/chickMenu/치킨플러스/아빠제주깜슐랭.png" />
 									<div class="info-text">
 										<h2>아빠의제주깜슐랭순살</h2>
 									</div>
@@ -3272,7 +3272,7 @@
 								<input type="checkbox" class="logocheck" name="menuCompare"
 									value="마늘스테미나순살" onclick="getCheckboxValue()" id="751" />
 								<button class="logobox" name="chickenbrand" value="치킨플러스">
-									<img src="images/chickMenu/치킨플러스/마늘스테미나.png" />
+									<img src="images/chickMenu/치킨플러스/마늘스태미나.png" />
 									<div class="info-text">
 										<h2>마늘스테미나순살</h2>
 									</div>
