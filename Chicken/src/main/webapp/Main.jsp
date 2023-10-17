@@ -636,8 +636,10 @@
 	            	},
 	                y: { // 최소값, 최대값, 틱범위
 	                	grid:{
-	                		display: false
+	                		display: false,
+	                		drawBorder: false
 	                	},
+	                	
 	                	beginAtZero : false,
 	                    min: 10000,
 	                    ticks: {
