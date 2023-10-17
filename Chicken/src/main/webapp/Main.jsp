@@ -660,22 +660,26 @@
 		        var finallabel;
 		        var finalmin;
 		        var finalavg;
+		        var finalboneless;
 		        console.log(${brand[0].brand_name})
 		        var arr = new Array();
 				for (var i = 0; i < result.length; i++) {
 						arr.push({brand_name:result[i].brand_name,
 					    min_price:result[i].min_price,
-					    avg_price:result[i].avg_price})
+					    avg_price:result[i].avg_price,
+					    boneless:result[i].boneless})
 				  }
 	          	for (var i = 0; i < 5; i++) {
 					if(label == arr[i].brand_name){
 	        		finallabel = arr[i].brand_name
 	        		finalmin = arr[i].min_price
 	        		finalavg = arr[i].avg_price
+	        		finalboneless = arr[i].boneless
 	        		console.log(arr[i].brand_name)
 					}
 				}
-				document.getElementById("LeftChart2").innerHTML = '<p>선택한 브랜드 : '+finallabel+'</p>'
+				document.getElementById("LeftChart2").innerHTML = '<p>선택한 브랜드 : '+finallabel+
+				'<br>브랜드 최소가격: '+finalmin+'원<br>브랜드 평균가격: '+finalavg+'원<br>브랜드 순살부위: '+finalboneless+'</p>'
 	          	document.getElementById("Chart2").innerHTML = '<canvas id="getChart" style="height: 200px; width: 450px; margin-left: 250px;"></canvas>'
 	              const gct = document.getElementById('getChart').getContext('2d');
 	              const myChart2 = new Chart(gct, {
