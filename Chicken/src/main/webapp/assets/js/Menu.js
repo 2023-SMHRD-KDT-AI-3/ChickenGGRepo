@@ -39,7 +39,7 @@ buttonRight.addEventListener("click", () => {
 
 /* 작은 슬라이드 */
 (function () { // A   
-    const itemWrapperEl = document.querySelector('.item-wrapper'),
+    const itemWrapperEl = document.querySelector('.BBQ'),
         leftBtnEl = document.getElementById('left-BBQ'),
         rightBtnEl = document.getElementById('right-BBQ');
 
@@ -63,7 +63,7 @@ buttonRight.addEventListener("click", () => {
 })();
 
 (function () { // A   
-    const itemWrapperEl = document.querySelector('.item-wrapper'),
+    const itemWrapperEl = document.querySelector('.BHC'),
         leftBtnEl = document.getElementById('left-BHC'),
         rightBtnEl = document.getElementById('right-BHC');
 

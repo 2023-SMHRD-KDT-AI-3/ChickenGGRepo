@@ -108,7 +108,7 @@
 			<div class="inner">
 				<img src="images/Menu_brandlogo/logo-bbq.jpg" class="brand-box">
 				<div class="slider">
-					<div class="item-wrapper">
+					<div class="item-wrapper BBQ">
 						<!-- item 클래스가 메뉴 양식 -->
 						<div class="item">
 							<div class="item-content">
@@ -558,7 +558,7 @@
 			<div class="inner">
 				<img src="images/Menu_brandlogo/logo-bhc.png" class="brand-box" />
 				<div class="slider">
-					<div class="item-wrapper">
+					<div class="item-wrapper BHC">
 						<div class="item">
 							<div class="item-content">
 								<input type="checkbox" class="logocheck" name="menuCompare"
