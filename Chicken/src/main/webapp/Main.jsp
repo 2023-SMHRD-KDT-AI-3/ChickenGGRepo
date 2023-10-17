@@ -303,13 +303,13 @@
 			</div>
 		</div>
 		<!-- 여기는 마이차트 부분입니다 -->
-		<div style="float: right" class="chart-wrap" id="myChart1">
+		<div class="chart-wrap" id="myChart1">
 			<!-- <canvas id="myChart" style="height: 490px; width: 850px"></canvas>  -->
 		</div>
 		<!-- 여기는 마이차트 부분입니다 -->
-		<div id="Chart2" style="height: 490px; width: 850px; float:right"></div>
-		<div id="LeftChart2" style="float:right"></div>
-		<div>${Reviews.nick}님: ${Reviews.review_content}</div>
+		<div id="Chart2" style="height: 490px; width: 850px;"></div>
+		<div id="LeftChart2"></div>
+		<div class="review-show">${Reviews.nick}님: ${Reviews.review_content}</div>
 	</div>
 	<!-- 검색추천, 자동완성  js문 -->
 	<script src="assets/js/Main.js"></script>

@@ -195,6 +195,7 @@ nav.navbar {
 .content {
 	margin-top: 100px;
 	padding: 20px;
+	display: flex;
 }
 
 .map_wrap {
@@ -244,7 +245,9 @@ nav.navbar {
 	margin-right: 145px;
 }
 
-
+.review-show {
+	text-align: left;
+}
 @keyframes jittery {
 
 	5%,
