@@ -601,6 +601,8 @@
 	<script src="assets/js/Menu.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 	<script type="text/javascript">
+		var smallcal_brand = null;
+		var smallprice_brand = null;
 		function compareclick() {
 			var menu_num = [];
 			$('input:checkbox[name=menuCompare]').each(function(index) {
@@ -611,6 +613,8 @@
 			})
 			if (menu_num.length > 5) {
 				alert("최대 5개까지만 비교해 주세요!");
+			} else if (menu_num.length < 2){
+				alert("최소 2개는 선택해 주세요!");
 			} else {
 				$.ajax({
 					url : 'ManyMenu',
@@ -622,6 +626,26 @@
 						console.log("메뉴 Ajax성공!");
 						console.log(res);
 						ManyBrandChart(res);
+						var min_calories = res[0].calories;
+						var min_price = res[0].menu_price;
+						console.log(min_calories);
+						var finalNum = 0;
+						var priceNum = 0;
+						for (var i = 0; i < res.length; i++) {
+							if (res[i].calories < min_calories) {
+								console.log(res[i].calories);
+								min_calories = res[i].calories;
+								finalNum = i;
+							}
+							if (res[i].menu_price < min_price) {
+								min_price = res[i].min_price;
+								priceNum = i;
+							}
+						}
+						console.log(res[finalNum].menu_name);
+						console.log(res[priceNum].menu_name);
+						smallcal_brand = res[finalNum];
+						smallprice_brand = res[priceNum];
 					},
 					error : function() {
 						alert("실패..");
@@ -629,6 +653,37 @@
 				})
 			}
 		}
+		function calories_click() {
+			makingChart(smallcal_brand);
+		}
+		function price_click() {
+			makingChart(smallprice_brand);
+		}
+	</script>
+	<!-- 하나만 클릭시 나와주는 함수 -->
+	<script>
+	$('.logobox').click(function() {
+		console.log($(this).prev().attr('id'));
+		var menu_number = $(this).prev().attr('id');
+		compareone(menu_number);
+	});
+	function compareone(num){
+		$.ajax({
+			url : 'OneMenu',
+			type : 'post',
+			data : {
+				'Menu' : num
+			},
+			success : function(res) {
+				console.log("메뉴 Ajax성공!");
+				console.log(res);
+				makingChart(res);
+			},
+			error : function() {
+				alert("실패..");
+			}
+		})
+	}
 	</script>
 		<!-- Chart.js -->
 	<script
@@ -744,8 +799,8 @@
 	</script>
 	<script>
 	function makingChart(result) {
-		document.getElementById("Brand_Between").innerHTML = '선택한 메뉴 : '+result.menu_name+' <br> 단백질 평균: '+result.protein+
-		'g <br> 칼로리 평균 : '+result.calories+'Kcal <br> 평균 가격 : '+result.menu_price+'원'
+		document.getElementById("Brand_Between").innerHTML = '선택한 메뉴 : '+result.menu_name+' <br> 단백질 : '+result.protein+
+		'g <br> 칼로리 : '+result.calories+'Kcal <br> 가격 : '+result.menu_price+'원'
 		document.getElementById("Brand_Chart").innerHTML = '<canvas id="myChart2" style="height: 500px; width: 500px"></canvas>'
 		const ctx = document.getElementById('myChart2').getContext('2d');
 		const myChart = new Chart(
