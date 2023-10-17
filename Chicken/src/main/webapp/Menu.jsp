@@ -1852,11 +1852,347 @@
 						<div class="item">
 							<div class="item-content">
 								<input type="checkbox" class="logocheck" name="menuCompare"
-									value="후라이드치킨" onclick="getCheckboxValue()" id="353" />
+									value="순살치킨" onclick="getCheckboxValue()" id="354" />
 								<button class="logobox" name="chickenbrand" value="자담치킨">
-									<img src="images/chickMenu/자담/후라이드.jpg" />
+									<img src="images/chickMenu/자담/순살치킨.jpg" />
 									<div class="info-text">
-										<h2>후라이드치킨</h2>
+										<h2>순살치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="핫후라이드치킨" onclick="getCheckboxValue()" id="355" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/핫후라이드치킨.jpg" />
+									<div class="info-text">
+										<h2>핫후라이드치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="핫순살치킨" onclick="getCheckboxValue()" id="356" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/핫순살.jpg" />
+									<div class="info-text">
+										<h2>핫순살</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="양념치킨" onclick="getCheckboxValue()" id="357" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/양념치킨.jpg" />
+									<div class="info-text">
+										<h2>양념치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="양념순살치킨" onclick="getCheckboxValue()" id="358" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/양념순살.jpg" />
+									<div class="info-text">
+										<h2>양념순살치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="간장치킨" onclick="getCheckboxValue()" id="359" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/간장치킨.jpg" />
+									<div class="info-text">
+										<h2>간장치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="마늘치킨" onclick="getCheckboxValue()" id="360" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/마늘치킨.jpg" />
+									<div class="info-text">
+										<h2>마늘치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="생그라나치킨" onclick="getCheckboxValue()" id="361" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/생그라나치킨.jpg" />
+									<div class="info-text">
+										<h2>생그라나치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="생그라나순살치킨" onclick="getCheckboxValue()" id="362" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/생그라나순살치킨.jpg" />
+									<div class="info-text">
+										<h2>생그라나순살치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="윙봉스치킨" onclick="getCheckboxValue()" id="363" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/윙봉스.jpg" />
+									<div class="info-text">
+										<h2>윙봉스치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="휭봉스 간장치킨" onclick="getCheckboxValue()" id="364" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/윙봉스.jpg" />
+									<div class="info-text">
+										<h2>윙봉스간장치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="휭봉스 마늘치킨" onclick="getCheckboxValue()" id="365" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/윙봉스.jpg" />
+									<div class="info-text">
+										<h2>윙봉스마늘치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="날다닭치킨" onclick="getCheckboxValue()" id="366" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/날다닭.jpg" />
+									<div class="info-text">
+										<h2>날다닭치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="날다닭간장치킨" onclick="getCheckboxValue()" id="367" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/날다닭간장.jpg" />
+									<div class="info-text">
+										<h2>날다닭간장치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="날다닭마늘치킨" onclick="getCheckboxValue()" id="368" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/날다닭마늘.jpg" />
+									<div class="info-text">
+										<h2>날다닭마늘치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="크리미양파치킨" onclick="getCheckboxValue()" id="369" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/크리미양파.jpg" />
+									<div class="info-text">
+										<h2>크리미양파치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="맵소이닭치킨" onclick="getCheckboxValue()" id="370" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/맵소이닭.jpg" />
+									<div class="info-text">
+										<h2>맵소이닭치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="치요링치킨" onclick="getCheckboxValue()" id="371" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/치요링.jpg" />
+									<div class="info-text">
+										<h2>치요링치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="치요링순살치킨" onclick="getCheckboxValue()" id="372" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/치요링순살.jpg" />
+									<div class="info-text">
+										<h2>치요링순살치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="파닭치킨" onclick="getCheckboxValue()" id="373" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/파닭순살.jpg" />
+									<div class="info-text">
+										<h2>파닭치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="파닭순살치킨" onclick="getCheckboxValue()" id="374" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/파닭순살.jpg" />
+									<div class="info-text">
+										<h2>파닭순살치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="맵슐랭치킨(오리지널)" onclick="getCheckboxValue()" id="375" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/맵슐랭.jpg" />
+									<div class="info-text">
+										<h2>맵슐랭치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="맵슐랭순살치킨" onclick="getCheckboxValue()" id="376" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/맵슐랭순살.jpg" />
+									<div class="info-text">
+										<h2>맵슐랭순살치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="스리라차치킨" onclick="getCheckboxValue()" id="377" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/스리라차.jpg" />
+									<div class="info-text">
+										<h2>스리라차치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="스리라차순살치킨" onclick="getCheckboxValue()" id="378" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/스리라차순살.jpg" />
+									<div class="info-text">
+										<h2>스리라차순살치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="불패치킨" onclick="getCheckboxValue()" id="379" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/불패.jpg" />
+									<div class="info-text">
+										<h2>불패치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="불패순살치킨" onclick="getCheckboxValue()" id="380" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/불패순살.jpg" />
+									<div class="info-text">
+										<h2>불패순살치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="소보로치킨" onclick="getCheckboxValue()" id="381" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/소보로.jpg" />
+									<div class="info-text">
+										<h2>소보로치킨</h2>
+									</div>
+								</button>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item-content">
+								<input type="checkbox" class="logocheck" name="menuCompare"
+									value="티키타코 순살치킨" onclick="getCheckboxValue()" id="382" />
+								<button class="logobox" name="chickenbrand" value="자담치킨">
+									<img src="images/chickMenu/자담/티키타코.jpg" />
+									<div class="info-text">
+										<h2>티키타코순살치킨</h2>
 									</div>
 								</button>
 							</div>
