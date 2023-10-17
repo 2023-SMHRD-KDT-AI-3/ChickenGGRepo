@@ -1652,5 +1652,17 @@
 					});
 		}
 	</script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			var data = '<c:out value="${SearchRes}"/>';
+			console.log(data);
+			setTimeout(function() {
+				if (data) {
+					//$('input[value=1]').attr("id");
+					console.log("왔니?")
+				}
+			}, 300);
+		});
+	</script>
 </body>
 </html>
