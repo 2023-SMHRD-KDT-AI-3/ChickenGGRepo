@@ -102,6 +102,7 @@
 			<span id="compare_list"></span>
 		</div>
 	</div>
+	<div style="float:right">※메뉴 바깥의 좌우버튼을 눌러 브랜드를 선택하고 메뉴 안쪽의 체크박스를 눌러 비교할 메뉴를 선택해 주세요<br>※최소 2개 최대 5개의 메뉴를 선택하고, 비교하기를 눌러 비교해주세요!<br>※메뉴의 정보를 자세히 보고 싶으면, 원하는 메뉴의 사진을 눌러주세요!</div>
 	<!-- 치킨 사진 슬라이드 -->
 	<div class="outer">
 		<div class="inner-grp">
