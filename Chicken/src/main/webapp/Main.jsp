@@ -631,7 +631,8 @@
 	             scales : {
 	            	x: {
 	            		grid:{
-	            			display:false
+	            			display:false,
+	            			drawBorder:false
 	            		}
 	            	},
 	                y: { // 최소값, 최대값, 틱범위
@@ -643,7 +644,7 @@
 	                	beginAtZero : false,
 	                    min: 10000,
 	                    ticks: {
-	                      stepSize: 2000
+	                      display:false
 	                      }
 	                   }
 	            	}
