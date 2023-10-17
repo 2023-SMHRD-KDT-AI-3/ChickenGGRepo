@@ -1688,7 +1688,7 @@
 			<div class="inner">
 				<img src="images/Menu_brandlogo/logo-hosigi.png" class="brand-box" />
 				<div class="slider">
-					<div class="item-wrapper">
+					<div class="item-wrapper hosigi">
 						<div class="item">
 							<div class="item-content">
 								<input type="checkbox" class="logocheck" name="menuCompare"
@@ -1824,11 +1824,11 @@
 					</div>
 					<div class="slider-btn-wrapper slider-btn-wrapper-left">
 						<!-- 왼쪽 화살표 -->
-						<button id="left-btn" class="slider-btn">⬅Left</button>
+						<button id="left-hosigi" class="slider-btn">⬅Left</button>
 					</div>
 					<div class="slider-btn-wrapper slider-btn-wrapper-right">
 						<!-- 오른쪽 화살표 -->
-						<button id="right-btn" class="slider-btn">Right➡</button>
+						<button id="right-hosigi" class="slider-btn">Right➡</button>
 					</div>
 				</div>
 			</div>
