@@ -546,11 +546,11 @@
 					</div>
 					<div class="slider-btn-wrapper slider-btn-wrapper-left">
 						<!-- 왼쪽 화살표 -->
-						<button id="left-btn" class="slider-btn">⬅Left</button>
+						<button id="left-BBQ" class="slider-btn">⬅Left</button>
 					</div>
 					<div class="slider-btn-wrapper slider-btn-wrapper-right">
 						<!-- 오른쪽 화살표 -->
-						<button id="right-btn" class="slider-btn">Right➡</button>
+						<button id="right-BBQ" class="slider-btn">Right➡</button>
 					</div>
 				</div>
 			</div>
@@ -1222,11 +1222,11 @@
 					</div>
 					<div class="slider-btn-wrapper slider-btn-wrapper-left">
 						<!-- 왼쪽 화살표 -->
-						<button id="left-btn" class="slider-btn">⬅Left</button>
+						<button id="left-BHC" class="slider-btn">⬅Left</button>
 					</div>
 					<div class="slider-btn-wrapper slider-btn-wrapper-right">
 						<!-- 오른쪽 화살표 -->
-						<button id="right-btn" class="slider-btn">Right➡</button>
+						<button id="right-BHC" class="slider-btn">Right➡</button>
 					</div>
 				</div>
 			</div>

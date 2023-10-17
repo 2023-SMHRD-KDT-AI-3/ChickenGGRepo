@@ -410,3 +410,15 @@ nav.navbar {
 	font-size: 25px;
 	color: #a96d24;
 }
+
+#Brand_Select {
+	position: relative;
+	top: 26px;
+	left: 83px;
+}
+
+#Brand_Between {
+	position: relative;
+	top: 160px;
+	right: 100px;
+}
