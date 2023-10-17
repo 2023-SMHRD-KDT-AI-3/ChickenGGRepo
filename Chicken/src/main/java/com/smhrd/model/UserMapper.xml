@@ -36,6 +36,6 @@
 	</select>
 	
 	<select id="allreview" resultType="com.smhrd.model.Review_Table">
-		select * from t_review;
+		select review_num, t_user.id, menu_num, review_content, nick from t_review join t_user on t_review.id = t_user.id;
 	</select>
 </mapper>

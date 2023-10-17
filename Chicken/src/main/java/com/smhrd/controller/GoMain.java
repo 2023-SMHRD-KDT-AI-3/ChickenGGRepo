@@ -2,6 +2,7 @@ package com.smhrd.controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -20,11 +21,13 @@ public class GoMain extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// 메인페이지 로드 전에 chart.js 사용하기 위해 로드
+		Random rand = new Random();
 		UserDAO dao = new UserDAO();
 		ArrayList<Review_Table> review = dao.reviewall();
-		System.out.println(review.get(0));
+		int rdnum = rand.nextInt(review.size());
+		System.out.println(review.get(rdnum));
 		response.setContentType("text/json;charset=utf-8");
-		request.setAttribute("Reviews", review.get(0));
+		request.setAttribute("Reviews", review.get(rdnum));
 		// 메인페이지로 가기 위한 url생성 및 이동
 		String url = "Main.jsp";
 		RequestDispatcher rd = request.getRequestDispatcher(url);
